@@ -1,8 +1,8 @@
 configfile: "config.yml"
 import snkmk
-RUNLIB2SAMP, SAMP2RUNLIB = snkmk.make_runlib2samp("rawdata/sample2runlib.csv")
-SAMPLESETS = snkmk.make_samplesets(s2rl_file="rawdata/sample2runlib.csv",
-                                   setfile_glob="rawdata/samplesets/*.txt")
+RUNLIB2SAMP, SAMP2RUNLIB = snkmk.make_runlib2samp("metadata/sample2runlib.csv")
+SAMPLESETS = snkmk.make_samplesets(s2rl_file="metadata/sample2runlib.csv",
+                                   setfile_glob="metadata/samplesets/*.txt")
 VARCALL_REGIONS = snkmk.make_regions(config["refs"], window=config["varcall"]["chunksize"])
 shell.prefix = "set -euo pipefail; "
 
@@ -53,7 +53,7 @@ rule qcreads:
         log="data/log/adapterremoval/{run}/{lib}.log",
         settings="data/stats/adapterremoval/{run}/{lib}.txt",
     threads:
-        1
+        4
     params:
         adp1=lambda wc: config["qc"].get(wc.run, config["qc"]["_DEFAULT_"])["adapter1"],
         adp2=lambda wc: config["qc"].get(wc.run, config["qc"]["_DEFAULT_"])["adapter2"],
@@ -75,7 +75,7 @@ rule qcreads:
         "   --output1 /dev/stdout"
         " | seqhax pairs"
         "   -l 20"
-        "   -b >(gzip >{output.reads})"
+        "   -b >(pigz >{output.reads})"
         "   /dev/stdin"
         ") >{log.log} 2>&1"
 
@@ -328,8 +328,7 @@ rule ngmap:
         reads="data/reads/runs/{run}/{lib}.fastq.gz",
         ref=lambda wc: config['refs'][wc.ref],
     output:
-        bam="data/alignments/ngm/{ref}/byrun/{run}/{lib}.bam",
-        bai="data/alignments/ngm/{ref}/byrun/{run}/{lib}.bam.bai",
+        bam=temp("data/alignments/ngm/{ref}/byrun/{run}/{lib}.bam"),
     log:
         "data/log/ngm/{ref}/{run}/{lib}.log"
     threads:
@@ -352,7 +351,6 @@ rule ngmap:
         "   -m 1G"
         "   -o {output.bam}"
         "   -" # stdin
-        " && samtools index {output.bam}"
         " ) >{log} 2>&1"
 
 rule bwamem:
@@ -360,8 +358,7 @@ rule bwamem:
         reads="data/reads/runs/{run}/{lib}.fastq.gz",
         ref=lambda wc: config['refs'][wc.ref],
     output:
-        bam="data/alignments/bwa/{ref}/byrun/{run}/{lib}.bam",
-        bai="data/alignments/bwa/{ref}/byrun/{run}/{lib}.bam.bai",
+        bam=temp("data/alignments/bwa/{ref}/byrun/{run}/{lib}.bam"),
     log:
         "data/log/bwa/{ref}/{run}/{lib}.log"
     threads:
@@ -382,7 +379,6 @@ rule bwamem:
         "   -m 1G"
         "   -o {output.bam}"
         "   -" # stdin
-        " && samtools index {output.bam}"
         " ) >{log} 2>&1"
 
 rule stampy:
@@ -391,7 +387,6 @@ rule stampy:
         ref=lambda wc: config['refs'][wc.ref],
     output:
         bam="data/alignments/stampy/{ref}/byrun/{run}/{lib}.bam",
-        bai="data/alignments/stampy/{ref}/byrun/{run}/{lib}.bam.bai",
     log:
         "data/log/stampy/{ref}/{run}/{lib}.log"
     threads:
@@ -416,9 +411,17 @@ rule stampy:
         "   -m 1G"
         "   -o {output.bam}"
         "   -" # stdin
-        " && samtools index {output.bam}"
         " ; rm -rf /dev/shm/stampyref_{wildcards.run}_{wildcards.lib}"
         " ) >{log} 2>&1"
+
+
+rule bamidx:
+    input:
+        "{path}.bam"
+    output:
+        "{path}.bam.bai"
+    shell:
+        "samtools index {input}"
 
 rule mergebam_samp:
     input:
@@ -427,7 +430,6 @@ rule mergebam_samp:
 	                for r, l in SAMP2RUNLIB[wc.sample]]
     output:
         bam="data/alignments/{aligner}/{ref}/samples/{sample}.bam",
-        bai="data/alignments/{aligner}/{ref}/samples/{sample}.bam.bai",
     log:
         "data/log/mergesamplebam/{aligner}/{ref}/{sample}.log"
     threads: 4
@@ -436,7 +438,6 @@ rule mergebam_samp:
         "   -@ {threads}"
         "   {output.bam}"
         "   {input}"
-        " && samtools index {output.bam}"
         " ) >{log} 2>&1"
 
 
@@ -461,7 +462,6 @@ rule mergebam_set:
 
     output:
         bam="data/alignments/{aligner}/{ref}/sets/{sampleset}.bam",
-        bai="data/alignments/{aligner}/{ref}/sets/{sampleset}.bam.bai",
     log:
         "data/log/mergesetbam/{aligner}/{ref}/{sampleset}.log"
     threads: 4
@@ -470,7 +470,6 @@ rule mergebam_set:
         "   -@ {threads}"
         "   {output.bam}"
         "   {input}"
-        " && samtools index {output.bam}"
         " ) >{log} 2>&1"
 
 ## Bam stats
@@ -544,6 +543,7 @@ rule qualstat:
         "   | seqhax clihist"
         "   | sed -e 's/^/{wildcards.run}~{wildcards.lib}	/'"
         "   > {output} ) >{log} 2>&1"
+
 rule align_librun:
     input:
         lambda wc: ["data/alignments/{aln}/{ref}/byrun/{run}/{lib}.bam".
@@ -565,11 +565,11 @@ rule align_sampset:
         expand("data/alignments/{aligner}/{ref}/sets/{sampleset}.bam",
                ref=config["mapping"]["refs"],
                aligner=config["mapping"]["aligners"],
-               sampleset=SAMPLESETS),
+               sampleset=config["mapping"]["samplesets"]),
         expand("data/bamlists/{aligner}/{ref}/{sampleset}.bamlist",
                ref=config["mapping"]["refs"],
                aligner=config["mapping"]["aligners"],
-               sampleset=SAMPLESETS),
+               sampleset=config["mapping"]["samplesets"]),
 
 rule bamstats:
     input:
@@ -580,6 +580,7 @@ rule bamstats:
 
 rule align:
    input:
+        rules.align_samp.input,
         rules.align_sampset.input,
         rules.bamstats.input,
 
@@ -590,6 +591,7 @@ rule align:
 rule freebayes:
     input:
         bam="data/alignments/{aligner}/{ref}/sets/{sampleset}.bam",
+        bai="data/alignments/{aligner}/{ref}/sets/{sampleset}.bam.bai",
         ref=lambda wc: config['refs'][wc.ref],
     output:
         bcf="data/variants/raw_split/freebayes~{aligner}~{ref}~{sampleset}/{region}.bcf",
@@ -619,6 +621,7 @@ rule freebayes:
 rule mpileup:
     input:
         bam="data/alignments/{aligner}/{ref}/sets/{sampleset}.bam",
+        bai="data/alignments/{aligner}/{ref}/sets/{sampleset}.bam.bai",
         ref=lambda wc: config['refs'][wc.ref],
     output:
         bcf="data/variants/raw_split/mpileup~{aligner}~{ref}~{sampleset}/{region}.bcf",
