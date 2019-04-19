@@ -1,0 +1,6 @@
+.snakemake
+data
+rawdata
+.*.sw?
+*.pyc
+*.o[012345679]*

@@ -1,0 +1,96 @@
+qc:
+  _DEFAULT_:
+    adapter1: CTGTCTCTTATACACATCTCCGAGCCCACGAGACNNNNNNNNATCTCGTATGCCGTCTTCTGCTTG
+    adapter2: CTGTCTCTTATACACATCTGACGCTGCCGACGANNNNNNNNGTGTAGATCTCGGTGGTCGCCGTATCATT
+    minqual: 25
+  BGI_LB1:
+    adapter1: CTGTCTCTTATACACATCTCCGAGCCCACGAGACNNNNNNNNATCTCGTATGCCGTCTTCTGCTTG
+    adapter2: CTGTCTCTTATACACATCTGACGCTGCCGACGANNNNNNNNGTGTAGATCTCGGTGGTCGCCGTATCATT
+    minqual: 25
+
+sample_sets: []
+
+mapping:
+  aligners:
+    - bwa
+  refs:
+    - grandisv2chl
+    - emel-scott
+
+refs:
+  grandis: /g/data1/xe2/references/eucalyptus/grandis/Egrandis_v2.fasta
+  grandisv2chl: /g/data1/xe2/references/eucalyptus/grandis_v2_chloro/Egrandis-v2-plus-chloro.fasta
+  emel-scott: /g/data1/xe2/references/eucalyptus/emel_scott/Emelliodora_CSIROg1_SISH00000000.1.fasta
+
+denovodist:
+  kwip_sketchsize: 1e9
+  mash_sketchsize: 1e5
+  sourmash_sketchsize: 1e5
+  ksize: 21
+  kwip_sets: []
+    #- Project2
+  mash_sets: # we can subset from everything for (sour)mash
+    - all_samples
+  sourmash_sets: []
+    #- all_samples
+
+varcall:
+  theta_prior: 0.1 # approx 10% of sites vary, it seems
+  chunksize: 1000000
+  aligners:
+    - bwa
+  callers:
+    - mpileup
+    #- freebayes
+  refs:
+    - grandisv2chl
+    - emel-scott
+  samplesets:
+    - all_samples
+  filters:
+    default: >
+      -i 'QUAL >= 10 &&
+          ALT != "." &&
+          INFO/DP >= 5 &&
+          INFO/AN >= 3'
+    strict: >
+      -i 'QUAL >= 40 &&
+          ALT != "." &&
+          INFO/DP >= 10 &&
+          ((INFO/AN / N_SAMPLES)*2) > 0.50 &&
+          MAF >= 0.02'
+    # Above is presence rate, >50%
+
+  # angsd:
+  #   chunksize: 1000000
+  #   filters:
+  #     angsd_default:  "-SNP_pval 1e-3  -minMaf 0.0001 -minInd 10 -setMinDepth 10 -minQ 10"
+  #     perloc_default:  "-SNP_pval 1e-3  -minMaf 0.0001 -setMinDepth 3 -minQ 10"
+  #   aligners:
+  #     - bwa
+  #   refs:
+  #     - grandisv2chl
+  #   samplesets:
+  #     - Project2-sideroxylon-no-outlier
+  #   locationsets:
+  #     - loc01_alb
+  # 
+  # beagle:
+  #   chunksize: 1e6
+  # 
+  # pcangsd:
+  #   angsd_chunksize: 100000
+  #   aligners:
+  #     - bwa
+  #   refs:
+  #     - grandisv2chl
+  #   samplesets:
+  #     - Project2-albens-no-outlier
+  #   nsnps:
+  #     - 100000
+  #   reps: 20
+  #   angsd_filters: "-SNP_pval 1e-4 -doMaf 2 -doPost 1  -minMaf 0.01 -minInd 50"
+  #   admix:
+  #     K: [1,2,3,4,5,6]
+  #     alpha: ["0.0", 0.001, 0.01, 0.1, 0.2]
+  #     seeds: [1, 2, 3, 5, 7]

@@ -1,0 +1,51 @@
+__default__:
+  mem: 31G
+  queue: normal
+  time: '01:00:00'
+  jobfs: 400G
+  project: xe2
+  name: "EUSMK_{rule}_{wildcards}"
+
+qcreads: # sometimes a local rule
+  time: '0:30:00'
+
+read_count:
+  time: "6:00:00"
+
+unique_kmers:
+  time: "18:00:00"
+
+stampy:
+  time: '12:00:00'
+
+ngmap:
+  time: '4:00:00'
+
+bwamem:
+  time: '2:00:00'
+
+mergebam_samp:
+  time: '4:00:00'
+
+mergebam_set:
+  time: '72:00:00'
+  mem: "16G"
+
+bcfmerge:
+  time: '72:00:00'
+
+kwipdist:
+  time: '168:00:00'
+
+mashsketch:
+  time: '12:00:00'
+  queue: normalbw
+
+mashdist:
+  time: '2:00:00'
+  queue: normalbw
+
+gatk4_hapcaller:
+  time: '24:00:00'
+  mem: 63G
+  queue: normal
