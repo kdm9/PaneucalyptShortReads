@@ -5,3 +5,7 @@ channels:
 dependencies:
   - python=3.*
   - snakemake
+  - bwa
+  - samtools
+  - bcftools
+  - AdapterRemoval

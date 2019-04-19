@@ -4,13 +4,19 @@ __default__:
   time: '01:00:00'
   jobfs: 400G
   project: xe2
-  name: "EUSMK_{rule}_{wildcards}"
+  name: "SNK_{rule}_{wildcards}"
 
 qcreads: # sometimes a local rule
-  time: '0:30:00'
+  time: '4:00:00'
+  mem: 10G
+
+qcreads_il: # sometimes a local rule
+  time: '4:00:00'
+  mem: 10G
 
 read_count:
   time: "6:00:00"
+  mem: 10G
 
 unique_kmers:
   time: "18:00:00"

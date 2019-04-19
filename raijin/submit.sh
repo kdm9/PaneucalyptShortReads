@@ -5,6 +5,7 @@
 #PBS -l mem=5G
 #PBS -l other=gdata1
 #PBS -l wd
+#PBS -j oe
 #PBS -M kevin@kdmurray.id.au
 #PBS -m abe
 #PBS -P xe2
@@ -21,7 +22,7 @@ SNAKEFILE=${SNAKEFILE:-Snakefile}
 
 QSUB="qsub -q {cluster.queue} -l ncpus={threads} -l jobfs={cluster.jobfs}"
 QSUB="$QSUB -l walltime={cluster.time} -l mem={cluster.mem} -N {cluster.name}"
-QSUB="$QSUB -l wd -o $logdir -e $logdir -P {cluster.project}"
+QSUB="$QSUB -l wd -j oe -o $logdir -P {cluster.project}"
 
 snakemake --unlock
 
@@ -35,5 +36,5 @@ snakemake                                                 \
     --snakefile "$SNAKEFILE"                              \
     --cluster "$QSUB"                                     \
     "$TARGET"                                             \
-    >data/log/submitter_${PBS_JOBID:-}_snakemake.log 2>&1 \
+    |& tee data/log/submitter_${PBS_JOBID:-headnode}_snakemake.log
 

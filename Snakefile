@@ -41,7 +41,6 @@ rule reads:
 
 ### Actual rules
 
-#localrules: qcreads
 ruleorder: qcreads_il > qcreads
 rule qcreads:
     input:
@@ -53,7 +52,7 @@ rule qcreads:
         log="data/log/adapterremoval/{run}/{lib}.log",
         settings="data/stats/adapterremoval/{run}/{lib}.txt",
     threads:
-        4
+        7
     params:
         adp1=lambda wc: config["qc"].get(wc.run, config["qc"]["_DEFAULT_"])["adapter1"],
         adp2=lambda wc: config["qc"].get(wc.run, config["qc"]["_DEFAULT_"])["adapter2"],
@@ -70,12 +69,12 @@ rule qcreads:
         "   --trimqualities"
         "   --trimwindows 10"
         "   --minquality {params.minqual}"
-        "   --threads {threads}"
+        "   --threads 2"
         "   --settings {log.settings}"
         "   --output1 /dev/stdout"
         " | seqhax pairs"
         "   -l 20"
-        "   -b >(pigz >{output.reads})"
+        "   -b >(pigz -p 5 >{output.reads})"
         "   /dev/stdin"
         ") >{log.log} 2>&1"
 
@@ -89,7 +88,7 @@ rule qcreads_il:
         log="data/log/adapterremoval/{run}/{lib}.log",
         settings="data/stats/adapterremoval/{run}/{lib}.txt",
     threads:
-        1
+        7
     params:
         adp1=lambda wc: config["qc"].get(wc.run, config["qc"]["_DEFAULT_"])["adapter1"],
         adp2=lambda wc: config["qc"].get(wc.run, config["qc"]["_DEFAULT_"])["adapter2"],
@@ -106,15 +105,17 @@ rule qcreads_il:
         "   --trimqualities"
         "   --trimwindows 10"
         "   --minquality {params.minqual}"
-        "   --threads {threads}"
+        "   --threads 2"
         "   --settings {log.settings}"
         "   --output1 /dev/stdout"
         " | seqhax pairs"
         "   -l 20"
-        "   -b >(gzip >{output.reads})"
+        "   -b >(pigz -p 5 >{output.reads})"
         "   /dev/stdin"
         ") >{log.log} 2>&1"
 
+
+localrules: samplefastq
 rule samplefastq:
     input:
         lambda wc: ["data/reads/runs/{run}/{lib}.fastq.gz".format(run=r, lib=l) for r, l in SAMP2RUNLIB[wc.sample]],
@@ -131,7 +132,7 @@ rule read_count_librun:
     output:
         "data/stats/reads/readnum_librun.tsv",
     threads:
-        32
+        28
     log:
         "data/log/readstats/seqhax-stats-librun.log",
     shell:
@@ -147,7 +148,7 @@ rule read_count_sample:
     output:
         "data/stats/reads/readnum_samples.tsv",
     threads:
-        32
+        28
     log:
         "data/log/readstats/seqhax-stats-sample.log",
     shell:
