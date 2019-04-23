@@ -27,7 +27,7 @@ rule qc_runlib:
 rule read_stats:
     input:
         "data/stats/reads/readnum_librun.tsv",
-        "data/stats/reads/readnum_samples.tsv",
+        #"data/stats/reads/readnum_samples.tsv",
 
 rule qc_samples:
     input:
@@ -37,7 +37,7 @@ rule reads:
     input:
         rules.qc_runlib.input,
         rules.read_stats.input,
-        rules.qc_samples.input,
+        #rules.qc_samples.input,
 
 ### Actual rules
 
@@ -47,7 +47,7 @@ rule qcreads:
         r1="rawdata/runs/{run}/{lib}_R1.fastq.gz",
         r2="rawdata/runs/{run}/{lib}_R2.fastq.gz",
     output:
-        reads=temp("data/reads/runs/{run}/{lib}.fastq.gz"),
+        reads="data/reads/runs/{run}/{lib}.fastq.gz",
     log:
         log="data/log/adapterremoval/{run}/{lib}.log",
         settings="data/stats/adapterremoval/{run}/{lib}.txt",
@@ -119,7 +119,7 @@ localrules: samplefastq
 rule samplefastq:
     input:
         lambda wc: ["data/reads/runs/{run}/{lib}.fastq.gz".format(run=r, lib=l) for r, l in SAMP2RUNLIB[wc.sample]],
-    output: "data/reads/samples/{sample}.fastq.gz"
+    output: pipe("data/reads/samples/{sample}.fastq.gz")
     log: "data/log/samplefastq/{sample}.log"
     threads: 1
     shell:
@@ -148,7 +148,7 @@ rule read_count_sample:
     output:
         "data/stats/reads/readnum_samples.tsv",
     threads:
-        28
+        27
     log:
         "data/log/readstats/seqhax-stats-sample.log",
     shell:
@@ -171,7 +171,7 @@ rule mashsketch:
         temp("data/mash/k{ksize}-s{sketchsize}/{set}.msh"),
     log:
         "data/log/mash/sketch/k{ksize}-s{sketchsize}-{set}.log"
-    threads: 32
+    threads: 27
     shell:
         " mash sketch"
         "   -k {wildcards.ksize}"
@@ -189,7 +189,7 @@ rule mashdist:
         dist="data/mash/k{ksize}-s{sketchsize}/{set}.dist",
     log:
         "data/log/mash/dist/k{ksize}-s{sketchsize}-{set}.log"
-    threads: 32
+    threads: 27
     shell:
         "mash dist"
         "   -p {threads}"
@@ -208,7 +208,7 @@ rule countsketch:
     log:
         "data/log/kwip/sketch/k{ksize}-s{sketchsize}-{sample}.log"
     threads:
-        4
+        3
     shell:
         "load-into-counting.py"
         "   -N 1"
@@ -249,7 +249,7 @@ rule unique_kmers:
     output:
         "data/readstats/unique-kmers/{set}.tsv",
     threads:
-        32
+        27
     params:
         kmersize=config["denovodist"]["ksize"],
     log:
@@ -333,9 +333,10 @@ rule ngmap:
     log:
         "data/log/ngm/{ref}/{run}/{lib}.log"
     threads:
-        4
+        8
     params:
         sample=lambda wc: RUNLIB2SAMP.get((wc.run, wc.lib), "{}~{}".format(wc.run, wc.lib)),
+        sensitivity=config["mapping"]["ngm"]["sensitivity"],
     shell:
         "( ngm"
         "   -q {input.reads}"
@@ -344,7 +345,7 @@ rule ngmap:
         "   -t {threads}"
         "   --rg-id {wildcards.run}_{wildcards.lib}"
         "   --rg-sm {params.sample}"
-        "   --sensitivity 0.5" # this is the mean from a bunch of different runs
+        "   --sensitivity {params.sensitivity}" # this is the mean from a bunch of different runs
         " | samtools view -Suh -"
         " | samtools sort"
         "   -T ${{TMPDIR:-/tmp}}/ngm_{wildcards.run}_{wildcards.lib}"
@@ -363,7 +364,7 @@ rule bwamem:
     log:
         "data/log/bwa/{ref}/{run}/{lib}.log"
     threads:
-        4
+        8
     params:
         sample=lambda wc: RUNLIB2SAMP.get((wc.run, wc.lib), "{}~{}".format(wc.run, wc.lib)),
     shell:
@@ -380,39 +381,6 @@ rule bwamem:
         "   -m 1G"
         "   -o {output.bam}"
         "   -" # stdin
-        " ) >{log} 2>&1"
-
-rule stampy:
-    input:
-        reads="data/reads/runs/{run}/{lib}.fastq.gz",
-        ref=lambda wc: config['refs'][wc.ref],
-    output:
-        bam="data/alignments/stampy/{ref}/byrun/{run}/{lib}.bam",
-    log:
-        "data/log/stampy/{ref}/{run}/{lib}.log"
-    threads:
-        16
-    params:
-        sample=lambda wc: RUNLIB2SAMP.get((wc.run, wc.lib), "{}~{}".format(wc.run, wc.lib)),
-    shell:
-        "( mkdir /dev/shm/stampyref_{wildcards.run}_{wildcards.lib}"
-        " && cp {input.ref} {input.ref}.st* /dev/shm/stampyref_{wildcards.run}_{wildcards.lib}/"
-        " && stampy.py"
-        "   -t {threads}"
-        "   --sensitive"
-        "   --substitutionrate=0.05"
-        "   -g /dev/shm/stampyref_{wildcards.run}_{wildcards.lib}/$(basename {input.ref})"
-        "   -h /dev/shm/stampyref_{wildcards.run}_{wildcards.lib}/$(basename {input.ref})"
-        "   -M {input.reads}"
-        "   --readgroup='ID:{wildcards.run}_{wildcards.lib},SM:{params.sample}'"
-        " | samtools view -Suh -"
-        " | samtools sort"
-        "   -T ${{TMPDIR:-/tmp}}/stampy_{wildcards.run}_{wildcards.lib}"
-        "   -@ {threads}"
-        "   -m 1G"
-        "   -o {output.bam}"
-        "   -" # stdin
-        " ; rm -rf /dev/shm/stampyref_{wildcards.run}_{wildcards.lib}"
         " ) >{log} 2>&1"
 
 
@@ -434,6 +402,7 @@ rule mergebam_samp:
     log:
         "data/log/mergesamplebam/{aligner}/{ref}/{sample}.log"
     threads: 4
+    priority: 1
     shell:
         "( samtools merge"
         "   -@ {threads}"
@@ -484,6 +453,7 @@ rule mergestats:
         "data/stats/{type}-{aligner}~{ref}.tsv"
     shell:
         "cat {input} > {output}"
+
 
 localrules: all_bamstats
 rule all_bamstats:

@@ -25,16 +25,23 @@ QSUB="$QSUB -l walltime={cluster.time} -l mem={cluster.mem} -N {cluster.name}"
 QSUB="$QSUB -l wd -j oe -o $logdir -P {cluster.project}"
 
 snakemake --unlock
+if [ "$TARGET" != "all" ]
+then
+	temp='--notemp'
+else
+	temp=''
+fi
 
-snakemake                                                 \
-    -j 100                                                \
-    --cluster-config raijin/cluster.yaml                  \
-    --local-cores ${PBS_NCPUS:-1}                         \
-    --js raijin/jobscript.sh                              \
-    --rerun-incomplete                                    \
-    --keep-going                                          \
-    --snakefile "$SNAKEFILE"                              \
-    --cluster "$QSUB"                                     \
-    "$TARGET"                                             \
-    |& tee data/log/submitter_${PBS_JOBID:-headnode}_snakemake.log
+snakemake                                                          \
+    -j 1000                                                        \
+    --cluster-config raijin/cluster.yaml                           \
+    --local-cores ${PBS_NCPUS:-1}                                  \
+    --js raijin/jobscript.sh                                       \
+    --rerun-incomplete                                             \
+    --keep-going                                                   \
+    $temp                                                          \
+    --snakefile "$SNAKEFILE"                                       \
+    --cluster "$QSUB"                                              \
+    "$TARGET"                                                      \
+    |& tee data/log/submitter_${PBS_JOBID:-headnode}_snakemake.log \
 

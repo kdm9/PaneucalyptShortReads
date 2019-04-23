@@ -14,28 +14,33 @@ qcreads_il: # sometimes a local rule
   time: '4:00:00'
   mem: 10G
 
-read_count:
+read_count_librun:
   time: "6:00:00"
+  queue: normalbw
   mem: 10G
+
+read_count_sample:
+  time: "24:00:00"
+  queue: normalbw
 
 unique_kmers:
   time: "18:00:00"
 
-stampy:
-  time: '12:00:00'
-
 ngmap:
-  time: '4:00:00'
+  time: '8:00:00'
+  mem: 15G
 
 bwamem:
-  time: '2:00:00'
+  time: '8:00:00'
+  mem: 15G
 
 mergebam_samp:
   time: '4:00:00'
+  mem: 8G
 
 mergebam_set:
   time: '72:00:00'
-  mem: "16G"
+  mem: 16G
 
 bcfmerge:
   time: '72:00:00'

@@ -17,6 +17,8 @@ mapping:
     - grandisv2chl
     - emel-scott
   samplesets: []
+  ngm:
+    sensitivity: 0.5
 
 refs:
   grandis: /g/data1/xe2/references/eucalyptus/grandis/Egrandis_v2.fasta
