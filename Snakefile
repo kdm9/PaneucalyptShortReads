@@ -348,7 +348,7 @@ rule ngmap:
         "   --sensitivity {params.sensitivity}" # this is the mean from a bunch of different runs
         " | samtools view -Suh -"
         " | samtools sort"
-        "   -T ${{TMPDIR:-/tmp}}/ngm_{wildcards.run}_{wildcards.lib}"
+        "   -T ${{TMPDIR:-/tmp}}/ngm_{wildcards.run}_{wildcards.lib}_$RANDOM"
         "   -@ {threads}"
         "   -m 1G"
         "   -o {output.bam}"
@@ -376,7 +376,7 @@ rule bwamem:
         "   {input.reads}"
         " | samtools view -Suh -"
         " | samtools sort"
-        "   -T ${{TMPDIR:-/tmp}}/bwa_{wildcards.run}_{wildcards.lib}"
+        "   -T ${{TMPDIR:-/tmp}}/bwa_{wildcards.run}_{wildcards.lib}_$RANDOM"
         "   -@ {threads}"
         "   -m 1G"
         "   -o {output.bam}"
@@ -446,74 +446,25 @@ rule mergebam_set:
 localrules: mergestats
 rule mergestats:
     input:
-        lambda wc: [ "data/stats/{type}/{aligner}/{ref}/{run}~{lib}.tsv".format(
+        lambda wc: [ "data/alnstats/{type}/{aligner}/{ref}/{run}~{lib}.tsv".format(
                             run=r, lib=l, aligner=wc.aligner, ref=wc.ref, type=wc.type)
                         for r, l in RUNLIB2SAMP],
     output:
-        "data/stats/{type}-{aligner}~{ref}.tsv"
+        "data/alnstats/{type}-{aligner}~{ref}.tsv"
     shell:
         "cat {input} > {output}"
-
-
-localrules: all_bamstats
-rule all_bamstats:
-    input:
-        expand("data/stats/bamstats_sample/{aligner}~{ref}~{sample}.tsv",
-               aligner=config["mapping"]["aligners"],
-               ref=config["mapping"]["refs"],
-               sample=SAMPLESETS["all_samples"]),
-        expand("data/stats/summarynumbers_{aligner}~{ref}.tsv",
-               aligner=config["mapping"]["aligners"],
-               ref=config["mapping"]["refs"]),
-
-rule bamstat_summary_nums:
-    input:
-        lambda wc: expand("data/stats/bamstats_sample/{aligner}~{ref}~{sample}.tsv",
-                          aligner=wc.aligner, ref=wc.ref,
-                          sample=SAMPLESETS["all_samples"]),
-    output:
-        "data/stats/summarynumbers_{aligner}~{ref}.tsv"
-    shell:
-        "./scripts/extractsn.py {input} > {output}"
 
 
 rule bamstat_samps:
     input:
         "data/alignments/{aligner}/{ref}/samples/{sample}.bam",
     output:
-        "data/stats/bamstats_sample/{aligner}~{ref}~{sample}.tsv"
+        "data/alnstats/bamstats_sample/{aligner}~{ref}~{sample}.tsv"
     log:
         "data/log/bamstats_sample/{aligner}~{ref}~{sample}.tsv"
     shell:
         "(samtools stats -i 5000 -x {input} >{output}) >{log}"
 
-rule bamstats_insertionsize:
-    input:
-        "data/alignments/{aligner}/{ref}/byrun/{run}/{lib}.bam",
-    output:
-        "data/stats/insertsize/{aligner}/{ref}/{run}~{lib}.tsv"
-    log:
-        "data/log/insertionsize/{aligner}/{ref}/{run}~{lib}.log"
-    shell:
-        "(samtools stats -i 5000 -x  {input}"
-        " | grep '^IS'"
-        " | sed -e 's/^IS/{wildcards.run}\\~{wildcards.lib}/'"
-        " > {output})"
-        ">{log} 2>&1"
-
-rule qualstat:
-    input:
-        bam="data/alignments/{aligner}/{ref}/byrun/{run}/{lib}.bam",
-    output:
-        "data/stats/qualstat/{aligner}/{ref}/{run}~{lib}.tsv"
-    log:
-        "data/log/qualstat/{aligner}/{ref}/{run}~{lib}.log"
-    shell:
-        "(samtools view {input} "
-        "   | awk '{{print $5}}'"
-        "   | seqhax clihist"
-        "   | sed -e 's/^/{wildcards.run}~{wildcards.lib}	/'"
-        "   > {output} ) >{log} 2>&1"
 
 rule align_librun:
     input:
@@ -529,6 +480,25 @@ rule align_samp:
                ref=config["mapping"]["refs"],
                aligner=config["mapping"]["aligners"],
                sample=SAMP2RUNLIB),
+
+
+localrules: all_bamstats
+rule all_bamstats:
+    input:
+        expand("data/alnstats/bamstats_sample/{aligner}~{ref}~{sample}.tsv",
+               aligner=config["mapping"]["aligners"],
+               ref=config["mapping"]["refs"],
+               sample=SAMPLESETS["all_samples"]),
+    output:
+        expand("data/alnstats/everything_{type}.csv",
+               type=["SN", "IS", "COV"])
+    log: "data/log/bamstats/mergeallbamstats.log"
+    shell:
+        "python3 ./scripts/tidybamstat.py"
+        "   -o data/alnstats/everything"  # prefix
+        "   {input}"
+        ">{log} 2>&1"
+
 
 rule align_sampset:
     input:

@@ -49,6 +49,8 @@ varcall:
     - grandisv2chl
     - emel-scott
   samplesets:
+    - LBEmel
+    - DP15-everything
     - all_samples
   filters:
     default: >
