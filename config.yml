@@ -16,7 +16,8 @@ mapping:
   refs:
     - grandisv2chl
     - emel-scott
-  samplesets: []
+  samplesets:
+    - all_samples
   ngm:
     sensitivity: 0.5
 
@@ -50,8 +51,8 @@ varcall:
     - emel-scott
   samplesets:
     - LBEmel
-    - DP15-everything
-    - all_samples
+      #- DP15-everything
+      #- all_samples
   filters:
     default: >
       -i 'QUAL >= 10 &&

@@ -474,16 +474,16 @@ rule align_librun:
                         for a in config["mapping"]["aligners"]
                         for ref in config["mapping"]["refs"]],
 
-rule align_samp:
+localrules: align_samples
+rule align_samples:
     input:
         expand("data/alignments/{aligner}/{ref}/samples/{sample}.bam",
                ref=config["mapping"]["refs"],
                aligner=config["mapping"]["aligners"],
                sample=SAMP2RUNLIB),
 
-
-localrules: all_bamstats
-rule all_bamstats:
+localrules: align_stats
+rule align_stats:
     input:
         expand("data/alnstats/bamstats_sample/{aligner}~{ref}~{sample}.tsv",
                aligner=config["mapping"]["aligners"],
@@ -500,30 +500,27 @@ rule all_bamstats:
         ">{log} 2>&1"
 
 
-rule align_sampset:
+allsets = set(
+    list(config["mapping"]["samplesets"]) +
+    list(config["varcall"]["samplesets"]) +
+    list(config["sample_sets"])
+)
+rule align_samplesets:
     input:
-        rules.align_samp.input,
         expand("data/alignments/{aligner}/{ref}/sets/{sampleset}.bam",
                ref=config["mapping"]["refs"],
                aligner=config["mapping"]["aligners"],
-               sampleset=config["mapping"]["samplesets"]),
+               sampleset=allsets),
         expand("data/bamlists/{aligner}/{ref}/{sampleset}.bamlist",
                ref=config["mapping"]["refs"],
                aligner=config["mapping"]["aligners"],
-               sampleset=config["mapping"]["samplesets"]),
-
-rule bamstats:
-    input:
-        expand("data/stats/{type}-{aligner}~{ref}.tsv",
-               aligner=config["mapping"]["aligners"],
-               ref=config["mapping"]["refs"],
-               type=["insertsize", "qualstat"]),
+               sampleset=allsets),
 
 rule align:
    input:
-        rules.align_samp.input,
-        rules.align_sampset.input,
-        rules.bamstats.input,
+        rules.align_samples.input,
+        rules.align_samplesets.input,
+        rules.align_stats.input,
 
 #######################################################################
 #                           Variant Calling                           #
