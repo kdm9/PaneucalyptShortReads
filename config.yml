@@ -32,11 +32,9 @@ denovodist:
   sourmash_sketchsize: 1e5
   ksize: 21
   kwip_sets: []
-    #- Project2
   mash_sets: # we can subset from everything for (sour)mash
     - all_samples
   sourmash_sets: []
-    #- all_samples
 
 varcall:
   theta_prior: 0.1 # approx 10% of sites vary, it seems
@@ -51,8 +49,8 @@ varcall:
     - emel-scott
   samplesets:
     - LBEmel
-      #- DP15-everything
-      #- all_samples
+    - DP15-everything
+    - all_samples
   filters:
     default: >
       -i 'QUAL >= 10 &&
