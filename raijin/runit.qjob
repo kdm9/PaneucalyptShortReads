@@ -7,6 +7,7 @@
 #PBS -l other=gdata1
 #PBS -l wd
 #PBS -j oe
+#PBS -o raijin/log/
 #PBS -M pbs@kdmurray.id.au
 #PBS -m abe
 #PBS -P xe2
@@ -20,7 +21,9 @@ TARGET=${TARGET:-all}
 SNAKEFILE=${SNAKEFILE:-Snakefile}
 
 NEXT=$(qsub -v TARGET=$TARGET,SNAKEFILE=$SNAKEFILE \
-       	    -W depend=afterany:$PBS_JOBID raijin/runit.qjob)
+       	    -W depend=afterany:$PBS_JOBID          \
+            -N ${PBS_JOBNAME:-RUNEMEL}             \
+            raijin/runit.qjob)
 
 mkdir -p data/log
 

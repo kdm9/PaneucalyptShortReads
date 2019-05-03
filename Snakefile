@@ -329,11 +329,11 @@ rule ngmap:
         reads="data/reads/runs/{run}/{lib}.fastq.gz",
         ref=lambda wc: config['refs'][wc.ref],
     output:
-        bam=temp("data/alignments/ngm/{ref}/byrun/{run}/{lib}.bam"),
+        bam=temp("data/alignments/byrun.raw/ngm/{ref}/{run}/{lib}.bam"),
     log:
         "data/log/ngm/{ref}/{run}/{lib}.log"
     threads:
-        8
+        7
     params:
         sample=lambda wc: RUNLIB2SAMP.get((wc.run, wc.lib), "{}~{}".format(wc.run, wc.lib)),
         sensitivity=config["mapping"]["ngm"]["sensitivity"],
@@ -346,13 +346,7 @@ rule ngmap:
         "   --rg-id {wildcards.run}_{wildcards.lib}"
         "   --rg-sm {params.sample}"
         "   --sensitivity {params.sensitivity}" # this is the mean from a bunch of different runs
-        " | samtools view -Suh -"
-        " | samtools sort"
-        "   -T ${{TMPDIR:-/tmp}}/ngm_{wildcards.run}_{wildcards.lib}_$RANDOM"
-        "   -@ {threads}"
-        "   -m 1G"
-        "   -o {output.bam}"
-        "   -" # stdin
+        "| samtools view -Suh - >{output.bam}"
         " ) >{log} 2>&1"
 
 rule bwamem:
@@ -360,9 +354,8 @@ rule bwamem:
         reads="data/reads/runs/{run}/{lib}.fastq.gz",
         ref=lambda wc: config['refs'][wc.ref],
     output:
-        bam=temp("data/alignments/bwa/{ref}/byrun/{run}/{lib}.bam"),
-    log:
-        "data/log/bwa/{ref}/{run}/{lib}.log"
+        bam=temp("data/alignments/byrun.raw/bwa/{ref}/{run}/{lib}.bam"),
+    log: "data/log/bwa/{ref}/{run}/{lib}.log"
     threads:
         8
     params:
@@ -374,15 +367,52 @@ rule bwamem:
         "   -R '@RG\\tID:{wildcards.run}_{wildcards.lib}\\tSM:{params.sample}'"
         "   {input.ref}"
         "   {input.reads}"
-        " | samtools view -Suh -"
-        " | samtools sort"
-        "   -T ${{TMPDIR:-/tmp}}/bwa_{wildcards.run}_{wildcards.lib}_$RANDOM"
+        "| samtools view -Suh - >{output.bam}"
+        " ) >{log} 2>&1"
+
+rule bam_markdups:
+    input:
+        bam="data/alignments/byrun.raw/{aligner}/{ref}/{run}/{lib}.bam",
+        ref=lambda wc: config['refs'][wc.ref],
+    output:
+        bam=temp("data/alignments/byrun.duprm/{aligner}/{ref}/{run}/{lib}.bam"),
+    threads: 4
+    log: "data/log/markdup/{aligner}/{ref}/{run}/{lib}.log"
+    shell:
+        "( samtools fixmate "
+        "   -m"
+        "   {input.bam}"
+        "   -@ {threads}"
+        "   -"
+        " | samtools markdup"
+        "   -T ${{TMPDIR:-/tmp}}/{wildcards.run}_{wildcards.lib}_$RANDOM"
+        "   -S" # mark supp alignments
+        "   -s" # report stats
+        "   -@ {threads}"
+        "   -"
+        "   {output.bam}"
+        " ) >{log} 2>&1"
+
+rule bam_sort:
+    input:
+        bam="data/alignments/byrun.raw/{aligner}/{ref}/{run}/{lib}.bam",
+        ref=lambda wc: config['refs'][wc.ref],
+    output:
+        bam=temp("data/alignments/byrun.sort/{aligner}/{ref}/{run}/{lib}.bam"),
+    threads: 4
+    log: "data/log/sortbam/{aligner}/{ref}/{run}/{lib}.log"
+    shell:
+        "( samtools sort"
+        "   -T ${{TMPDIR:-/tmp}}/{wildcards.run}_{wildcards.lib}_$RANDOM"
+        "   -l 0" # uncompressed
         "   -@ {threads}"
         "   -m 1G"
         "   -o {output.bam}"
-        "   -" # stdin
+        "   {input.bam}"
         " ) >{log} 2>&1"
 
+
+# Utils
 
 rule bamidx:
     input:
@@ -391,18 +421,26 @@ rule bamidx:
         "{path}.bam.bai"
     shell:
         "samtools index {input}"
+rule sam2bam:
+    input:
+        "{path}.sam"
+    output:
+        temp("{path}.bam")
+    shell:
+        "samtools view -Suh {input} >{output}"
+
 
 rule mergebam_samp:
     input:
-        lambda wc: ["data/alignments/{aln}/{ref}/byrun/{run}/{lib}.bam".format(
+        lambda wc: ["data/alignments/byrun.duprm/{aln}/{ref}/{run}/{lib}.bam".format(
                             run=r, lib=l, aln=wc.aligner, ref=wc.ref)
 	                for r, l in SAMP2RUNLIB[wc.sample]]
     output:
-        bam="data/alignments/{aligner}/{ref}/samples/{sample}.bam",
+        bam="data/alignments/samples/{aligner}/{ref}/{sample}.bam",
     log:
         "data/log/mergesamplebam/{aligner}/{ref}/{sample}.log"
     threads: 4
-    priority: 1
+    priority: 1 # so the temps get cleaned sooner
     shell:
         "( samtools merge"
         "   -@ {threads}"
@@ -414,7 +452,7 @@ rule mergebam_samp:
 localrules: bamlist
 rule bamlist:
     input:
-        lambda wc: expand("data/alignments/{aligner}/{ref}/samples/{sample}.bam",
+        lambda wc: expand("data/alignments/samples/{aligner}/{ref}/{sample}.bam",
                           aligner=wc.aligner, ref=wc.ref, sample=SAMPLESETS[wc.sampleset]),
 
     output:
@@ -427,11 +465,11 @@ rule bamlist:
 
 rule mergebam_set:
     input:
-        lambda wc: expand("data/alignments/{aligner}/{ref}/samples/{sample}.bam",
+        lambda wc: expand("data/alignments/samples/{aligner}/{ref}/{sample}.bam",
                           aligner=wc.aligner, ref=wc.ref, sample=SAMPLESETS[wc.sampleset]),
 
     output:
-        bam="data/alignments/{aligner}/{ref}/sets/{sampleset}.bam",
+        bam="data/alignments/sets/{aligner}~{ref}~{sampleset}.bam",
     log:
         "data/log/mergesetbam/{aligner}/{ref}/{sampleset}.log"
     threads: 4
@@ -442,33 +480,24 @@ rule mergebam_set:
         "   {input}"
         " ) >{log} 2>&1"
 
-## Bam stats
-localrules: mergestats
-rule mergestats:
-    input:
-        lambda wc: [ "data/alnstats/{type}/{aligner}/{ref}/{run}~{lib}.tsv".format(
-                            run=r, lib=l, aligner=wc.aligner, ref=wc.ref, type=wc.type)
-                        for r, l in RUNLIB2SAMP],
-    output:
-        "data/alnstats/{type}-{aligner}~{ref}.tsv"
-    shell:
-        "cat {input} > {output}"
-
 
 rule bamstat_samps:
     input:
-        "data/alignments/{aligner}/{ref}/samples/{sample}.bam",
+        "data/alignments/samples/{aligner}/{ref}/{sample}.bam",
     output:
-        "data/alnstats/bamstats_sample/{aligner}~{ref}~{sample}.tsv"
+        "data/alignments/bamstats/sample/{aligner}~{ref}~{sample}.tsv",
     log:
         "data/log/bamstats_sample/{aligner}~{ref}~{sample}.tsv"
     shell:
         "(samtools stats -i 5000 -x {input} >{output}) >{log}"
 
 
+
+### Align targets
+
 rule align_librun:
     input:
-        lambda wc: ["data/alignments/{aln}/{ref}/byrun/{run}/{lib}.bam".
+        lambda wc: ["data/alignments/byrun.duprm/{aln}/{ref}/{run}/{lib}.bam".
                         format(run=r, lib=l, aln=a, ref=ref)
                         for r, l in RUNLIB2SAMP
                         for a in config["mapping"]["aligners"]
@@ -477,7 +506,7 @@ rule align_librun:
 localrules: align_samples
 rule align_samples:
     input:
-        expand("data/alignments/{aligner}/{ref}/samples/{sample}.bam",
+        expand("data/alignments/samples/{aligner}/{ref}/{sample}.bam",
                ref=config["mapping"]["refs"],
                aligner=config["mapping"]["aligners"],
                sample=SAMP2RUNLIB),
@@ -485,7 +514,7 @@ rule align_samples:
 localrules: align_stats
 rule align_stats:
     input:
-        expand("data/alnstats/bamstats_sample/{aligner}~{ref}~{sample}.tsv",
+        expand("data/alignments/bamstats/sample/{aligner}~{ref}~{sample}.tsv",
                aligner=config["mapping"]["aligners"],
                ref=config["mapping"]["refs"],
                sample=SAMPLESETS["all_samples"]),
@@ -507,7 +536,7 @@ allsets = set(
 )
 rule align_samplesets:
     input:
-        expand("data/alignments/{aligner}/{ref}/sets/{sampleset}.bam",
+        expand("data/alignments/sets/{aligner}~{ref}~{sampleset}.bam",
                ref=config["mapping"]["refs"],
                aligner=config["mapping"]["aligners"],
                sampleset=allsets),
@@ -528,8 +557,8 @@ rule align:
 
 rule freebayes:
     input:
-        bam="data/alignments/{aligner}/{ref}/sets/{sampleset}.bam",
-        bai="data/alignments/{aligner}/{ref}/sets/{sampleset}.bam.bai",
+        bam="data/alignments/sets/{aligner}~{ref}~{sampleset}.bam",
+        bai="data/alignments/sets/{aligner}~{ref}~{sampleset}.bam.bai",
         ref=lambda wc: config['refs'][wc.ref],
     output:
         bcf="data/variants/raw_split/freebayes~{aligner}~{ref}~{sampleset}/{region}.bcf",
@@ -558,8 +587,8 @@ rule freebayes:
 
 rule mpileup:
     input:
-        bam="data/alignments/{aligner}/{ref}/sets/{sampleset}.bam",
-        bai="data/alignments/{aligner}/{ref}/sets/{sampleset}.bam.bai",
+        bam="data/alignments/sets/{aligner}~{ref}~{sampleset}.bam",
+        bai="data/alignments/sets/{aligner}~{ref}~{sampleset}.bam.bai",
         ref=lambda wc: config['refs'][wc.ref],
     output:
         bcf="data/variants/raw_split/mpileup~{aligner}~{ref}~{sampleset}/{region}.bcf",
