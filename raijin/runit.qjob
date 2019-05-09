@@ -20,6 +20,13 @@ set -xeuo pipefail
 TARGET=${TARGET:-all}
 SNAKEFILE=${SNAKEFILE:-Snakefile}
 
+if [ "$TARGET" != "all" ]
+then
+	temp='--notemp'
+else
+	temp=''
+fi
+
 NEXT=$(qsub -v TARGET=$TARGET,SNAKEFILE=$SNAKEFILE \
        	    -W depend=afterany:$PBS_JOBID          \
             -N ${PBS_JOBNAME:-RUNEMEL}             \
@@ -30,6 +37,7 @@ mkdir -p data/log
 snakemake                    \
     --snakefile ${SNAKEFILE} \
     --nolock                 \
+    $temp                    \
     -j ${PBS_NCPUS:-2}       \
     --rerun-incomplete       \
     --keep-going             \

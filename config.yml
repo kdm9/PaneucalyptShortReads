@@ -37,13 +37,17 @@ denovodist:
   sourmash_sets: []
 
 varcall:
-  theta_prior: 0.1 # approx 10% of sites vary, it seems
+  minmapq:
+    bwa: 30
+    ngm: 10
+  minbq: 15
+  theta_prior: 0.1 # approx 10% of sites vary, it seems. Crazy!
   chunksize: 1000000
   aligners:
     - bwa
   callers:
     - mpileup
-    #- freebayes
+    - freebayes
   refs:
     - grandisv2chl
     - emel-scott
@@ -60,10 +64,10 @@ varcall:
     strict: >
       -i 'QUAL >= 40 &&
           ALT != "." &&
-          INFO/DP >= 10 &&
-          ((INFO/AN / N_SAMPLES)*2) > 0.50 &&
+          INFO/DP >= 20 &&
+          ((INFO/AN / N_SAMPLES)*2) > 0.20 &&
           MAF >= 0.02'
-    # Above is presence rate, >50%
+    # Above is presence rate, >20%
 
   # angsd:
   #   chunksize: 1000000
@@ -78,9 +82,6 @@ varcall:
   #     - Project2-sideroxylon-no-outlier
   #   locationsets:
   #     - loc01_alb
-  # 
-  # beagle:
-  #   chunksize: 1e6
   # 
   # pcangsd:
   #   angsd_chunksize: 100000

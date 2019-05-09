@@ -333,7 +333,7 @@ rule ngmap:
     log:
         "data/log/ngm/{ref}/{run}/{lib}.log"
     threads:
-        7
+        8
     params:
         sample=lambda wc: RUNLIB2SAMP.get((wc.run, wc.lib), "{}~{}".format(wc.run, wc.lib)),
         sensitivity=config["mapping"]["ngm"]["sensitivity"],
@@ -370,80 +370,53 @@ rule bwamem:
         "| samtools view -Suh - >{output.bam}"
         " ) >{log} 2>&1"
 
-rule bam_markdups:
+rule bam_markdups_sort:
     input:
         bam="data/alignments/byrun.raw/{aligner}/{ref}/{run}/{lib}.bam",
         ref=lambda wc: config['refs'][wc.ref],
     output:
-        bam=temp("data/alignments/byrun.duprm/{aligner}/{ref}/{run}/{lib}.bam"),
+        bam=temp("data/alignments/byrun/{aligner}/{ref}/{run}/{lib}.bam"),
     threads: 4
     log: "data/log/markdup/{aligner}/{ref}/{run}/{lib}.log"
     shell:
         "( samtools fixmate "
         "   -m"
-        "   {input.bam}"
         "   -@ {threads}"
+        "   --output-fmt bam,level=0"
+        "   {input.bam}"
+        "   -"
+        " | samtools sort"
+        "   -T ${{TMPDIR:-/tmp}}/{wildcards.run}_{wildcards.lib}_sort_$RANDOM"
+        "   --output-fmt bam,level=0"
+        "   -@ {threads}"
+        "   -m 1g"
         "   -"
         " | samtools markdup"
-        "   -T ${{TMPDIR:-/tmp}}/{wildcards.run}_{wildcards.lib}_$RANDOM"
-        "   -S" # mark supp alignments
+        "   -T ${{TMPDIR:-/tmp}}/{wildcards.run}_{wildcards.lib}_markdup_$RANDOM"
         "   -s" # report stats
         "   -@ {threads}"
+        "   --output-fmt bam,level=3"
         "   -"
         "   {output.bam}"
         " ) >{log} 2>&1"
 
-rule bam_sort:
-    input:
-        bam="data/alignments/byrun.raw/{aligner}/{ref}/{run}/{lib}.bam",
-        ref=lambda wc: config['refs'][wc.ref],
-    output:
-        bam=temp("data/alignments/byrun.sort/{aligner}/{ref}/{run}/{lib}.bam"),
-    threads: 4
-    log: "data/log/sortbam/{aligner}/{ref}/{run}/{lib}.log"
-    shell:
-        "( samtools sort"
-        "   -T ${{TMPDIR:-/tmp}}/{wildcards.run}_{wildcards.lib}_$RANDOM"
-        "   -l 0" # uncompressed
-        "   -@ {threads}"
-        "   -m 1G"
-        "   -o {output.bam}"
-        "   {input.bam}"
-        " ) >{log} 2>&1"
-
-
-# Utils
-
-rule bamidx:
-    input:
-        "{path}.bam"
-    output:
-        "{path}.bam.bai"
-    shell:
-        "samtools index {input}"
-rule sam2bam:
-    input:
-        "{path}.sam"
-    output:
-        temp("{path}.bam")
-    shell:
-        "samtools view -Suh {input} >{output}"
 
 
 rule mergebam_samp:
     input:
-        lambda wc: ["data/alignments/byrun.duprm/{aln}/{ref}/{run}/{lib}.bam".format(
+        lambda wc: ["data/alignments/byrun/{aln}/{ref}/{run}/{lib}.bam".format(
                             run=r, lib=l, aln=wc.aligner, ref=wc.ref)
 	                for r, l in SAMP2RUNLIB[wc.sample]]
     output:
         bam="data/alignments/samples/{aligner}/{ref}/{sample}.bam",
     log:
         "data/log/mergesamplebam/{aligner}/{ref}/{sample}.log"
-    threads: 4
+    threads: 8
     priority: 1 # so the temps get cleaned sooner
     shell:
         "( samtools merge"
         "   -@ {threads}"
+        "   --output-fmt bam,level=4"
         "   {output.bam}"
         "   {input}"
         " ) >{log} 2>&1"
@@ -456,7 +429,7 @@ rule bamlist:
                           aligner=wc.aligner, ref=wc.ref, sample=SAMPLESETS[wc.sampleset]),
 
     output:
-        "data/bamlists/{aligner}/{ref}/{sampleset}.bamlist",
+        "data/alignments/bamlists/{aligner}~{ref}~{sampleset}.bamlist",
     run:
         with open(output[0], "w") as fh:
             for s in input:
@@ -475,12 +448,14 @@ rule mergebam_set:
     threads: 4
     shell:
         "( samtools merge"
+        "   --output-fmt bam,level=7"
         "   -@ {threads}"
         "   {output.bam}"
         "   {input}"
         " ) >{log} 2>&1"
 
 
+localrules: bamstat_samps
 rule bamstat_samps:
     input:
         "data/alignments/samples/{aligner}/{ref}/{sample}.bam",
@@ -493,11 +468,30 @@ rule bamstat_samps:
 
 
 
+# Utils
+
+rule bamidx:
+    input:
+        "{path}.bam"
+    output:
+        "{path}.bam.bai"
+    shell:
+        "samtools index {input}"
+
+rule sam2bam:
+    input:
+        "{path}.sam"
+    output:
+        "{path}.bam"
+    shell:
+        "samtools view -Suh {input} >{output}"
+
+
 ### Align targets
 
 rule align_librun:
     input:
-        lambda wc: ["data/alignments/byrun.duprm/{aln}/{ref}/{run}/{lib}.bam".
+        lambda wc: ["data/alignments/byrun/{aln}/{ref}/{run}/{lib}.bam".
                         format(run=r, lib=l, aln=a, ref=ref)
                         for r, l in RUNLIB2SAMP
                         for a in config["mapping"]["aligners"]
@@ -534,13 +528,16 @@ allsets = set(
     list(config["varcall"]["samplesets"]) +
     list(config["sample_sets"])
 )
-rule align_samplesets:
+rule align_samplesets_all:
+    # Currently there's no real need for this, as all variant calling uses the mega-bam
+    # and ANGSD uses a list of filenames (which will be generated on the fly
+    # for each ANGSD sample set)
     input:
         expand("data/alignments/sets/{aligner}~{ref}~{sampleset}.bam",
                ref=config["mapping"]["refs"],
                aligner=config["mapping"]["aligners"],
                sampleset=allsets),
-        expand("data/bamlists/{aligner}/{ref}/{sampleset}.bamlist",
+        expand("data/alignments/bamlists/{aligner}~{ref}~all_samples.bamlist",
                ref=config["mapping"]["refs"],
                aligner=config["mapping"]["aligners"],
                sampleset=allsets),
@@ -548,64 +545,91 @@ rule align_samplesets:
 rule align:
    input:
         rules.align_samples.input,
-        rules.align_samplesets.input,
         rules.align_stats.input,
+        expand("data/alignments/sets/{aligner}~{ref}~all_samples.bam",
+               ref=config["mapping"]["refs"],
+               aligner=config["mapping"]["aligners"]),
+        expand("data/alignments/bamlists/{aligner}~{ref}~all_samples.bamlist",
+               ref=config["mapping"]["refs"],
+               aligner=config["mapping"]["aligners"]),
+        expand("data/alignments/sets/{aligner}~{ref}~all_samples.bam.bai",
+               ref=config["mapping"]["refs"],
+               aligner=config["mapping"]["aligners"]),
 
 #######################################################################
 #                           Variant Calling                           #
 #######################################################################
 
+# So I've rejigged the variant calling to use the megabam of all samples for
+# each aligner/ref, as then we don't need 15 different massive subset bams.
+
 rule freebayes:
     input:
-        bam="data/alignments/sets/{aligner}~{ref}~{sampleset}.bam",
-        bai="data/alignments/sets/{aligner}~{ref}~{sampleset}.bam.bai",
+        bam="data/alignments/sets/{aligner}~{ref}~all_samples.bam",  # use the megabam, see above
+        bai="data/alignments/sets/{aligner}~{ref}~all_samples.bam.bai",
+        sset="data/samplelists/{sampleset}.txt",
         ref=lambda wc: config['refs'][wc.ref],
     output:
-        bcf="data/variants/raw_split/freebayes~{aligner}~{ref}~{sampleset}/{region}.bcf",
+        bcf=temp("data/variants/raw_split/freebayes~{aligner}~{ref}~{sampleset}/{region}.bcf"),
     log:
         "data/log/freebayes/{aligner}~{ref}~{sampleset}/{region}.log"
     params:
         theta=config["varcall"].get("theta_prior", 0.01),
+        minmq=lambda wc: config["varcall"]["minmapq"].get(wc.aligner, 5),
+        minbq=config["varcall"]["minbq"],
     shell:
-        "( samtools view"  # some versions of freebayes don't seek to region
-        "   -u"            # also region format is zero-based in freebayes
-        "    {input.bam}"  # so we extract the correct region from the BAM
-        "   '{wildcards.region}'"
-        " | freebayes"
+        "(  freebayes"
         "   --theta {params.theta}"
-        "   --use-best-n-alleles 4"
+        "   --samples {input.sset}"
+        "   --ploidy 2"
+        "   --use-best-n-alleles 3"
+        "   --min-mapping-quality {params.minmq}"
+        "   --min-base-quality {params.minbq}"
+        "   --read-max-mismatch-fraction 0.1"
         "   --min-alternate-fraction 0"
-        "   --min-alternate-count 1" # per sample
-        "   --min-alternate-total 3" # across all samples
-        "   --min-coverage 5" # across all samples
+        "   --min-alternate-count 2" # per sample
+        "   --min-alternate-total 5" # across all samples
+        "   --min-coverage 10" # across all samples
+        "   --prob-contamination 1e-6"
+        "   --use-mapping-quality"
         "   --strict-vcf"
-        "   --stdin"
+        "   --region '{wildcards.region}'"
         "   --fasta-reference {input.ref}"
+        "   {input.bam}"
         " | bcftools view"
         "   -O u  -o {output.bcf}"
         " ) >{log} 2>&1"
 
+
 rule mpileup:
     input:
-        bam="data/alignments/sets/{aligner}~{ref}~{sampleset}.bam",
-        bai="data/alignments/sets/{aligner}~{ref}~{sampleset}.bam.bai",
+        bam="data/alignments/sets/{aligner}~{ref}~all_samples.bam",  # use the megabam, see above
+        bai="data/alignments/sets/{aligner}~{ref}~all_samples.bam.bai",
+        sset="data/samplelists/{sampleset}.txt",
         ref=lambda wc: config['refs'][wc.ref],
     output:
-        bcf="data/variants/raw_split/mpileup~{aligner}~{ref}~{sampleset}/{region}.bcf",
+        bcf=temp("data/variants/raw_split/mpileup~{aligner}~{ref}~{sampleset}/{region}.bcf"),
     log:
         "data/log/mpileup/{aligner}~{ref}~{sampleset}/{region}.log"
     params:
         theta=config["varcall"].get("theta_prior", 0.01),
+        minmq=lambda wc: config["varcall"]["minmapq"].get(wc.aligner, 5),
+        minbq=config["varcall"]["minbq"],
     shell:
-        "( samtools mpileup"
-        "   --output-tags DP,AD,SP,INFO/AD" #output everything
-        "   --region '{wildcards.region}'"
-        "   --fasta-ref {input.ref}"
+        "( bcftools mpileup"
+        "   --adjust-MQ 50"
         "   --redo-BAQ"
-        "   --BCF --uncompressed"
+        "   --min-MQ {param.minmq}"
+        "   --min-BQ {param.minbq}"
+        "   --fasta-ref {input.ref}"
+        "   --samples-file {input.sset}"
+        "   --annotate FORMAT/DP,FORMAT/AD,FORMAT/SP,INFO/AD" #output extra tags
+        "   --region '{wildcards.region}'"
+        "   --output-type u" #uncompressed
         "   {input.bam}"
         " | bcftools call"
         "   --targets '{wildcards.region}'" # might not be needed
+        "   --ploidy 2"
         "   --multiallelic-caller"
         "   --prior {params.theta}"
         "   -O u"
@@ -629,6 +653,7 @@ rule bcfnorm:
         "   {input.bcf}"
         " | vt decompose_blocksub + -o -" # decompose MNP to multipe SNPs
         " | bcftools norm" # Split multi-alleics
+        "   --fasta-ref {input.ref}"
         "   --do-not-normalize"
         "   --multiallelics -snps"
         "   -O u  -o {output.bcf}"
@@ -711,7 +736,6 @@ rule variantidx:
         "{path}"
     output:
         "{path}.csi"
-    priority: 2
     shell:
         "bcftools index -f {input}"
 

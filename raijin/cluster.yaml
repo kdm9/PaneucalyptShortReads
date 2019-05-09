@@ -31,19 +31,24 @@ ngmap:
   mem: 15G
 
 bwamem:
-  time: '8:00:00'
+  time: '4:00:00'
   mem: 15G
+
+bam_markdups_sort:
+  time: '1:00:00'
+  mem: 7500m
 
 mergebam_samp:
   time: '4:00:00'
-  mem: 8G
+  mem: 7G
 
 mergebam_set:
   time: '72:00:00'
-  mem: 16G
+  mem: 7G
 
 bcfmerge:
   time: '72:00:00'
+  mem: 7G
 
 kwipdist:
   time: '168:00:00'
@@ -55,8 +60,3 @@ mashsketch:
 mashdist:
   time: '2:00:00'
   queue: normalbw
-
-gatk4_hapcaller:
-  time: '24:00:00'
-  mem: 63G
-  queue: normal
