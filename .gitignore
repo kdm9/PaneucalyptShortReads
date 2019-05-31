@@ -3,3 +3,4 @@ data
 rawdata
 .*.sw?
 *.pyc
+TMP_*

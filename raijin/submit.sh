@@ -24,14 +24,11 @@ QSUB="qsub -q {cluster.queue} -l ncpus={threads} -l jobfs={cluster.jobfs}"
 QSUB="$QSUB -l walltime={cluster.time} -l mem={cluster.mem} -N {cluster.name}"
 QSUB="$QSUB -l wd -j oe -o $logdir -P {cluster.project}"
 
-if [ "${RMTEMP:-no}" == yes ]
+if [ "${RMTEMP:-no}" == no ]
 then
 	temp=''
-elif [ "$TARGET" != "all" ]
-then
-	temp='--notemp'
 else
-	temp=''
+	temp='--notemp'
 fi
 
 snakemake                                                          \

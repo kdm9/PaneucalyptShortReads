@@ -1,8 +1,8 @@
 #!/bin/bash
 #PBS -q normalbw
 #PBS -l ncpus=28
-#PBS -l walltime=16:00:00
-#PBS -l mem=250G
+#PBS -l walltime=6:00:00
+#PBS -l mem=31G
 #PBS -l jobfs=400G
 #PBS -l other=gdata1
 #PBS -l wd
@@ -19,18 +19,23 @@ set -xeuo pipefail
 
 TARGET=${TARGET:-all}
 SNAKEFILE=${SNAKEFILE:-Snakefile}
+SELFSUB=${SELFSUB:-yes}
+RMTEMP="${RMTEMP:-}" # set to --notemp if you want that
 
-if [ "$TARGET" != "all" ]
+if [ "$SELFSUB" == "yes" ]
 then
-	temp='--notemp'
-else
-	temp=''
+    NEXT=$(qsub -v "TARGET=${TARGET},SNAKEFILE=${SNAKEFILE},SELFSUB=${SELFSUB},RMTEMP=${RMTEMP}" \
+        -W depend=afterany:$PBS_JOBID          \
+        -N ${PBS_JOBNAME:-RUNEMEL}             \
+        raijin/runit.qjob)
 fi
 
-NEXT=$(qsub -v TARGET=$TARGET,SNAKEFILE=$SNAKEFILE \
-       	    -W depend=afterany:$PBS_JOBID          \
-            -N ${PBS_JOBNAME:-RUNEMEL}             \
-            raijin/runit.qjob)
+if [ "${RMTEMP:-no}" == no ]
+then
+	temp=''
+else
+	temp='--notemp'
+fi
 
 mkdir -p data/log
 

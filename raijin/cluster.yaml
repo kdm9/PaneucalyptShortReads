@@ -43,8 +43,12 @@ mergebam_samp:
   mem: 7G
 
 mergebam_set:
+  time: '96:00:00'
+  mem: 15G
+
+bamidx:
   time: '72:00:00'
-  mem: 7G
+  mem: 15G
 
 bcfmerge:
   time: '72:00:00'

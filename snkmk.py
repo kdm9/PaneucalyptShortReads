@@ -3,6 +3,7 @@ from collections import defaultdict
 from glob import glob
 from os.path import basename, splitext
 import os
+from sys import stderr
 
 
 def parsefai(fai):
@@ -93,7 +94,15 @@ def make_samplesets(s2rl_file, setfile_glob):
     with open("data/samplelists/GENERATED_FILES_DO_NOT_EDIT", "w") as fh:
         print("you're probably looking for", setfile_glob, file=fh)
     for setname, setsamps in ssets.items():
-        with open("data/samplelists/{}.txt".format(setname), "w") as fh:
-            for s in setsamps:
-                print(s, file=fh)
+        fname = "data/samplelists/{}.txt".format(setname)
+        try:
+            with open(fname) as fh:
+                currsamps = set([l.strip() for l in fh])
+        except IOError:
+            currsamps = set()
+        if set(setsamps) != currsamps:
+            with open(fname, "w") as fh:
+                print("WARNING: updating sample sets, this will trigger reruns", setname, file=stderr)
+                for s in sorted(setsamps):
+                    print(s, file=fh)
     return {n: list(sorted(set(s))) for n, s in ssets.items()}

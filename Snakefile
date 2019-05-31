@@ -443,6 +443,7 @@ rule mergebam_set:
 
     output:
         bam="data/alignments/sets/{aligner}~{ref}~{sampleset}.bam",
+        bai="data/alignments/sets/{aligner}~{ref}~{sampleset}.bam.bai",
     log:
         "data/log/mergesetbam/{aligner}/{ref}/{sampleset}.log"
     threads: 4
@@ -450,8 +451,10 @@ rule mergebam_set:
         "( samtools merge"
         "   --output-fmt bam,level=7"
         "   -@ {threads}"
-        "   {output.bam}"
+        "   -"
         "   {input}"
+        " | tee {output.bam}"
+        " | samtools index - {output.bai}"  # indexing takes bloody ages, we may as well do this on the fly
         " ) >{log} 2>&1"
 
 
@@ -469,12 +472,14 @@ rule bamstat_samps:
 
 
 # Utils
-
+ruleorder: mergebam_set > bamidx # as we index on the fly for sets
 rule bamidx:
     input:
         "{path}.bam"
     output:
         "{path}.bam.bai"
+    log:
+        "data/log/bamindex/{path}.log"
     shell:
         "samtools index {input}"
 
@@ -570,9 +575,11 @@ rule freebayes:
         sset="data/samplelists/{sampleset}.txt",
         ref=lambda wc: config['refs'][wc.ref],
     output:
-        bcf=temp("data/variants/raw_split/freebayes~{aligner}~{ref}~{sampleset}/{region}.bcf"),
+        bcf="data/variants/raw_split/freebayes~{aligner}~{ref}~{sampleset}/{region}.bcf",
     log:
         "data/log/freebayes/{aligner}~{ref}~{sampleset}/{region}.log"
+    benchmark:
+        "data/log/freebayes/{aligner}~{ref}~{sampleset}/{region}.benchmark"
     params:
         theta=config["varcall"].get("theta_prior", 0.01),
         minmq=lambda wc: config["varcall"]["minmapq"].get(wc.aligner, 5),
@@ -597,7 +604,7 @@ rule freebayes:
         "   --fasta-reference {input.ref}"
         "   {input.bam}"
         " | bcftools view"
-        "   -O u  -o {output.bcf}"
+        "   -O b  -o {output.bcf}"
         " ) >{log} 2>&1"
 
 
@@ -608,9 +615,11 @@ rule mpileup:
         sset="data/samplelists/{sampleset}.txt",
         ref=lambda wc: config['refs'][wc.ref],
     output:
-        bcf=temp("data/variants/raw_split/mpileup~{aligner}~{ref}~{sampleset}/{region}.bcf"),
+        bcf="data/variants/raw_split/mpileup~{aligner}~{ref}~{sampleset}/{region}.bcf",
     log:
         "data/log/mpileup/{aligner}~{ref}~{sampleset}/{region}.log"
+    benchmark:
+        "data/log/mpileup/{aligner}~{ref}~{sampleset}/{region}.benchmark"
     params:
         theta=config["varcall"].get("theta_prior", 0.01),
         minmq=lambda wc: config["varcall"]["minmapq"].get(wc.aligner, 5),
@@ -619,8 +628,9 @@ rule mpileup:
         "( bcftools mpileup"
         "   --adjust-MQ 50"
         "   --redo-BAQ"
-        "   --min-MQ {param.minmq}"
-        "   --min-BQ {param.minbq}"
+        "   --max-depth 20000" # the default per file max (250x) is insane, i.e. <1x for most sets. new limit of 20000x  equates to a max. of 20x across all samples.
+        "   --min-MQ {params.minmq}"
+        "   --min-BQ {params.minbq}"
         "   --fasta-ref {input.ref}"
         "   --samples-file {input.sset}"
         "   --annotate FORMAT/DP,FORMAT/AD,FORMAT/SP,INFO/AD" #output extra tags
@@ -629,10 +639,9 @@ rule mpileup:
         "   {input.bam}"
         " | bcftools call"
         "   --targets '{wildcards.region}'" # might not be needed
-        "   --ploidy 2"
         "   --multiallelic-caller"
         "   --prior {params.theta}"
-        "   -O u"
+        "   -O b"
         "   -o {output.bcf}"
         " ) >{log} 2>&1"
 
@@ -692,7 +701,7 @@ rule bcfmerge_fofn:
         fofn=temp("data/variants/final/{caller}~{aligner}~{ref}~{sampleset}~filtered-{filter}.bcf.INPUT_FOFN"),
     run:
         with open(output[0], "w") as fh:
-            for s in input:
+            for s in sorted(input):
                 print(s, file=fh)
 
 rule bcfmerge:
@@ -746,6 +755,22 @@ rule stats:
         "data/stats/variants/{path}.varstats"
     shell:
         "bcftools stats -s - -d 0,1000,2 --threads {threads} {input} >{output}"
+
+
+def raw_variant_calls_input(wildcards):
+    inputs = []
+    for caller in config["varcall"]["callers"]:
+        for aligner in config["varcall"]["aligners"]:
+            for sampleset in config["varcall"]["samplesets"]:
+                for ref in config["varcall"]["refs"]:
+                    this_rawfiles = expand("data/variants/raw_split/{caller}~{aligner}~{ref}~{sampleset}/{region}.bcf",
+                                           caller=caller, aligner=aligner, ref=ref, sampleset=sampleset, region=VARCALL_REGIONS[ref])
+                    inputs.extend(this_rawfiles)
+    return inputs
+
+
+rule raw_variant_calls:
+    input: raw_variant_calls_input
 
 rule filtered_variants:
     input:

@@ -1,10 +1,10 @@
 #!/bin/bash
 #PBS -P xe2
 #PBS -q normal
-#PBS -l ncpus=496
-#PBS -l walltime=24:00:00
+#PBS -l ncpus=512
+#PBS -l walltime=4:00:00
 #PBS -l other=gdata1
-#PBS -l mem=1600G
+#PBS -l mem=1000G
 #PBS -j oe
 #PBS -o raijin/log/
 #PBS -l wd
@@ -14,15 +14,23 @@
 source raijin/modules.sh
 set -ue
 
+if [ "$CALLER" == freebayes ]
+then
+	req="-l walltime=24:00:00,ncpus=768,mem=3000G"
+else
+	req="-l walltime=6:00:00,ncpus=512,mem=1000G"
+fi
+
 NEXT=$(qsub -W depend=afterany:$PBS_JOBID -N VC_${CALLER}_${SAMPLESET} \
     -v SIZE=${SIZE},CALLER=${CALLER},ALIGNER=${ALIGNER},REF=${REF},REFPATH=${REFPATH},SAMPLESET=${SAMPLESET} \
+    $req \
     raijin/parallel-varcall-one.pbs)
 
 OUTFILE="data/variants/raw_split/${CALLER}~${ALIGNER}~${REF}~${SAMPLESET}/{region}.bcf"
-LOGFILE="data/log/bcfnormalise/snakemake_${CALLER}~${ALIGNER}~${REF}~${SAMPLESET}~{region}.log"
+LOGFILE="data/log/parvarcall/snakemake_${CALLER}~${ALIGNER}~${REF}~${SAMPLESET}~{region}.log"
 mkdir -p "$(dirname "$LOGFILE")"
 
 # Don't process the whole way to filtering, causes race conditions. Filtering is quick and can happen later.
-regionparallel -r $REFPATH --size $SIZE "source raijin/modules.sh ; snakemake --nolock $OUTFILE >$LOGFILE 2>&1 && echo 'DONE' >>$LOGFILE"
+regionparallel -r $REFPATH --size $SIZE "source raijin/modules.sh ; snakemake --nolock --ri $OUTFILE >$LOGFILE 2>&1 && echo 'DONE' >>$LOGFILE"
 
 qdel $NEXT
