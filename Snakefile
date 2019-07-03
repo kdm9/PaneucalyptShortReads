@@ -422,6 +422,25 @@ rule mergebam_samp:
         " ) >{log} 2>&1"
 
 
+rule qualimap_samp:
+    input:
+        bam="data/alignments/samples/{aligner}/{ref}/{sample}.bam",
+    output:
+        directory("data/alignments/qualimap/samples/{aligner}~{ref}~{sample}/"),
+    log:
+        "data/log/qualimap_sample/{aligner}~{ref}~{sample}.log"
+    threads: 4
+    shell:
+        "( unset DISPLAY; qualimap bamqc"
+        "   --java-mem-size=4G"
+        "   -bam {input.bam}"
+        "   -nr 10000"
+        "   -nt {threads}"
+        "   -outdir {output}"
+        "   {input}"
+        " ) >{log} 2>&1"
+
+
 localrules: bamlist
 rule bamlist:
     input:
@@ -510,6 +529,14 @@ rule align_samples:
                aligner=config["mapping"]["aligners"],
                sample=SAMP2RUNLIB),
 
+localrules: align_qualimap_samples
+rule align_qualimap_samples:
+    input:
+        expand(directory("data/alignments/qualimap/samples/{aligner}~{ref}~{sample}/"),
+               aligner=config["mapping"]["aligners"],
+               ref=config["mapping"]["refs"],
+               sample=SAMP2RUNLIB),
+
 localrules: align_stats
 rule align_stats:
     input:
@@ -580,6 +607,7 @@ rule freebayes:
         "data/log/freebayes/{aligner}~{ref}~{sampleset}/{region}.log"
     benchmark:
         "data/log/freebayes/{aligner}~{ref}~{sampleset}/{region}.benchmark"
+    priority: 1  # get them done earlier, normalisation is super quick
     params:
         theta=config["varcall"].get("theta_prior", 0.01),
         minmq=lambda wc: config["varcall"]["minmapq"].get(wc.aligner, 5),
@@ -624,6 +652,7 @@ rule mpileup:
         theta=config["varcall"].get("theta_prior", 0.01),
         minmq=lambda wc: config["varcall"]["minmapq"].get(wc.aligner, 5),
         minbq=config["varcall"]["minbq"],
+    priority: 1  # get them done earlier, normalisation is super quick
     shell:
         "( bcftools mpileup"
         "   --adjust-MQ 50"

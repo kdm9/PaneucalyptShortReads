@@ -1,7 +1,7 @@
 #!/bin/bash
-#PBS -q normalbw
-#PBS -l ncpus=28
-#PBS -l walltime=6:00:00
+#PBS -q normal
+#PBS -l ncpus=8
+#PBS -l walltime=24:00:00
 #PBS -l mem=31G
 #PBS -l jobfs=400G
 #PBS -l other=gdata1
@@ -20,7 +20,8 @@ set -xeuo pipefail
 TARGET=${TARGET:-all}
 SNAKEFILE=${SNAKEFILE:-Snakefile}
 SELFSUB=${SELFSUB:-yes}
-RMTEMP="${RMTEMP:-}" # set to --notemp if you want that
+RMTEMP="${RMTEMP:-yes}"
+echo TARGET=${TARGET} SNAKEFILE=${SNAKEFILE} SELFSUB=${SELFSUB} RMTEMP="${RMTEMP}"
 
 if [ "$SELFSUB" == "yes" ]
 then
@@ -30,7 +31,7 @@ then
         raijin/runit.qjob)
 fi
 
-if [ "${RMTEMP:-no}" == no ]
+if [ "${RMTEMP}" == yes ]
 then
 	temp=''
 else

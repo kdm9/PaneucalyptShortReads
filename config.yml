@@ -50,7 +50,7 @@ varcall:
       #  - freebayes
   refs:
     - grandisv2chl
-      #- emel-scott
+    - emel-scott
   samplesets:
     - LBEmel
     - DP15-everything

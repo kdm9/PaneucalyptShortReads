@@ -8,4 +8,5 @@ dependencies:
   - bwa
   - samtools
   - bcftools
+  - qualimap
   - AdapterRemoval
