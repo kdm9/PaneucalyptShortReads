@@ -4,6 +4,7 @@ RUNLIB2SAMP, SAMP2RUNLIB = snkmk.make_runlib2samp("metadata/sample2runlib.csv")
 SAMPLESETS = snkmk.make_samplesets(s2rl_file="metadata/sample2runlib.csv",
                                    setfile_glob="metadata/samplesets/*.txt")
 VARCALL_REGIONS = snkmk.make_regions(config["refs"], window=config["varcall"]["chunksize"])
+CHROMS = snkmk.make_chroms(config["refs"])
 shell.prefix = "set -euo pipefail; "
 
 wildcard_constraints:
@@ -432,7 +433,7 @@ rule qualimap_samp:
     threads: 4
     shell:
         "( unset DISPLAY; qualimap bamqc"
-        "   --java-mem-size=4G"
+        "   --java-mem-size=6G"
         "   -bam {input.bam}"
         "   -nr 10000"
         "   -nt {threads}"
@@ -445,6 +446,8 @@ localrules: bamlist
 rule bamlist:
     input:
         lambda wc: expand("data/alignments/samples/{aligner}/{ref}/{sample}.bam",
+                          aligner=wc.aligner, ref=wc.ref, sample=SAMPLESETS[wc.sampleset]),
+        lambda wc: expand("data/alignments/samples/{aligner}/{ref}/{sample}.bam.bai",
                           aligner=wc.aligner, ref=wc.ref, sample=SAMPLESETS[wc.sampleset]),
 
     output:
@@ -502,13 +505,14 @@ rule bamidx:
     shell:
         "samtools index {input}"
 
-rule sam2bam:
-    input:
-        "{path}.sam"
-    output:
-        "{path}.bam"
-    shell:
-        "samtools view -Suh {input} >{output}"
+#ruleorder: mergebam_samp > sam2bam
+#rule sam2bam:
+#    input:
+#        "{path}.sam"
+#    output:
+#        "{path}.bam"
+#    shell:
+#        "samtools view -Suh {input} >{output}"
 
 
 ### Align targets
@@ -664,13 +668,13 @@ rule mpileup:
         "   --samples-file {input.sset}"
         "   --annotate FORMAT/DP,FORMAT/AD,FORMAT/SP,INFO/AD" #output extra tags
         "   --region '{wildcards.region}'"
-        "   --output-type u" #uncompressed
+        "   --output-type u" # uncompressed bam
         "   {input.bam}"
         " | bcftools call"
         "   --targets '{wildcards.region}'" # might not be needed
         "   --multiallelic-caller"
         "   --prior {params.theta}"
-        "   -O b"
+        "   -O b" # compressed bam
         "   -o {output.bcf}"
         " ) >{log} 2>&1"
 
@@ -779,11 +783,11 @@ rule variantidx:
 
 rule stats:
     input:
-        "data/variants/{path}"
+        "data/variants/{path}.bcf"
     output:
-        "data/stats/variants/{path}.varstats"
+        "data/variants/{path}.bcf.stats"
     shell:
-        "bcftools stats -s - -d 0,1000,2 --threads {threads} {input} >{output}"
+        "bcftools stats -s - -d 0,1000,1 --threads {threads} {input} >{output}"
 
 
 def raw_variant_calls_input(wildcards):
@@ -811,9 +815,72 @@ rule filtered_variants:
                sampleset=config["varcall"]["samplesets"],
                filter=config["varcall"]["filters"]),
 
+
+localrules: varcall_stats
+rule varcall_stats:
+    input:
+        expand("data/variants/final/{caller}~{aligner}~{ref}~{sampleset}~filtered-{filter}.bcf.stats",
+               caller=config["varcall"]["callers"],
+               aligner=config["varcall"]["aligners"],
+               ref=config["varcall"]["refs"],
+               sampleset=config["varcall"]["samplesets"],
+               filter=config["varcall"]["filters"]),
+
 rule varcall:
     input:
         rules.filtered_variants.input,
+
+### ANGSD
+
+# Angsd somewhat hacky verison of Rose's logic w/ hardcoded sites per step1 files
+
+rule angsd_step2_maf_chrom:
+    input:
+        ref=lambda wc: config['refs'][wc.ref],
+        sites=lambda wc: expand("rawdata/angsd-sites-rose/{chr}.sites_mm", chr=wc.chrom),
+        bamlist="data/alignments/bamlists/{aligner}~{ref}~{sampleset}.bamlist",
+    output:
+        "data/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.arg",
+        "data/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.depthGlobal",
+        "data/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.depthSample",
+        "data/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.log",
+        "data/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.mafs.gz",
+        "data/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.qs",
+        "data/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.saf.gz",
+        "data/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.saf.idx",
+        "data/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.saf.pos.gz",
+    log:
+        "data/log/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.log"
+    shell:
+        "angsd"
+        "   -P 1"
+        "   -bam {input.bamlist}"
+        "   -out data/angsd/step2/maf_{wildcards.aligner}~{wildcards.ref}~{wildcards.sampleset}_{wildcards.chrom}"
+        "   -ref {input.ref} -anc {input.ref}"
+        "   -GL 2"
+        "   -doMajorMinor 3"
+        "   -skipTriallelic 1"
+        "   -doMaf 1"
+        "   -doSaf 1"
+        "   -doCounts 1"
+        "   -doQsDist 1"
+        "   -doSnpStat 1"
+        "   -C 50"
+        "   -baq 1"
+        "   -minMapQ 20"
+        "   -minQ 20"
+        "   -r {wildcards.chrom}"
+        "   -sites {input.sites}"
+        "   > {log} 2>&1"
+
+
+rule all_angsd_step2_maf:
+    input:
+        expand("data/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.mafs.gz",
+               aligner=config["angsd"]["aligners"],
+               ref=config["angsd"]["refs"],
+               sampleset=config["angsd"]["samplesets"],
+               chrom=config["angsd"]["chroms"])
 
 
 #######################################################################

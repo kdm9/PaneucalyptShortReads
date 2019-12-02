@@ -35,14 +35,8 @@ def make_chroms(rdict):
     for refname, refpath in rdict.items():
         fai = refpath+".fai"
         ref = dict()
-        scafs = []
         for cname, clen in parsefai(fai):
-            if cname.lower().startswith("chr"):
-                ref[cname] = [cname]
-            else:
-                scafs.append(cname)
-        if scafs:
-            ref["scaffolds"] = scafs
+            ref[cname] = clen
         ret[refname] = ref
     return ret
 

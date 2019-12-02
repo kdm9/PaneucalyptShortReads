@@ -42,6 +42,10 @@ mergebam_samp:
   time: '4:00:00'
   mem: 7G
 
+qualimap_samp:
+  time: '4:00:00'
+  mem: 7G
+
 mergebam_set:
   time: '96:00:00'
   mem: 15G

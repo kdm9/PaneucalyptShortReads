@@ -16,7 +16,7 @@ mkdir -p data/log/
 source raijin/modules.sh
 export TMPDIR=${PBS_JOBFS:-$TMPDIR}
 
-set -xe
+set -ueo pipefail
 TARGET=${TARGET:-all}
 SNAKEFILE=${SNAKEFILE:-Snakefile}
 
@@ -24,7 +24,7 @@ QSUB="qsub -q {cluster.queue} -l ncpus={threads} -l jobfs={cluster.jobfs}"
 QSUB="$QSUB -l walltime={cluster.time} -l mem={cluster.mem} -N {cluster.name}"
 QSUB="$QSUB -l wd -j oe -o $logdir -P {cluster.project}"
 
-if [ "${RMTEMP:-no}" == no ]
+if [ "${RMTEMP:-yes}" == yes ]
 then
 	temp=''
 else

@@ -3,10 +3,10 @@
 
 source /g/data1/xe2/.profile
 
-set -ueo pipefail
 
 export TMPDIR=$PBS_JOBFS
 
 . raijin/modules.sh
 
+set -ueo pipefail
 {exec_job}

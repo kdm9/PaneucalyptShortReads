@@ -69,6 +69,67 @@ varcall:
           MAF >= 0.01'
     # Above is presence rate, >20%
 
+angsd:
+  aligners:
+    - bwa
+  refs:
+    - grandisv2chl
+  samplesets:
+    - DP15_loc01_alb
+    - DP15_loc03_alb
+    - DP15_loc05_alb
+    - DP15_loc05_sid
+    - DP15_loc06_alb
+    - DP15_loc07_alb
+    - DP15_loc08_alb
+    - DP15_loc08_sid
+    - DP15_loc09_alb
+    - DP15_loc09_sid
+    - DP15_loc10_sid
+    - DP15_loc11_alb
+    - DP15_loc11_sid
+    - DP15_loc12_sid
+    - DP15_loc13_alb
+    - DP15_loc14_alb
+    - DP15_loc15_alb
+    - DP15_loc16_alb
+    - DP15_loc17_sid
+    - DP15_loc18_alb
+    - DP15_loc19_alb
+    - DP15_loc20_alb
+    - DP15_loc21_alb
+    - DP15_loc22_alb
+    - DP15_loc23_sid
+    - DP15_loc24_alb
+    - DP15_loc24_sid
+    - DP15_loc25_alb
+    - DP15_loc26_alb
+    - DP15_loc27_sid
+    - DP15_loc28_sid
+    - DP15_loc29_alb
+    - DP15_loc30_sid
+    - DP15_loc31_sid
+    - DP15_loc32_alb
+    - DP15_loc33_alb
+    - DP15_loc34_alb
+    - DP15_loc35_sid
+    - DP15_loc36_sid
+    - DP15_loc37_sid
+    - DP15_loc38_sid
+    - DP15_loc39_alb
+  chroms:
+    - Chr01
+    - Chr02
+    - Chr03
+    - Chr04
+    - Chr05
+    - Chr06
+    - Chr07
+    - Chr08
+    - Chr09
+    - Chr10
+    - Chr11
+
   # angsd:
   #   chunksize: 1000000
   #   filters:
