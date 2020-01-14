@@ -45,8 +45,8 @@ rule reads:
 ruleorder: qcreads_il > qcreads
 rule qcreads:
     input:
-        r1="rawdata/runs/{run}/{lib}_R1.fastq.gz",
-        r2="rawdata/runs/{run}/{lib}_R2.fastq.gz",
+        r1=ancient("rawdata/runs/{run}/{lib}_R1.fastq.gz"),
+        r2=ancient("rawdata/runs/{run}/{lib}_R2.fastq.gz"),
     output:
         reads="data/reads/runs/{run}/{lib}.fastq.gz",
     log:
@@ -445,16 +445,16 @@ rule qualimap_samp:
 localrules: bamlist
 rule bamlist:
     input:
-        lambda wc: expand("data/alignments/samples/{aligner}/{ref}/{sample}.bam",
+        bam=lambda wc: expand("data/alignments/samples/{aligner}/{ref}/{sample}.bam",
                           aligner=wc.aligner, ref=wc.ref, sample=SAMPLESETS[wc.sampleset]),
-        lambda wc: expand("data/alignments/samples/{aligner}/{ref}/{sample}.bam.bai",
+        bai=lambda wc: expand("data/alignments/samples/{aligner}/{ref}/{sample}.bam.bai",
                           aligner=wc.aligner, ref=wc.ref, sample=SAMPLESETS[wc.sampleset]),
 
     output:
         "data/alignments/bamlists/{aligner}~{ref}~{sampleset}.bamlist",
     run:
         with open(output[0], "w") as fh:
-            for s in input:
+            for s in input.bam:
                 print(s, file=fh)
 
 
@@ -536,7 +536,7 @@ rule align_samples:
 localrules: align_qualimap_samples
 rule align_qualimap_samples:
     input:
-        expand(directory("data/alignments/qualimap/samples/{aligner}~{ref}~{sample}/"),
+        expand("data/alignments/qualimap/samples/{aligner}~{ref}~{sample}/",
                aligner=config["mapping"]["aligners"],
                ref=config["mapping"]["refs"],
                sample=SAMP2RUNLIB),
@@ -841,14 +841,13 @@ rule angsd_step2_maf_chrom:
         bamlist="data/alignments/bamlists/{aligner}~{ref}~{sampleset}.bamlist",
     output:
         "data/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.arg",
-        "data/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.depthGlobal",
-        "data/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.depthSample",
-        "data/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.log",
+        "data/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.hwe.gz",
         "data/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.mafs.gz",
         "data/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.qs",
         "data/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.saf.gz",
         "data/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.saf.idx",
         "data/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.saf.pos.gz",
+        "data/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.snpStat.gz",
     log:
         "data/log/angsd/step2/maf_{aligner}~{ref}~{sampleset}_{chrom}.log"
     shell:
@@ -860,6 +859,7 @@ rule angsd_step2_maf_chrom:
         "   -GL 2"
         "   -doMajorMinor 3"
         "   -skipTriallelic 1"
+        "   -doHWE 1"
         "   -doMaf 1"
         "   -doSaf 1"
         "   -doCounts 1"

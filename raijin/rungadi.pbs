@@ -2,19 +2,19 @@
 #PBS -q normal
 #PBS -l ncpus=48
 #PBS -l walltime=24:00:00
-#PBS -l mem=192G
+#PBS -l mem=190G
 #PBS -l jobfs=400G
-#PBS -l storage=scratch/xe2+gdata/xe2
 #PBS -l wd
+#PBS -l storage=scratch/xe2+gdata/xe2
 #PBS -j oe
 #PBS -o raijin/log/
 #PBS -M pbs@kdmurray.id.au
-#PBS -m ae
+#PBS -m abe
 #PBS -P xe2
 #PBS -N RUNEUC
 
 source /g/data1/xe2/.profile
-source raijin/modules.sh
+source raijin/gadimod.sh
 set -xeuo pipefail
 
 TARGET=${TARGET:-all}
@@ -26,9 +26,8 @@ echo TARGET=${TARGET} SNAKEFILE=${SNAKEFILE} SELFSUB=${SELFSUB} RMTEMP="${RMTEMP
 if [ "$SELFSUB" == "yes" ]
 then
     NEXT=$(qsub -v "TARGET=${TARGET},SNAKEFILE=${SNAKEFILE},SELFSUB=${SELFSUB},RMTEMP=${RMTEMP}" \
-        -W depend=afterany:$PBS_JOBID          \
-        -N ${PBS_JOBNAME:-RUNEMEL}             \
-        raijin/runit.qjob)
+                -W depend=afterany:$PBS_JOBID -N ${PBS_JOBNAME:-RUNEMEL}             \
+		raijin/rungadi.pbs)
 fi
 
 if [ "${RMTEMP}" == yes ]

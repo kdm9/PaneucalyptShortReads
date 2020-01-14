@@ -22,9 +22,9 @@ mapping:
     sensitivity: 0.5
 
 refs:
-  grandis: /g/data1/xe2/references/eucalyptus/grandis/Egrandis_v2.fasta
-  grandisv2chl: /g/data1/xe2/references/eucalyptus/grandis_v2_chloro/Egrandis-v2-plus-chloro.fasta
-  emel-scott: /g/data1/xe2/references/eucalyptus/emel_scott/Emelliodora_CSIROg1_SISH00000000.1.fasta
+  grandis: /g/data/xe2/references/eucalyptus/grandis/Egrandis_v2.fasta
+  grandisv2chl: /g/data/xe2/references/eucalyptus/grandis_v2_chloro/Egrandis-v2-plus-chloro.fasta
+  emel-scott: /g/data/xe2/references/eucalyptus/emel_scott/Emelliodora_CSIROg1_SISH00000000.1.fasta
 
 denovodist:
   kwip_sketchsize: 1e9
