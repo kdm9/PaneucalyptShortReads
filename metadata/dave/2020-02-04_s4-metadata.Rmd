@@ -1,0 +1,29 @@
+
+```{r}
+library(tidyverse)
+library(stringdist)
+```
+
+
+```{r}
+filenames = read.table(file="md5sum.txt", header=F, col.name=c("md5sum", "filename"))
+
+file_runnames = filenames %>%
+    pull("filename") %>%
+    sub("_S\\d+_L\\d+_R\\d_\\d+\\.fastq\\.gz$", "", .) %>%
+    unique()
+
+s4samp = read_csv("s4-bvz.csv")
+```
+
+```{r}
+m = amatch(s4samp$lib, file_runnames, method='lv', maxDist=3)
+s4samp$file_lib = NA
+s4samp$file_lib[!is.na(m)] = file_runnames[m[!is.na(m)]]
+missing_matches = file_runnames[is.na(amatch(file_runnames, s4samp$lib, method='lv', maxDist=3))]
+s4withbad = rbind(s4samp, data.frame(lib=NA, run=NA, project=NA, file_lib=missing_matches))
+write_csv(s4withbad, "s4-bvz-filenames.csv")
+
+```
+
+

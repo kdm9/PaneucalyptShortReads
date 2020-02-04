@@ -1,0 +1,1143 @@
+SampleID	Species	Location	Date	Latitude	Longitude	Elevation	SampleName	Population
+LBM01A02	Eucalyptus melliodora	NA	NA	-36.632668	144.35019	178	LB-U-9	LB-U
+LBM01A03	Eucalyptus melliodora	NA	NA	-35.819633	145.31187	101	LB-P-7	LB-P
+LBM01A09	Eucalyptus melliodora	NA	NA	-33.423	149.752	844	LB-V-2	LB-V
+LBM01A12	Eucalyptus melliodora	NA	NA	-33.416668	149.55055	712	LB-1-6	LB-1
+LBM01B01	Eucalyptus melliodora	NA	NA	-36.632668	144.35019	178	LB-U-2	LB-U
+LBM01B02	Eucalyptus melliodora	NA	NA	-36.632668	144.35019	178	LB-U-10	LB-U
+LBM01B03	Eucalyptus melliodora	NA	NA	-35.819633	145.31187	101	LB-P-8	LB-P
+LBM01B05	Eucalyptus melliodora	NA	NA	-36.42797	144.41092	114	LB-W1-4	LB-W1
+LBM01B06	Eucalyptus melliodora	NA	NA	-36.63518	149.56728	186	LB-H-2	LB-H
+LBM01B07	Eucalyptus melliodora	NA	NA	-36.63518	149.56728	186	LB-H-10	LB-H
+LBM01B08	Eucalyptus melliodora	NA	NA	-36.3675	145.70232	268	LB-D-5	LB-D
+LBM01B09	Eucalyptus melliodora	NA	NA	-33.423	149.752	844	LB-V-3	LB-V
+LBM01B10	Eucalyptus melliodora	NA	NA	-36.388	146.481	181	LB-A-2	LB-A
+LBM01B12	Eucalyptus melliodora	NA	NA	-33.416668	149.55055	712	LB-1-7	LB-1
+LBM01C01	Eucalyptus melliodora	NA	NA	-36.632668	144.35019	178	LB-U-3	LB-U
+LBM01C02	Eucalyptus melliodora	NA	NA	-35.819633	145.31187	101	LB-P-1	LB-P
+LBM01C03	Eucalyptus melliodora	NA	NA	-35.819633	145.31187	101	LB-P-9	LB-P
+LBM01C04	Eucalyptus melliodora	NA	NA	-36.86476	148.85016	638	LB-G-7	LB-G
+LBM01C05	Eucalyptus melliodora	NA	NA	-36.42797	144.41092	114	LB-W1-5	LB-W1
+LBM01C06	Eucalyptus melliodora	NA	NA	-36.63518	149.56728	186	LB-H-3	LB-H
+LBM01C08	Eucalyptus melliodora	NA	NA	-36.3675	145.70232	268	LB-D-6	LB-D
+LBM01C09	Eucalyptus melliodora	NA	NA	-33.423	149.752	844	LB-V-4	LB-V
+LBM01C10	Eucalyptus melliodora	NA	NA	-36.388	146.481	181	LB-A-3	LB-A
+LBM01C12	Eucalyptus melliodora	NA	NA	-33.416668	149.55055	712	LB-1-8	LB-1
+LBM01D01	Eucalyptus melliodora	NA	NA	-36.632668	144.35019	178	LB-U-4	LB-U
+LBM01D03	Eucalyptus melliodora	NA	NA	-35.819633	145.31187	101	LB-P-10	LB-P
+LBM01D05	Eucalyptus melliodora	NA	NA	-36.42797	144.41092	114	LB-W1-6	LB-W1
+LBM01D06	Eucalyptus melliodora	NA	NA	-36.63518	149.56728	186	LB-H-4	LB-H
+LBM01D09	Eucalyptus melliodora	NA	NA	-33.423	149.752	844	LB-V-5	LB-V
+LBM01D10	Eucalyptus melliodora	NA	NA	-36.388	146.481	181	LB-A-4	LB-A
+LBM01D11	Eucalyptus melliodora	NA	NA	-33.416668	149.55055	712	LB-1-1	LB-1
+LBM01D12	Eucalyptus melliodora	NA	NA	-33.416668	149.55055	712	LB-1-9	LB-1
+LBM01E01	Eucalyptus melliodora	NA	NA	-36.632668	144.35019	178	LB-U-5	LB-U
+LBM01E02	Eucalyptus melliodora	NA	NA	-35.819633	145.31187	101	LB-P-3	LB-P
+LBM01E03	Eucalyptus melliodora	NA	NA	-36.86476	148.85016	638	LB-G-1	LB-G
+LBM01E04	Eucalyptus melliodora	NA	NA	-36.86476	148.85016	638	LB-G-9	LB-G
+LBM01E06	Eucalyptus melliodora	NA	NA	-36.63518	149.56728	186	LB-H-5	LB-H
+LBM01E08	Eucalyptus melliodora	NA	NA	-36.3675	145.70232	268	LB-D-8	LB-D
+LBM01E09	Eucalyptus melliodora	NA	NA	-33.423	149.752	844	LB-V-6	LB-V
+LBM01E12	Eucalyptus melliodora	NA	NA	-33.416668	149.55055	712	LB-1-10	LB-1
+LBM01F01	Eucalyptus melliodora	NA	NA	-36.632668	144.35019	178	LB-U-6	LB-U
+LBM01F02	Eucalyptus melliodora	NA	NA	-35.819633	145.31187	101	LB-P-4	LB-P
+LBM01F03	Eucalyptus melliodora	NA	NA	-36.86476	148.85016	638	LB-G-2	LB-G
+LBM01F05	Eucalyptus melliodora	NA	NA	-36.42797	144.41092	114	LB-W1-8	LB-W1
+LBM01F06	Eucalyptus melliodora	NA	NA	-36.63518	149.56728	186	LB-H-6	LB-H
+LBM01F07	Eucalyptus melliodora	NA	NA	-36.3675	145.70232	268	LB-D-1	LB-D
+LBM01F09	Eucalyptus melliodora	NA	NA	-33.423	149.752	844	LB-V-7	LB-V
+LBM01F10	Eucalyptus melliodora	NA	NA	-36.388	146.481	181	LB-A-6	LB-A
+LBM01F12	Eucalyptus melliodora	NA	NA	-35.03333	147.33333	NA	LB-C-1	LB-C
+LBM01G01	Eucalyptus melliodora	NA	NA	-36.632668	144.35019	178	LB-U-7	LB-U
+LBM01G02	Eucalyptus melliodora	NA	NA	-35.819633	145.31187	101	LB-P-5	LB-P
+LBM01G03	Eucalyptus melliodora	NA	NA	-36.86476	148.85016	638	LB-G-3	LB-G
+LBM01G05	Eucalyptus melliodora	NA	NA	-36.42797	144.41092	114	LB-W1-9	LB-W1
+LBM01G06	Eucalyptus melliodora	NA	NA	-36.63518	149.56728	186	LB-H-7	LB-H
+LBM01G07	Eucalyptus melliodora	NA	NA	-36.3675	145.70232	268	LB-D-2	LB-D
+LBM01G08	Eucalyptus melliodora	NA	NA	-36.3675	145.70232	268	LB-D-10	LB-D
+LBM01G09	Eucalyptus melliodora	NA	NA	-33.423	149.752	844	LB-V-8	LB-V
+LBM01G11	Eucalyptus melliodora	NA	NA	-33.416668	149.55055	712	LB-1-4	LB-1
+LBM01H05	Eucalyptus melliodora	NA	NA	-36.42797	144.41092	114	LB-W1-10	LB-W1
+LBM01H06	Eucalyptus melliodora	NA	NA	-36.63518	149.56728	186	LB-H-8	LB-H
+LBM01H07	Eucalyptus melliodora	NA	NA	-36.3675	145.70232	268	LB-D-3	LB-D
+LBM01H08	Eucalyptus melliodora	NA	NA	-33.423	149.752	844	LB-V-1	LB-V
+LBM01H09	Eucalyptus melliodora	NA	NA	-33.423	149.752	844	LB-V-9	LB-V
+LBM01H10	Eucalyptus melliodora	NA	NA	-36.388	146.481	181	LB-A-8	LB-A
+LBM01H11	Eucalyptus melliodora	NA	NA	-33.416668	149.55055	712	LB-1-5	LB-1
+LBM01H12	Eucalyptus melliodora	NA	NA	-35.03333	147.33333	NA	LB-C-3	LB-C
+LBM02A01	Eucalyptus melliodora	NA	NA	-35.03333	147.33333	NA	LB-C-4	LB-C
+LBM02A03	Eucalyptus melliodora	NA	NA	-34.036884	148.5675	318	LB-N1-1	LB-N1
+LBM02A04	Eucalyptus melliodora	NA	NA	-34.036884	148.5675	318	LB-N1-9	LB-N1
+LBM02A08	Eucalyptus melliodora	NA	NA	-33.121143	149.05785	709	LB-J2-4	LB-J2
+LBM02A10	Eucalyptus melliodora	NA	NA	-33.44218	147.51628	213	LB-17-10	LB-17
+LBM02B01	Eucalyptus melliodora	NA	NA	-35.03333	147.33333	NA	LB-C-5	LB-C
+LBM02B02	Eucalyptus melliodora	NA	NA	-33.6166	149.64452	782	LB-N2-4	LB-N2
+LBM02B03	Eucalyptus melliodora	NA	NA	-34.036884	148.5675	318	LB-N1-2	LB-N1
+LBM02B04	Eucalyptus melliodora	NA	NA	-34.036884	148.5675	318	LB-N1-10	LB-N1
+LBM02B05	Eucalyptus melliodora	NA	NA	-27.368696	152.03023	625	LB-3-8	LB-3
+LBM02B06	Eucalyptus melliodora	NA	NA	-33.936944	116.963333	NA	LB-7-6	LB-7
+LBM02B07	Eucalyptus melliodora	NA	NA	-35.235664	149.16422	613	LB-B-7	LB-B
+LBM02B08	Eucalyptus melliodora	NA	NA	-33.121143	149.05785	709	LB-J2-5	LB-J2
+LBM02B09	Eucalyptus melliodora	NA	NA	-33.44218	147.51628	213	LB-17-3	LB-17
+LBM02B11	Eucalyptus melliodora	NA	NA	-35.40026	149.1318	669	LB-11-9	LB-11
+LBM02B12	Eucalyptus melliodora	NA	NA	-36.54041	146.10739	195	LB-i2-7	LB-i2
+LBM02C01	Eucalyptus melliodora	NA	NA	-35.03333	147.33333	NA	LB-C-6	LB-C
+LBM02C02	Eucalyptus melliodora	NA	NA	-33.6166	149.64452	782	LB-N2-5	LB-N2
+LBM02C03	Eucalyptus melliodora	NA	NA	-34.036884	148.5675	318	LB-N1-3	LB-N1
+LBM02C04	Eucalyptus melliodora	NA	NA	-27.368696	152.03023	625	LB-3-1	LB-3
+LBM02C05	Eucalyptus melliodora	NA	NA	-27.368696	152.03023	625	LB-3-9	LB-3
+LBM02C06	Eucalyptus melliodora	NA	NA	-33.936944	116.963333	NA	LB-7-7	LB-7
+LBM02C07	Eucalyptus melliodora	NA	NA	-35.235664	149.16422	613	LB-B-8	LB-B
+LBM02C08	Eucalyptus melliodora	NA	NA	-33.121143	149.05785	709	LB-J2-6	LB-J2
+LBM02C09	Eucalyptus melliodora	NA	NA	-33.44218	147.51628	213	LB-17-4	LB-17
+LBM02C10	Eucalyptus melliodora	NA	NA	-35.40026	149.1318	669	LB-11-2	LB-11
+LBM02C11	Eucalyptus melliodora	NA	NA	-35.40026	149.1318	669	LB-11-10	LB-11
+LBM02C12	Eucalyptus melliodora	NA	NA	-36.54041	146.10739	195	LB-i2-8	LB-i2
+LBM02D01	Eucalyptus melliodora	NA	NA	-35.03333	147.33333	NA	LB-C-7	LB-C
+LBM02D02	Eucalyptus melliodora	NA	NA	-33.6166	149.64452	782	LB-N2-6	LB-N2
+LBM02D03	Eucalyptus melliodora	NA	NA	-34.036884	148.5675	318	LB-N1-4	LB-N1
+LBM02D04	Eucalyptus melliodora	NA	NA	-27.368696	152.03023	625	LB-3-2	LB-3
+LBM02D05	Eucalyptus melliodora	NA	NA	-27.368696	152.03023	625	LB-3-10	LB-3
+LBM02D07	Eucalyptus melliodora	NA	NA	-35.235664	149.16422	613	LB-B-9	LB-B
+LBM02D08	Eucalyptus melliodora	NA	NA	-33.121143	149.05785	709	LB-J2-7	LB-J2
+LBM02D09	Eucalyptus melliodora	NA	NA	-33.44218	147.51628	213	LB-17-5	LB-17
+LBM02D10	Eucalyptus melliodora	NA	NA	-35.40026	149.1318	669	LB-11-3	LB-11
+LBM02D11	Eucalyptus melliodora	NA	NA	-36.54041	146.10739	195	LB-i2-1	LB-i2
+LBM02D12	Eucalyptus melliodora	NA	NA	-36.54041	146.10739	195	LB-i2-9	LB-i2
+LBM02E01	Eucalyptus melliodora	NA	NA	-35.03333	147.33333	NA	LB-C-8	LB-C
+LBM02E02	Eucalyptus melliodora	NA	NA	-33.6166	149.64452	782	LB-N2-7	LB-N2
+LBM02E03	Eucalyptus melliodora	NA	NA	-34.036884	148.5675	318	LB-N1-5	LB-N1
+LBM02E04	Eucalyptus melliodora	NA	NA	-27.368696	152.03023	625	LB-3-3	LB-3
+LBM02E05	Eucalyptus melliodora	NA	NA	-33.936944	116.963333	NA	LB-7-1	LB-7
+LBM02E06	Eucalyptus melliodora	NA	NA	-35.235664	149.16422	613	LB-B-2	LB-B
+LBM02E07	Eucalyptus melliodora	NA	NA	-35.235664	149.16422	613	LB-B-10	LB-B
+LBM02E09	Eucalyptus melliodora	NA	NA	-33.44218	147.51628	213	LB-17-6	LB-17
+LBM02E10	Eucalyptus melliodora	NA	NA	-35.40026	149.1318	669	LB-11-4	LB-11
+LBM02E11	Eucalyptus melliodora	NA	NA	-36.54041	146.10739	195	LB-i2-2	LB-i2
+LBM02E12	Eucalyptus melliodora	NA	NA	-36.54041	146.10739	195	LB-i2-10	LB-i2
+LBM02F01	Eucalyptus melliodora	NA	NA	-35.03333	147.33333	NA	LB-C-9	LB-C
+LBM02F02	Eucalyptus melliodora	NA	NA	-33.6166	149.64452	782	LB-N2-8	LB-N2
+LBM02F03	Eucalyptus melliodora	NA	NA	-34.036884	148.5675	318	LB-N1-6	LB-N1
+LBM02F04	Eucalyptus melliodora	NA	NA	-27.368696	152.03023	625	LB-3-4	LB-3
+LBM02F06	Eucalyptus melliodora	NA	NA	-35.235664	149.16422	613	LB-B-3	LB-B
+LBM02F07	Eucalyptus melliodora	NA	NA	-33.121143	149.05785	709	LB-J2-1	LB-J2
+LBM02F08	Eucalyptus melliodora	NA	NA	-33.121143	149.05785	709	LB-J2-9	LB-J2
+LBM02F09	Eucalyptus melliodora	NA	NA	-33.44218	147.51628	213	LB-17-7	LB-17
+LBM02F10	Eucalyptus melliodora	NA	NA	-35.40026	149.1318	669	LB-11-5	LB-11
+LBM02F11	Eucalyptus melliodora	NA	NA	-36.54041	146.10739	195	LB-i2-3	LB-i2
+LBM02G01	Eucalyptus melliodora	NA	NA	-33.6166	149.64452	782	LB-N2-1	LB-N2
+LBM02G02	Eucalyptus melliodora	NA	NA	-33.6166	149.64452	782	LB-N2-9	LB-N2
+LBM02G03	Eucalyptus melliodora	NA	NA	-34.036884	148.5675	318	LB-N1-7	LB-N1
+LBM02G04	Eucalyptus melliodora	NA	NA	-27.368696	152.03023	625	LB-3-5	LB-3
+LBM02G05	Eucalyptus melliodora	NA	NA	-33.936944	116.963333	NA	LB-7-3	LB-7
+LBM02G06	Eucalyptus melliodora	NA	NA	-35.235664	149.16422	613	LB-B-4	LB-B
+LBM02G07	Eucalyptus melliodora	NA	NA	-33.121143	149.05785	709	LB-J2-2	LB-J2
+LBM02G08	Eucalyptus melliodora	NA	NA	-33.121143	149.05785	709	LB-J2-10	LB-J2
+LBM02G09	Eucalyptus melliodora	NA	NA	-33.44218	147.51628	213	LB-17-8	LB-17
+LBM02G10	Eucalyptus melliodora	NA	NA	-35.40026	149.1318	669	LB-11-6	LB-11
+LBM02G11	Eucalyptus melliodora	NA	NA	-36.54041	146.10739	195	LB-i2-4	LB-i2
+LBM02G12	Eucalyptus melliodora	NA	NA	-33.224724	149.28056	NA	LB-16-2	LB-16
+LBM02H02	Eucalyptus melliodora	NA	NA	-33.6166	149.64452	782	LB-N2-10	LB-N2
+LBM02H03	Eucalyptus melliodora	NA	NA	-34.036884	148.5675	318	LB-N1-8	LB-N1
+LBM02H04	Eucalyptus melliodora	NA	NA	-27.368696	152.03023	625	LB-3-6	LB-3
+LBM02H05	Eucalyptus melliodora	NA	NA	-33.936944	116.963333	NA	LB-7-4	LB-7
+LBM02H08	Eucalyptus melliodora	NA	NA	-33.44218	147.51628	213	LB-17-1	LB-17
+LBM02H09	Eucalyptus melliodora	NA	NA	-33.44218	147.51628	213	LB-17-9	LB-17
+LBM02H10	Eucalyptus melliodora	NA	NA	-35.40026	149.1318	669	LB-11-7	LB-11
+LBM02H11	Eucalyptus melliodora	NA	NA	-36.54041	146.10739	195	LB-i2-5	LB-i2
+LBM03A02	Eucalyptus melliodora	NA	NA	-36.6755	146.26477	236	LB-2-5	LB-2
+LBM03A11	Eucalyptus melliodora	NA	NA	-34.911785	148.971179	562	LB-20-7	LB-20
+LBM03B02	Eucalyptus melliodora	NA	NA	-36.6755	146.26477	236	LB-2-6	LB-2
+LBM03B04	Eucalyptus melliodora	NA	NA	-33.710145	149.52355	978	LB-5-2	LB-5
+LBM03B05	Eucalyptus melliodora	NA	NA	-33.710145	149.52355	978	LB-5-10	LB-5
+LBM03B07	Eucalyptus melliodora	NA	NA	-35.26495	147.310133	265	LB-T1-6	LB-T1
+LBM03B09	Eucalyptus melliodora	NA	NA	-30.54493	151.79367	1055	LB-K2-2	LB-K2
+LBM03B10	Eucalyptus melliodora	NA	NA	-30.54493	151.79367	1055	LB-K2-10	LB-K2
+LBM03B11	Eucalyptus melliodora	NA	NA	-34.911785	148.971179	562	LB-20-8	LB-20
+LBM03C02	Eucalyptus melliodora	NA	NA	-36.6755	146.26477	236	LB-2-7	LB-2
+LBM03C03	Eucalyptus melliodora	NA	NA	-32.389167	150.881667	147	LB-14-5	LB-14
+LBM03C04	Eucalyptus melliodora	NA	NA	-33.710145	149.52355	978	LB-5-3	LB-5
+LBM03C05	Eucalyptus melliodora	NA	NA	-37.285278	143.77778	321	LB-10-1	LB-10
+LBM03C07	Eucalyptus melliodora	NA	NA	-35.26495	147.310133	265	LB-T1-7	LB-T1
+LBM03C09	Eucalyptus melliodora	NA	NA	-30.54493	151.79367	1055	LB-K2-3	LB-K2
+LBM03C10	Eucalyptus melliodora	NA	NA	-34.911785	148.971179	562	LB-20-1	LB-20
+LBM03C11	Eucalyptus melliodora	NA	NA	-34.911785	148.971179	562	LB-20-9	LB-20
+LBM03D01	Eucalyptus melliodora	NA	NA	-33.224724	149.28056	NA	LB-16-7	LB-16
+LBM03D02	Eucalyptus melliodora	NA	NA	-36.6755	146.26477	236	LB-2-8	LB-2
+LBM03D03	Eucalyptus melliodora	NA	NA	-32.389167	150.881667	147	LB-14-6	LB-14
+LBM03D04	Eucalyptus melliodora	NA	NA	-33.710145	149.52355	978	LB-5-4	LB-5
+LBM03D05	Eucalyptus melliodora	NA	NA	-37.285278	143.77778	321	LB-10-2	LB-10
+LBM03D06	Eucalyptus melliodora	NA	NA	-37.285278	143.77778	321	LB-10-10	LB-10
+LBM03D07	Eucalyptus melliodora	NA	NA	-35.26495	147.310133	265	LB-T1-8	LB-T1
+LBM03D08	Eucalyptus melliodora	NA	NA	-37.179444	144.483333	517	LB-19-6	LB-19
+LBM03D09	Eucalyptus melliodora	NA	NA	-30.54493	151.79367	1055	LB-K2-4	LB-K2
+LBM03D10	Eucalyptus melliodora	NA	NA	-34.911785	148.971179	562	LB-20-2	LB-20
+LBM03D11	Eucalyptus melliodora	NA	NA	-34.911785	148.971179	562	LB-20-10	LB-20
+LBM03E01	Eucalyptus melliodora	NA	NA	-36.6755	146.26477	236	LB-2-1	LB-2
+LBM03E02	Eucalyptus melliodora	NA	NA	-36.6755	146.26477	236	LB-2-9	LB-2
+LBM03E04	Eucalyptus melliodora	NA	NA	-33.710145	149.52355	978	LB-5-5	LB-5
+LBM03E06	Eucalyptus melliodora	NA	NA	-35.26495	147.310133	265	LB-T1-1	LB-T1
+LBM03E07	Eucalyptus melliodora	NA	NA	-35.26495	147.310133	265	LB-T1-9	LB-T1
+LBM03E08	Eucalyptus melliodora	NA	NA	-37.179444	144.483333	517	LB-19-7	LB-19
+LBM03E09	Eucalyptus melliodora	NA	NA	-30.54493	151.79367	1055	LB-K2-5	LB-K2
+LBM03E10	Eucalyptus melliodora	NA	NA	-34.911785	148.971179	562	LB-20-3	LB-20
+LBM03E11	Eucalyptus melliodora	NA	NA	-36.580471	143.521639	206	LB-W2-1	LB-W2
+LBM03E12	Eucalyptus melliodora	NA	NA	-36.580471	143.521639	206	LB-W2-9	LB-W2
+LBM03F01	Eucalyptus melliodora	NA	NA	-36.6755	146.26477	236	LB-2-2	LB-2
+LBM03F04	Eucalyptus melliodora	NA	NA	-33.710145	149.52355	978	LB-5-6	LB-5
+LBM03F05	Eucalyptus melliodora	NA	NA	-37.285278	143.77778	321	LB-10-4	LB-10
+LBM03F06	Eucalyptus melliodora	NA	NA	-35.26495	147.310133	265	LB-T1-2	LB-T1
+LBM03F07	Eucalyptus melliodora	NA	NA	-35.26495	147.310133	265	LB-T1-10	LB-T1
+LBM03F08	Eucalyptus melliodora	NA	NA	-37.179444	144.483333	517	LB-19-8	LB-19
+LBM03F09	Eucalyptus melliodora	NA	NA	-30.54493	151.79367	1055	LB-K2-6	LB-K2
+LBM03F10	Eucalyptus melliodora	NA	NA	-34.911785	148.971179	562	LB-20-4	LB-20
+LBM03F11	Eucalyptus melliodora	NA	NA	-36.580471	143.521639	206	LB-W2-2	LB-W2
+LBM03G02	Eucalyptus melliodora	NA	NA	-32.389167	150.881667	147	LB-14-1	LB-14
+LBM03G05	Eucalyptus melliodora	NA	NA	-37.285278	143.77778	321	LB-10-5	LB-10
+LBM03G06	Eucalyptus melliodora	NA	NA	-35.26495	147.310133	265	LB-T1-3	LB-T1
+LBM03G07	Eucalyptus melliodora	NA	NA	-37.179444	144.483333	517	LB-19-1	LB-19
+LBM03G08	Eucalyptus melliodora	NA	NA	-37.179444	144.483333	517	LB-19-9	LB-19
+LBM03G09	Eucalyptus melliodora	NA	NA	-30.54493	151.79367	1055	LB-K2-7	LB-K2
+LBM03G10	Eucalyptus melliodora	NA	NA	-34.911785	148.971179	562	LB-20-5	LB-20
+LBM03G11	Eucalyptus melliodora	NA	NA	-36.580471	143.521639	206	LB-W2-3	LB-W2
+LBM03H06	Eucalyptus melliodora	NA	NA	-35.26495	147.310133	265	LB-T1-4	LB-T1
+LBM04A01	Eucalyptus melliodora	NA	NA	-36.980278	144.047611	333	LB-24-3	LB-24
+LBM04A02	Eucalyptus melliodora	NA	NA	-36.487921	143.891325	138	LB-W3-1	LB-W3
+LBM04A03	Eucalyptus melliodora	NA	NA	-36.487921	143.891325	138	LB-W3-9	LB-W3
+LBM04A05	Eucalyptus melliodora	NA	NA	-37.144361	142.839428	244	LB-21-5	LB-21
+LBM04B01	Eucalyptus melliodora	NA	NA	-36.980278	144.047611	333	LB-24-4	LB-24
+LBM04B02	Eucalyptus melliodora	NA	NA	-36.487921	143.891325	138	LB-W3-2	LB-W3
+LBM04B04	Eucalyptus melliodora	NA	NA	-35.299683	147.165733	258	LB-T3-8	LB-T3
+LBM04B06	Eucalyptus melliodora	NA	NA	-35.37515	147.25261	266	LB-T2-4	LB-T2
+LBM04B08	Eucalyptus melliodora	NA	NA	-35.39474	149.677129	NA	LB-26-4	LB-26
+LBM04C02	Eucalyptus melliodora	NA	NA	-36.487921	143.891325	138	LB-W3-3	LB-W3
+LBM04C03	Eucalyptus melliodora	NA	NA	-35.299683	147.165733	258	LB-T3-1	LB-T3
+LBM04C04	Eucalyptus melliodora	NA	NA	-35.299683	147.165733	258	LB-T3-9	LB-T3
+LBM04C05	Eucalyptus melliodora	NA	NA	-37.144361	142.839428	244	LB-21-7	LB-21
+LBM04C06	Eucalyptus melliodora	NA	NA	-35.37515	147.25261	266	LB-T2-5	LB-T2
+LBM04D01	Eucalyptus melliodora	NA	NA	-36.980278	144.047611	333	LB-24-6	LB-24
+LBM04D02	Eucalyptus melliodora	NA	NA	-36.487921	143.891325	138	LB-W3-4	LB-W3
+LBM04D05	Eucalyptus melliodora	NA	NA	-37.144361	142.839428	244	LB-21-8	LB-21
+LBM04D06	Eucalyptus melliodora	NA	NA	-35.37515	147.25261	266	LB-T2-6	LB-T2
+LBM04D08	Eucalyptus melliodora	NA	NA	-35.39474	149.677129	NA	LB-26-6	LB-26
+LBM04E01	Eucalyptus melliodora	NA	NA	-36.980278	144.047611	333	LB-24-7	LB-24
+LBM04E02	Eucalyptus melliodora	NA	NA	-36.487921	143.891325	138	LB-W3-5	LB-W3
+LBM04E03	Eucalyptus melliodora	NA	NA	-35.299683	147.165733	258	LB-T3-3	LB-T3
+LBM04E04	Eucalyptus melliodora	NA	NA	-37.144361	142.839428	244	LB-21-1	LB-21
+LBM04E05	Eucalyptus melliodora	NA	NA	-37.144361	142.839428	244	LB-21-9	LB-21
+LBM04E06	Eucalyptus melliodora	NA	NA	-35.37515	147.25261	266	LB-T2-7	LB-T2
+LBM04E08	Eucalyptus melliodora	NA	NA	-35.39474	149.677129	NA	LB-26-7	LB-26
+LBM04E11	Eucalyptus melliodora	NA	NA	-33.936944	116.963333	NA	LB-7-1	LB-7
+LBM04F01	Eucalyptus melliodora	NA	NA	-36.980278	144.047611	333	LB-24-8	LB-24
+LBM04F02	Eucalyptus melliodora	NA	NA	-36.487921	143.891325	138	LB-W3-6	LB-W3
+LBM04F03	Eucalyptus melliodora	NA	NA	-35.299683	147.165733	258	LB-T3-4	LB-T3
+LBM04F04	Eucalyptus melliodora	NA	NA	-37.144361	142.839428	244	LB-21-2	LB-21
+LBM04F05	Eucalyptus melliodora	NA	NA	-37.144361	142.839428	244	LB-21-10	LB-21
+LBM04F06	Eucalyptus melliodora	NA	NA	-35.37515	147.25261	266	LB-T2-8	LB-T2
+LBM04G01	Eucalyptus melliodora	NA	NA	-36.980278	144.047611	333	LB-24-9	LB-24
+LBM04G02	Eucalyptus melliodora	NA	NA	-36.487921	143.891325	138	LB-W3-7	LB-W3
+LBM04G03	Eucalyptus melliodora	NA	NA	-35.299683	147.165733	258	LB-T3-5	LB-T3
+LBM04G04	Eucalyptus melliodora	NA	NA	-37.144361	142.839428	244	LB-21-3	LB-21
+LBM04G05	Eucalyptus melliodora	NA	NA	-35.37515	147.25261	266	LB-T2-1	LB-T2
+LBM04G06	Eucalyptus melliodora	NA	NA	-35.37515	147.25261	266	LB-T2-9	LB-T2
+LBM04G08	Eucalyptus melliodora	NA	NA	-35.39474	149.677129	NA	LB-26-9	LB-26
+LBM04H01	Eucalyptus melliodora	NA	NA	-36.980278	144.047611	333	LB-24-10	LB-24
+EB510	Eucalyptus porosa	Torrens Gorge	NA	-34.85926	138.73598	NA	EB510	NA
+EB515	Eucalyptus odorata	Callington	NA	-35.0961	138.9629	NA	EB515	NA
+EB519	Eucalyptus leucoxylon	Spring Gully CP	NA	-33.912544	138.60479	NA	EB519	NA
+EB521	Eucalyptus odorata	Betaloo	NA	-33.187045	138.2587	NA	EB521	NA
+EB522	Eucalyptus leucoxylon	Betaloo	NA	-33.20288	138.25193	NA	EB522	NA
+EB523	Eucalyptus odorata	Pitchi Ritchi Pass	NA	-32.44503	137.9782	NA	EB523	NA
+EB524	Eucalyptus leucoxylon	Pitchi Ritchi Pass	NA	-32.3824	137.98374	NA	EB524	NA
+EB525	Eucalyptus porosa	Dutchmans Stern CP	NA	-32.29882	137.9858	NA	EB525	NA
+EB526	Eucalyptus albens	Melrose	NA	-32.8229	138.1843	NA	EB526	NA
+EB527	Eucalyptus microcarpa	Melrose	NA	-32.8229	138.1843	NA	EB527	NA
+EB528	Eucalyptus leucoxylon	Mount Remarkable	NA	-32.725607	138.081843	NA	EB528	NA
+EB529	Eucalyptus microcarpa	Mount Remarkable	NA	-32.725607	138.081843	NA	EB529	NA
+EB530	Eucalyptus albens	Melrose	NA	-32.85	138.18006	NA	EB530	NA
+EB531	Eucalyptus porosa	Port Germaine Gorge	NA	-32.987021	138.06658	NA	EB531	NA
+EB534	Eucalyptus microcarpa	Norton Summit	NA	-35.90853	138.7042	NA	EB534	NA
+EB535	Eucalyptus porosa	Rockleigh	NA	-34.94037	139.0772	NA	EB535	NA
+EB536	Eucalyptus leucoxylon	Mount Torrens	NA	-34.88304	138.9809	NA	EB536	NA
+ENE0001	Eucalyptus sp. aff. magnificata	HRF1	2017-11-22	-29.84968	152.00146	NA	ENE0001	NA
+ENE0005	Eucalyptus melliodora	HRF1	2017-11-22	-29.85121	152.00075	NA	ENE0005	NA
+ENE0008	Eucalyptus sp. aff. magnificata	HRF1	2017-11-22	-29.85109	152.0009	NA	ENE0008	NA
+ENE0009	Eucalyptus conica	HRF1	2017-11-22	-29.85126	152.00015	NA	ENE0009	NA
+ENE0010	Eucalyptus sp. aff. magnificata	HRF1	2017-11-22	-29.85105	151.99956	NA	ENE0010	NA
+ENE0011	Eucalyptus sp. aff. magnificata	HRF1	2017-11-22	-29.85126	151.99948	NA	ENE0011	NA
+ENE0014	Eucalyptus melliodora	HRF1	2017-11-22	-29.84946	152.00108	NA	ENE0014	NA
+ENE0015	Eucalyptus melliodora	HRF1	2017-11-22	-29.84945	152.00114	NA	ENE0015	NA
+ENE0023	Eucalyptus sp. aff. magnificata	HRF1	2017-11-22	-29.84896	152.0058	NA	ENE0023	NA
+ENE0024	Eucalyptus melliodora	Waterfall Way 2	2017-11-24	-30.5176	151.97227	NA	ENE0024	NA
+ENE0026	Eucalyptus melliodora	Waterfall Way 2	2017-11-24	-30.51734	151.97252	NA	ENE0026	NA
+ENE0028	Eucalyptus melliodora	Waterfall Way 2	2017-11-24	-30.5173	151.97264	NA	ENE0028	NA
+ENE0030	Eucalyptus sp. aff. magnificata	Waterfall Way 2	2017-11-24	-30.51709	151.97293	NA	ENE0030	NA
+ENE0031	Eucalyptus sp. aff. magnificata	Waterfall Way 2	2017-11-24	-30.517	151.97298	NA	ENE0031	NA
+ENE0032	Eucalyptus sp. aff. magnificata	Waterfall Way 2	2017-11-24	-30.51712	151.97308	NA	ENE0032	NA
+ENE0033	Eucalyptus sp. aff. magnificata	Waterfall Way 2	2017-11-24	-30.51688	151.97357	NA	ENE0033	NA
+ENE0034	Eucalyptus sp. aff. magnificata	Waterfall Way 2	2017-11-24	-30.51691	151.9735	NA	ENE0034	NA
+ENE0036	Eucalyptus conica	Wollomombi Falls Lookout	2017-11-24	-30.53189	152.03299	NA	ENE0036	NA
+ENE0038	Eucalyptus conica	Wollomombi Falls Lookout	2017-11-24	-30.53132	152.03278	NA	ENE0038	NA
+ENE0040	Eucalyptus conica	Wollomombi Falls Lookout	2017-11-24	-30.53132	152.03148	NA	ENE0040	NA
+ENE0042	Eucalyptus conica	Kempsey road gravel depot	2017-11-24	-30.52496	152.07028	NA	ENE0042	NA
+ENE0044	Eucalyptus conica	Kempsey road gravel depot	2017-11-24	-30.52445	152.07028	NA	ENE0044	NA
+FDK10	Eucalyptus microcarpa	Dookie (private property)	2013-10-31	-36.33119	145.70688	NA	FDK10	NA
+GH1	Eucalyptus unknown	NA	NA	NA	NA	NA	GH1	NA
+GH2	Eucalyptus unknown	NA	NA	NA	NA	NA	GH2	NA
+J293	Eucalyptus albens	Keepit, Old Menedebri Rd	2015-09-29	-30.8942	150.66708	NA	J293	NA
+J294	Eucalyptus albens	Keepit, Old Menedebri Rd	2015-09-29	-30.8942	150.66708	NA	J294	NA
+J295	Eucalyptus albens	Keepit, Somerton Main Rd	2015-09-29	-30.89198	150.6728	NA	J295	NA
+J296	Eucalyptus melliodora	Namoi River, Dunmore Rd	2015-09-29	-30.65167	150.87812	NA	J296	NA
+J298	Eucalyptus sideroxylon	Bundarra, Thunderbolts Way	2015-09-29	-30.15277	151.07437	NA	J298	NA
+J300	Eucalyptus sideroxylon	Gum Flat, Copeton Dam Rd	2015-09-30	-29.80812	150.91918	NA	J300	NA
+J301	Eucalyptus sideroxylon	Gum Flat, Copeton Dam Rd	2015-09-30	-29.80812	150.91918	NA	J301	NA
+J302	Eucalyptus albens	Sawn Rocks, Kilarney Gap Rd	2015-09-30	-30.14391	150.05293	NA	J302	NA
+J303	Eucalyptus albens	Sawn Rocks, Kilarney Gap Rd	2015-09-30	-30.14391	150.05293	NA	J303	NA
+J304	Eucalyptus albens	Sawn Rocks, Kilarney Gap Rd	2015-09-30	-30.14391	150.05293	NA	J304	NA
+J307	Eucalyptus crebra	Narrabri, Newell Hwy	2015-09-30	-30.22665	149.8094	NA	J307	NA
+J310	Eucalyptus populnea	Narrabri, Killarney Forest	2015-09-30	-30.22025	149.83597	NA	J310	NA
+J311	Eucalyptus fibrosa	Pilliga, Newell Hwy	2015-09-30	-30.60224	149.58173	NA	J311	NA
+J312	Eucalyptus sideroxylon	Pilliga, Newell Hwy	2015-09-30	-30.60224	149.58173	NA	J312	NA
+J315	Eucalyptus fibrosa	Pilliga, no 1 break rd	2015-09-30	-30.92855	149.36347	NA	J315	NA
+J316	Eucalyptus crebra	Pilliga, no 1 break rd	2015-09-30	-30.92855	149.36347	NA	J316	NA
+J317	Eucalyptus crebra	Sawn Rocks, parking lot	2015-09-30	-30.14459	150.0534	NA	J317	NA
+J318	Eucalyptus melliodora	Chaffey Dam, Tamworth Nundle Rd	2015-10-11	-31.37365	151.13779	NA	J318	NA
+J319	Eucalyptus melliodora	Nundle, Crawney Rd	2015-10-11	-31.55948	151.05664	NA	J319	NA
+J320	Eucalyptus moluccana	Timor, Crawney Rd	2015-10-11	-31.72257	151.10243	NA	J320	NA
+J321g	Eucalyptus crebra	Polkobin, Broke Rd	2015-10-12	-32.75326	151.25224	NA	J321g	NA
+J322	Eucalyptus fibrosa	Polkobin, Broke Rd	2015-10-12	-32.75342	151.25269	NA	J322	NA
+J324	Eucalyptus conica	Wollomi NP, Bylong Valley Way	2015-10-12	-32.44442	150.2812	NA	J324	NA
+J326	Eucalyptus moluccana	Rathdowney, Boonah Rathdowney Rd	2015-11-03	-28.21744	152.84309	NA	J326	NA
+J327	Eucalyptus crebra	Koreelah, Tooloom Rd	2015-11-03	-28.45172	152.3925	NA	J327	NA
+J328	Eucalyptus moluccana	Legume, Mt Lindsay Rd	2015-11-03	-28.43038	152.35915	NA	J328	NA
+J329	Eucalyptus conica	Legume, Mt Lindsay Rd	2015-11-03	-28.41028	152.29292	NA	J329	NA
+J330	Eucalyptus fibrosa	Karara, Cunningham Hwy	2015-11-04	-28.19138	151.61853	NA	J330	NA
+J331	Eucalyptus crebra	Gore, Cunningham Hwy	2015-11-04	-28.29549	151.48801	NA	J331	NA
+J333	Eucalyptus caleyi	Inglewood, Inglewood Texas Rd	2015-11-04	-28.52431	151.10556	NA	J333	NA
+J333a	Eucalyptus caleyi	Inglewood, Inglewood Texas Rd	2015-11-04	-28.52431	151.10556	NA	J333a	NA
+J334	Eucalyptus moluccana	Inglewood, Inglewood Texas Rd	2015-11-04	-28.53696	151.10815	NA	J334	NA
+J335	Eucalyptus microcarpa	Texas, Texas Bridge Road	2015-11-04	-28.89198	151.14803	NA	J335	NA
+J338	Eucalyptus conica	Tenterfield, Bluff rock lookout	2015-11-05	-29.15425	152.00211	NA	J338	NA
+J339	Eucalyptus moluccana	Emmaville, Strathbogie Rd	2015-11-05	-29.45636	151.55505	NA	J339	NA
+J340	Eucalyptus melliodora	Emmaville, Strathbogie Rd	2015-11-05	-29.45577	151.55405	NA	J340	NA
+J341	Eucalyptus albens	Yellow Dam, Emmaville Rd	2015-11-05	-29.40223	151.41655	NA	J341	NA
+J341a	Eucalyptus albens	Yellow Dam, Emmaville Rd	2015-11-05	-29.40223	151.41655	NA	J341a	NA
+J341b	Eucalyptus albens	Yellow Dam, Emmaville Rd	2015-11-05	-29.40223	151.41655	NA	J341b	NA
+J341c	Eucalyptus albens	Yellow Dam, Emmaville Rd	2015-11-05	-29.40223	151.41655	NA	J341c	NA
+J341d	Eucalyptus albens	Yellow Dam, Emmaville Rd	2015-11-05	-29.40223	151.41655	NA	J341d	NA
+J342	Eucalyptus sideroxylon	Yellow Dam, Emmaville Rd	2015-11-05	-29.39087	151.39279	NA	J342	NA
+J342a	Eucalyptus sideroxylon	Yellow Dam, Emmaville Rd	2015-11-05	-29.39087	151.39279	NA	J342a	NA
+J342b	Eucalyptus sideroxylon	Yellow Dam, Emmaville Rd	2015-11-05	-29.39087	151.39279	NA	J342b	NA
+J342c	Eucalyptus sideroxylon	Yellow Dam, Emmaville Rd	2015-11-05	-29.39087	151.39279	NA	J342c	NA
+J342d	Eucalyptus sideroxylon	Yellow Dam, Emmaville Rd	2015-11-05	-29.39087	151.39279	NA	J342d	NA
+J343	Eucalyptus crebra	Yellow Dam, Emmaville Rd	2015-11-05	-29.35816	151.30991	NA	J343	NA
+J344	Eucalyptus polyanthemos	Pierces Creek State Forest, Vanitys Crossing	2015-11-19	-35.33962	148.91113	NA	J344	NA
+J345	Eucalyptus albens	Mullion, Mountain Creek Rd.	2015-11-20	-35.07022	148.83685	NA	J345	NA
+J345a	Eucalyptus albens	Mullion, Mountain Creek Rd.	2015-11-20	-35.07022	148.83685	NA	J345a	NA
+J345b	Eucalyptus albens	Mullion, Mountain Creek Rd.	2015-11-20	-35.07022	148.83685	NA	J345b	NA
+J345c	Eucalyptus albens	Mullion, Mountain Creek Rd.	2015-11-20	-35.07022	148.83685	NA	J345c	NA
+J345d	Eucalyptus albens	Mullion, Mountain Creek Rd.	2015-11-20	-35.07022	148.83685	NA	J345d	NA
+J346	Eucalyptus melliodora	Mullion, Mountain Creek Rd.	2015-11-20	-35.06954	148.83661	NA	J346	NA
+J347	Eucalyptus polyanthemos	Wee Jasper, Doctors Flat Rd.	2015-11-20	-35.09381	148.74881	NA	J347	NA
+J348	Eucalyptus polyanthemos	Wee Jasper, Wee Jasper Rd.	2015-11-20	-35.24184	148.29729	NA	J348	NA
+J349	Eucalyptus albens	Wee Jasper, Wee Jasper Rd.	2015-11-20	-35.24369	148.2968	NA	J349	NA
+J349a	Eucalyptus albens	Wee Jasper, Wee Jasper Rd.	2015-11-20	-35.24369	148.2968	NA	J349a	NA
+J349b	Eucalyptus albens	Wee Jasper, Wee Jasper Rd.	2015-11-20	-35.24369	148.2968	NA	J349b	NA
+J349d	Eucalyptus albens	Wee Jasper, Wee Jasper Rd.	2015-11-20	-35.24369	148.2968	NA	J349d	NA
+J349e	Eucalyptus albens	Wee Jasper, Wee Jasper Rd.	2015-11-20	-35.24369	148.2968	NA	J349e	NA
+J349f	Eucalyptus albens	Wee Jasper, Wee Jasper Rd.	2015-11-20	-35.24369	148.2968	NA	J349f	NA
+J349g	Eucalyptus albens	Wee Jasper, Wee Jasper Rd.	2015-11-20	-35.24369	148.2968	NA	J349g	NA
+J349h	Eucalyptus albens	Wee Jasper, Wee Jasper Rd.	2015-11-20	-35.24369	148.2968	NA	J349h	NA
+J349i	Eucalyptus albens	Wee Jasper, Wee Jasper Rd.	2015-11-20	-35.24369	148.2968	NA	J349i	NA
+J349j	Eucalyptus albens	Wee Jasper, Wee Jasper Rd.	2015-11-20	-35.24369	148.2968	NA	J349j	NA
+J350	Eucalyptus albens	Tarcutta, Mates Gully Rd.	2015-11-20	-35.2456	147.68083	NA	J350	NA
+J350a	Eucalyptus albens	Tarcutta, Mates Gully Rd.	2015-11-20	-35.2456	147.68083	NA	J350a	NA
+J350b	Eucalyptus albens	Tarcutta, Mates Gully Rd.	2015-11-20	-35.2456	147.68083	NA	J350b	NA
+J350c	Eucalyptus albens	Tarcutta, Mates Gully Rd.	2015-11-20	-35.2456	147.68083	NA	J350c	NA
+J350d	Eucalyptus albens	Tarcutta, Mates Gully Rd.	2015-11-20	-35.2456	147.68083	NA	J350d	NA
+J350e	Eucalyptus albens	Tarcutta, Mates Gully Rd.	2015-11-20	-35.2456	147.68083	NA	J350e	NA
+J350f	Eucalyptus albens	Tarcutta, Mates Gully Rd.	2015-11-20	-35.2456	147.68083	NA	J350f	NA
+J350g	Eucalyptus albens	Tarcutta, Mates Gully Rd.	2015-11-20	-35.2456	147.68083	NA	J350g	NA
+J350h	Eucalyptus albens	Tarcutta, Mates Gully Rd.	2015-11-20	-35.2456	147.68083	NA	J350h	NA
+J350i	Eucalyptus albens	Tarcutta, Mates Gully Rd.	2015-11-20	-35.2456	147.68083	NA	J350i	NA
+J351	Eucalyptus polyanthemos	Tarcutta, Mates Gully Rd.	2015-11-20	-35.25609	147.68506	NA	J351	NA
+J352	Eucalyptus sideroxylon	Tarcutta, Mates Gully Rd.	2015-11-20	-35.25665	147.68486	NA	J352	NA
+J352a	Eucalyptus sideroxylon	Tarcutta, Mates Gully Rd.	2015-11-20	-35.25665	147.68486	NA	J352a	NA
+J352b	Eucalyptus sideroxylon	Tarcutta, Mates Gully Rd.	2015-11-20	-35.25665	147.68486	NA	J352b	NA
+J352c	Eucalyptus sideroxylon	Tarcutta, Mates Gully Rd.	2015-11-20	-35.25665	147.68486	NA	J352c	NA
+J352d	Eucalyptus sideroxylon	Tarcutta, Mates Gully Rd.	2015-11-20	-35.25665	147.68486	NA	J352d	NA
+J352e	Eucalyptus sideroxylon	Tarcutta, Mates Gully Rd.	2015-11-20	-35.25665	147.68486	NA	J352e	NA
+J352f	Eucalyptus sideroxylon	Tarcutta, Mates Gully Rd.	2015-11-20	-35.25665	147.68486	NA	J352f	NA
+J352g	Eucalyptus sideroxylon	Tarcutta, Mates Gully Rd.	2015-11-20	-35.25665	147.68486	NA	J352g	NA
+J352h	Eucalyptus sideroxylon	Tarcutta, Mates Gully Rd.	2015-11-20	-35.25665	147.68486	NA	J352h	NA
+J352i	Eucalyptus sideroxylon	Tarcutta, Mates Gully Rd.	2015-11-20	-35.25665	147.68486	NA	J352i	NA
+J353	Eucalyptus polyanthemos	Blue Metal Rest Area, M31	2015-11-20	-35.8453	147.19722	NA	J353	NA
+J354	Eucalyptus moluccana	Blue Metal Rest Area, M31	2015-11-20	-35.84469	147.19794	NA	J354	NA
+J355	Eucalyptus sideroxylon	Chiltern, Chiltern-Howlong Rd.	2015-11-21	-36.09264	146.61917	NA	J355	NA
+J355a	Eucalyptus sideroxylon	Chiltern, Chiltern-Howlong Rd.	2015-11-21	-36.09264	146.61917	NA	J355a	NA
+J355b	Eucalyptus sideroxylonXmicrocarpa	Chiltern, Chiltern-Howlong Rd.	2015-11-21	-36.08961	146.62105	NA	J355b	NA
+J355c	Eucalyptus sideroxylon	Chiltern, Chiltern-Howlong Rd.	2015-11-21	-36.09264	146.61917	NA	J355c	NA
+J355d	Eucalyptus sideroxylon	Chiltern, Chiltern-Howlong Rd.	2015-11-21	-36.09264	146.61917	NA	J355d	NA
+J355e	Eucalyptus sideroxylon	Chiltern, Chiltern-Howlong Rd.	2015-11-21	-36.09264	146.61917	NA	J355e	NA
+J355f	Eucalyptus sideroxylon	Chiltern, Chiltern-Howlong Rd.	2015-11-21	-36.09264	146.61917	NA	J355f	NA
+J355g	Eucalyptus sideroxylon	Chiltern, Chiltern-Howlong Rd.	2015-11-21	-36.09264	146.61917	NA	J355g	NA
+J357	Eucalyptus melliodora	Collendina State Forest, Spring Dr.	2015-11-21	-36.019	146.29446	NA	J357	NA
+J358	Eucalyptus melliodora	Urana, Walbundrie Rd.	2015-11-21	-35.38973	146.35303	NA	J358	NA
+J359	Eucalyptus sideroxylon	Ingalba Nature Reserve, Hwy 94	2015-11-21	-34.47594	147.40941	NA	J359	NA
+J359a	Eucalyptus sideroxylon	Ingalba Nature Reserve, Hwy 94	2015-11-21	-34.47594	147.40941	NA	J359a	NA
+J359b	Eucalyptus sideroxylon	Ingalba Nature Reserve, Hwy 94	2015-11-21	-34.47594	147.40941	NA	J359b	NA
+J359c	Eucalyptus sideroxylon	Ingalba Nature Reserve, Hwy 94	2015-11-21	-34.47594	147.40941	NA	J359c	NA
+J359d	Eucalyptus sideroxylon	Ingalba Nature Reserve, Hwy 94	2015-11-21	-34.47594	147.40941	NA	J359d	NA
+J359e	Eucalyptus sideroxylon	Ingalba Nature Reserve, Hwy 94	2015-11-21	-34.47594	147.40941	NA	J359e	NA
+J359f	Eucalyptus sideroxylon	Ingalba Nature Reserve, Hwy 94	2015-11-21	-34.47594	147.40941	NA	J359f	NA
+J359g	Eucalyptus sideroxylon	Ingalba Nature Reserve, Hwy 94	2015-11-21	-34.47594	147.40941	NA	J359g	NA
+J359h	Eucalyptus sideroxylon	Ingalba Nature Reserve, Hwy 94	2015-11-21	-34.47594	147.40941	NA	J359h	NA
+J359i	Eucalyptus sideroxylon	Ingalba Nature Reserve, Hwy 94	2015-11-21	-34.47594	147.40941	NA	J359i	NA
+J360	Eucalyptus conica	Orange, Old Forbes Rd.	2015-11-21	-34.01205	148.12904	NA	J360	NA
+J361	Eucalyptus albens	Nangar Natl Park, Dripping Rock Rd.	2015-11-22	-33.42118	148.51154	NA	J361	NA
+J361a	Eucalyptus albens	Nangar Natl Park, Dripping Rock Rd.	2015-11-22	-33.42118	148.51154	NA	J361a	NA
+J361b	Eucalyptus albens	Nangar Natl Park, Dripping Rock Rd.	2015-11-22	-33.42118	148.51154	NA	J361b	NA
+J361c	Eucalyptus albens	Nangar Natl Park, Dripping Rock Rd.	2015-11-22	-33.42118	148.51154	NA	J361c	NA
+J361d	Eucalyptus albens	Nangar Natl Park, Dripping Rock Rd.	2015-11-22	-33.42118	148.51154	NA	J361d	NA
+J361e	Eucalyptus albens	Nangar Natl Park, Dripping Rock Rd.	2015-11-22	-33.42118	148.51154	NA	J361e	NA
+J361f	Eucalyptus albens	Nangar Natl Park, Dripping Rock Rd.	2015-11-22	-33.42118	148.51154	NA	J361f	NA
+J361g	Eucalyptus albens	Nangar Natl Park, Dripping Rock Rd.	2015-11-22	-33.42118	148.51154	NA	J361g	NA
+J361h	Eucalyptus albens	Nangar Natl Park, Dripping Rock Rd.	2015-11-22	-33.42118	148.51154	NA	J361h	NA
+J361i	Eucalyptus albens	Nangar Natl Park, Dripping Rock Rd.	2015-11-22	-33.42118	148.51154	NA	J361i	NA
+J362	Eucalyptus sideroxylon	Nangar Natl Park, Dripping Rock Rd.	2015-11-22	-33.42108	148.51126	NA	J362	NA
+J362a	Eucalyptus sideroxylon	Nangar Natl Park, Dripping Rock Rd.	2015-11-22	-33.42108	148.51126	NA	J362a	NA
+J362b	Eucalyptus sideroxylon	Nangar Natl Park, Dripping Rock Rd.	2015-11-22	-33.42108	148.51126	NA	J362b	NA
+J363	Eucalyptus microcarpa	Eugowra, Escort Way	2015-11-22	-33.41328	148.22136	NA	J363	NA
+J364	Eucalyptus conica	Eugowra, Escort Way	2015-11-22	-33.41328	148.22136	NA	J364	NA
+J365	Eucalyptus melliodora	Glenwood State Forest, Cargo Rd.	2015-11-22	-33.31832	148.97163	NA	J365	NA
+J366	Eucalyptus fibrosa	Gardens of Stone Natl Park, Glen Davis Rd.	2015-11-22	-33.12436	150.01617	NA	J366	NA
+J367	Eucalyptus sideroxylon	Uralla-Kingstown Rd, Kingstown	2015-12-15	-30.5285	151.15897	NA	J367	NA
+J367a	Eucalyptus sideroxylon	Uralla-Kingstown Rd, Kingstown	2015-12-15	-30.5285	151.15897	NA	J367a	NA
+J367b	Eucalyptus sideroxylon	Uralla-Kingstown Rd, Kingstown	2015-12-15	-30.5285	151.15897	NA	J367b	NA
+J367c	Eucalyptus sideroxylon	Uralla-Kingstown Rd, Kingstown	2015-12-15	-30.5285	151.15897	NA	J367c	NA
+J367d	Eucalyptus sideroxylon	Uralla-Kingstown Rd, Kingstown	2015-12-15	-30.5285	151.15897	NA	J367d	NA
+J367e	Eucalyptus sideroxylon	Uralla-Kingstown Rd, Kingstown	2015-12-15	-30.5285	151.15897	NA	J367e	NA
+J367f	Eucalyptus sideroxylon	Uralla-Kingstown Rd, Kingstown	2015-12-15	-30.5285	151.15897	NA	J367f	NA
+J367g	Eucalyptus sideroxylon	Uralla-Kingstown Rd, Kingstown	2015-12-15	-30.5285	151.15897	NA	J367g	NA
+J367h	Eucalyptus sideroxylon	Uralla-Kingstown Rd, Kingstown	2015-12-15	-30.5285	151.15897	NA	J367h	NA
+J367i	Eucalyptus sideroxylonXmoluccana	Uralla-Kingstown Rd, Kingstown	2015-12-15	-30.52474	151.15401	NA	J367i	NA
+J368	Eucalyptus caleyi	Kingstwon-Retreat Rd, Kingstown	2015-12-15	-30.57301	151.09172	NA	J368	NA
+J369	Eucalyptus caleyi	Thunderbolts Way, Bundarra	2015-12-15	-30.07144	151.09796	NA	J369	NA
+J370	Eucalyptus fibrosa	Bucketts Way, Stroud Road	2016-01-20	-32.62925	151.87758	NA	J370	NA
+J371	Eucalyptus fibrosa	Bucketts Way, Wards River	2016-01-20	-32.23292	151.93147	NA	J371	NA
+J372	Eucalyptus polyanthemos	Licola, Tamboritha Rd	2016-01-24	-37.60536	146.64015	NA	J372	NA
+J373	Eucalyptus melliodora	Doctors Flat	2016-01-24	-37.46662	147.83218	NA	J373	NA
+J374	Eucalyptus albens	Ensay	2016-01-24	-37.36159	147.85228	NA	J374	NA
+J374a	Eucalyptus albens	Ensay	2016-01-24	-37.36159	147.85228	NA	J374a	NA
+J374b	Eucalyptus albens	Ensay	2016-01-24	-37.36159	147.85228	NA	J374b	NA
+J374c	Eucalyptus albens	Ensay	2016-01-24	-37.36159	147.85228	NA	J374c	NA
+J374d	Eucalyptus albens	Ensay	2016-01-24	-37.36159	147.85228	NA	J374d	NA
+J374e	Eucalyptus albens	Ensay	2016-01-24	-37.36159	147.85228	NA	J374e	NA
+J374f	Eucalyptus albens	Ensay	2016-01-24	-37.36159	147.85228	NA	J374f	NA
+J374g	Eucalyptus albens	Ensay	2016-01-24	-37.36159	147.85228	NA	J374g	NA
+J374h	Eucalyptus albens	Ensay	2016-01-24	-37.36159	147.85228	NA	J374h	NA
+J374i	Eucalyptus albens	Ensay	2016-01-24	-37.36159	147.85228	NA	J374i	NA
+J375	Eucalyptus melliodora	Buchan	2016-01-25	-37.40165	148.21443	NA	J375	NA
+J376	Eucalyptus albens	McKillop Bridge	2016-01-25	-37.07782	148.34419	NA	J376	NA
+J376a	Eucalyptus albens	McKillop Bridge	2016-01-25	-37.07782	148.34419	NA	J376a	NA
+J376b	Eucalyptus albens	McKillop Bridge	2016-01-25	-37.07782	148.34419	NA	J376b	NA
+J376c	Eucalyptus albens	McKillop Bridge	2016-01-25	-37.07782	148.34419	NA	J376c	NA
+J376d	Eucalyptus albens	McKillop Bridge	2016-01-25	-37.07782	148.34419	NA	J376d	NA
+J376e	Eucalyptus albens	McKillop Bridge	2016-01-25	-37.07782	148.34419	NA	J376e	NA
+J376f	Eucalyptus albens	McKillop Bridge	2016-01-25	-37.07782	148.34419	NA	J376f	NA
+J376g	Eucalyptus albens	McKillop Bridge	2016-01-25	-37.07782	148.34419	NA	J376g	NA
+J376h	Eucalyptus albens	McKillop Bridge	2016-01-25	-37.07782	148.34419	NA	J376h	NA
+J376i	Eucalyptus albens	McKillop Bridge	2016-01-25	-37.07782	148.34419	NA	J376i	NA
+J377	Eucalyptus albens	Suggan Buggan	2016-01-25	-36.96985	148.30525	NA	J377	NA
+J377a	Eucalyptus albens	Suggan Buggan	2016-01-25	-36.96985	148.30525	NA	J377a	NA
+J377b	Eucalyptus albens	Suggan Buggan	2016-01-25	-36.96985	148.30525	NA	J377b	NA
+J377c	Eucalyptus albens	Suggan Buggan	2016-01-25	-36.96985	148.30525	NA	J377c	NA
+J377d	Eucalyptus albens	Suggan Buggan	2016-01-25	-36.96985	148.30525	NA	J377d	NA
+J377e	Eucalyptus albens	Suggan Buggan	2016-01-25	-36.96985	148.30525	NA	J377e	NA
+J377f	Eucalyptus albens	Suggan Buggan	2016-01-25	-36.96985	148.30525	NA	J377f	NA
+J377g	Eucalyptus albens	Suggan Buggan	2016-01-25	-36.96985	148.30525	NA	J377g	NA
+J377h	Eucalyptus albens	Suggan Buggan	2016-01-25	-36.96985	148.30525	NA	J377h	NA
+J377i	Eucalyptus albens	Suggan Buggan	2016-01-25	-36.96985	148.30525	NA	J377i	NA
+J379	Eucalyptus polyanthemos	Bombala	2016-01-26	-36.94525	149.4919	NA	J379	NA
+J381	Eucalyptus polyanthemos	Bruthen	2016-01-27	-37.3619	149.66098	NA	J381	NA
+J382	Eucalyptus albens	Swifts Creek	2016-01-27	-37.21575	147.71677	NA	J382	NA
+J382a	Eucalyptus albens	Swifts Creek	2016-01-27	-37.21575	147.71677	NA	J382a	NA
+J382b	Eucalyptus albens	Swifts Creek	2016-01-27	-37.21575	147.71677	NA	J382b	NA
+J382c	Eucalyptus albens	Swifts Creek	2016-01-27	-37.21575	147.71677	NA	J382c	NA
+J382d	Eucalyptus albens	Swifts Creek	2016-01-27	-37.21575	147.71677	NA	J382d	NA
+J382e	Eucalyptus albens	Swifts Creek	2016-01-27	-37.21575	147.71677	NA	J382e	NA
+J382f	Eucalyptus albens	Swifts Creek	2016-01-27	-37.21575	147.71677	NA	J382f	NA
+J382g	Eucalyptus albens	Swifts Creek	2016-01-27	-37.21575	147.71677	NA	J382g	NA
+J382h	Eucalyptus albens	Swifts Creek	2016-01-27	-37.21575	147.71677	NA	J382h	NA
+J382i	Eucalyptus albens	Swifts Creek	2016-01-27	-37.21575	147.71677	NA	J382i	NA
+J383	Eucalyptus polyanthemos	Yambuck	2016-01-27	-36.31995	146.84286	NA	J383	NA
+J385	Eucalyptus sideroxylon	Chiltern	2016-01-29	-36.17434	146.66263	NA	J385	NA
+J385a	Eucalyptus sideroxylon	Chiltern	2016-01-29	-36.17434	146.66263	NA	J385a	NA
+J385b	Eucalyptus sideroxylon	Chiltern	2016-01-29	-36.17434	146.66263	NA	J385b	NA
+J385c	Eucalyptus sideroxylon	Chiltern	2016-01-29	-36.17434	146.66263	NA	J385c	NA
+J385d	Eucalyptus sideroxylon	Chiltern	2016-01-29	-36.17434	146.66263	NA	J385d	NA
+J385e	Eucalyptus sideroxylon	Chiltern	2016-01-29	-36.17434	146.66263	NA	J385e	NA
+J385f	Eucalyptus sideroxylon	Chiltern	2016-01-29	-36.17434	146.66263	NA	J385f	NA
+J385g	Eucalyptus sideroxylon	Chiltern	2016-01-29	-36.17434	146.66263	NA	J385g	NA
+J385h	Eucalyptus sideroxylon	Chiltern	2016-01-29	-36.17434	146.66263	NA	J385h	NA
+J385i	Eucalyptus sideroxylon	Chiltern	2016-01-29	-36.17434	146.66263	NA	J385i	NA
+J386	Eucalyptus albens	Chiltern	2016-01-29	-36.14425	146.65103	NA	J386	NA
+J386a	Eucalyptus albens	Chiltern	2016-01-29	-36.14425	146.65103	NA	J386a	NA
+J386b	Eucalyptus albens	Chiltern	2016-01-29	-36.14425	146.65103	NA	J386b	NA
+J386c	Eucalyptus albens	Chiltern	2016-01-29	-36.14425	146.65103	NA	J386c	NA
+J386d	Eucalyptus albens	Chiltern	2016-01-29	-36.14425	146.65103	NA	J386d	NA
+J386e	Eucalyptus albens	Chiltern	2016-01-29	-36.14425	146.65103	NA	J386e	NA
+J386f	Eucalyptus albens	Chiltern	2016-01-29	-36.14425	146.65103	NA	J386f	NA
+J386g	Eucalyptus albens	Chiltern	2016-01-29	-36.14425	146.65103	NA	J386g	NA
+J386h	Eucalyptus albens	Chiltern	2016-01-29	-36.14425	146.65103	NA	J386h	NA
+J386i	Eucalyptus albens	Chiltern	2016-01-29	-36.14425	146.65103	NA	J386i	NA
+J387	Eucalyptus sideroxylon	Warrangatta	2016-01-29	-32.24456	146.18248	NA	J387	NA
+J387a	Eucalyptus sideroxylon	Warrangatta	2016-01-29	-32.24456	146.18248	NA	J387a	NA
+J387b	Eucalyptus sideroxylon	Warrangatta	2016-01-29	-32.24456	146.18248	NA	J387b	NA
+J387c	Eucalyptus sideroxylon	Warrangatta	2016-01-29	-32.24456	146.18248	NA	J387c	NA
+J387d	Eucalyptus sideroxylon	Warrangatta	2016-01-29	-32.24456	146.18248	NA	J387d	NA
+J387e	Eucalyptus sideroxylon	Warrangatta	2016-01-29	-32.24456	146.18248	NA	J387e	NA
+J387f	Eucalyptus sideroxylon	Warrangatta	2016-01-29	-32.24456	146.18248	NA	J387f	NA
+J387g	Eucalyptus sideroxylon	Warrangatta	2016-01-29	-32.24456	146.18248	NA	J387g	NA
+J387h	Eucalyptus sideroxylon	Warrangatta	2016-01-29	-32.24456	146.18248	NA	J387h	NA
+J387i	Eucalyptus sideroxylon	Warrangatta	2016-01-29	-32.24456	146.18248	NA	J387i	NA
+J388	Eucalyptus albens	Warrangatta	2016-01-29	-36.26528	146.15425	NA	J388	NA
+J388a	Eucalyptus albens	Warrangatta	2016-01-29	-36.26528	146.15425	NA	J388a	NA
+J388b	Eucalyptus albens	Warrangatta	2016-01-29	-36.26528	146.15425	NA	J388b	NA
+J388c	Eucalyptus albens	Warrangatta	2016-01-29	-36.26528	146.15425	NA	J388c	NA
+J388d	Eucalyptus albens	Warrangatta	2016-01-29	-36.26528	146.15425	NA	J388d	NA
+J388e	Eucalyptus albens	Warrangatta	2016-01-29	-36.26528	146.15425	NA	J388e	NA
+J388f	Eucalyptus albens	Warrangatta	2016-01-29	-36.26528	146.15425	NA	J388f	NA
+J388g	Eucalyptus albens	Warrangatta	2016-01-29	-36.26528	146.15425	NA	J388g	NA
+J388h	Eucalyptus albens	Warrangatta	2016-01-29	-36.26528	146.15425	NA	J388h	NA
+J388i	Eucalyptus albens	Warrangatta	2016-01-29	-36.26528	146.15425	NA	J388i	NA
+J389	Eucalyptus polyanthemos	Reef Road State Park	2016-01-29	-36.60631	145.92644	NA	J389	NA
+J390	Eucalyptus albens	Reef Road State Park	2016-01-29	-36.5877	145.96066	NA	J390	NA
+J390a	Eucalyptus albens	Reef Road State Park	2016-01-29	-36.5877	145.96066	NA	J390a	NA
+J390b	Eucalyptus albens	Reef Road State Park	2016-01-29	-36.5877	145.96066	NA	J390b	NA
+J392	Eucalyptus tricarpa	Puckapanyl	2016-01-30	-37.00641	145.00121	NA	J392	NA
+J393	Eucalyptus albens	Heathcote	2016-01-30	-36.93458	144.74492	NA	J393	NA
+J393a	Eucalyptus albens	Heathcote	2016-01-30	-36.93458	144.74492	NA	J393a	NA
+J393b	Eucalyptus albens	Heathcote	2016-01-30	-36.93458	144.74492	NA	J393b	NA
+J393c	Eucalyptus albens	Heathcote	2016-01-30	-36.93458	144.74492	NA	J393c	NA
+J393d	Eucalyptus albens	Heathcote	2016-01-30	-36.93458	144.74492	NA	J393d	NA
+J393e	Eucalyptus albens	Heathcote	2016-01-30	-36.93458	144.74492	NA	J393e	NA
+J393f	Eucalyptus albens	Heathcote	2016-01-30	-36.93458	144.74492	NA	J393f	NA
+J393g	Eucalyptus albens	Heathcote	2016-01-30	-36.93458	144.74492	NA	J393g	NA
+J393h	Eucalyptus albens	Heathcote	2016-01-30	-36.93458	144.74492	NA	J393h	NA
+J393i	Eucalyptus albens	Heathcote	2016-01-30	-36.93458	144.74492	NA	J393i	NA
+J394	Eucalyptus albens	Lake Eppalock	2016-01-30	-36.84715	144.52614	NA	J394	NA
+J394a	Eucalyptus albens	Lake Eppalock	2016-01-30	-36.84715	144.52614	NA	J394a	NA
+J394b	Eucalyptus albens	Lake Eppalock	2016-01-30	-36.84715	144.52614	NA	J394b	NA
+J394c	Eucalyptus albens	Lake Eppalock	2016-01-30	-36.84715	144.52614	NA	J394c	NA
+J394d	Eucalyptus albens	Lake Eppalock	2016-01-30	-36.84715	144.52614	NA	J394d	NA
+J394e	Eucalyptus albens	Lake Eppalock	2016-01-30	-36.84715	144.52614	NA	J394e	NA
+J394f	Eucalyptus albens	Lake Eppalock	2016-01-30	-36.84715	144.52614	NA	J394f	NA
+J394g	Eucalyptus albens	Lake Eppalock	2016-01-30	-36.84715	144.52614	NA	J394g	NA
+J395	Eucalyptus albensXmicrocarpa	Powers Rd, Woodstock on Loddon	2016-01-31	-36.76884	144.07336	NA	J395	NA
+J395a	Eucalyptus albens	Powers Rd, Woodstock on Loddon	2016-01-31	-36.76884	144.07336	NA	J395a	NA
+J395b	Eucalyptus albens	Powers Rd, Woodstock on Loddon	2016-01-31	-36.76884	144.07336	NA	J395b	NA
+J395c	Eucalyptus albens	Powers Rd, Woodstock on Loddon	2016-01-31	-36.76884	144.07336	NA	J395c	NA
+J395d	Eucalyptus albens	Powers Rd, Woodstock on Loddon	2016-01-31	-36.76884	144.07336	NA	J395d	NA
+J395e	Eucalyptus albens	Powers Rd, Woodstock on Loddon	2016-01-31	-36.76884	144.07336	NA	J395e	NA
+J395h	Eucalyptus albens	Powers Rd, Woodstock on Loddon	2016-01-31	-36.76884	144.07336	NA	J395h	NA
+J397	Eucalyptus leucoxylon	Dergholm State Park	2016-02-01	-37.28408	141.18732	NA	J397	NA
+J398	Eucalyptus leucoxylon	Cherrypool, Rockland Reservoir	2016-02-02	-37.22194	142.04807	NA	J398	NA
+J399	Eucalyptus leucoxylon	Castlemaine	2016-01-03	-37.1632	144.08661	NA	J399	NA
+J400	Eucalyptus moluccana	Torreyburn Rd, Yarrowyck	2016-04-05	-30.44375	151.25961	NA	J400	NA
+J401	Eucalyptus sideroxylon	Torreyburn Rd, Yarrowyck	2016-04-05	-30.44023	151.25069	NA	J401	NA
+J401a	Eucalyptus sideroxylon	Torreyburn Rd, Yarrowyck	2016-04-05	-30.44023	151.25069	NA	J401a	NA
+J401b	Eucalyptus sideroxylon	Torreyburn Rd, Yarrowyck	2016-04-05	-30.44023	151.25069	NA	J401b	NA
+J401c	Eucalyptus sideroxylon	Torreyburn Rd, Yarrowyck	2016-04-05	-30.44023	151.25069	NA	J401c	NA
+J401d	Eucalyptus sideroxylon	Torreyburn Rd, Yarrowyck	2016-04-05	-30.44023	151.25069	NA	J401d	NA
+J401e	Eucalyptus sideroxylon	Torreyburn Rd, Yarrowyck	2016-04-05	-30.44023	151.25069	NA	J401e	NA
+J401f	Eucalyptus sideroxylon	Torreyburn Rd, Yarrowyck	2016-04-05	-30.44023	151.25069	NA	J401f	NA
+J401g	Eucalyptus sideroxylon	Torreyburn Rd, Yarrowyck	2016-04-05	-30.44023	151.25069	NA	J401g	NA
+J401h	Eucalyptus sideroxylon	Torreyburn Rd, Yarrowyck	2016-04-05	-30.44023	151.25069	NA	J401h	NA
+J401i	Eucalyptus sideroxylon	Torreyburn Rd, Yarrowyck	2016-04-05	-30.44023	151.25069	NA	J401i	NA
+J402	Eucalyptus caleyi	Bundarra Rd, Copeton	2016-04-05	-30.04322	150.94122	NA	J402	NA
+J403	Eucalyptus caleyi	Copeton Dam Rd	2016-04-05	-29.92441	150.93559	NA	J403	NA
+J404	Eucalyptus caleyi	Copeton Dam Rd	2016-04-05	-29.98952	150.85857	NA	J404	NA
+J405	Eucalyptus sideroxylon	Baldersleigh Rd	2016-04-05	-30.22862	151.23865	NA	J405	NA
+J405a	Eucalyptus sideroxylon	Baldersleigh Rd	2016-04-05	-30.22862	151.23865	NA	J405a	NA
+J405b	Eucalyptus sideroxylon	Baldersleigh Rd	2016-04-05	-30.22862	151.23865	NA	J405b	NA
+J405c	Eucalyptus sideroxylon	Baldersleigh Rd	2016-04-05	-30.22862	151.23865	NA	J405c	NA
+J405d	Eucalyptus sideroxylon	Baldersleigh Rd	2016-04-05	-30.22862	151.23865	NA	J405d	NA
+J405e	Eucalyptus sideroxylon	Baldersleigh Rd	2016-04-05	-30.22862	151.23865	NA	J405e	NA
+J405f	Eucalyptus sideroxylon	Baldersleigh Rd	2016-04-05	-30.22862	151.23865	NA	J405f	NA
+J405g	Eucalyptus sideroxylon	Baldersleigh Rd	2016-04-05	-30.22862	151.23865	NA	J405g	NA
+J405h	Eucalyptus sideroxylon	Baldersleigh Rd	2016-04-05	-30.22862	151.23865	NA	J405h	NA
+J405i	Eucalyptus sideroxylon	Baldersleigh Rd	2016-04-05	-30.22862	151.23865	NA	J405i	NA
+J406	Eucalyptus albens	Baldersleigh Rd, The Basin	2016-04-05	-30.23707	151.252	NA	J406	NA
+J406a	Eucalyptus albens	Baldersleigh Rd, The Basin	2016-04-05	-30.23707	151.252	NA	J406a	NA
+J406b	Eucalyptus albens	Baldersleigh Rd, The Basin	2016-04-05	-30.23707	151.252	NA	J406b	NA
+J406c	Eucalyptus albens	Baldersleigh Rd, The Basin	2016-04-05	-30.23707	151.252	NA	J406c	NA
+J406d	Eucalyptus albens	Baldersleigh Rd, The Basin	2016-04-05	-30.23707	151.252	NA	J406d	NA
+J406e	Eucalyptus albens	Baldersleigh Rd, The Basin	2016-04-05	-30.23707	151.252	NA	J406e	NA
+J406f	Eucalyptus albens	Baldersleigh Rd, The Basin	2016-04-05	-30.23707	151.252	NA	J406f	NA
+J406g	Eucalyptus albens	Baldersleigh Rd, The Basin	2016-04-05	-30.23707	151.252	NA	J406g	NA
+J406h	Eucalyptus albens	Baldersleigh Rd, The Basin	2016-04-05	-30.23707	151.252	NA	J406h	NA
+J406i	Eucalyptus albens	Baldersleigh Rd, The Basin	2016-04-05	-30.23707	151.252	NA	J406i	NA
+J407	Eucalyptus fibrosa	Nymboidea	2016-04-06	-30.05045	152.63814	NA	J407	NA
+J408	Eucalyptus crebra	Nymboidea	2016-04-06	-29.92432	152.75188	NA	J408	NA
+J411	Eucalyptus fibrosa	Old Grafton Rd, Gibraltar	2016-04-07	-29.69674	152.10576	NA	J411	NA
+J412	Eucalyptus moluccana	Appleby Rd, Moonbi	2016-06-16	-30.96459	150.84267	NA	J412	NA
+J413	Eucalyptus albens	Boggabri - private land	2016-06-16	-30.70737	150.09621	NA	J413	NA
+J413a	Eucalyptus albens	Boggabri - private land	2016-06-16	-30.70737	150.09621	NA	J413a	NA
+J413b	Eucalyptus albens	Boggabri - private land	2016-06-16	-30.70737	150.09621	NA	J413b	NA
+J413c	Eucalyptus albens	Boggabri - private land	2016-06-16	-30.70737	150.09621	NA	J413c	NA
+J413d	Eucalyptus albens	Boggabri - private land	2016-06-16	-30.70737	150.09621	NA	J413d	NA
+J413e	Eucalyptus albens	Boggabri - private land	2016-06-16	-30.70737	150.09621	NA	J413e	NA
+J413f	Eucalyptus albens	Boggabri - private land	2016-06-16	-30.70737	150.09621	NA	J413f	NA
+J413g	Eucalyptus albens	Boggabri - private land	2016-06-16	-30.70737	150.09621	NA	J413g	NA
+J413h	Eucalyptus albens	Boggabri - private land	2016-06-16	-30.70737	150.09621	NA	J413h	NA
+J413i	Eucalyptus albens	Boggabri - private land	2016-06-16	-30.70737	150.09621	NA	J413i	NA
+J414	Eucalyptus albens	Narrabri	2016-06-16	-30.49283	149.94203	NA	J414	NA
+J414a	Eucalyptus albens	Narrabri	2016-06-16	-30.49283	149.94203	NA	J414a	NA
+J414b	Eucalyptus albens	Narrabri	2016-06-16	-30.49283	149.94203	NA	J414b	NA
+J414c	Eucalyptus albens	Narrabri	2016-06-16	-30.49283	149.94203	NA	J414c	NA
+J414d	Eucalyptus albens	Narrabri	2016-06-16	-30.49283	149.94203	NA	J414d	NA
+J416	Eucalyptus sideroxylon	Weewaa	2016-06-17	-30.32322	149.26971	NA	J416	NA
+J416a	Eucalyptus sideroxylon	Weewaa	2016-06-17	-30.32322	149.26971	NA	J416a	NA
+J416b	Eucalyptus sideroxylon	Weewaa	2016-06-17	-30.32322	149.26971	NA	J416b	NA
+J416c	Eucalyptus sideroxylon	Weewaa	2016-06-17	-30.32322	149.26971	NA	J416c	NA
+J416d	Eucalyptus sideroxylon	Weewaa	2016-06-17	-30.32322	149.26971	NA	J416d	NA
+J416e	Eucalyptus sideroxylon	Weewaa	2016-06-17	-30.32322	149.26971	NA	J416e	NA
+J416f	Eucalyptus sideroxylon	Weewaa	2016-06-17	-30.32322	149.26971	NA	J416f	NA
+J416g	Eucalyptus sideroxylon	Weewaa	2016-06-17	-30.32322	149.26971	NA	J416g	NA
+J416h	Eucalyptus sideroxylon	Weewaa	2016-06-17	-30.32322	149.26971	NA	J416h	NA
+J416i	Eucalyptus sideroxylon	Weewaa	2016-06-17	-30.32322	149.26971	NA	J416i	NA
+J417	Eucalyptus crebra	Weewaa	2016-06-17	-30.32377	149.26567	NA	J417	NA
+J418	Eucalyptus sideroxylon	The Pilliga	2016-06-17	-31.05012	149.23013	NA	J418	NA
+J418a	Eucalyptus sideroxylon	The Pilliga	2016-06-17	-31.05012	149.23013	NA	J418a	NA
+J418b	Eucalyptus sideroxylon	The Pilliga	2016-06-17	-31.05012	149.23013	NA	J418b	NA
+J418c	Eucalyptus sideroxylon	The Pilliga	2016-06-17	-31.05012	149.23013	NA	J418c	NA
+J418d	Eucalyptus sideroxylon	The Pilliga	2016-06-17	-31.05012	149.23013	NA	J418d	NA
+J418e	Eucalyptus sideroxylon	The Pilliga	2016-06-17	-31.05012	149.23013	NA	J418e	NA
+J418g	Eucalyptus sideroxylon	The Pilliga	2016-06-17	-31.05012	149.23013	NA	J418g	NA
+J418h	Eucalyptus sideroxylon	The Pilliga	2016-06-17	-31.05012	149.23013	NA	J418h	NA
+J418i	Eucalyptus sideroxylon	The Pilliga	2016-06-17	-31.05012	149.23013	NA	J418i	NA
+J419	Eucalyptus albens	Warrumbungle	2016-06-23	-31.35926	148.93951	NA	J419	NA
+J419a	Eucalyptus albens	Warrumbungle	2016-06-23	-31.35926	148.93951	NA	J419a	NA
+J419b	Eucalyptus albens	Warrumbungle	2016-06-23	-31.35926	148.93951	NA	J419b	NA
+J419c	Eucalyptus albens	Warrumbungle	2016-06-23	-31.35926	148.93951	NA	J419c	NA
+J419d	Eucalyptus albens	Warrumbungle	2016-06-23	-31.35926	148.93951	NA	J419d	NA
+J419e	Eucalyptus albens	Warrumbungle	2016-06-23	-31.35926	148.93951	NA	J419e	NA
+J419f	Eucalyptus albens	Warrumbungle	2016-06-23	-31.35926	148.93951	NA	J419f	NA
+J419g	Eucalyptus albens	Warrumbungle	2016-06-23	-31.35926	148.93951	NA	J419g	NA
+J419h	Eucalyptus albens	Warrumbungle	2016-06-23	-31.35926	148.93951	NA	J419h	NA
+J419i	Eucalyptus albens	Warrumbungle	2016-06-23	-31.35926	148.93951	NA	J419i	NA
+J420	Eucalyptus moluccana	Warrumbungle	2016-06-23	-31.35926	148.93951	NA	J420	NA
+J421	Eucalyptus sideroxylon	Narromine	2016-06-23	-32.36597	148.23103	NA	J421	NA
+J421a	Eucalyptus sideroxylon	Narromine	2016-06-23	-32.36597	148.23103	NA	J421a	NA
+J421b	Eucalyptus sideroxylon	Narromine	2016-06-23	-32.36597	148.23103	NA	J421b	NA
+J421c	Eucalyptus sideroxylon	Narromine	2016-06-23	-32.36597	148.23103	NA	J421c	NA
+J421d	Eucalyptus sideroxylon	Narromine	2016-06-23	-32.36597	148.23103	NA	J421d	NA
+J421e	Eucalyptus sideroxylon	Narromine	2016-06-23	-32.36597	148.23103	NA	J421e	NA
+J421f	Eucalyptus sideroxylon	Narromine	2016-06-23	-32.36597	148.23103	NA	J421f	NA
+J421g	Eucalyptus sideroxylon	Narromine	2016-06-23	-32.36597	148.23103	NA	J421g	NA
+J421h	Eucalyptus sideroxylon	Narromine	2016-06-23	-32.36597	148.23103	NA	J421h	NA
+J421i	Eucalyptus sideroxylon	Narromine	2016-06-23	-32.36597	148.23103	NA	J421i	NA
+J422	Eucalyptus sideroxylon	Dubbo	2016-06-24	-32.22311	148.66797	NA	J422	NA
+J422a	Eucalyptus sideroxylon	Dubbo	2016-06-24	-32.22311	148.66797	NA	J422a	NA
+J422b	Eucalyptus sideroxylon	Dubbo	2016-06-24	-32.22311	148.66797	NA	J422b	NA
+J422c	Eucalyptus sideroxylon	Dubbo	2016-06-24	-32.22311	148.66797	NA	J422c	NA
+J422d	Eucalyptus sideroxylon	Dubbo	2016-06-24	-32.22311	148.66797	NA	J422d	NA
+J422e	Eucalyptus sideroxylon	Dubbo	2016-06-24	-32.22311	148.66797	NA	J422e	NA
+J422f	Eucalyptus sideroxylon	Dubbo	2016-06-24	-32.22311	148.66797	NA	J422f	NA
+J422g	Eucalyptus sideroxylon	Dubbo	2016-06-24	-32.22311	148.66797	NA	J422g	NA
+J422h	Eucalyptus sideroxylon	Dubbo	2016-06-24	-32.22311	148.66797	NA	J422h	NA
+J422i	Eucalyptus sideroxylon	Dubbo	2016-06-24	-32.22311	148.66797	NA	J422i	NA
+J423	Eucalyptus moluccana	Coolah	2016-06-24	-31.82373	149.68475	NA	J423	NA
+J424	Eucalyptus albens	Ardglen	2016-06-24	-31.71111	150.6998	NA	J424	NA
+J424a	Eucalyptus albens	Ardglen	2016-06-24	-31.71111	150.6998	NA	J424a	NA
+J424b	Eucalyptus albens	Ardglen	2016-06-24	-31.71111	150.6998	NA	J424b	NA
+J424c	Eucalyptus albens	Ardglen	2016-06-24	-31.71111	150.6998	NA	J424c	NA
+J424d	Eucalyptus albens	Ardglen	2016-06-24	-31.71111	150.6998	NA	J424d	NA
+J424e	Eucalyptus albens	Ardglen	2016-06-24	-31.71111	150.6998	NA	J424e	NA
+J424f	Eucalyptus albens	Ardglen	2016-06-24	-31.71111	150.6998	NA	J424f	NA
+J424g	Eucalyptus albens	Ardglen	2016-06-24	-31.71111	150.6998	NA	J424g	NA
+J424h	Eucalyptus albens	Ardglen	2016-06-24	-31.71111	150.6998	NA	J424h	NA
+J424i	Eucalyptus albens	Ardglen	2016-06-24	-31.71111	150.6998	NA	J424i	NA
+J425	Eucalyptus sideroxylon	Bundarra	2016-07-09	-30.30756	151.20671	NA	J425	NA
+J425a	Eucalyptus sideroxylon	Bundarra	2016-07-09	-30.30756	151.20671	NA	J425a	NA
+J425b	Eucalyptus sideroxylon	Bundarra	2016-07-09	-30.30756	151.20671	NA	J425b	NA
+J425c	Eucalyptus sideroxylon	Bundarra	2016-07-09	-30.30756	151.20671	NA	J425c	NA
+J425d	Eucalyptus sideroxylon	Bundarra	2016-07-09	-30.30756	151.20671	NA	J425d	NA
+J425e	Eucalyptus sideroxylon	Bundarra	2016-07-09	-30.30756	151.20671	NA	J425e	NA
+J425f	Eucalyptus sideroxylon	Bundarra	2016-07-09	-30.30756	151.20671	NA	J425f	NA
+J425g	Eucalyptus sideroxylon	Bundarra	2016-07-09	-30.30756	151.20671	NA	J425g	NA
+J425h	Eucalyptus sideroxylon	Bundarra	2016-07-09	-30.30756	151.20671	NA	J425h	NA
+J425i	Eucalyptus sideroxylon	Bundarra	2016-07-09	-30.30756	151.20671	NA	J425i	NA
+J426	Eucalyptus albens	Bundarra	2016-07-09	-30.30846	151.20667	NA	J426	NA
+J426a	Eucalyptus albens	Bundarra	2016-07-09	-30.30846	151.20667	NA	J426a	NA
+J426b	Eucalyptus albens	Bundarra	2016-07-09	-30.30846	151.20667	NA	J426b	NA
+J426c	Eucalyptus albens	Bundarra	2016-07-09	-30.30846	151.20667	NA	J426c	NA
+J426d	Eucalyptus albens	Bundarra	2016-07-09	-30.30846	151.20667	NA	J426d	NA
+J426e	Eucalyptus albens	Bundarra	2016-07-09	-30.30846	151.20667	NA	J426e	NA
+J426f	Eucalyptus albens	Bundarra	2016-07-09	-30.30846	151.20667	NA	J426f	NA
+J426g	Eucalyptus albens	Bundarra	2016-07-09	-30.30846	151.20667	NA	J426g	NA
+J426h	Eucalyptus albens	Bundarra	2016-07-09	-30.30846	151.20667	NA	J426h	NA
+J426i	Eucalyptus albens	Bundarra	2016-07-09	-30.30846	151.20667	NA	J426i	NA
+J427	Eucalyptus caleyi	Bundarra	2016-07-09	-30.36709	151.25757	NA	J427	NA
+J427a	Eucalyptus caleyi	Bundarra	2016-07-09	-30.36709	151.25757	NA	J427a	NA
+J428	Eucalyptus albens	Inverell	2016-07-09	-29.6731	151.15315	NA	J428	NA
+J428a	Eucalyptus albens	Inverell	2016-07-09	-29.6731	151.15315	NA	J428a	NA
+J428b	Eucalyptus albens	Inverell	2016-07-09	-29.6731	151.15315	NA	J428b	NA
+J428c	Eucalyptus albens	Inverell	2016-07-09	-29.6731	151.15315	NA	J428c	NA
+J428d	Eucalyptus albens	Inverell	2016-07-09	-29.6731	151.15315	NA	J428d	NA
+J428e	Eucalyptus albens	Inverell	2016-07-09	-29.6731	151.15315	NA	J428e	NA
+J428f	Eucalyptus albens	Inverell	2016-07-09	-29.6731	151.15315	NA	J428f	NA
+J428g	Eucalyptus albens	Inverell	2016-07-09	-29.6731	151.15315	NA	J428g	NA
+J428h	Eucalyptus albens	Inverell	2016-07-09	-29.6731	151.15315	NA	J428h	NA
+J428i	Eucalyptus albens	Inverell	2016-07-09	-29.6731	151.15315	NA	J428i	NA
+J429	Eucalyptus albens	Texas	2016-07-09	-28.77243	151.21523	NA	J429	NA
+J429a	Eucalyptus albens	Texas	2016-07-09	-28.77243	151.21523	NA	J429a	NA
+J429b	Eucalyptus albens	Texas	2016-07-09	-28.77243	151.21523	NA	J429b	NA
+J429c	Eucalyptus albens	Texas	2016-07-09	-28.77243	151.21523	NA	J429c	NA
+J429d	Eucalyptus albens	Texas	2016-07-09	-28.77243	151.21523	NA	J429d	NA
+J429e	Eucalyptus albens	Texas	2016-07-09	-28.77243	151.21523	NA	J429e	NA
+J429f	Eucalyptus albens	Texas	2016-07-09	-28.77243	151.21523	NA	J429f	NA
+J429g	Eucalyptus albens	Texas	2016-07-09	-28.77243	151.21523	NA	J429g	NA
+J429h	Eucalyptus albens	Texas	2016-07-09	-28.77243	151.21523	NA	J429h	NA
+J429i	Eucalyptus albens	Texas	2016-07-09	-28.77243	151.21523	NA	J429i	NA
+J430	Eucalyptus sideroxylon	Inglewood	2016-07-10	-28.56925	151.07571	NA	J430	NA
+J430a	Eucalyptus sideroxylon	Inglewood	2016-07-10	-28.56925	151.07571	NA	J430a	NA
+J430b	Eucalyptus sideroxylon	Inglewood	2016-07-10	-28.56925	151.07571	NA	J430b	NA
+J430c	Eucalyptus sideroxylon	Inglewood	2016-07-10	-28.56925	151.07571	NA	J430c	NA
+J430d	Eucalyptus sideroxylon	Inglewood	2016-07-10	-28.56925	151.07571	NA	J430d	NA
+J430e	Eucalyptus sideroxylon	Inglewood	2016-07-10	-28.56925	151.07571	NA	J430e	NA
+J430f	Eucalyptus sideroxylon	Inglewood	2016-07-10	-28.56925	151.07571	NA	J430f	NA
+J430g	Eucalyptus sideroxylon	Inglewood	2016-07-10	-28.56925	151.07571	NA	J430g	NA
+J430h	Eucalyptus sideroxylon	Inglewood	2016-07-10	-28.56925	151.07571	NA	J430h	NA
+J430i	Eucalyptus sideroxylon	Inglewood	2016-07-10	-28.56925	151.07571	NA	J430i	NA
+J431	Eucalyptus crebra	Inglewood	2016-07-10	-28.56955	151.07539	NA	J431	NA
+J432	Eucalyptus fibrosa	Glendon	2016-07-10	-28.18033	151.66934	NA	J432	NA
+J433	Eucalyptus sideroxylon	Glendon	2016-07-10	-28.17577	151.6577	NA	J433	NA
+J433a	Eucalyptus sideroxylon	Glendon	2016-07-10	-28.17577	151.6577	NA	J433a	NA
+J433b	Eucalyptus sideroxylon	Glendon	2016-07-10	-28.17577	151.6577	NA	J433b	NA
+J433c	Eucalyptus sideroxylon	Glendon	2016-07-10	-28.17577	151.6577	NA	J433c	NA
+J433d	Eucalyptus sideroxylon	Glendon	2016-07-10	-28.17577	151.6577	NA	J433d	NA
+J433e	Eucalyptus sideroxylon	Glendon	2016-07-10	-28.17577	151.6577	NA	J433e	NA
+J433f	Eucalyptus sideroxylon	Glendon	2016-07-10	-28.17577	151.6577	NA	J433f	NA
+J433g	Eucalyptus sideroxylon	Glendon	2016-07-10	-28.17577	151.6577	NA	J433g	NA
+J433h	Eucalyptus sideroxylon	Glendon	2016-07-10	-28.17577	151.6577	NA	J433h	NA
+J433i	Eucalyptus sideroxylon	Glendon	2016-07-10	-28.17577	151.6577	NA	J433i	NA
+J434	Eucalyptus sideroxylon	Allora	2016-07-10	-27.7547	152.1189	NA	J434	NA
+J434a	Eucalyptus sideroxylon	Allora	2016-07-10	-27.7547	152.1189	NA	J434a	NA
+J434b	Eucalyptus sideroxylon	Allora	2016-07-10	-27.7547	152.1189	NA	J434b	NA
+J435	Eucalyptus sideroxylon	Wondai	2016-07-10	-26.36944	151.88103	NA	J435	NA
+J435a	Eucalyptus sideroxylon	Wondai	2016-07-10	-26.36944	151.88103	NA	J435a	NA
+J435b	Eucalyptus sideroxylon	Wondai	2016-07-10	-26.36944	151.88103	NA	J435b	NA
+J435c	Eucalyptus sideroxylon	Wondai	2016-07-10	-26.36944	151.88103	NA	J435c	NA
+J435d	Eucalyptus sideroxylon	Wondai	2016-07-10	-26.36944	151.88103	NA	J435d	NA
+J435e	Eucalyptus sideroxylon	Wondai	2016-07-10	-26.36944	151.88103	NA	J435e	NA
+J435f	Eucalyptus sideroxylon	Wondai	2016-07-10	-26.36944	151.88103	NA	J435f	NA
+J435g	Eucalyptus sideroxylon	Wondai	2016-07-10	-26.36944	151.88103	NA	J435g	NA
+J435h	Eucalyptus sideroxylon	Wondai	2016-07-10	-26.36944	151.88103	NA	J435h	NA
+J435i	Eucalyptus sideroxylon	Wondai	2016-07-10	-26.36944	151.88103	NA	J435i	NA
+J436	Eucalyptus albens	Kulpi	2016-07-11	-27.18896	151.73259	NA	J436	NA
+J436a	Eucalyptus albens	Kulpi	2016-07-11	-27.18896	151.73259	NA	J436a	NA
+J436b	Eucalyptus albens	Kulpi	2016-07-11	-27.18896	151.73259	NA	J436b	NA
+J436c	Eucalyptus albens	Kulpi	2016-07-11	-27.18896	151.73259	NA	J436c	NA
+J436d	Eucalyptus albens	Kulpi	2016-07-11	-27.18896	151.73259	NA	J436d	NA
+J436e	Eucalyptus albens	Kulpi	2016-07-11	-27.18896	151.73259	NA	J436e	NA
+J436f	Eucalyptus albens	Kulpi	2016-07-11	-27.18896	151.73259	NA	J436f	NA
+J436g	Eucalyptus albens	Kulpi	2016-07-11	-27.18896	151.73259	NA	J436g	NA
+J436h	Eucalyptus albens	Kulpi	2016-07-11	-27.18896	151.73259	NA	J436h	NA
+J436i	Eucalyptus albens	Kulpi	2016-07-11	-27.18896	151.73259	NA	J436i	NA
+J437	Eucalyptus sideroxylonXmelliodora	Bundarra, Thunderbolts Way	2016-11-28	-30.27552	151.18698	NA	J437	NA
+J438	Eucalyptus sideroxylonXmelliodora	Bundarra, Thunderbolts Way	2016-11-28	-30.27563	151.18764	NA	J438	NA
+MelMosaic	Eucalyptus melliodora	Yeoval	NA	NA	NA	NA	MelMosaic	NA
+NAL05	Eucalyptus microcarpa	Melrose-Trangie Rd, Albert Murrumbidgee NP	2013-10-16	-32.3742	147.4871	NA	NAL05	NA
+NBJ30	Eucalyptus microcarpa	Berry Jerry State Forest	2013-11-18	-35.05268	147.0439	NA	NBJ30	NA
+NCD30	Eucalyptus microcarpa	Condobolin	2013-11-17	-32.89835	147.05836	NA	NCD30	NA
+NCR13	Eucalyptus microcarpa	Crowther	2013-11-15	-34.08362	148.51941	NA	NCR13	NA
+NDU10	Eucalyptus microcarpa	Dubbo	2013-10-15	-32.32624	148.51287	NA	NDU10	NA
+NE10467	Eucalyptus porosa	Lake  Eyre	1960-11-10	NA	NA	NA	NE10467	NA
+NE25923	Eucalyptus woollsiana	Maranoa	1972-09-05	NA	NA	NA	NE25923	NA
+NE25953	Eucalyptus porosa	Eyre Peninsula	1972-11-02	NA	NA	NA	NE25953	NA
+NE35955	Eucalyptus porosa	Coonalpyn	1972-11-04	NA	NA	NA	NE35955	NA
+NE35959	Eucalyptus porosa	Murray	1972-11-04	NA	NA	NA	NE35959	NA
+NE36811	Eucalyptus odorata	Hall Creek Road	1964-01-14	NA	NA	NA	NE36811	NA
+NE37169	Eucalyptus odorata	Alligator Creek	1960-06-11	NA	NA	NA	NE37169	NA
+NE37647	Eucalyptus woollsiana	Narrabri	1978-09-11	NA	NA	NA	NE37647	NA
+NE4583	Eucalyptus woollsiana	Gilgandra	1958-10-01	NA	NA	NA	NE4583	NA
+NE67754	Eucalyptus odorata	Sandland Road	1994-08-27	NA	NA	NA	NE67754	NA
+NE90535	Eucalyptus woollsiana	Inglewood	2006-10-25	NA	NA	NA	NE90535	NA
+RA1006	Eucalyptus albens	Bundarra Rd	NA	NA	NA	NA	RA1006	NA
+RA1007	Eucalyptus albens	Bundarra Rd	NA	NA	NA	NA	RA1007	NA
+SRR1386218	Eucalyptus grandis	NA	NA	NA	NA	NA	SRR1386218	NA
+SRR1386219	Eucalyptus grandis	NA	NA	NA	NA	NA	SRR1386219	NA
+SRR1386220	Eucalyptus grandis	NA	NA	NA	NA	NA	SRR1386220	NA
+SRR1386221	Eucalyptus grandis	NA	NA	NA	NA	NA	SRR1386221	NA
+SRR1386222	Eucalyptus grandis	NA	NA	NA	NA	NA	SRR1386222	NA
+SRR1392391	Eucalyptus grandis	NA	NA	NA	NA	NA	SRR1392391	NA
+SRR1392399	Eucalyptus grandis	NA	NA	NA	NA	NA	SRR1392399	NA
+SRR1392411	Eucalyptus globulus	NA	NA	NA	NA	NA	SRR1392411	NA
+SRR1448467	Eucalyptus grandis	NA	NA	NA	NA	NA	SRR1448467	NA
+SRR191872	Eucalyptus globulus	NA	NA	NA	NA	NA	SRR191872	NA
+SRR400875	Eucalyptus globulus	NA	NA	NA	NA	NA	SRR400875	NA
+TLC715	Eucalyptus conica	Stanthorpe	NA	-28.68757004	151.962399	851.994751	TLC715	NA
+TLC720	Eucalyptus conica	Tenterfield	NA	-29.06569697	151.988323	895.315063	TLC720	NA
+TLC724	Eucalyptus conica	Dundee	NA	-29.60560603	151.868071	1037.9375	TLC724	NA
+TLC725	Eucalyptus conica	Dundee	NA	-29.60565004	151.867978	1038.672363	TLC725	NA
+TLC726	Eucalyptus conica	Abington Creek	NA	-30.282428	151.195725	NA	TLC726	NA
+TLC732	Eucalyptus magnificata	Hillgrove	NA	-30.575079	151.903794	979	TLC732	NA
+TLC734	Eucalyptus magnificata	Hillgrove	NA	-30.55260301	151.896692	972	TLC734	NA
+TLC738-1	Eucalyptus sp. aff. magnificata	Cheadle Mtn	NA	-30.85471898	151.858673	1054.764404	TLC738-1	NA
+TLC739	Eucalyptus sp. aff. magnificata	Cheadle Mtn	NA	-30.85471798	151.858588	1055.253906	TLC739	NA
+TLC750	Eucalyptus magnificata	Enmore	NA	-30.71997302	151.72217	984	TLC750	NA
+TLC757	Eucalyptus magnificata	Enmore	NA	-30.71907003	151.721817	981.434265	TLC757	NA
+TLC758	Eucalyptus magnificata	Enmore	NA	-30.71955401	151.722795	977	TLC758	NA
+TLC760	Eucalyptus magnificata	Metz Gorge	NA	-30.57490801	151.884066	985	TLC760	NA
+TLC761	Eucalyptus magnificata	Metz Gorge	NA	-30.57479996	151.884278	990	TLC761	NA
+TLC764	Eucalyptus magnificata	Metz Gorge	NA	-30.57433502	151.885239	977	TLC764	NA
+TLC775	Eucalyptus conica	Inglewood	NA	-28.39504103	151.311965	344	TLC775	NA
+TLC807	Eucalyptus magnificata	Hillgrove	NA	-30.57603898	151.90429	986	TLC807	NA
+TLC827	Eucalyptus magnificata	Long Point	NA	-30.61447897	151.940761	1001	TLC827	NA
+TLC830	Eucalyptus magnificata	Long Point	NA	-30.61620296	151.938109	994	TLC830	NA
+TLC831	Eucalyptus magnificata	Long Point	NA	-30.61607497	151.938129	996	TLC831	NA
+TLC908	Eucalyptus sp. aff. magnificata	Cheadle Mtn	NA	-30.86045003	151.891704	1048	TLC908	NA
+TLC909	Eucalyptus sp. aff. magnificata	Cheadle Mtn	NA	-30.86056503	151.891859	1049	TLC909	NA
+TLC914	Eucalyptus sp. aff. magnificata	Cheyenne Station	NA	-30.81462398	151.859377	1008	TLC914	NA
+TLC915	Eucalyptus sp. aff. magnificata	Cheyenne Station	NA	-30.81471702	151.859337	1008	TLC915	NA
+TLC922-1	Eucalyptus sp. aff. magnificata	Wollomombi	NA	-30.56833701	152.04948	1004	TLC922-1	NA
+TLC922-2	Eucalyptus sp. aff. magnificata	Wollomombi	NA	-30.56833701	152.04948	1004	TLC922-2	NA
+TLC922-3	Eucalyptus sp. aff. magnificata	Wollomombi	NA	-30.56833701	152.04948	1004	TLC922-3	NA
+TLC922-4	Eucalyptus sp. aff. magnificata	Wollomombi	NA	-30.56833701	152.04948	1004	TLC922-4	NA
+TLC922-5	Eucalyptus sp. aff. magnificata	Wollomombi	NA	-30.56833701	152.04948	1004	TLC922-5	NA
+TLC946	Eucalyptus sp. aff. magnificata	Henry River Falls	NA	-29.84949804	152.001091	975	TLC946	NA
+TLC947	Eucalyptus sp. aff. magnificata	Henry River Falls	NA	-29.84955001	152.001463	969	TLC947	NA
+TLC948	Eucalyptus sp. aff. magnificata	Henry River Falls	NA	-29.84698003	152.010428	951	TLC948	NA
+TLC949	Eucalyptus sp. aff. magnificata	Henry River Falls	NA	-29.845609	152.012508	923	TLC949	NA
+TLC950	Eucalyptus sp. aff. magnificata	Henry River Falls	NA	-29.84570699	152.011747	930	TLC950	NA
+TLC952-1	Eucalyptus sp. aff. magnificata	Yarraford Rd	NA	-29.62114801	151.783008	1062	TLC952-1	NA
+TLC952-2	Eucalyptus sp. aff. magnificata	Yarraford Rd	NA	-29.62114801	151.783008	1062	TLC952-2	NA
+TLC952-3	Eucalyptus sp. aff. magnificata	Yarraford Rd	NA	-29.62114801	151.783008	1062	TLC952-3	NA
+TLC952-4	Eucalyptus sp. aff. magnificata	Yarraford Rd	NA	-29.62114801	151.783008	1062	TLC952-4	NA
+TLC952-5	Eucalyptus sp. aff. magnificata	Yarraford Rd	NA	-29.62114801	151.783008	1062	TLC952-5	NA
+TLC953C	Eucalyptus sp. aff. magnificata	Terralto	NA	-30.83146197	151.821772	1094	TLC953C	NA
+TLC953E	Eucalyptus sp. aff. magnificata	Terralto	NA	-30.83146197	151.821772	1094	TLC953E	NA
+TLC963A	Eucalyptus sp. aff. magnificata	Terralto	NA	-30.83926	151.83008	1136	TLC963A	NA
+TLC963C	Eucalyptus sp. aff. magnificata	Terralto	NA	-30.83926	151.83008	1136	TLC963C	NA
+VMA18	Eucalyptus microcarpa	Mt Arapiles State Park	2013-10-28	-36.77474	141.82599	NA	VMA18	NA
+VWG14	Eucalyptus microcarpa	Werribee Gorge State Park	2013-12-03	-37.67129	144.36256	NA	VWG14	NA
+EmelCSIRO	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0137	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0164	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0465	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0218	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0466	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0525	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0572	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0650	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0672	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0677	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0681	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0684	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0687	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0691	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0704	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0705	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0706	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0708	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0724	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0728	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0733	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0743	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0751	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0755	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0768	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0790	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0807	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0808	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0819	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0848	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0920	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0931	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0933	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0941	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0951	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0971	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1085	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1297	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1300	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1377	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3005	NA	NA	NA	NA	NA	NA	NA	NA
+CCA2917	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1505	NA	NA	NA	NA	NA	NA	NA	NA
+CCA6869	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1504	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1478	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1366	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1543	NA	NA	NA	NA	NA	NA	NA	NA
+CCA6871	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1507	NA	NA	NA	NA	NA	NA	NA	NA
+CCA6870	NA	NA	NA	NA	NA	NA	NA	NA
+CCA2857	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1680	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1657	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1506	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3471	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3107	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3130	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3147	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3217	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3035	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3216	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3062	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3271	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3051	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3092	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3041	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3322	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3841	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3899	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3837	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3821	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3893	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3711	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3887	NA	NA	NA	NA	NA	NA	NA	NA
+CCA4821	NA	NA	NA	NA	NA	NA	NA	NA
+CCA4706	NA	NA	NA	NA	NA	NA	NA	NA
+CCA5976	NA	NA	NA	NA	NA	NA	NA	NA
+CCA4877	NA	NA	NA	NA	NA	NA	NA	NA
+CCA5060	NA	NA	NA	NA	NA	NA	NA	NA
+CCA5946	NA	NA	NA	NA	NA	NA	NA	NA
+CCA5918	NA	NA	NA	NA	NA	NA	NA	NA
+CCA5597	NA	NA	NA	NA	NA	NA	NA	NA
+CCA5568	NA	NA	NA	NA	NA	NA	NA	NA
+CCA4960	NA	NA	NA	NA	NA	NA	NA	NA
+CCA5319	NA	NA	NA	NA	NA	NA	NA	NA
+CCA5180	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0455	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0431	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0405	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0390	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0375	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0278	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0266	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0248	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0175	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0124	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0003	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0016	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0037	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0038	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0758	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0904	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0937	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0866	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0837	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0831	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0761	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0965	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0615	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0813	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0575	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0800	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0744	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0773	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0736	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0700	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0671	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0695	NA	NA	NA	NA	NA	NA	NA	NA
+CCA0964	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1037	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1111	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1122	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1135	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1192	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1212	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1266	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1256	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1302	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1370	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1413	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1439	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1474	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1564	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1594	NA	NA	NA	NA	NA	NA	NA	NA
+CCA2829	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1655	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1654	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1650	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1644	NA	NA	NA	NA	NA	NA	NA	NA
+CCA1660	NA	NA	NA	NA	NA	NA	NA	NA
+CCA2812	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3263	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3261	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3250	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3248	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3247	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3176	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3011	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3012	NA	NA	NA	NA	NA	NA	NA	NA
+CCA2909	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3464	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3451	NA	NA	NA	NA	NA	NA	NA	NA
+CCA6041	NA	NA	NA	NA	NA	NA	NA	NA
+CCA6033	NA	NA	NA	NA	NA	NA	NA	NA
+CCA5922	NA	NA	NA	NA	NA	NA	NA	NA
+CCA5926	NA	NA	NA	NA	NA	NA	NA	NA
+CCA5615	NA	NA	NA	NA	NA	NA	NA	NA
+CCA5616	NA	NA	NA	NA	NA	NA	NA	NA
+CCA5558	NA	NA	NA	NA	NA	NA	NA	NA
+CCA5430	NA	NA	NA	NA	NA	NA	NA	NA
+CCA5408	NA	NA	NA	NA	NA	NA	NA	NA
+CCA4957	NA	NA	NA	NA	NA	NA	NA	NA
+CCA4939	NA	NA	NA	NA	NA	NA	NA	NA
+CCA4776	NA	NA	NA	NA	NA	NA	NA	NA
+CCA4913	NA	NA	NA	NA	NA	NA	NA	NA
+CCA4770	NA	NA	NA	NA	NA	NA	NA	NA
+CCA4557	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3997	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3916	NA	NA	NA	NA	NA	NA	NA	NA
+CCA3651	NA	NA	NA	NA	NA	NA	NA	NA
+EMW0001	NA	NA	NA	NA	NA	NA	NA	NA
+EMW0002	NA	NA	NA	NA	NA	NA	NA	NA
+EMW0003	NA	NA	NA	NA	NA	NA	NA	NA
+EMW0004	NA	NA	NA	NA	NA	NA	NA	NA
+EMW0005	NA	NA	NA	NA	NA	NA	NA	NA
+EMW0006	NA	NA	NA	NA	NA	NA	NA	NA
+CMD0001	NA	NA	NA	NA	NA	NA	NA	NA
+CMB0002	NA	NA	NA	NA	NA	NA	NA	NA
+CMB0003	NA	NA	NA	NA	NA	NA	NA	NA
+CMB0004	NA	NA	NA	NA	NA	NA	NA	NA
+CMB0005	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0001	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0002	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0003	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0004	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0005	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0006	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0007	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0008	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0009	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0010	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0011	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0012	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0013	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0014	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0015	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0016	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0017	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0018	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0019	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0020	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0021	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0022	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0023	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0024	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0025	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0026	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0027	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0028	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0029	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0030	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0031	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0032	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0033	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0034	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0035	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0036	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0037	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0038	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0039	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0040	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0041	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0056	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0057	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0058	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0059	NA	NA	NA	NA	NA	NA	NA	NA
+GOL0060	NA	NA	NA	NA	NA	NA	NA	NA
+NSW0001	NA	NA	NA	NA	NA	NA	NA	NA
+NSW0002	NA	NA	NA	NA	NA	NA	NA	NA
+NSW0003	NA	NA	NA	NA	NA	NA	NA	NA
+NSW0004	NA	NA	NA	NA	NA	NA	NA	NA
+NSW0005	NA	NA	NA	NA	NA	NA	NA	NA
+NSW0006	NA	NA	NA	NA	NA	NA	NA	NA
+NSW0007	NA	NA	NA	NA	NA	NA	NA	NA
+NSW0008	NA	NA	NA	NA	NA	NA	NA	NA
+NSW0009	NA	NA	NA	NA	NA	NA	NA	NA
+NSW0010	NA	NA	NA	NA	NA	NA	NA	NA
+NSW0011	NA	NA	NA	NA	NA	NA	NA	NA
+NSW0012	NA	NA	NA	NA	NA	NA	NA	NA
+NSW0013	NA	NA	NA	NA	NA	NA	NA	NA
+NSW0014	NA	NA	NA	NA	NA	NA	NA	NA
+NSW0015	NA	NA	NA	NA	NA	NA	NA	NA
+NSW0016	NA	NA	NA	NA	NA	NA	NA	NA
+NSW0017	NA	NA	NA	NA	NA	NA	NA	NA
+NSW0018	NA	NA	NA	NA	NA	NA	NA	NA
+NSW0019	NA	NA	NA	NA	NA	NA	NA	NA
+Ex3_C	NA	NA	NA	NA	NA	NA	NA	NA
+Ex2_C	NA	NA	NA	NA	NA	NA	NA	NA
+Ex1_C	NA	NA	NA	NA	NA	NA	NA	NA
+E17_10	NA	NA	NA	NA	NA	NA	NA	NA
+I39_3	NA	NA	NA	NA	NA	NA	NA	NA
+C29_10	NA	NA	NA	NA	NA	NA	NA	NA
+D3_13	NA	NA	NA	NA	NA	NA	NA	NA
+M26_12	NA	NA	NA	NA	NA	NA	NA	NA
+H23_19	NA	NA	NA	NA	NA	NA	NA	NA
+B35_15	NA	NA	NA	NA	NA	NA	NA	NA
+K8_15	NA	NA	NA	NA	NA	NA	NA	NA
+A18_10	NA	NA	NA	NA	NA	NA	NA	NA
+I16_10	NA	NA	NA	NA	NA	NA	NA	NA
+L5_15	NA	NA	NA	NA	NA	NA	NA	NA
+Corymbia_maculata_Arboretum_ACT	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_morrisbyi_UTAS_Campus	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_tenuipes_ANBG	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_tricarpa_Arboretum_ACT	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_curtisii_ANBG	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_elata_ANBG	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_microcorys_ANBG	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_salubris_ANBG	NA	NA	NA	NA	NA	NA	NA	NA
+Corymbia_calophylla_ANBG	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_camadulensis_ANBG	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_cloezania_ANBG	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_erythrocorys_ANBG	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_melliodora_CSIRO	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_marginata_ANBG	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_albens_ANBG	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_viminalis_Tasmanian_Herbarium	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_sideroxylon_ANBG	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_globulus_UTAS_Campus	NA	NA	NA	NA	NA	NA	NA	NA
+Acacia_acuminata_ANBG	NA	NA	NA	NA	NA	NA	NA	NA
+Angophora_floribunda_ANU_Banks_Building	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_regnans_Centurion	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_relicta_Whicher	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_patens	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_pyriformis	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_leucophloia	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_gomphocephala	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_pumila	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_cladocalyx	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_pterocarpa	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_laeliae	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_scyphocalyx	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_diversifolia	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_desmondensis	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_brandiana	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_grandis	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_virginea	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_decipiens	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_coolabah	NA	NA	NA	NA	NA	NA	NA	NA
+Acacia_melanoxylon	NA	NA	NA	NA	NA	NA	NA	NA
+Eucalyptus_ovata	NA	NA	NA	NA	NA	NA	NA	NA
+Acacia_dealbata	NA	NA	NA	NA	NA	NA	NA	NA
+Oryza_australiensis_300131_VR	NA	NA	NA	NA	NA	NA	NA	NA
+Oryza_meridionalis_BH	NA	NA	NA	NA	NA	NA	NA	NA
+Oryza_sativa_Javanica	NA	NA	NA	NA	NA	NA	NA	NA
+Oryza_australiensis_Keep_River	NA	NA	NA	NA	NA	NA	NA	NA
+Oryza_australiensis_300134_CH	NA	NA	NA	NA	NA	NA	NA	NA
+Oryza_australiensis_300137_D	NA	NA	NA	NA	NA	NA	NA	NA
+Gund21	NA	NA	NA	NA	NA	NA	NA	NA
+Gund24	NA	NA	NA	NA	NA	NA	NA	NA
+Gund15	NA	NA	NA	NA	NA	NA	NA	NA
+J388F	NA	NA	NA	NA	NA	NA	NA	NA
+Gund22	NA	NA	NA	NA	NA	NA	NA	NA
+J382A	NA	NA	NA	NA	NA	NA	NA	NA
+Gund16	NA	NA	NA	NA	NA	NA	NA	NA
+Gund26	NA	NA	NA	NA	NA	NA	NA	NA
+Gund23	NA	NA	NA	NA	NA	NA	NA	NA
