@@ -10,18 +10,18 @@
 #PBS -m abe
 #PBS -P xe2
 
+source raijin/gadimod.sh
+
+set -ueo pipefail
 logdir=raijin/log
 mkdir -p $logdir
 mkdir -p data/log/
-source raijin/modules.sh
 export TMPDIR=${PBS_JOBFS:-$TMPDIR}
-
-set -ueo pipefail
 TARGET=${TARGET:-all}
 SNAKEFILE=${SNAKEFILE:-Snakefile}
 
 QSUB="qsub -q {cluster.queue} -l ncpus={threads} -l jobfs={cluster.jobfs}"
-QSUB="$QSUB -l walltime={cluster.time} -l mem={cluster.mem} -N {cluster.name}"
+QSUB="$QSUB -l walltime={cluster.time} -l mem={cluster.mem} -N {cluster.name} -l storage=scratch/xe2+gdata/xe2"
 QSUB="$QSUB -l wd -j oe -o $logdir -P {cluster.project}"
 
 if [ "${RMTEMP:-yes}" == yes ]

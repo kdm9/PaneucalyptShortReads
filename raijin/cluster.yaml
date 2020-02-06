@@ -1,18 +1,22 @@
 __default__:
-  mem: 31G
+  mem: 47G
   queue: normal
   time: '01:00:00'
   jobfs: 400G
   project: xe2
-  name: "SNK_{rule}_{wildcards}"
+  name: "SNK_{rule}"
 
 qcreads: # sometimes a local rule
-  time: '4:00:00'
-  mem: 10G
+  time: '6:00:00'
+  mem: 12G
 
 qcreads_il: # sometimes a local rule
-  time: '4:00:00'
-  mem: 10G
+  time: '6:00:00'
+  mem: 12G
+
+everything_mash_sketch:
+  time: '48:00:00'
+  mem: 190G
 
 read_count_librun:
   time: "6:00:00"
@@ -31,7 +35,7 @@ ngmap:
   mem: 15G
 
 bwamem:
-  time: '4:00:00'
+  time: '6:00:00'
   mem: 15G
 
 bam_markdups_sort:

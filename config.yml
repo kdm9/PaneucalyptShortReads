@@ -15,9 +15,10 @@ mapping:
     - bwa
   refs:
     - grandisv2chl
-    - emel-scott
   samplesets:
-    - all_samples
+    - DP15
+    - DP15-hicov
+    - RymerMarri
   ngm:
     sensitivity: 0.5
 

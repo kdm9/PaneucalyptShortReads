@@ -1,12 +1,11 @@
 #!/bin/bash
 # properties = {properties}
 
-source /g/data1/xe2/.profile
-
+source /g/data1/xe2/gadi/profile.sh
+source raijin/gadimod.sh
 
 export TMPDIR=$PBS_JOBFS
 
-. raijin/modules.sh
 
 set -ueo pipefail
 {exec_job}

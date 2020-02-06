@@ -22,23 +22,19 @@ wildcard_constraints:
 
 rule qc_runlib:
     input:
-        ["data/reads/runs/{run}/{lib}.fastq.gz".format(run=run, lib=lib)
-		for run, lib in RUNLIB2SAMP],
+        ["data/reads/runs/{run}/{lib}.fastq.gz".format(run=run, lib=lib) for run, lib in RUNLIB2SAMP],
+        expand("data/mash/everything/k{ksize}-s{sketchsize}_everything_librun.dist", 
+               ksize=config["denovodist"]["ksize"], sketchsize=config["denovodist"]["mash_sketchsize"]),
 
 rule read_stats:
     input:
         "data/stats/reads/readnum_librun.tsv",
         #"data/stats/reads/readnum_samples.tsv",
 
-rule qc_samples:
-    input:
-        expand("data/reads/samples/{sample}.fastq.gz", sample=SAMP2RUNLIB),
-
 rule reads:
     input:
         rules.qc_runlib.input,
         rules.read_stats.input,
-        #rules.qc_samples.input,
 
 ### Actual rules
 
@@ -53,7 +49,7 @@ rule qcreads:
         log="data/log/adapterremoval/{run}/{lib}.log",
         settings="data/stats/adapterremoval/{run}/{lib}.txt",
     threads:
-        7
+        8
     params:
         adp1=lambda wc: config["qc"].get(wc.run, config["qc"]["_DEFAULT_"])["adapter1"],
         adp2=lambda wc: config["qc"].get(wc.run, config["qc"]["_DEFAULT_"])["adapter2"],
@@ -70,16 +66,15 @@ rule qcreads:
         "   --trimqualities"
         "   --trimwindows 10"
         "   --minquality {params.minqual}"
-        "   --threads 2"
+        "   --threads {threads}"
         "   --settings {log.settings}"
         "   --output1 /dev/stdout"
         " | seqhax pairs"
         "   -l 20"
-        "   -b >(pigz -p 5 >{output.reads})"
+        "   -b >(pigz -p {threads} >{output.reads})"
         "   /dev/stdin"
         ") >{log.log} 2>&1"
 
-#localrules: qcreads
 rule qcreads_il:
     input:
         il="rawdata/runs/{run}/{lib}.fastq.gz",
@@ -89,7 +84,7 @@ rule qcreads_il:
         log="data/log/adapterremoval/{run}/{lib}.log",
         settings="data/stats/adapterremoval/{run}/{lib}.txt",
     threads:
-        7
+        8
     params:
         adp1=lambda wc: config["qc"].get(wc.run, config["qc"]["_DEFAULT_"])["adapter1"],
         adp2=lambda wc: config["qc"].get(wc.run, config["qc"]["_DEFAULT_"])["adapter2"],
@@ -106,17 +101,16 @@ rule qcreads_il:
         "   --trimqualities"
         "   --trimwindows 10"
         "   --minquality {params.minqual}"
-        "   --threads 2"
+        "   --threads {threads}"
         "   --settings {log.settings}"
         "   --output1 /dev/stdout"
         " | seqhax pairs"
         "   -l 20"
-        "   -b >(pigz -p 5 >{output.reads})"
+        "   -b >(pigz -p {threads} >{output.reads})"
         "   /dev/stdin"
         ") >{log.log} 2>&1"
 
 
-localrules: samplefastq
 rule samplefastq:
     input:
         lambda wc: ["data/reads/runs/{run}/{lib}.fastq.gz".format(run=r, lib=l) for r, l in SAMP2RUNLIB[wc.sample]],
@@ -164,15 +158,14 @@ rule read_count_sample:
 #                      De-novo Distance analysis                      #
 #######################################################################
 
-rule mashsketch:
+rule everything_mash_sketch:
     input:
-        lambda wc: expand("data/reads/samples/{sample}.fastq.gz",
-                          sample=SAMPLESETS[wc.set]),
+        ["data/reads/runs/{run}/{lib}.fastq.gz".format(run=run, lib=lib) for run, lib in RUNLIB2SAMP],
     output:
-        temp("data/mash/k{ksize}-s{sketchsize}/{set}.msh"),
+        temp("data/mash/everything/k{ksize}-s{sketchsize}_everything_librun.msh"),
     log:
-        "data/log/mash/sketch/k{ksize}-s{sketchsize}-{set}.log"
-    threads: 27
+        "data/log/mash/everything/k{ksize}-s{sketchsize}.log"
+    threads: 49
     shell:
         " mash sketch"
         "   -k {wildcards.ksize}"
@@ -185,12 +178,12 @@ rule mashsketch:
 
 rule mashdist:
     input:
-        "data/mash/k{ksize}-s{sketchsize}/{set}.msh"
+        "data/mash/everything/k{ksize}-s{sketchsize}_everything_librun.msh",
     output:
-        dist="data/mash/k{ksize}-s{sketchsize}/{set}.dist",
+        dist="data/mash/everything/k{ksize}-s{sketchsize}_everything_librun.dist",
     log:
-        "data/log/mash/dist/k{ksize}-s{sketchsize}-{set}.log"
-    threads: 27
+        "data/log/mash/everything/dist_k{ksize}-s{sketchsize}.log"
+    threads: 48
     shell:
         "mash dist"
         "   -p {threads}"
@@ -330,13 +323,12 @@ rule ngmap:
         reads="data/reads/runs/{run}/{lib}.fastq.gz",
         ref=lambda wc: config['refs'][wc.ref],
     output:
-        bam=temp("data/alignments/byrun.raw/ngm/{ref}/{run}/{lib}.bam"),
+        bam=temp("data/alignments/byrun.raw/ngm/{ref}/{run}/{lib}~{sample}.bam"),
     log:
-        "data/log/ngm/{ref}/{run}/{lib}.log"
+        "data/log/ngm/{ref}/{run}/{lib}~{sample}.log"
     threads:
         8
     params:
-        sample=lambda wc: RUNLIB2SAMP.get((wc.run, wc.lib), "{}~{}".format(wc.run, wc.lib)),
         sensitivity=config["mapping"]["ngm"]["sensitivity"],
     shell:
         "( ngm"
@@ -344,8 +336,8 @@ rule ngmap:
         "   --paired --broken-pairs"
         "   -r {input.ref}"
         "   -t {threads}"
-        "   --rg-id {wildcards.run}_{wildcards.lib}"
-        "   --rg-sm {params.sample}"
+        "   --rg-id {wildcards.run}_{wildcards.lib}_{wildcards.sample}"
+        "   --rg-sm {wildcards.sample}"
         "   --sensitivity {params.sensitivity}" # this is the mean from a bunch of different runs
         "| samtools view -Suh - >{output.bam}"
         " ) >{log} 2>&1"
@@ -355,17 +347,15 @@ rule bwamem:
         reads="data/reads/runs/{run}/{lib}.fastq.gz",
         ref=lambda wc: config['refs'][wc.ref],
     output:
-        bam=temp("data/alignments/byrun.raw/bwa/{ref}/{run}/{lib}.bam"),
-    log: "data/log/bwa/{ref}/{run}/{lib}.log"
+        bam=temp("data/alignments/byrun.raw/bwa/{ref}/{run}/{lib}~{sample}.bam"),
+    log: "data/log/bwa/{ref}/{run}/{lib}~{sample}.log"
     threads:
-        8
-    params:
-        sample=lambda wc: RUNLIB2SAMP.get((wc.run, wc.lib), "{}~{}".format(wc.run, wc.lib)),
+        12
     shell:
         "( bwa mem"
         "   -p" # paired input
         "   -t {threads}"
-        "   -R '@RG\\tID:{wildcards.run}_{wildcards.lib}\\tSM:{params.sample}'"
+        "   -R '@RG\\tID:{wildcards.run}_{wildcards.lib}_{wildcards.sample}\\tSM:{wildcards.sample}'"
         "   {input.ref}"
         "   {input.reads}"
         "| samtools view -Suh - >{output.bam}"
@@ -373,12 +363,12 @@ rule bwamem:
 
 rule bam_markdups_sort:
     input:
-        bam="data/alignments/byrun.raw/{aligner}/{ref}/{run}/{lib}.bam",
+        bam="data/alignments/byrun.raw/{aligner}/{ref}/{run}/{lib}~{sample}.bam",
         ref=lambda wc: config['refs'][wc.ref],
     output:
-        bam=temp("data/alignments/byrun/{aligner}/{ref}/{run}/{lib}.bam"),
+        bam=temp("data/alignments/byrun/{aligner}/{ref}/{run}/{lib}~{sample}.bam"),
     threads: 4
-    log: "data/log/markdup/{aligner}/{ref}/{run}/{lib}.log"
+    log: "data/log/markdup/{aligner}/{ref}/{run}/{lib}~{sample}.log"
     shell:
         "( samtools fixmate "
         "   -m"
@@ -405,8 +395,8 @@ rule bam_markdups_sort:
 
 rule mergebam_samp:
     input:
-        lambda wc: ["data/alignments/byrun/{aln}/{ref}/{run}/{lib}.bam".format(
-                            run=r, lib=l, aln=wc.aligner, ref=wc.ref)
+        lambda wc: ["data/alignments/byrun/{aln}/{ref}/{run}/{lib}~{sample}.bam".format(
+                            run=r, lib=l, aln=wc.aligner, ref=wc.ref, sample=wc.sample)
 	                for r, l in SAMP2RUNLIB[wc.sample]]
     output:
         bam="data/alignments/samples/{aligner}/{ref}/{sample}.bam",

@@ -13,7 +13,7 @@
 #PBS -P xe2
 #PBS -N RUNEUC
 
-source /g/data1/xe2/.profile
+source /g/data/xe2/gadi/profile.sh
 source raijin/gadimod.sh
 set -xeuo pipefail
 
