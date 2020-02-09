@@ -458,7 +458,7 @@ rule mergebam_set:
         bai="data/alignments/sets/{aligner}~{ref}~{sampleset}.bam.bai",
     log:
         "data/log/mergesetbam/{aligner}/{ref}/{sampleset}.log"
-    threads: 4
+    threads: 16
     shell:
         "( samtools merge"
         "   --output-fmt bam,level=7"
@@ -591,8 +591,8 @@ rule align:
 
 rule freebayes:
     input:
-        bam="data/alignments/sets/{aligner}~{ref}~all_samples.bam",  # use the megabam, see above
-        bai="data/alignments/sets/{aligner}~{ref}~all_samples.bam.bai",
+        bam="data/alignments/sets/{aligner}~{ref}~{sampleset}.bam",  # use the megabam, see above
+        bai="data/alignments/sets/{aligner}~{ref}~{sampleset}.bam.bai",
         sset="data/samplelists/{sampleset}.txt",
         ref=lambda wc: config['refs'][wc.ref],
     output:
@@ -603,7 +603,7 @@ rule freebayes:
         "data/log/freebayes/{aligner}~{ref}~{sampleset}/{region}.benchmark"
     priority: 1  # get them done earlier, normalisation is super quick
     params:
-        theta=config["varcall"].get("theta_prior", 0.01),
+        theta=lambda wc: config["varcall"]["samplesets"][wc.sampleset].get("theta_prior", 0.01),
         minmq=lambda wc: config["varcall"]["minmapq"].get(wc.aligner, 5),
         minbq=config["varcall"]["minbq"],
     shell:
@@ -632,8 +632,8 @@ rule freebayes:
 
 rule mpileup:
     input:
-        bam="data/alignments/sets/{aligner}~{ref}~all_samples.bam",  # use the megabam, see above
-        bai="data/alignments/sets/{aligner}~{ref}~all_samples.bam.bai",
+        bam="data/alignments/sets/{aligner}~{ref}~{sampleset}.bam",
+        bai="data/alignments/sets/{aligner}~{ref}~{sampleset}.bam.bai",
         sset="data/samplelists/{sampleset}.txt",
         ref=lambda wc: config['refs'][wc.ref],
     output:
@@ -643,7 +643,7 @@ rule mpileup:
     benchmark:
         "data/log/mpileup/{aligner}~{ref}~{sampleset}/{region}.benchmark"
     params:
-        theta=config["varcall"].get("theta_prior", 0.01),
+        theta=lambda wc: config["varcall"]["samplesets"][wc.sampleset].get("theta_prior", 0.01),
         minmq=lambda wc: config["varcall"]["minmapq"].get(wc.aligner, 5),
         minbq=config["varcall"]["minbq"],
     priority: 1  # get them done earlier, normalisation is super quick
@@ -737,7 +737,7 @@ rule bcfmerge:
         bcf="data/variants/final/{caller}~{aligner}~{ref}~{sampleset}~filtered-{filter}.bcf",
     log:
         "data/log/mergebcf/{caller}~{aligner}~{ref}~{sampleset}_filtered~{filter}.log"
-    threads: 4
+    threads: 8
     shell:
         "( bcftools concat"
         "   --threads {threads}"
@@ -754,7 +754,7 @@ rule bcf2vcf:
         vcf="{path}.vcf.gz",
     log:
         "data/log/bcf2vcf/{path}.log"
-    threads: 4
+    threads: 8
     shell:
         "( bcftools view"
         "   {input.bcf}"
@@ -771,7 +771,7 @@ rule variantidx:
     shell:
         "bcftools index -f {input}"
 
-rule stats:
+rule bcfstats:
     input:
         "data/variants/{path}.bcf"
     output:
@@ -782,10 +782,10 @@ rule stats:
 
 def raw_variant_calls_input(wildcards):
     inputs = []
-    for caller in config["varcall"]["callers"]:
-        for aligner in config["varcall"]["aligners"]:
-            for sampleset in config["varcall"]["samplesets"]:
-                for ref in config["varcall"]["refs"]:
+    for sampleset in config["varcall"]["samplesets"]:
+        for caller in config["varcall"]["samplesets"][sampleset]["callers"]:
+            for aligner in config["varcall"]["samplesets"][sampleset]["aligners"]:
+                for ref in config["varcall"]["samplesets"][sampleset]["refs"]:
                     this_rawfiles = expand("data/variants/raw_split/{caller}~{aligner}~{ref}~{sampleset}/{region}.bcf",
                                            caller=caller, aligner=aligner, ref=ref, sampleset=sampleset, region=VARCALL_REGIONS[ref])
                     inputs.extend(this_rawfiles)
@@ -795,26 +795,19 @@ def raw_variant_calls_input(wildcards):
 rule raw_variant_calls:
     input: raw_variant_calls_input
 
+localrules: filtered_variants
 rule filtered_variants:
     input:
-        expand("data/variants/final/{caller}~{aligner}~{ref}~{sampleset}~filtered-{filter}.{ext}",
-               ext=["bcf", "bcf.csi", "vcf.gz", "vcf.gz.csi"],
-               caller=config["varcall"]["callers"],
-               aligner=config["varcall"]["aligners"],
-               ref=config["varcall"]["refs"],
-               sampleset=config["varcall"]["samplesets"],
-               filter=config["varcall"]["filters"]),
+        [expand("data/variants/final/{caller}~{aligner}~{ref}~{sampleset}~filtered-{filter}.{ext}",
+               ext=["bcf", "bcf.csi", "vcf.gz", "vcf.gz.csi", "bcf.stats"],
+               caller=config["varcall"]["samplesets"][sampleset]["callers"],
+               aligner=config["varcall"]["samplesets"][sampleset]["aligners"],
+               ref=config["varcall"]["samplesets"][sampleset]["refs"],
+               filter=config["varcall"]["filters"],
+               sampleset=sampleset)
+        for sampleset in config["varcall"]["samplesets"]]
 
 
-localrules: varcall_stats
-rule varcall_stats:
-    input:
-        expand("data/variants/final/{caller}~{aligner}~{ref}~{sampleset}~filtered-{filter}.bcf.stats",
-               caller=config["varcall"]["callers"],
-               aligner=config["varcall"]["aligners"],
-               ref=config["varcall"]["refs"],
-               sampleset=config["varcall"]["samplesets"],
-               filter=config["varcall"]["filters"]),
 
 rule varcall:
     input:

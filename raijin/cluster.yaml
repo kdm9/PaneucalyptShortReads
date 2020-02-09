@@ -31,19 +31,19 @@ unique_kmers:
   time: "18:00:00"
 
 ngmap:
-  time: '8:00:00'
+  time: '12:00:00'
   mem: 15G
 
 bwamem:
-  time: '6:00:00'
+  time: '12:00:00'
   mem: 15G
 
 bam_markdups_sort:
-  time: '1:00:00'
+  time: '10:00:00'
   mem: 7500m
 
 mergebam_samp:
-  time: '4:00:00'
+  time: '6:00:00'
   mem: 7G
 
 qualimap_samp:
@@ -51,7 +51,7 @@ qualimap_samp:
   mem: 7G
 
 mergebam_set:
-  time: '96:00:00'
+  time: '48:00:00'
   mem: 15G
 
 bamidx:
@@ -72,3 +72,35 @@ mashsketch:
 mashdist:
   time: '2:00:00'
   queue: normalbw
+
+mpileup:
+  time: '4:00:00'
+  mem: 8G
+
+freebayes:
+  time: '8:00:00'
+  mem: 12G
+
+bcfnorm:
+  time: '2:00:00'
+  mem: 4G
+
+bcffilter:
+  time: '2:00:00'
+  mem: 4G
+
+bcfmerge:
+  time: '18:00:00'
+  mem: 4G
+
+bcf2vcf:
+  time: '12:00:00'
+  mem: 2G
+
+variantidx:
+  time: '5:00:00'
+  mem: 8G
+
+bcfstats:
+  time: '8:00:00'
+  mem: 4G

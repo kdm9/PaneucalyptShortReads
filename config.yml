@@ -16,8 +16,7 @@ mapping:
   refs:
     - grandisv2chl
   samplesets:
-    - DP15
-    - DP15-hicov
+    - DP15_highcov
     - RymerMarri
   ngm:
     sensitivity: 0.5
@@ -42,20 +41,31 @@ varcall:
     bwa: 30
     ngm: 10
   minbq: 15
-  theta_prior: 0.1 # approx 10% of sites vary, it seems. Crazy!
-  chunksize: 100000
-  aligners:
-    - bwa
-  callers:
-    - mpileup
-      #  - freebayes
-  refs:
-    - grandisv2chl
-    - emel-scott
+  chunksize: 1000000
   samplesets:
-    - LBEmel
-    - DP15-everything
-    - all_samples
+    AdnatariaHighCoverage:
+      theta_prior: 0.1
+      aligners:
+        - bwa
+      callers:
+        - mpileup
+      refs:
+        - grandisv2chl
+    DP15_highcov:
+      aligners:
+        - bwa
+      callers:
+        - mpileup
+      refs:
+        - grandisv2chl
+    RymerMarri:
+      theta_prior: 0.05
+      aligners:
+        - bwa
+      callers:
+        - mpileup
+      refs:
+        - grandisv2chl
   filters:
     default: >
       -i 'QUAL >= 10 &&
