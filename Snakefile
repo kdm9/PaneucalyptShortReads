@@ -3,7 +3,12 @@ import snkmk
 RUNLIB2SAMP, SAMP2RUNLIB = snkmk.make_runlib2samp("metadata/sample2runlib.csv")
 SAMPLESETS = snkmk.make_samplesets(s2rl_file="metadata/sample2runlib.csv",
                                    setfile_glob="metadata/samplesets/*.txt")
-VARCALL_REGIONS = snkmk.make_regions(config["refs"], window=config["varcall"]["chunksize"])
+
+VARCALL_REGIONS = {
+    vc: snkmk.make_regions(config["refs"], window=config["varcall"]["chunksize"][vc])
+    for vc in config["varcall"]["chunksize"]
+}
+
 CHROMS = snkmk.make_chroms(config["refs"])
 shell.prefix = "set -euo pipefail; "
 
@@ -111,39 +116,86 @@ rule qcreads_il:
         ") >{log.log} 2>&1"
 
 
-rule samplefastq:
+rule samplefastqpipe:
     input:
         lambda wc: ["data/reads/runs/{run}/{lib}.fastq.gz".format(run=r, lib=l) for r, l in SAMP2RUNLIB[wc.sample]],
-    output: pipe("data/reads/samples/{sample}.fastq.gz")
-    log: "data/log/samplefastq/{sample}.log"
+    output: pipe("data/reads/samples_pipe/{sample}.fastq.gz")
+    log: "data/log/samplefastqpipe/{sample}.log"
     threads: 1
     shell:
         "cat {input} > {output}"
 
-rule read_count_librun:
+rule samplefastqfile:
     input:
-        ["data/reads/runs/{run}/{lib}.fastq.gz".format(run=run, lib=lib)
-		for run, lib in RUNLIB2SAMP],
+        lambda wc: ["data/reads/runs/{run}/{lib}.fastq.gz".format(run=r, lib=l) for r, l in SAMP2RUNLIB[wc.sample]],
+    output: "data/reads/samples/{sample}.fastq.gz"
+    log: "data/log/samplefastqfile/{sample}.log"
+    threads: 1
+    shell:
+        "cat {input} > {output}"
+
+
+localrules: sample_fastqs
+rule sample_fastqs:
+    input:
+        [expand("data/reads/samples/{sample}.fastq.gz", sample=SAMPLESETS[sset])
+            for sset in config["persample_reads"]["samplesets"]]
+
+#rule read_count_librun:
+#    input:
+#        ["data/reads/runs/{run}/{lib}.fastq.gz".format(run=run, lib=lib)
+#		for run, lib in RUNLIB2SAMP],
+#    output:
+#        "data/stats/reads/readnum_librun.tsv",
+#    threads:
+#        48
+#    log:
+#        "data/log/readstats/seqhax-stats-librun.log",
+#    shell:
+#        "( seqhax stats"
+#        "    -t {threads}"
+#        "    {input}"
+#        "    >{output}"
+#        " ) 2>{log}"
+
+rule read_count_librun_indiv:
+    input:
+        "data/reads/runs/{run}/{lib}.fastq.gz"
     output:
-        "data/stats/reads/readnum_librun.tsv",
-    threads:
-        28
+        "data/stats/reads/readnum_librun/{run}~{lib}.tsv",
     log:
-        "data/log/readstats/seqhax-stats-librun.log",
+        "data/log/readstats/seqhax-stats-librun/{run}~{lib}.log",
     shell:
         "( seqhax stats"
-        "    -t {threads}"
         "    {input}"
         "    >{output}"
         " ) 2>{log}"
 
+rule read_count_fromindiv:
+    input:
+        ["data/stats/reads/readnum_librun/{run}~{lib}.tsv".format(run=run, lib=lib)
+          for run, lib in RUNLIB2SAMP],
+    output:
+        "data/stats/reads/readnum_librun.tsv",
+    threads:
+        1
+    run:
+        with open(output[0], "w") as fh:
+            for i, tsv in enumerate(input):
+                with open(tsv) as tsvfh:
+                    if i > 0:
+                        next(tsvfh)  # skip header on all but first file
+                    for line in tsvfh:
+                        fh.write(line)
+
+
 rule read_count_sample:
     input:
-    	expand("data/reads/samples/{sample}.fastq.gz", sample=SAMP2RUNLIB),
+    	expand("data/reads/samples_pipe/{sample}.fastq.gz", sample=SAMP2RUNLIB),
     output:
         "data/stats/reads/readnum_samples.tsv",
     threads:
-        27
+        47
     log:
         "data/log/readstats/seqhax-stats-sample.log",
     shell:
@@ -194,7 +246,7 @@ rule mashdist:
 
 rule countsketch:
     input:
-        "data/reads/samples/{sample}.fastq.gz",
+        "data/reads/samples_pipe/{sample}.fastq.gz",
     output:
         ct=temp("data/kwip/sketch/k{ksize}-s{sketchsize}/{sample}.ct.gz"),
         info="data/kwip/sketch/k{ksize}-s{sketchsize}/{sample}.ct.gz.info",
@@ -238,7 +290,7 @@ rule kwipdist:
 
 rule unique_kmers:
     input:
-        lambda wc: expand("data/reads/samples/{sample}.fastq.gz",
+        lambda wc: expand("data/reads/samples_pipe/{sample}.fastq.gz",
                           sample=SAMPLESETS[wc.set]),
     output:
         "data/readstats/unique-kmers/{set}.tsv",
@@ -259,7 +311,7 @@ rule unique_kmers:
 
 rule sourmash_sketch:
     input:
-        "data/reads/samples/{sample}.fastq.gz",
+        "data/reads/samples_pipe/{sample}.fastq.gz",
     output:
         temp("data/sourmash/sketch/k{ksize}-s{sketchsize}/{sample}.smh"),
     log:
@@ -607,20 +659,19 @@ rule freebayes:
         minmq=lambda wc: config["varcall"]["minmapq"].get(wc.aligner, 5),
         minbq=config["varcall"]["minbq"],
     shell:
-        "(  freebayes"
+        "( freebayes"
         "   --theta {params.theta}"
         "   --samples {input.sset}"
         "   --ploidy 2"
-        "   --use-best-n-alleles 3"
+        "   --use-best-n-alleles 4"
         "   --min-mapping-quality {params.minmq}"
         "   --min-base-quality {params.minbq}"
-        "   --read-max-mismatch-fraction 0.1"
-        "   --min-alternate-fraction 0"
-        "   --min-alternate-count 2" # per sample
-        "   --min-alternate-total 5" # across all samples
-        "   --min-coverage 10" # across all samples
-        "   --prob-contamination 1e-6"
-        "   --use-mapping-quality"
+        "   --read-max-mismatch-fraction 0.15"
+        "   --min-alternate-fraction 0.05"
+        "   --min-alternate-count 3" # per sample
+        "   --min-alternate-total 9" # across all samples
+        "   --min-coverage 20" # across all samples
+        "   --prob-contamination 1e-3"
         "   --strict-vcf"
         "   --region '{wildcards.region}'"
         "   --fasta-reference {input.ref}"
@@ -649,9 +700,8 @@ rule mpileup:
     priority: 1  # get them done earlier, normalisation is super quick
     shell:
         "( bcftools mpileup"
-        "   --adjust-MQ 50"
         "   --redo-BAQ"
-        "   --max-depth 20000" # the default per file max (250x) is insane, i.e. <1x for most sets. new limit of 20000x  equates to a max. of 20x across all samples.
+        "   --max-depth 100000" # the default per file max (250x) is insane, i.e. <1x for most sets. new limit of 20000x  equates to a max. of 20x across all samples.
         "   --min-MQ {params.minmq}"
         "   --min-BQ {params.minbq}"
         "   --fasta-ref {input.ref}"
@@ -681,15 +731,24 @@ rule bcfnorm:
     shell:
         "( bcftools norm"
         "   --fasta-ref {input.ref}"
-        "   -O u"
-        "   {input.bcf}"
-        " | vt decompose_blocksub + -o -" # decompose MNP to multipe SNPs
-        " | bcftools norm" # Split multi-alleics
-        "   --fasta-ref {input.ref}"
-        "   --do-not-normalize"
-        "   --multiallelics -snps"
+        "   --multiallelics -snps"  # Split multi-alleics to filter each allele separately
         "   -O u  -o {output.bcf}"
+        "   {input.bcf}"
         " ) >{log} 2>&1"
+
+        #
+        #  Old version with vt decompose_blocksub -- for some reason doesn't decompose block subsititions, and crashes on gadi
+        #  "( bcftools norm"
+        #  "   --fasta-ref {input.ref}"
+        #  "   -O u"
+        #  "   {input.bcf}"
+        #  " | vt decompose_blocksub + -o -" # decompose MNP to multipe SNPs
+        #  " | bcftools norm" # Split multi-alleics to filter each allele separately
+        #  "   --fasta-ref {input.ref}"
+        #  "   --do-not-normalize"
+        #  "   --multiallelics -snps"
+        #  "   -O u  -o {output.bcf}"
+        #  " ) >{log} 2>&1"
 
 rule bcffilter:
     input:
@@ -710,7 +769,7 @@ rule bcffilter:
         " | bcftools norm" # We normalise here to re-join multi-allelic sites, after filtering with multi-allelics split
         "   --fasta-ref {input.ref}"
         "   --do-not-normalize"
-        "   --multiallelics +snps" # Split multi-alleic sites
+        "   --multiallelics +snps" # re-join multi-alleic sites
         "   -O b  -o {output.bcf}"
         " ) >{log} 2>&1"
 
@@ -719,7 +778,7 @@ rule bcfmerge_fofn:
     input:
         bcf=lambda wc: expand("data/variants/filter_split/{caller}~{aligner}~{ref}~{sampleset}_filtered~{filter}/{region}.bcf",
                               caller=wc.caller, aligner=wc.aligner, ref=wc.ref, sampleset=wc.sampleset, filter=wc.filter,
-                              region=sorted(VARCALL_REGIONS[wc.ref])),
+                              region=sorted(VARCALL_REGIONS[wc.caller][wc.ref])),
     output:
         fofn=temp("data/variants/final/{caller}~{aligner}~{ref}~{sampleset}~filtered-{filter}.bcf.INPUT_FOFN"),
     run:
@@ -731,7 +790,7 @@ rule bcfmerge:
     input:
         bcf=lambda wc: expand("data/variants/filter_split/{caller}~{aligner}~{ref}~{sampleset}_filtered~{filter}/{region}.bcf",
                               caller=wc.caller, aligner=wc.aligner, ref=wc.ref, sampleset=wc.sampleset, filter=wc.filter,
-                              region=sorted(VARCALL_REGIONS[wc.ref])),
+                              region=sorted(VARCALL_REGIONS[wc.caller][wc.ref])),
         fofn="data/variants/final/{caller}~{aligner}~{ref}~{sampleset}~filtered-{filter}.bcf.INPUT_FOFN",
     output:
         bcf="data/variants/final/{caller}~{aligner}~{ref}~{sampleset}~filtered-{filter}.bcf",
@@ -787,7 +846,7 @@ def raw_variant_calls_input(wildcards):
             for aligner in config["varcall"]["samplesets"][sampleset]["aligners"]:
                 for ref in config["varcall"]["samplesets"][sampleset]["refs"]:
                     this_rawfiles = expand("data/variants/raw_split/{caller}~{aligner}~{ref}~{sampleset}/{region}.bcf",
-                                           caller=caller, aligner=aligner, ref=ref, sampleset=sampleset, region=VARCALL_REGIONS[ref])
+                                           caller=caller, aligner=aligner, ref=ref, sampleset=sampleset, region=VARCALL_REGIONS[caller][ref])
                     inputs.extend(this_rawfiles)
     return inputs
 

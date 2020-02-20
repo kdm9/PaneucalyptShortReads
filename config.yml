@@ -8,6 +8,10 @@ qc:
     adapter2: CTGTCTCTTATACACATCTGACGCTGCCGACGANNNNNNNNGTGTAGATCTCGGTGGTCGCCGTATCATT
     minqual: 25
 
+persample_reads:
+  samplesets:
+    - EucPan
+
 sample_sets: []
 
 mapping:
@@ -41,14 +45,25 @@ varcall:
     bwa: 30
     ngm: 10
   minbq: 15
-  chunksize: 1000000
+  chunksize:
+    mpileup:   1000000
+    freebayes:   50000
   samplesets:
+    HMBEmel:
+      theta_prior: 0.1
+      aligners:
+        - bwa
+      callers:
+        - mpileup
+      refs:
+        - grandisv2chl
     AdnatariaHighCoverage:
       theta_prior: 0.1
       aligners:
         - bwa
       callers:
         - mpileup
+        - freebayes
       refs:
         - grandisv2chl
     DP15_highcov:
