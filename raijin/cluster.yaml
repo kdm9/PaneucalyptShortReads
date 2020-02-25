@@ -91,7 +91,8 @@ bcffilter:
 
 bcfmerge:
   time: '18:00:00'
-  mem: 4G
+  queue: express
+  mem: 8G
 
 bcf2vcf:
   time: '12:00:00'

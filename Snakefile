@@ -671,6 +671,7 @@ rule freebayes:
         "   --min-alternate-count 3" # per sample
         "   --min-alternate-total 9" # across all samples
         "   --min-coverage 20" # across all samples
+	"   --skip-coverage 100000"
         "   --prob-contamination 1e-3"
         "   --strict-vcf"
         "   --region '{wildcards.region}'"
@@ -796,7 +797,7 @@ rule bcfmerge:
         bcf="data/variants/final/{caller}~{aligner}~{ref}~{sampleset}~filtered-{filter}.bcf",
     log:
         "data/log/mergebcf/{caller}~{aligner}~{ref}~{sampleset}_filtered~{filter}.log"
-    threads: 8
+    threads: 12
     shell:
         "( bcftools concat"
         "   --threads {threads}"
@@ -871,6 +872,19 @@ rule filtered_variants:
 rule varcall:
     input:
         rules.filtered_variants.input,
+
+
+## Haplotype Caller
+
+#BSQR # persamp bam
+#HC gvcf   #samp/region
+#GenomicsDBImport  #samp/region
+#GenotypeGVCFs  #region
+#VariantRecalibrator, ApplyRecalibration  # per region
+#Merge 
+
+
+
 
 ### ANGSD
 
