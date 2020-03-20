@@ -32,7 +32,7 @@ else
 fi
 
 snakemake                                                          \
-    -j 2000                                                         \
+    -j 1000                                                        \
     --cluster-config raijin/cluster.yaml                           \
     --local-cores ${PBS_NCPUS:-1}                                  \
     --js raijin/jobscript.sh                                       \

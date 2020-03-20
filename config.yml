@@ -48,6 +48,7 @@ varcall:
   chunksize:
     mpileup:   1000000
     freebayes:   50000
+    gatk-hc:   1000000
   samplesets:
     HMBEmel:
       theta_prior: 0.1
@@ -55,6 +56,7 @@ varcall:
         - bwa
       callers:
         - mpileup
+        - freebayes
       refs:
         - grandisv2chl
     AdnatariaHighCoverage:
@@ -71,6 +73,7 @@ varcall:
         - bwa
       callers:
         - mpileup
+        - freebayes
       refs:
         - grandisv2chl
     RymerMarri:
@@ -78,6 +81,7 @@ varcall:
       aligners:
         - bwa
       callers:
+        - freebayes
         - mpileup
       refs:
         - grandisv2chl

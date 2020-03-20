@@ -598,7 +598,7 @@ rule align_stats:
         "python3 ./scripts/tidybamstat.py"
         "   -o data/alnstats/everything"  # prefix
         "   {input}"
-        ">{log} 2>&1"
+        " >{log} 2>&1"
 
 
 allsets = set(
@@ -801,9 +801,10 @@ rule bcfmerge:
     shell:
         "( bcftools concat"
         "   --threads {threads}"
-        "   -O b"
-        "   -o {output.bcf}"
         "   --file-list {input.fofn}"
+        "   --allow-overlaps"
+        "   -o {output.bcf}"
+        "   -O b"
         " ) >{log} 2>&1"
 
 
@@ -876,14 +877,117 @@ rule varcall:
 
 ## Haplotype Caller
 
-#BSQR # persamp bam
-#HC gvcf   #samp/region
-#GenomicsDBImport  #samp/region
+### We don't do BQSR as it requires a library of known polymorphism. We don't
+### have that, so the original bams will have to do.
+
+rule gatk_hapcall:
+    input:
+        bam="data/alignments/samples/{aligner}/{ref}/{sample}.bam",
+        bai="data/alignments/samples/{aligner}/{ref}/{sample}.bam.bai",
+        ref=lambda wc: config['refs'][wc.ref],
+    output:
+        gvcf="data/variants/gatk/hapcall/{aligner}~{ref}~{sample}/{region}.gvcf",
+    log:
+        "data/variants/gatk/hapcall/{aligner}~{ref}~{sample}/{region}.gvcf.log",
+    threads:
+        2
+    shell:
+        "gatk"
+        "   HaplotypeCaller"
+        "   -R {input.ref}"
+        "   -I {input.bam}"
+        "   -O {output.gvcf}"
+        "   -ERC GVCF"
+        "   -L {wildcards.region}"
+        "   --heterozygosity 0.05"
+        "   --heterozygosity-stdev 0.01"
+        "   --indel-heterozygosity 0.01"
+        "   --max-reads-per-alignment-start 50"
+        "   --native-pair-hmm-threads {threads}"
+        "   --create-output-variant-index"
+        "   --create-output-variant-md5"
+        "   --contamination-fraction-to-filter 0.03"
+        " >{log} 2>&1"
+
+
+rule gatk_combinegvcfs:
+    input:
+        gvcfs=lambda wc: expand("data/variants/gatk/hapcall/{aligner}~{ref}~{sample}/{region}.gvcf",
+                                aligner=wc.aligner, ref=wc.ref, region=wc.region,
+                                sample=SAMPLESETS[wc.sampleset]),
+        ref=lambda wc: config['refs'][wc.ref],
+    output:
+        gvcf="data/variants/gatk/combinedgvcf/{aligner}~{ref}~{sampleset}/{region}.gvcf.gz",
+    log:
+        "data/variants/gatk/combinedgvcf/{aligner}~{ref}~{sampleset}/{region}.gvcf.gz.log"
+    threads:
+        1
+    run:
+        gvcfarg = " -V ".join(input.gvcfs)
+        shell(
+            "gatk"
+            "   CombineGVCFs"
+            "   -R {input.ref}"
+            "   -L {wildcards.region}"
+            f"  {gvcfarg}"
+            "   -O {output.gvcf}"
+            "   --create-output-variant-index"
+            "   --create-output-variant-md5"
+            " >{log} 2>&1"
+        )
+
+
+rule gatk_genotypegvcfs:
+    input:
+        gvcf="data/variants/gatk/combinedgvcf/{aligner}~{ref}~{sampleset}/{region}.gvcf.gz",
+        ref=lambda wc: config['refs'][wc.ref],
+    output:
+        vcf="data/variants/gatk/genotypedgvcf/{aligner}~{ref}~{sampleset}/{region}.vcf.gz",
+    log:
+        "data/variants/gatk/genotypedgvcf/{aligner}~{ref}~{sampleset}/{region}.gvcf.gz.log"
+    threads:
+        1
+    shell:
+        "gatk"
+        "   GenotypeGVCFs"
+        "   -R {input.ref}"
+        "   -V {input.gvcf}"
+        "   -O {output.vcf}"
+        "   -L {wildcards.region}"
+        "   --create-output-variant-index"
+        "   --create-output-variant-md5"
+        "   --heterozygosity 0.05"
+        "   --heterozygosity-stdev 0.01"
+        "   --indel-heterozygosity 0.01"
+        ">{log} 2>&1"
+
+
 #GenotypeGVCFs  #region
 #VariantRecalibrator, ApplyRecalibration  # per region
-#Merge 
 
-
+rule gatk_mergevariants:
+    input:
+        vcf=lambda wc: expand("data/variants/gatk/genotypedgvcf/{aligner}~{ref}~{sampleset}/{region}.vcf.gz",
+                               aligner=wc.aligner, ref=wc.ref, sampleset=wc.sampleset,
+                               region=sorted(VARCALL_REGIONS["gatk-hc"][wc.ref])),
+    output:
+        vcf="data/variants/final/gatk-hc~{aligner}~{ref}~{sampleset}.vcf.gz",
+    log:
+        "data/variants/final/gatk-hc~{aligner}~{ref}~{sampleset}.vcf.gz.log",
+    run:
+        invcfs = " -I ".join(input.vcf)
+        shell(
+            "gatk MergeVCFs"
+            "   -O {output.vcf}" +
+            invcfs +
+            " >{log} 2>&1"
+        )
+            
+                   
+rule gatk:
+    input:
+        expand("data/variants/final/gatk-hc~{aligner}~{ref}~{sampleset}.vcf.gz",
+                aligner="bwa", ref="grandisv2chl", sampleset="DP15_highcov")
 
 
 ### ANGSD
