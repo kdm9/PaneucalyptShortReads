@@ -792,6 +792,9 @@ rule bcfmerge:
         bcf=lambda wc: expand("data/variants/filter_split/{caller}~{aligner}~{ref}~{sampleset}_filtered~{filter}/{region}.bcf",
                               caller=wc.caller, aligner=wc.aligner, ref=wc.ref, sampleset=wc.sampleset, filter=wc.filter,
                               region=sorted(VARCALL_REGIONS[wc.caller][wc.ref])),
+        bcfi=lambda wc: expand("data/variants/filter_split/{caller}~{aligner}~{ref}~{sampleset}_filtered~{filter}/{region}.bcf.csi",
+                              caller=wc.caller, aligner=wc.aligner, ref=wc.ref, sampleset=wc.sampleset, filter=wc.filter,
+                              region=sorted(VARCALL_REGIONS[wc.caller][wc.ref])),
         fofn="data/variants/final/{caller}~{aligner}~{ref}~{sampleset}~filtered-{filter}.bcf.INPUT_FOFN",
     output:
         bcf="data/variants/final/{caller}~{aligner}~{ref}~{sampleset}~filtered-{filter}.bcf",
@@ -886,7 +889,7 @@ rule gatk_hapcall:
         bai="data/alignments/samples/{aligner}/{ref}/{sample}.bam.bai",
         ref=lambda wc: config['refs'][wc.ref],
     output:
-        gvcf="data/variants/gatk/hapcall/{aligner}~{ref}~{sample}/{region}.gvcf",
+        gvcf=temp("data/variants/gatk/hapcall/{aligner}~{ref}~{sample}/{region}.gvcf"),
     log:
         "data/variants/gatk/hapcall/{aligner}~{ref}~{sample}/{region}.gvcf.log",
     threads:
@@ -929,7 +932,7 @@ rule gatk_combinegvcfs:
             "   CombineGVCFs"
             "   -R {input.ref}"
             "   -L {wildcards.region}"
-            f"  {gvcfarg}"
+            f"  -V {gvcfarg}"
             "   -O {output.gvcf}"
             "   --create-output-variant-index"
             "   --create-output-variant-md5"
@@ -977,13 +980,14 @@ rule gatk_mergevariants:
     run:
         invcfs = " -I ".join(input.vcf)
         shell(
-            "gatk MergeVCFs"
+            "gatk MergeVcfs"
             "   -O {output.vcf}" +
-            invcfs +
+            f"  -I {invcfs}"
             " >{log} 2>&1"
         )
             
                    
+localrules: gatk
 rule gatk:
     input:
         expand("data/variants/final/gatk-hc~{aligner}~{ref}~{sampleset}.vcf.gz",

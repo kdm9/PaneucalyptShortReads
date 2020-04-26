@@ -4,3 +4,4 @@ rawdata
 .*.sw?
 *.pyc
 TMP_*
+raijin/*.zip

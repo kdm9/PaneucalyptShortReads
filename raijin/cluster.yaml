@@ -107,5 +107,17 @@ bcfstats:
   mem: 4G
 
 gatk_hapcall:
+  time: '12:00:00'
+  mem: 8G
+
+gatk_combinegvcfs:
+  time: '8:00:00'
+  mem: 48G
+
+gatk_genotypegvcfs:
+  time: '8:00:00'
+  mem: 48G
+
+gatk_mergevariants:
   time: '8:00:00'
   mem: 48G

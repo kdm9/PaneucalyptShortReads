@@ -1,9 +1,9 @@
 #!/bin/bash
 #PBS -q normal
 #PBS -l ncpus=1
-#PBS -l walltime=72:00:00
+#PBS -l walltime=48:00:00
 #PBS -l mem=5G
-#PBS -l other=gdata1
+#PBS -l storage=scratch/xe2+gdata/xe2
 #PBS -l wd
 #PBS -j oe
 #PBS -M kevin@kdmurray.id.au
