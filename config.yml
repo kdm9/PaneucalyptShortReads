@@ -29,6 +29,8 @@ refs:
   grandis: /g/data/xe2/references/eucalyptus/grandis/Egrandis_v2.fasta
   grandisv2chl: /g/data/xe2/references/eucalyptus/grandis_v2_chloro/Egrandis-v2-plus-chloro.fasta
   emel-scott: /g/data/xe2/references/eucalyptus/emel_scott/Emelliodora_CSIROg1_SISH00000000.1.fasta
+  emel-scott2: /g/data/xe2/references/eucalyptus/scott-final-2020/E_mell_canu_dip.fasta
+  ccal-scott2: /g/data/xe2/references/eucalyptus/scott-final-2020/C_calophylla.fasta
 
 denovodist:
   kwip_sketchsize: 1e9
@@ -85,6 +87,7 @@ varcall:
         - mpileup
       refs:
         - grandisv2chl
+        - ccal-scott2
   filters:
     default: >
       -i 'QUAL >= 10 &&

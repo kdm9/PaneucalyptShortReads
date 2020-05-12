@@ -33,6 +33,7 @@ fi
 
 snakemake                                                          \
     -j 1000                                                        \
+    --max-jobs-per-second 2                                        \
     --cluster-config raijin/cluster.yaml                           \
     --local-cores ${PBS_NCPUS:-1}                                  \
     --js raijin/jobscript.sh                                       \
