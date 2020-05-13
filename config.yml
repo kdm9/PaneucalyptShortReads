@@ -101,18 +101,18 @@ varcall:
         - grandisv2chl
         - C_callophyla
     E_melliodora: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_melliodora"]}
-    A_floribunda: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "A_floribunda"]}
+    #A_floribunda: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "A_floribunda"]}
     C_callophyla: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "C_callophyla"]}
-    C_maculata: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "C_maculata"]}
+    #C_maculata: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "C_maculata"]}
     E_albens: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_albens"]}
-    E_caleyi: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_caleyi"]}
-    E_camaldulensis: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_camaldulensis"]}
-    E_cloeziana: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_cloeziana"]}
-    E_coolabah: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_coolabah"]}
-    E_globulus: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_globulus"]}
+    #E_caleyi: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_caleyi"]}
+    #E_camaldulensis: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_camaldulensis"]}
+    #E_cloeziana: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_cloeziana"]}
+    #E_coolabah: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_coolabah"]}
+    #E_globulus: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_globulus"]}
     E_grandis: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_grandis"]}
     E_melliodora: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_melliodora"]}
-    E_polyanthemos: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_polyanthemos"]}
+    #E_polyanthemos: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_polyanthemos"]}
     E_sideroxylon: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_sideroxylon"]}
   filters:
     default: >
