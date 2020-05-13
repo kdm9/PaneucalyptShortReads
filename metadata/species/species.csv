@@ -1,0 +1,35 @@
+Species,N,ReferenceSpecies,SetName
+Angophora floribunda,2,Angophora floribunda,A_floribunda
+Corymbia calophylla,1,Corymbia callophyla,C_callophyla
+Corymbia maculata,8,Corymbia maculata,C_maculata
+Eucalyptus albens,225,Eucalyptus albens,E_albens
+Eucalyptus albensXmicrocarpa,1,Eucalyptus albens,E_albens
+Eucalyptus microcarpa,14,Eucalyptus albens,E_albens
+Eucalyptus moluccana,11,Eucalyptus albens,E_albens
+Eucalyptus caleyi,9,Eucalyptus caleyi,E_caleyi
+Eucalyptus caleyi subsp. caleyi,1,Eucalyptus caleyi,E_caleyi
+Eucalyptus crebra,11,Eucalyptus caleyi,E_caleyi
+Eucalyptus fibrosa,11,Eucalyptus caleyi,E_caleyi
+Eucalyptus camadulensis,1,Eucalyptus camadulensis,E_camaldulensis
+Eucalyptus camaldulensis subsp. arida,1,Eucalyptus camadulensis,E_camaldulensis
+Eucalyptus camaldulensis subsp. camaldulensis,2,Eucalyptus camadulensis,E_camaldulensis
+Eucalyptus camaldulensis subsp. minima,1,Eucalyptus camadulensis,E_camaldulensis
+Eucalyptus camaldulensis subsp. obtusa,1,Eucalyptus camadulensis,E_camaldulensis
+Eucalyptus camaldulensis subsp. simulata,1,Eucalyptus camadulensis,E_camaldulensis
+Eucalyptus cloezania,1,Eucalyptus cloeziana,E_cloeziana
+Eucalyptus cloeziana,1,Eucalyptus cloeziana,E_cloeziana
+Eucalyptus coolabah,3,Eucalyptus coolabah,E_coolabah
+Eucalyptus globulus,7,Eucalyptus globulus,E_globulus
+Eucalyptus grandis,11,Eucalyptus grandis,E_grandis
+Eucalyptus melliodora,334,Eucalyptus melliodora,E_melliodora
+Eucalyptus melliodora x E. sideroxylon,7,Eucalyptus melliodora,E_melliodora
+Eucalyptus polyanthemos,10,Eucalyptus polyanthemos,E_polyanthemos
+Eucalyptus polyanthemos subsp. marginalis,1,Eucalyptus polyanthemos,E_polyanthemos
+Eucalyptus polyanthemos subsp. polyanthemos,1,Eucalyptus polyanthemos,E_polyanthemos
+Eucalyptus conica,18,Eucalyptus polyanthemos,E_polyanthemos
+Eucalyptus magnificata,13,Eucalyptus polyanthemos,E_polyanthemos
+Eucalyptus sp. aff. magnificata,35,Eucalyptus polyanthemos,E_polyanthemos
+Eucalyptus sideroxylon,173,Eucalyptus sideroxylon,E_sideroxylon
+Eucalyptus sideroxylonXmelliodora,2,Eucalyptus sideroxylon,E_sideroxylon
+Eucalyptus sideroxylonXmicrocarpa,1,Eucalyptus sideroxylon,E_sideroxylon
+Eucalyptus sideroxylonXmoluccana,1,Eucalyptus sideroxylon,E_sideroxylon

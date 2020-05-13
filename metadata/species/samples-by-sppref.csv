@@ -1,0 +1,921 @@
+SampleID,Species,Location,Date,Latitude,Longitude,Elevation,SampleName,Datum,Population,N,ReferenceSpecies,SetName
+FDK10,Eucalyptus microcarpa,Dookie (private property),2013-10-31T00:00:00Z,-36.33119,145.70688,NA,FDK10,WGS84,NA,14,Eucalyptus albens,E_albens
+J294,Eucalyptus albens,"Keepit, Old Menedebri Rd",2015-09-29T00:00:00Z,-30.8942,150.66708,NA,J294,WGS84,NA,225,Eucalyptus albens,E_albens
+J296,Eucalyptus melliodora,"Namoi River, Dunmore Rd",2015-09-29T00:00:00Z,-30.65167,150.87812,NA,J296,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+J298,Eucalyptus sideroxylon,"Bundarra, Thunderbolts Way",2015-09-29T00:00:00Z,-30.15277,151.07437,NA,J298,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J301,Eucalyptus sideroxylon,"Gum Flat, Copeton Dam Rd",2015-09-30T00:00:00Z,-29.80812,150.91918,NA,J301,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J303,Eucalyptus albens,"Sawn Rocks, Kilarney Gap Rd",2015-09-30T00:00:00Z,-30.14391,150.05293,NA,J303,WGS84,NA,225,Eucalyptus albens,E_albens
+J307,Eucalyptus crebra,"Narrabri, Newell Hwy",2015-09-30T00:00:00Z,-30.22665,149.8094,NA,J307,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+J311,Eucalyptus fibrosa,"Pilliga, Newell Hwy",2015-09-30T00:00:00Z,-30.60224,149.58173,NA,J311,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+J315,Eucalyptus fibrosa,"Pilliga, no 1 break rd",2015-09-30T00:00:00Z,-30.92855,149.36347,NA,J315,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+J316,Eucalyptus crebra,"Pilliga, no 1 break rd",2015-09-30T00:00:00Z,-30.92855,149.36347,NA,J316,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+J317,Eucalyptus crebra,"Sawn Rocks, parking lot",2015-09-30T00:00:00Z,-30.14459,150.0534,NA,J317,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+J318,Eucalyptus melliodora,"Chaffey Dam, Tamworth Nundle Rd",2015-10-11T00:00:00Z,-31.37365,151.13779,NA,J318,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+J319,Eucalyptus melliodora,"Nundle, Crawney Rd",2015-10-11T00:00:00Z,-31.55948,151.05664,NA,J319,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+J320,Eucalyptus moluccana,"Timor, Crawney Rd",2015-10-11T00:00:00Z,-31.72257,151.10243,NA,J320,WGS84,NA,11,Eucalyptus albens,E_albens
+J321g,Eucalyptus crebra,"Polkobin, Broke Rd",2015-10-12T00:00:00Z,-32.75326,151.25224,NA,J321g,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+J322,Eucalyptus fibrosa,"Polkobin, Broke Rd",2015-10-12T00:00:00Z,-32.75342,151.25269,NA,J322,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+J324,Eucalyptus conica,"Wollomi NP, Bylong Valley Way",2015-10-12T00:00:00Z,-32.44442,150.2812,NA,J324,WGS84,NA,18,Eucalyptus polyanthemos,E_polyanthemos
+J326,Eucalyptus moluccana,"Rathdowney, Boonah Rathdowney Rd",2015-11-03T00:00:00Z,-28.21744,152.84309,NA,J326,WGS84,NA,11,Eucalyptus albens,E_albens
+J327,Eucalyptus crebra,"Koreelah, Tooloom Rd",2015-11-03T00:00:00Z,-28.45172,152.3925,NA,J327,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+J328,Eucalyptus moluccana,"Legume, Mt Lindsay Rd",2015-11-03T00:00:00Z,-28.43038,152.35915,NA,J328,WGS84,NA,11,Eucalyptus albens,E_albens
+J329,Eucalyptus conica,"Legume, Mt Lindsay Rd",2015-11-03T00:00:00Z,-28.41028,152.29292,NA,J329,WGS84,NA,18,Eucalyptus polyanthemos,E_polyanthemos
+J330,Eucalyptus fibrosa,"Karara, Cunningham Hwy",2015-11-04T00:00:00Z,-28.19138,151.61853,NA,J330,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+J331,Eucalyptus crebra,"Gore, Cunningham Hwy",2015-11-04T00:00:00Z,-28.29549,151.48801,NA,J331,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+J333,Eucalyptus caleyi,"Inglewood, Inglewood Texas Rd",2015-11-04T00:00:00Z,-28.52431,151.10556,NA,J333,WGS84,NA,9,Eucalyptus caleyi,E_caleyi
+J333a,Eucalyptus caleyi,"Inglewood, Inglewood Texas Rd",2015-11-04T00:00:00Z,-28.52431,151.10556,NA,J333a,WGS84,NA,9,Eucalyptus caleyi,E_caleyi
+J334,Eucalyptus moluccana,"Inglewood, Inglewood Texas Rd",2015-11-04T00:00:00Z,-28.53696,151.10815,NA,J334,WGS84,NA,11,Eucalyptus albens,E_albens
+J335,Eucalyptus microcarpa,"Texas, Texas Bridge Road",2015-11-04T00:00:00Z,-28.89198,151.14803,NA,J335,WGS84,NA,14,Eucalyptus albens,E_albens
+J338,Eucalyptus conica,"Tenterfield, Bluff rock lookout",2015-11-05T00:00:00Z,-29.15425,152.00211,NA,J338,WGS84,NA,18,Eucalyptus polyanthemos,E_polyanthemos
+J339,Eucalyptus moluccana,"Emmaville, Strathbogie Rd",2015-11-05T00:00:00Z,-29.45636,151.55505,NA,J339,WGS84,NA,11,Eucalyptus albens,E_albens
+J340,Eucalyptus melliodora,"Emmaville, Strathbogie Rd",2015-11-05T00:00:00Z,-29.45577,151.55405,NA,J340,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+J341,Eucalyptus albens,"Yellow Dam, Emmaville Rd",2015-11-05T00:00:00Z,-29.40223,151.41655,NA,J341,WGS84,NA,225,Eucalyptus albens,E_albens
+J342,Eucalyptus sideroxylon,"Yellow Dam, Emmaville Rd",2015-11-05T00:00:00Z,-29.39087,151.39279,NA,J342,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J343,Eucalyptus crebra,"Yellow Dam, Emmaville Rd",2015-11-05T00:00:00Z,-29.35816,151.30991,NA,J343,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+J344,Eucalyptus polyanthemos,"Pierces Creek State Forest, Vanitys Crossing",2015-11-19T00:00:00Z,-35.33962,148.91113000000001,NA,J344,WGS84,NA,10,Eucalyptus polyanthemos,E_polyanthemos
+J345,Eucalyptus albens,"Mullion, Mountain Creek Rd.",2015-11-20T00:00:00Z,-35.07022,148.83685,NA,J345,WGS84,NA,225,Eucalyptus albens,E_albens
+J346,Eucalyptus melliodora,"Mullion, Mountain Creek Rd.",2015-11-20T00:00:00Z,-35.06954,148.83661,NA,J346,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+J347,Eucalyptus polyanthemos,"Wee Jasper, Doctors Flat Rd.",2015-11-20T00:00:00Z,-35.09381,148.74881,NA,J347,WGS84,NA,10,Eucalyptus polyanthemos,E_polyanthemos
+J348,Eucalyptus polyanthemos,"Wee Jasper, Wee Jasper Rd.",2015-11-20T00:00:00Z,-35.24184,148.29729,NA,J348,WGS84,NA,10,Eucalyptus polyanthemos,E_polyanthemos
+J349,Eucalyptus albens,"Wee Jasper, Wee Jasper Rd.",2015-11-20T00:00:00Z,-35.24369,148.2968,NA,J349,WGS84,NA,225,Eucalyptus albens,E_albens
+J350,Eucalyptus albens,"Tarcutta, Mates Gully Rd.",2015-11-20T00:00:00Z,-35.2456,147.68083,NA,J350,WGS84,NA,225,Eucalyptus albens,E_albens
+J351,Eucalyptus polyanthemos,"Tarcutta, Mates Gully Rd.",2015-11-20T00:00:00Z,-35.25609,147.68506,NA,J351,WGS84,NA,10,Eucalyptus polyanthemos,E_polyanthemos
+J353,Eucalyptus polyanthemos,"Blue Metal Rest Area, M31",2015-11-20T00:00:00Z,-35.8453,147.19722,NA,J353,WGS84,NA,10,Eucalyptus polyanthemos,E_polyanthemos
+J354,Eucalyptus moluccana,"Blue Metal Rest Area, M31",2015-11-20T00:00:00Z,-35.84469,147.19794,NA,J354,WGS84,NA,11,Eucalyptus albens,E_albens
+J355,Eucalyptus sideroxylon,"Chiltern, Chiltern-Howlong Rd.",2015-11-21T00:00:00Z,-36.09264,146.61917,NA,J355,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J355b,Eucalyptus sideroxylonXmicrocarpa,"Chiltern, Chiltern-Howlong Rd.",2015-11-21T00:00:00Z,-36.08961,146.62105,NA,J355b,WGS84,NA,1,Eucalyptus sideroxylon,E_sideroxylon
+J357,Eucalyptus melliodora,"Collendina State Forest, Spring Dr.",2015-11-21T00:00:00Z,-36.019,146.29446,NA,J357,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+J358,Eucalyptus melliodora,"Urana, Walbundrie Rd.",2015-11-21T00:00:00Z,-35.38973,146.35303,NA,J358,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+J359,Eucalyptus sideroxylon,"Ingalba Nature Reserve, Hwy 94",2015-11-21T00:00:00Z,-34.47594,147.40941,NA,J359,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J360,Eucalyptus conica,"Orange, Old Forbes Rd.",2015-11-21T00:00:00Z,-34.01205,148.12904,NA,J360,WGS84,NA,18,Eucalyptus polyanthemos,E_polyanthemos
+J361,Eucalyptus albens,"Nangar Natl Park, Dripping Rock Rd.",2015-11-22T00:00:00Z,-33.42118,148.51154,NA,J361,WGS84,NA,225,Eucalyptus albens,E_albens
+J362,Eucalyptus sideroxylon,"Nangar Natl Park, Dripping Rock Rd.",2015-11-22T00:00:00Z,-33.42108,148.51126,NA,J362,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J363,Eucalyptus microcarpa,"Eugowra, Escort Way",2015-11-22T00:00:00Z,-33.41328,148.22136,NA,J363,WGS84,NA,14,Eucalyptus albens,E_albens
+J364,Eucalyptus conica,"Eugowra, Escort Way",2015-11-22T00:00:00Z,-33.41328,148.22136,NA,J364,WGS84,NA,18,Eucalyptus polyanthemos,E_polyanthemos
+J365,Eucalyptus melliodora,"Glenwood State Forest, Cargo Rd.",2015-11-22T00:00:00Z,-33.31832,148.97163,NA,J365,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+J366,Eucalyptus fibrosa,"Gardens of Stone Natl Park, Glen Davis Rd.",2015-11-22T00:00:00Z,-33.12436,150.01617,NA,J366,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+J367,Eucalyptus sideroxylon,"Uralla-Kingstown Rd, Kingstown",2015-12-15T00:00:00Z,-30.5285,151.15897,NA,J367,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J367i,Eucalyptus sideroxylonXmoluccana,"Uralla-Kingstown Rd, Kingstown",2015-12-15T00:00:00Z,-30.52474,151.15401,NA,J367i,WGS84,NA,1,Eucalyptus sideroxylon,E_sideroxylon
+J368,Eucalyptus caleyi,"Kingstwon-Retreat Rd, Kingstown",2015-12-15T00:00:00Z,-30.57301,151.09172,NA,J368,WGS84,NA,9,Eucalyptus caleyi,E_caleyi
+J369,Eucalyptus caleyi,"Thunderbolts Way, Bundarra",2015-12-15T00:00:00Z,-30.07144,151.09796,NA,J369,WGS84,NA,9,Eucalyptus caleyi,E_caleyi
+J370,Eucalyptus fibrosa,"Bucketts Way, Stroud Road",2016-01-20T00:00:00Z,-32.62925,151.87758,NA,J370,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+J371,Eucalyptus fibrosa,"Bucketts Way, Wards River",2016-01-20T00:00:00Z,-32.23292,151.93147,NA,J371,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+J372,Eucalyptus polyanthemos,"Licola, Tamboritha Rd",2016-01-24T00:00:00Z,-37.60536,146.64015,NA,J372,WGS84,NA,10,Eucalyptus polyanthemos,E_polyanthemos
+J373,Eucalyptus melliodora,Doctors Flat,2016-01-24T00:00:00Z,-37.46662,147.83218,NA,J373,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+J374,Eucalyptus albens,Ensay,2016-01-24T00:00:00Z,-37.36159,147.85228,NA,J374,WGS84,NA,225,Eucalyptus albens,E_albens
+J375,Eucalyptus melliodora,Buchan,2016-01-25T00:00:00Z,-37.40165,148.21443,NA,J375,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+J376,Eucalyptus albens,McKillop Bridge,2016-01-25T00:00:00Z,-37.07782,148.34419,NA,J376,WGS84,NA,225,Eucalyptus albens,E_albens
+J377,Eucalyptus albens,Suggan Buggan,2016-01-25T00:00:00Z,-36.96985,148.30525,NA,J377,WGS84,NA,225,Eucalyptus albens,E_albens
+J379,Eucalyptus polyanthemos,Bombala,2016-01-26T00:00:00Z,-36.94525,149.4919,NA,J379,WGS84,NA,10,Eucalyptus polyanthemos,E_polyanthemos
+J381,Eucalyptus polyanthemos,Bruthen,2016-01-27T00:00:00Z,-37.3619,149.66098,NA,J381,WGS84,NA,10,Eucalyptus polyanthemos,E_polyanthemos
+J382a,Eucalyptus albens,Swifts Creek,2016-01-27T00:00:00Z,-37.21575,147.71677,NA,J382a,WGS84,NA,225,Eucalyptus albens,E_albens
+J383,Eucalyptus polyanthemos,Yambuck,2016-01-27T00:00:00Z,-36.31995,146.84286,NA,J383,WGS84,NA,10,Eucalyptus polyanthemos,E_polyanthemos
+J385,Eucalyptus sideroxylon,Chiltern,2016-01-29T00:00:00Z,-36.17434,146.66263,NA,J385,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J386,Eucalyptus albens,Chiltern,2016-01-29T00:00:00Z,-36.14425,146.65103,NA,J386,WGS84,NA,225,Eucalyptus albens,E_albens
+J387,Eucalyptus sideroxylon,Warrangatta,2016-01-29T00:00:00Z,-32.24456,146.18248,NA,J387,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J388f,Eucalyptus albens,Warrangatta,2016-01-29T00:00:00Z,-36.26528,146.15425,NA,J388f,WGS84,NA,225,Eucalyptus albens,E_albens
+J389,Eucalyptus polyanthemos,Reef Road State Park,2016-01-29T00:00:00Z,-36.60631,145.92644,NA,J389,WGS84,NA,10,Eucalyptus polyanthemos,E_polyanthemos
+J390,Eucalyptus albens,Reef Road State Park,2016-01-29T00:00:00Z,-36.5877,145.96066,NA,J390,WGS84,NA,225,Eucalyptus albens,E_albens
+J393,Eucalyptus albens,Heathcote,2016-01-30T00:00:00Z,-36.93458,144.74492,NA,J393,WGS84,NA,225,Eucalyptus albens,E_albens
+J394g,Eucalyptus albens,Lake Eppalock,2016-01-30T00:00:00Z,-36.84715,144.52614,NA,J394g,WGS84,NA,225,Eucalyptus albens,E_albens
+J395,Eucalyptus albensXmicrocarpa,"Powers Rd, Woodstock on Loddon",2016-01-31T00:00:00Z,-36.76884,144.07336,NA,J395,WGS84,NA,1,Eucalyptus albens,E_albens
+J400,Eucalyptus moluccana,"Torreyburn Rd, Yarrowyck",2016-04-05T00:00:00Z,-30.44375,151.25961,NA,J400,WGS84,NA,11,Eucalyptus albens,E_albens
+J401,Eucalyptus sideroxylon,"Torreyburn Rd, Yarrowyck",2016-04-05T00:00:00Z,-30.44023,151.25069,NA,J401,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J402,Eucalyptus caleyi,"Bundarra Rd, Copeton",2016-04-05T00:00:00Z,-30.04322,150.94122,NA,J402,WGS84,NA,9,Eucalyptus caleyi,E_caleyi
+J403,Eucalyptus caleyi,Copeton Dam Rd,2016-04-05T00:00:00Z,-29.92441,150.93559,NA,J403,WGS84,NA,9,Eucalyptus caleyi,E_caleyi
+J404,Eucalyptus caleyi,Copeton Dam Rd,2016-04-05T00:00:00Z,-29.98952,150.85857,NA,J404,WGS84,NA,9,Eucalyptus caleyi,E_caleyi
+J405,Eucalyptus sideroxylon,Baldersleigh Rd,2016-04-05T00:00:00Z,-30.22862,151.23865,NA,J405,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J406,Eucalyptus albens,"Baldersleigh Rd, The Basin",2016-04-05T00:00:00Z,-30.23707,151.252,NA,J406,WGS84,NA,225,Eucalyptus albens,E_albens
+J407,Eucalyptus fibrosa,Nymboidea,2016-04-06T00:00:00Z,-30.05045,152.63814,NA,J407,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+J408,Eucalyptus crebra,Nymboidea,2016-04-06T00:00:00Z,-29.92432,152.75188,NA,J408,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+J411,Eucalyptus fibrosa,"Old Grafton Rd, Gibraltar",2016-04-07T00:00:00Z,-29.69674,152.10576,NA,J411,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+J412,Eucalyptus moluccana,"Appleby Rd, Moonbi",2016-06-16T00:00:00Z,-30.96459,150.84267,NA,J412,WGS84,NA,11,Eucalyptus albens,E_albens
+J413,Eucalyptus albens,Boggabri - private land,2016-06-16T00:00:00Z,-30.70737,150.09621,NA,J413,WGS84,NA,225,Eucalyptus albens,E_albens
+J414,Eucalyptus albens,Narrabri,2016-06-16T00:00:00Z,-30.49283,149.94203,NA,J414,WGS84,NA,225,Eucalyptus albens,E_albens
+J416,Eucalyptus sideroxylon,Weewaa,2016-06-17T00:00:00Z,-30.32322,149.26971,NA,J416,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J417,Eucalyptus crebra,Weewaa,2016-06-17T00:00:00Z,-30.32377,149.26567,NA,J417,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+J418,Eucalyptus sideroxylon,The Pilliga,2016-06-17T00:00:00Z,-31.05012,149.23013,NA,J418,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J419,Eucalyptus albens,Warrumbungle,2016-06-23T00:00:00Z,-31.35926,148.93951,NA,J419,WGS84,NA,225,Eucalyptus albens,E_albens
+J420,Eucalyptus moluccana,Warrumbungle,2016-06-23T00:00:00Z,-31.35926,148.93951,NA,J420,WGS84,NA,11,Eucalyptus albens,E_albens
+J421,Eucalyptus sideroxylon,Narromine,2016-06-23T00:00:00Z,-32.36597,148.23103,NA,J421,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J422,Eucalyptus sideroxylon,Dubbo,2016-06-24T00:00:00Z,-32.22311,148.66797,NA,J422,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J423,Eucalyptus moluccana,Coolah,2016-06-24T00:00:00Z,-31.82373,149.68475,NA,J423,WGS84,NA,11,Eucalyptus albens,E_albens
+J424,Eucalyptus albens,Ardglen,2016-06-24T00:00:00Z,-31.71111,150.6998,NA,J424,WGS84,NA,225,Eucalyptus albens,E_albens
+J425i,Eucalyptus sideroxylon,Bundarra,2016-07-09T00:00:00Z,-30.30756,151.20671,NA,J425i,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J426,Eucalyptus albens,Bundarra,2016-07-09T00:00:00Z,-30.30846,151.20667,NA,J426,WGS84,NA,225,Eucalyptus albens,E_albens
+J427,Eucalyptus caleyi,Bundarra,2016-07-09T00:00:00Z,-30.36709,151.25757,NA,J427,WGS84,NA,9,Eucalyptus caleyi,E_caleyi
+J427a,Eucalyptus caleyi,Bundarra,2016-07-09T00:00:00Z,-30.36709,151.25757,NA,J427a,WGS84,NA,9,Eucalyptus caleyi,E_caleyi
+J428d,Eucalyptus albens,Inverell,2016-07-09T00:00:00Z,-29.6731,151.15315,NA,J428d,WGS84,NA,225,Eucalyptus albens,E_albens
+J429f,Eucalyptus albens,Texas,2016-07-09T00:00:00Z,-28.77243,151.21523,NA,J429f,WGS84,NA,225,Eucalyptus albens,E_albens
+J431,Eucalyptus crebra,Inglewood,2016-07-10T00:00:00Z,-28.56955,151.07539,NA,J431,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+J432,Eucalyptus fibrosa,Glendon,2016-07-10T00:00:00Z,-28.18033,151.66934,NA,J432,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+J433a,Eucalyptus sideroxylon,Glendon,2016-07-10T00:00:00Z,-28.17577,151.6577,NA,J433a,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J434a,Eucalyptus sideroxylon,Allora,2016-07-10T00:00:00Z,-27.7547,152.1189,NA,J434a,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J435d,Eucalyptus sideroxylon,Wondai,2016-07-10T00:00:00Z,-26.36944,151.88103,NA,J435d,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J436d,Eucalyptus albens,Kulpi,2016-07-11T00:00:00Z,-27.18896,151.73259,NA,J436d,WGS84,NA,225,Eucalyptus albens,E_albens
+J437,Eucalyptus sideroxylonXmelliodora,"Bundarra, Thunderbolts Way",2016-11-28T00:00:00Z,-30.27552,151.18698,NA,J437,WGS84,NA,2,Eucalyptus sideroxylon,E_sideroxylon
+J438,Eucalyptus sideroxylonXmelliodora,"Bundarra, Thunderbolts Way",2016-11-28T00:00:00Z,-30.27563,151.18764,NA,J438,WGS84,NA,2,Eucalyptus sideroxylon,E_sideroxylon
+RA1006,Eucalyptus albens,Bundarra Rd,NA,NA,NA,NA,RA1006,WGS84,NA,225,Eucalyptus albens,E_albens
+TLC715,Eucalyptus conica,Stanthorpe,NA,-28.68757004,151.962399,851.994751,TLC715,WGS84,NA,18,Eucalyptus polyanthemos,E_polyanthemos
+TLC720,Eucalyptus conica,Tenterfield,NA,-29.06569697,151.988323,895.315063,TLC720,WGS84,NA,18,Eucalyptus polyanthemos,E_polyanthemos
+TLC725,Eucalyptus conica,Dundee,NA,-29.60565004,151.867978,1038.672363,TLC725,WGS84,NA,18,Eucalyptus polyanthemos,E_polyanthemos
+TLC726,Eucalyptus conica,Abington Creek,NA,-30.282428,151.195725,NA,TLC726,WGS84,NA,18,Eucalyptus polyanthemos,E_polyanthemos
+TLC775,Eucalyptus conica,Inglewood,NA,-28.39504103,151.311965,344,TLC775,WGS84,NA,18,Eucalyptus polyanthemos,E_polyanthemos
+VMA18,Eucalyptus microcarpa,Mt Arapiles State Park,2013-10-28T00:00:00Z,-36.77474,141.82599,NA,VMA18,WGS84,NA,14,Eucalyptus albens,E_albens
+VWG14,Eucalyptus microcarpa,Werribee Gorge State Park,2013-12-03T00:00:00Z,-37.67129,144.36256,NA,VWG14,WGS84,NA,14,Eucalyptus albens,E_albens
+Angophora_floribunda_ANU_Banks_Building,Angophora floribunda,ANU Banks Building,NA,NA,NA,NA,NA,WGS84,NA,2,Angophora floribunda,A_floribunda
+Corymbia_calophylla_ANBG,Corymbia calophylla,ANBG,NA,NA,NA,NA,NA,WGS84,NA,1,Corymbia callophyla,C_callophyla
+Corymbia_maculata_Arboretum_ACT,Corymbia maculata,ACT Arboretum,NA,NA,NA,NA,NA,WGS84,NA,8,Corymbia maculata,C_maculata
+Eucalyptus_albens_ANBG,Eucalyptus albens,ANBG,NA,NA,NA,NA,NA,WGS84,NA,225,Eucalyptus albens,E_albens
+Eucalyptus_camadulensis_ANBG,Eucalyptus camadulensis,ANBG,NA,NA,NA,NA,NA,WGS84,NA,1,Eucalyptus camadulensis,E_camaldulensis
+Eucalyptus_cloezania_ANBG,Eucalyptus cloezania,ANBG,NA,NA,NA,NA,NA,WGS84,NA,1,Eucalyptus cloeziana,E_cloeziana
+Eucalyptus_coolabah,Eucalyptus coolabah,CCA,NA,NA,NA,NA,NA,WGS84,NA,3,Eucalyptus coolabah,E_coolabah
+Eucalyptus_globulus_UTAS_Campus,Eucalyptus globulus,UTAS Campus,NA,NA,NA,NA,NA,WGS84,NA,7,Eucalyptus globulus,E_globulus
+Eucalyptus_grandis,Eucalyptus grandis,CCA,NA,NA,NA,NA,NA,WGS84,NA,11,Eucalyptus grandis,E_grandis
+Eucalyptus_sideroxylon_ANBG,Eucalyptus sideroxylon,ANBG,NA,NA,NA,NA,NA,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+CMB0002,Corymbia maculata,W off A1 Hwy S of Batemans' Bay,2018-12-22T17:55:56Z,-35.76518864,150.1498347,10.65988897,NA,WGS84,NA,8,Corymbia maculata,C_maculata
+CMB0003,Corymbia maculata,W off A1 Hwy S of Batemans' Bay,2018-12-22T18:21:57Z,-35.76251088,150.1445105,17.83857636,NA,WGS84,NA,8,Corymbia maculata,C_maculata
+CMB0004,Corymbia maculata,E down Kianga Rd. off Hwy A1 S of Bateman's Bay,2018-12-22T20:44:32Z,-36.18421901,150.0985728,40.54666008,NA,WGS84,NA,8,Corymbia maculata,C_maculata
+CMB0005,Corymbia maculata,Melbourne Royal Botanic Garden near Macpherson Robertson War Memorial Fountain,2018-12-25T10:00:00Z,-37.832778,144.973333,NA,NA,WGS84,NA,8,Corymbia maculata,C_maculata
+CMD0001,Corymbia maculata,Parking lot pullout E of road just entering Durras Beach N of Bateman's Bay,2018-11-14T13:52:12Z,-35.6727785,150.296111,-0.620873638,NA,WGS84,NA,8,Corymbia maculata,C_maculata
+EMW0001,Eucalyptus melliodora,Wombeyan Cave Rd.,2019-01-20T20:04:01Z,-36.18417333,150.0986026,121.3435516,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+EMW0002,Eucalyptus melliodora,Wombeyan Cave Rd.,2019-01-20T20:57:36Z,-34.29426229,150.0163724,163.0970959,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+EMW0003,Eucalyptus melliodora,Wombeyan Cave Rd.,2019-01-20T21:27:50Z,-34.2938706,150.0160115,169.7630332,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+EMW0004,Eucalyptus melliodora,Wombeyan Cave Rd.,2019-01-20T22:08:09Z,-34.30037412,150.0047701,193.350133,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+EMW0005,Eucalyptus melliodora,Wombeyan Cave Rd.,2019-01-20T22:25:27Z,-34.30002065,150.0023791,198.5510064,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+EMW0006,Eucalyptus melliodora,Wombeyan Cave Rd.,2019-01-20T23:33:00Z,-34.31277473,150.0875892,82.37350211,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0001,Eucalyptus melliodora,"S from M23 to Sutton Rd., then dirt rd. W",2019-03-19T17:22:22Z,-35.20836473,149.2588769,647.088135,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0002,Eucalyptus melliodora,"S on Sutton Rd., E on Norton Rd, N on Fernloff",2019-03-19T17:47:09Z,-35.24763865,149.2807351,792.967285,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0003,Eucalyptus melliodora,S out of Bungendore on Gidleigh Lane,2019-03-19T18:58:39Z,-35.28911448,149.4522442,738.412842,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0004,Eucalyptus melliodora,Continueing S on Gidleigh Ln,2019-03-19T19:22:07Z,-35.29944534,149.4607546,749.708008,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0005,Eucalyptus melliodora,Continueing S on Gidleigh Ln,2019-03-19T20:00:03Z,-35.31586063,149.4957254,807.867432,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0006,Eucalyptus melliodora,"Sawyer's Ridge Rd, E of Araluen Rd. S of Braidwood",2019-03-19T22:49:11Z,-35.59996331,149.8112832,631.226807,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0007,Eucalyptus melliodora,"Sawyer's Ridge Rd, E of Araluen Rd. S of Braidwood",2019-03-19T22:50:12Z,-35.60009432,149.8113898,630.265381,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0008,Eucalyptus melliodora,Araluen Rd,2019-03-19T23:39:30Z,-35.6729831,149.8309023,158.501953,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0009,Eucalyptus melliodora,Araluen Rd,2019-03-20T00:00:55Z,-35.68992904,149.8492569,146.485474,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0010,Eucalyptus melliodora,"N out of Braidwood on Nerriga Rd., then W on Brightside Rd. (dirt)",2019-03-27T10:18:07Z,-35.34229933,149.8506001,696.836182,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0011,Eucalyptus melliodora,"N out of Braidwood on Nerriga Rd., then W on Brightside Rd. (dirt)",2019-03-27T10:34:12Z,-35.34337733,149.8529949,707.4104,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0012,Eucalyptus melliodora,"Nerriga Rd., large grassy pull-off on left side",2019-03-27T11:18:19Z,-35.3077793,149.8785983,630.746094,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0013,Eucalyptus melliodora,"End of Nerriga Rd before entering Morton National Park; pull in entrance between two chainlink fences, small pullout just past the entrance on the right",2019-03-27T12:46:20Z,-35.0883332,150.1207641,560.329834,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0014,Eucalyptus melliodora,Pulloff on east side of Nerriga Rd. heading back S,2019-03-27T12:54:38Z,-35.09359863,150.1175408,589.649902,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0015,Eucalyptus melliodora,"Oallen Ford Rd west, then turn rt. on Jerralong Rd; tree just about 8 meters from intersection",2019-03-27T14:12:28Z,-35.11480426,149.9193022,628.102539,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0016,Eucalyptus melliodora,Worton Rd. (?) off Oallen Ford Rd.,2019-03-27T14:40:32Z,-35.0892744,149.9074582,585.804688,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0017,Eucalyptus melliodora,Pulloff on W side of Oalla Ford Rd.,2019-03-27T15:11:16Z,-35.064829,149.8654812,596.37915,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0018,Eucalyptus melliodora,"Sandy Pt. rd W of Oalla Ford Rd., pulloff on N side of the rd.",2019-03-27T15:33:37Z,-35.08290416,149.8458555,605.27124,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0019,Eucalyptus melliodora,Continue W on Sandy Point Rd.,2019-03-27T16:04:46Z,-35.0929072,149.8306888,633.14917,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0020,Eucalyptus melliodora,"Continuing W down Sandy Point Rd. after it turns to dirt, past turn to Willow Glen Rd.",2019-03-27T16:25:36Z,-35.11568679,149.8138964,630.265381,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0021,Eucalyptus melliodora,"Continuing W down Sandy Point Rd. after it turns to dirt, past turn to Willow Glen Rd.",2019-03-27T16:38:38Z,-35.10303673,149.8190508,631.226807,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0022,Eucalyptus melliodora,"N to Tarago, Cullala Rd east, then N on Lumley Rd.",2019-04-01T11:32:18Z,-34.96374845,149.8216151,655.73999,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0023,Eucalyptus melliodora,Continuing NE on Lumley Rd.,2019-04-01T11:40:51Z,-34.95464193,149.8286439,643.24292,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0024,Eucalyptus melliodora,Continuing NE on Lumley Rd.,2019-04-01T12:26:36Z,-34.91414376,149.8963593,641.801025,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0025,Eucalyptus melliodora,Continuing NE on Lumley Rd.,2019-04-01T12:52:41Z,-34.90062333,149.9203847,635.55249,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0026,Eucalyptus melliodora,Howick St. E out of Bungonia towards Bungonia Nat'l Park,2019-04-01T13:55:19Z,-34.85496668,149.9551925,599.503418,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0027,Eucalyptus melliodora,Right across the road from GOL0026,2019-04-01T14:20:38Z,-34.85478479,149.9550694,598.301758,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0028,Eucalyptus melliodora,Along Howick St.,2019-04-01T14:39:12Z,-34.84301266,149.9758547,574.98999,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0029,Eucalyptus melliodora,Pullout on S side of Howick St.,2019-04-01T14:53:43Z,-34.85567085,149.9485649,585.08374,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0030,Eucalyptus melliodora,E side of Jerrara Rd. N out of Bungonia,2019-04-01T15:25:17Z,-34.82950808,149.9507709,590.37085,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0031,Eucalyptus melliodora,Continuing N on Jerrara,2019-04-01T15:38:26Z,-34.8086674,149.953166,598.061523,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0032,Eucalyptus melliodora,Glynmar Rd. E off Jerrara Rd.,2019-04-01T16:01:19Z,-34.77803011,149.9807995,646.126953,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0033,Eucalyptus melliodora,Glynmar Rd. E off Jerrara Rd.,2019-04-01T16:12:51Z,-34.77781638,149.9758829,642.04126,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0034,Eucalyptus melliodora,"N on Jerrara Rd, pulloff on W side",2019-04-01T16:30:00Z,-34.77297993,149.964274,627.861816,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0035,Eucalyptus melliodora,"B23 to B72 then N on Creek St., rt. Uphill on Massie St., tree ~15m inside gate of Nanny Goat Hill Reserve & Outlook on left",2019-04-03T11:55:29Z,-36.23574081,149.12084,831.419678,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0036,Eucalyptus melliodora,Paveys Rd E off Monaro Hwy (B23),2019-04-03T13:42:11Z,-35.85174596,149.1861647,829.49707,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0037,Eucalyptus melliodora,"Close to GOL0036, but has seed",2019-04-03T13:56:07Z,-35.85356534,149.1830405,850.165039,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0038,Eucalyptus melliodora,Paveys Rd up hill in field N of road,2019-04-03T14:18:59Z,-35.84869579,149.1754083,807.386719,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0039,Eucalyptus melliodora,E on Ryrie Hill Rd.,2019-04-03T14:38:11Z,-35.78823058,149.1674645,808.10791,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0040,Eucalyptus melliodora,E on Ryrie Hill Rd.,2019-04-03T14:56:01Z,-35.78673123,149.1813752,865.305908,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0041,Eucalyptus melliodora,E on Ryrie Hill Rd.,2019-04-03T15:20:34Z,-35.79441877,149.1830167,876.120605,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0056,Eucalyptus melliodora,Turn SW down Currawang Rd,2019-07-04T13:25:39Z,-34.88100406,149.6216107,701.162109,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0057,Eucalyptus melliodora,"Just S of M31 exit for Goulburn, go SW down Mazamet Rd, only a few seeds, 5-valved",2019-07-04T13:55:16Z,-34.77965897,149.6830312,690.827637,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0058,Eucalyptus melliodora,"NW out of Goulburn on Crookwell Rd, turn W down Pejar Rd",2019-07-04T15:50:46Z,-34.5565892,149.5649045,868.430176,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0059,Eucalyptus melliodora,"Pejar Rd then S on Range Rd towards Goulburn, good quiet country rd,",2019-07-04T16:40:24Z,-34.62917958,149.5234976,751.630615,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+GOL0060,Eucalyptus melliodora,Thompsons Lane E off Range Rd,2019-07-04T17:05:36Z,-34.67122455,149.5781598,768.694092,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+NSW0001,Eucalyptus melliodora,Pull off W of Range Rd at green Pomeroy Fire Brigade shed,2019-07-04T17:30:28Z,-34.69864234,149.6065069,713.89917,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+NSW0002,Eucalyptus melliodora,"From Blackheath in Blue Mnts take Shipley Rd W then Megalong Rd SW; tree at very end of dirt bush track, just inside Blue Mnts Nat'l Park by Green Gulley track? about 30' inside; ALA shows more trees but looks like they're either on a private farm or walking access along Nat'l Park trail",2019-07-05T15:43:27Z,-33.79039172,150.22171,657.422119,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+NSW0003,Eucalyptus melliodora,"Going back N on Megalong Rd, W side of rd.",2019-07-05T16:27:39Z,-33.74848883,150.2361709,656.701172,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+NSW0004,Eucalyptus melliodora,"Going W on A23 Great Western HWY, turn S on Coxs River Rd at Little Hartley",2019-07-05T17:39:19Z,-33.58679077,150.2058728,784.315186,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+NSW0005,Eucalyptus melliodora,"Drive N from Lithgow on A23 to B55, at Capertee take Glen Davis Rd NE, at fork continue rt. on Glen Davis Rd",2019-07-06T12:05:15Z,-33.1236643,150.0056215,716.30249,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+NSW0006,Eucalyptus melliodora,"Continue ~1km, pullout on N side of rd; N side of rd is public here, S side is Gardens of Stone Nat'l Park; all samples are on N side",2019-07-06T12:24:08Z,-33.11997442,150.034491,699.719971,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+NSW0007,Eucalyptus melliodora,"Continue on Glen Davis Rd, N side of rd",2019-07-06T12:56:42Z,-33.13831503,150.109859,403.395874,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+NSW0008,Eucalyptus melliodora,"Continue on Glen Davis Rd, N side of rd",2019-07-06T13:59:05Z,-33.10924617,150.1912611,322.405396,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+NSW0009,Eucalyptus melliodora,Turn N towards Glen Alice,2019-07-06T14:30:20Z,-33.07784647,150.2113412,298.612915,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+NSW0010,Eucalyptus melliodora,Continue N,2019-07-06T14:45:00Z,-33.07240946,150.2132123,306.784058,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+NSW0011,Eucalyptus melliodora,Continue N,2019-07-06T15:02:15Z,-33.0363221,150.1634771,330.816895,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+NSW0012,Eucalyptus melliodora,W side of road past Bogee,2019-07-06T15:35:25Z,-32.97420709,150.1042704,469.966675,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+NSW0013,Eucalyptus melliodora,N side of Rd,2019-07-06T15:44:33Z,-32.95507682,150.0824443,503.372192,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+NSW0014,Eucalyptus melliodora,Continueing,2019-07-06T16:12:11Z,-32.90411761,150.0378866,686.02124,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+NSW0015,Eucalyptus melliodora,"S on B55, at Ilford turn W on Goulburn-Ilford Rd, pull onto dirt frontage on N side of rd",2019-07-06T17:19:15Z,-32.9797285,149.7962746,893.904785,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+NSW0016,Eucalyptus melliodora,At end of 'Rolling Hills' drive way,2019-07-06T17:36:12Z,-32.98264531,149.7389758,861.700928,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+NSW0017,Eucalyptus melliodora,Pull off into medium sized dirt lot on left/E side of rd,2019-07-06T17:57:02Z,-33.05459281,149.6923205,618.008545,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+NSW0018,Eucalyptus melliodora,"N out of Bathurst on Duramana Rd, tree on W side of rd",2019-07-07T11:13:35Z,-33.29176018,149.5713342,717.263916,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+NSW0019,Eucalyptus melliodora,"Continuing N, W side of Rd",2019-07-07T11:29:49Z,-33.24703988,149.5812118,618.969727,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+LBM01A02,Eucalyptus melliodora,NA,NA,-36.632668,144.35019,178,LB-U-9,WGS84,LB-U,334,Eucalyptus melliodora,E_melliodora
+LBM01A03,Eucalyptus melliodora,NA,NA,-35.819633,145.31187,101,LB-P-7,WGS84,LB-P,334,Eucalyptus melliodora,E_melliodora
+LBM01A09,Eucalyptus melliodora,NA,NA,-33.423,149.752,844,LB-V-2,WGS84,LB-V,334,Eucalyptus melliodora,E_melliodora
+LBM01A12,Eucalyptus melliodora,NA,NA,-33.416668,149.55055,712,LB-1-6,WGS84,LB-1,334,Eucalyptus melliodora,E_melliodora
+LBM01B01,Eucalyptus melliodora,NA,NA,-36.632668,144.35019,178,LB-U-2,WGS84,LB-U,334,Eucalyptus melliodora,E_melliodora
+LBM01B02,Eucalyptus melliodora,NA,NA,-36.632668,144.35019,178,LB-U-10,WGS84,LB-U,334,Eucalyptus melliodora,E_melliodora
+LBM01B03,Eucalyptus melliodora,NA,NA,-35.819633,145.31187,101,LB-P-8,WGS84,LB-P,334,Eucalyptus melliodora,E_melliodora
+LBM01B05,Eucalyptus melliodora,NA,NA,-36.42797,144.41092,114,LB-W1-4,WGS84,LB-W1,334,Eucalyptus melliodora,E_melliodora
+LBM01B06,Eucalyptus melliodora,NA,NA,-36.63518,149.56728,186,LB-H-2,WGS84,LB-H,334,Eucalyptus melliodora,E_melliodora
+LBM01B07,Eucalyptus melliodora,NA,NA,-36.63518,149.56728,186,LB-H-10,WGS84,LB-H,334,Eucalyptus melliodora,E_melliodora
+LBM01B08,Eucalyptus melliodora,NA,NA,-36.3675,145.70232,268,LB-D-5,WGS84,LB-D,334,Eucalyptus melliodora,E_melliodora
+LBM01B09,Eucalyptus melliodora,NA,NA,-33.423,149.752,844,LB-V-3,WGS84,LB-V,334,Eucalyptus melliodora,E_melliodora
+LBM01B10,Eucalyptus melliodora,NA,NA,-36.388,146.481,181,LB-A-2,WGS84,LB-A,334,Eucalyptus melliodora,E_melliodora
+LBM01B12,Eucalyptus melliodora,NA,NA,-33.416668,149.55055,712,LB-1-7,WGS84,LB-1,334,Eucalyptus melliodora,E_melliodora
+LBM01C01,Eucalyptus melliodora,NA,NA,-36.632668,144.35019,178,LB-U-3,WGS84,LB-U,334,Eucalyptus melliodora,E_melliodora
+LBM01C02,Eucalyptus melliodora,NA,NA,-35.819633,145.31187,101,LB-P-1,WGS84,LB-P,334,Eucalyptus melliodora,E_melliodora
+LBM01C03,Eucalyptus melliodora,NA,NA,-35.819633,145.31187,101,LB-P-9,WGS84,LB-P,334,Eucalyptus melliodora,E_melliodora
+LBM01C04,Eucalyptus melliodora,NA,NA,-36.86476,148.85016,638,LB-G-7,WGS84,LB-G,334,Eucalyptus melliodora,E_melliodora
+LBM01C05,Eucalyptus melliodora,NA,NA,-36.42797,144.41092,114,LB-W1-5,WGS84,LB-W1,334,Eucalyptus melliodora,E_melliodora
+LBM01C06,Eucalyptus melliodora,NA,NA,-36.63518,149.56728,186,LB-H-3,WGS84,LB-H,334,Eucalyptus melliodora,E_melliodora
+LBM01C08,Eucalyptus melliodora,NA,NA,-36.3675,145.70232,268,LB-D-6,WGS84,LB-D,334,Eucalyptus melliodora,E_melliodora
+LBM01C09,Eucalyptus melliodora,NA,NA,-33.423,149.752,844,LB-V-4,WGS84,LB-V,334,Eucalyptus melliodora,E_melliodora
+LBM01C10,Eucalyptus melliodora,NA,NA,-36.388,146.481,181,LB-A-3,WGS84,LB-A,334,Eucalyptus melliodora,E_melliodora
+LBM01C12,Eucalyptus melliodora,NA,NA,-33.416668,149.55055,712,LB-1-8,WGS84,LB-1,334,Eucalyptus melliodora,E_melliodora
+LBM01D01,Eucalyptus melliodora,NA,NA,-36.632668,144.35019,178,LB-U-4,WGS84,LB-U,334,Eucalyptus melliodora,E_melliodora
+LBM01D03,Eucalyptus melliodora,NA,NA,-35.819633,145.31187,101,LB-P-10,WGS84,LB-P,334,Eucalyptus melliodora,E_melliodora
+LBM01D05,Eucalyptus melliodora,NA,NA,-36.42797,144.41092,114,LB-W1-6,WGS84,LB-W1,334,Eucalyptus melliodora,E_melliodora
+LBM01D06,Eucalyptus melliodora,NA,NA,-36.63518,149.56728,186,LB-H-4,WGS84,LB-H,334,Eucalyptus melliodora,E_melliodora
+LBM01D09,Eucalyptus melliodora,NA,NA,-33.423,149.752,844,LB-V-5,WGS84,LB-V,334,Eucalyptus melliodora,E_melliodora
+LBM01D10,Eucalyptus melliodora,NA,NA,-36.388,146.481,181,LB-A-4,WGS84,LB-A,334,Eucalyptus melliodora,E_melliodora
+LBM01D11,Eucalyptus melliodora,NA,NA,-33.416668,149.55055,712,LB-1-1,WGS84,LB-1,334,Eucalyptus melliodora,E_melliodora
+LBM01D12,Eucalyptus melliodora,NA,NA,-33.416668,149.55055,712,LB-1-9,WGS84,LB-1,334,Eucalyptus melliodora,E_melliodora
+LBM01F01,Eucalyptus melliodora,NA,NA,-36.632668,144.35019,178,LB-U-6,WGS84,LB-U,334,Eucalyptus melliodora,E_melliodora
+LBM01F02,Eucalyptus melliodora,NA,NA,-35.819633,145.31187,101,LB-P-4,WGS84,LB-P,334,Eucalyptus melliodora,E_melliodora
+LBM01F03,Eucalyptus melliodora,NA,NA,-36.86476,148.85016,638,LB-G-2,WGS84,LB-G,334,Eucalyptus melliodora,E_melliodora
+LBM01F05,Eucalyptus melliodora,NA,NA,-36.42797,144.41092,114,LB-W1-8,WGS84,LB-W1,334,Eucalyptus melliodora,E_melliodora
+LBM01F06,Eucalyptus melliodora,NA,NA,-36.63518,149.56728,186,LB-H-6,WGS84,LB-H,334,Eucalyptus melliodora,E_melliodora
+LBM01F07,Eucalyptus melliodora,NA,NA,-36.3675,145.70232,268,LB-D-1,WGS84,LB-D,334,Eucalyptus melliodora,E_melliodora
+LBM01F09,Eucalyptus melliodora,NA,NA,-33.423,149.752,844,LB-V-7,WGS84,LB-V,334,Eucalyptus melliodora,E_melliodora
+LBM01F10,Eucalyptus melliodora,NA,NA,-36.388,146.481,181,LB-A-6,WGS84,LB-A,334,Eucalyptus melliodora,E_melliodora
+LBM01F12,Eucalyptus melliodora,NA,NA,-35.03333,147.33333,NA,LB-C-1,WGS84,LB-C,334,Eucalyptus melliodora,E_melliodora
+LBM01G01,Eucalyptus melliodora,NA,NA,-36.632668,144.35019,178,LB-U-7,WGS84,LB-U,334,Eucalyptus melliodora,E_melliodora
+LBM01G02,Eucalyptus melliodora,NA,NA,-35.819633,145.31187,101,LB-P-5,WGS84,LB-P,334,Eucalyptus melliodora,E_melliodora
+LBM01G03,Eucalyptus melliodora,NA,NA,-36.86476,148.85016,638,LB-G-3,WGS84,LB-G,334,Eucalyptus melliodora,E_melliodora
+LBM01G05,Eucalyptus melliodora,NA,NA,-36.42797,144.41092,114,LB-W1-9,WGS84,LB-W1,334,Eucalyptus melliodora,E_melliodora
+LBM01G06,Eucalyptus melliodora,NA,NA,-36.63518,149.56728,186,LB-H-7,WGS84,LB-H,334,Eucalyptus melliodora,E_melliodora
+LBM01G07,Eucalyptus melliodora,NA,NA,-36.3675,145.70232,268,LB-D-2,WGS84,LB-D,334,Eucalyptus melliodora,E_melliodora
+LBM01G08,Eucalyptus melliodora,NA,NA,-36.3675,145.70232,268,LB-D-10,WGS84,LB-D,334,Eucalyptus melliodora,E_melliodora
+LBM01G09,Eucalyptus melliodora,NA,NA,-33.423,149.752,844,LB-V-8,WGS84,LB-V,334,Eucalyptus melliodora,E_melliodora
+LBM01G11,Eucalyptus melliodora,NA,NA,-33.416668,149.55055,712,LB-1-4,WGS84,LB-1,334,Eucalyptus melliodora,E_melliodora
+LBM01H05,Eucalyptus melliodora,NA,NA,-36.42797,144.41092,114,LB-W1-10,WGS84,LB-W1,334,Eucalyptus melliodora,E_melliodora
+LBM01H06,Eucalyptus melliodora,NA,NA,-36.63518,149.56728,186,LB-H-8,WGS84,LB-H,334,Eucalyptus melliodora,E_melliodora
+LBM01H07,Eucalyptus melliodora,NA,NA,-36.3675,145.70232,268,LB-D-3,WGS84,LB-D,334,Eucalyptus melliodora,E_melliodora
+LBM01H08,Eucalyptus melliodora,NA,NA,-33.423,149.752,844,LB-V-1,WGS84,LB-V,334,Eucalyptus melliodora,E_melliodora
+LBM01H09,Eucalyptus melliodora,NA,NA,-33.423,149.752,844,LB-V-9,WGS84,LB-V,334,Eucalyptus melliodora,E_melliodora
+LBM01H10,Eucalyptus melliodora,NA,NA,-36.388,146.481,181,LB-A-8,WGS84,LB-A,334,Eucalyptus melliodora,E_melliodora
+LBM01H11,Eucalyptus melliodora,NA,NA,-33.416668,149.55055,712,LB-1-5,WGS84,LB-1,334,Eucalyptus melliodora,E_melliodora
+LBM01H12,Eucalyptus melliodora,NA,NA,-35.03333,147.33333,NA,LB-C-3,WGS84,LB-C,334,Eucalyptus melliodora,E_melliodora
+LBM02A01,Eucalyptus melliodora,NA,NA,-35.03333,147.33333,NA,LB-C-4,WGS84,LB-C,334,Eucalyptus melliodora,E_melliodora
+LBM02A03,Eucalyptus melliodora,NA,NA,-34.036884,148.5675,318,LB-N1-1,WGS84,LB-N1,334,Eucalyptus melliodora,E_melliodora
+LBM02A04,Eucalyptus melliodora,NA,NA,-34.036884,148.5675,318,LB-N1-9,WGS84,LB-N1,334,Eucalyptus melliodora,E_melliodora
+LBM02A08,Eucalyptus melliodora,NA,NA,-33.121143000000004,149.05785,709,LB-J2-4,WGS84,LB-J2,334,Eucalyptus melliodora,E_melliodora
+LBM02A10,Eucalyptus melliodora,NA,NA,-33.44218,147.51628,213,LB-17-10,WGS84,LB-17,334,Eucalyptus melliodora,E_melliodora
+LBM02B01,Eucalyptus melliodora,NA,NA,-35.03333,147.33333,NA,LB-C-5,WGS84,LB-C,334,Eucalyptus melliodora,E_melliodora
+LBM02B02,Eucalyptus melliodora,NA,NA,-33.6166,149.64452,782,LB-N2-4,WGS84,LB-N2,334,Eucalyptus melliodora,E_melliodora
+LBM02B03,Eucalyptus melliodora,NA,NA,-34.036884,148.5675,318,LB-N1-2,WGS84,LB-N1,334,Eucalyptus melliodora,E_melliodora
+LBM02B04,Eucalyptus melliodora,NA,NA,-34.036884,148.5675,318,LB-N1-10,WGS84,LB-N1,334,Eucalyptus melliodora,E_melliodora
+LBM02B05,Eucalyptus melliodora,NA,NA,-27.368696,152.03023,625,LB-3-8,WGS84,LB-3,334,Eucalyptus melliodora,E_melliodora
+LBM02B06,Eucalyptus melliodora,NA,NA,-33.936944,116.963333,NA,LB-7-6,WGS84,LB-7,334,Eucalyptus melliodora,E_melliodora
+LBM02B07,Eucalyptus melliodora,NA,NA,-35.235664,149.16422,613,LB-B-7,WGS84,LB-B,334,Eucalyptus melliodora,E_melliodora
+LBM02B08,Eucalyptus melliodora,NA,NA,-33.121143000000004,149.05785,709,LB-J2-5,WGS84,LB-J2,334,Eucalyptus melliodora,E_melliodora
+LBM02B09,Eucalyptus melliodora,NA,NA,-33.44218,147.51628,213,LB-17-3,WGS84,LB-17,334,Eucalyptus melliodora,E_melliodora
+LBM02B11,Eucalyptus melliodora,NA,NA,-35.40026,149.1318,669,LB-11-9,WGS84,LB-11,334,Eucalyptus melliodora,E_melliodora
+LBM02B12,Eucalyptus melliodora,NA,NA,-36.54041,146.10739,195,LB-i2-7,WGS84,LB-i2,334,Eucalyptus melliodora,E_melliodora
+LBM02C01,Eucalyptus melliodora,NA,NA,-35.03333,147.33333,NA,LB-C-6,WGS84,LB-C,334,Eucalyptus melliodora,E_melliodora
+LBM02C02,Eucalyptus melliodora,NA,NA,-33.6166,149.64452,782,LB-N2-5,WGS84,LB-N2,334,Eucalyptus melliodora,E_melliodora
+LBM02C03,Eucalyptus melliodora,NA,NA,-34.036884,148.5675,318,LB-N1-3,WGS84,LB-N1,334,Eucalyptus melliodora,E_melliodora
+LBM02C04,Eucalyptus melliodora,NA,NA,-27.368696,152.03023,625,LB-3-1,WGS84,LB-3,334,Eucalyptus melliodora,E_melliodora
+LBM02C05,Eucalyptus melliodora,NA,NA,-27.368696,152.03023,625,LB-3-9,WGS84,LB-3,334,Eucalyptus melliodora,E_melliodora
+LBM02C06,Eucalyptus melliodora,NA,NA,-33.936944,116.963333,NA,LB-7-7,WGS84,LB-7,334,Eucalyptus melliodora,E_melliodora
+LBM02C07,Eucalyptus melliodora,NA,NA,-35.235664,149.16422,613,LB-B-8,WGS84,LB-B,334,Eucalyptus melliodora,E_melliodora
+LBM02C08,Eucalyptus melliodora,NA,NA,-33.121143000000004,149.05785,709,LB-J2-6,WGS84,LB-J2,334,Eucalyptus melliodora,E_melliodora
+LBM02C09,Eucalyptus melliodora,NA,NA,-33.44218,147.51628,213,LB-17-4,WGS84,LB-17,334,Eucalyptus melliodora,E_melliodora
+LBM02C10,Eucalyptus melliodora,NA,NA,-35.40026,149.1318,669,LB-11-2,WGS84,LB-11,334,Eucalyptus melliodora,E_melliodora
+LBM02C11,Eucalyptus melliodora,NA,NA,-35.40026,149.1318,669,LB-11-10,WGS84,LB-11,334,Eucalyptus melliodora,E_melliodora
+LBM02C12,Eucalyptus melliodora,NA,NA,-36.54041,146.10739,195,LB-i2-8,WGS84,LB-i2,334,Eucalyptus melliodora,E_melliodora
+LBM02D01,Eucalyptus melliodora,NA,NA,-35.03333,147.33333,NA,LB-C-7,WGS84,LB-C,334,Eucalyptus melliodora,E_melliodora
+LBM02D02,Eucalyptus melliodora,NA,NA,-33.6166,149.64452,782,LB-N2-6,WGS84,LB-N2,334,Eucalyptus melliodora,E_melliodora
+LBM02D03,Eucalyptus melliodora,NA,NA,-34.036884,148.5675,318,LB-N1-4,WGS84,LB-N1,334,Eucalyptus melliodora,E_melliodora
+LBM02D04,Eucalyptus melliodora,NA,NA,-27.368696,152.03023,625,LB-3-2,WGS84,LB-3,334,Eucalyptus melliodora,E_melliodora
+LBM02D05,Eucalyptus melliodora,NA,NA,-27.368696,152.03023,625,LB-3-10,WGS84,LB-3,334,Eucalyptus melliodora,E_melliodora
+LBM02D07,Eucalyptus melliodora,NA,NA,-35.235664,149.16422,613,LB-B-9,WGS84,LB-B,334,Eucalyptus melliodora,E_melliodora
+LBM02D08,Eucalyptus melliodora,NA,NA,-33.121143000000004,149.05785,709,LB-J2-7,WGS84,LB-J2,334,Eucalyptus melliodora,E_melliodora
+LBM02D09,Eucalyptus melliodora,NA,NA,-33.44218,147.51628,213,LB-17-5,WGS84,LB-17,334,Eucalyptus melliodora,E_melliodora
+LBM02D10,Eucalyptus melliodora,NA,NA,-35.40026,149.1318,669,LB-11-3,WGS84,LB-11,334,Eucalyptus melliodora,E_melliodora
+LBM02D11,Eucalyptus melliodora,NA,NA,-36.54041,146.10739,195,LB-i2-1,WGS84,LB-i2,334,Eucalyptus melliodora,E_melliodora
+LBM02D12,Eucalyptus melliodora,NA,NA,-36.54041,146.10739,195,LB-i2-9,WGS84,LB-i2,334,Eucalyptus melliodora,E_melliodora
+LBM02F01,Eucalyptus melliodora,NA,NA,-35.03333,147.33333,NA,LB-C-9,WGS84,LB-C,334,Eucalyptus melliodora,E_melliodora
+LBM02F02,Eucalyptus melliodora,NA,NA,-33.6166,149.64452,782,LB-N2-8,WGS84,LB-N2,334,Eucalyptus melliodora,E_melliodora
+LBM02F03,Eucalyptus melliodora,NA,NA,-34.036884,148.5675,318,LB-N1-6,WGS84,LB-N1,334,Eucalyptus melliodora,E_melliodora
+LBM02F04,Eucalyptus melliodora,NA,NA,-27.368696,152.03023,625,LB-3-4,WGS84,LB-3,334,Eucalyptus melliodora,E_melliodora
+LBM02F06,Eucalyptus melliodora,NA,NA,-35.235664,149.16422,613,LB-B-3,WGS84,LB-B,334,Eucalyptus melliodora,E_melliodora
+LBM02F07,Eucalyptus melliodora,NA,NA,-33.121143000000004,149.05785,709,LB-J2-1,WGS84,LB-J2,334,Eucalyptus melliodora,E_melliodora
+LBM02F08,Eucalyptus melliodora,NA,NA,-33.121143000000004,149.05785,709,LB-J2-9,WGS84,LB-J2,334,Eucalyptus melliodora,E_melliodora
+LBM02F09,Eucalyptus melliodora,NA,NA,-33.44218,147.51628,213,LB-17-7,WGS84,LB-17,334,Eucalyptus melliodora,E_melliodora
+LBM02F10,Eucalyptus melliodora,NA,NA,-35.40026,149.1318,669,LB-11-5,WGS84,LB-11,334,Eucalyptus melliodora,E_melliodora
+LBM02F11,Eucalyptus melliodora,NA,NA,-36.54041,146.10739,195,LB-i2-3,WGS84,LB-i2,334,Eucalyptus melliodora,E_melliodora
+LBM02G01,Eucalyptus melliodora,NA,NA,-33.6166,149.64452,782,LB-N2-1,WGS84,LB-N2,334,Eucalyptus melliodora,E_melliodora
+LBM02G02,Eucalyptus melliodora,NA,NA,-33.6166,149.64452,782,LB-N2-9,WGS84,LB-N2,334,Eucalyptus melliodora,E_melliodora
+LBM02G03,Eucalyptus melliodora,NA,NA,-34.036884,148.5675,318,LB-N1-7,WGS84,LB-N1,334,Eucalyptus melliodora,E_melliodora
+LBM02G04,Eucalyptus melliodora,NA,NA,-27.368696,152.03023,625,LB-3-5,WGS84,LB-3,334,Eucalyptus melliodora,E_melliodora
+LBM02G05,Eucalyptus melliodora,NA,NA,-33.936944,116.963333,NA,LB-7-3,WGS84,LB-7,334,Eucalyptus melliodora,E_melliodora
+LBM02G06,Eucalyptus melliodora,NA,NA,-35.235664,149.16422,613,LB-B-4,WGS84,LB-B,334,Eucalyptus melliodora,E_melliodora
+LBM02G07,Eucalyptus melliodora,NA,NA,-33.121143000000004,149.05785,709,LB-J2-2,WGS84,LB-J2,334,Eucalyptus melliodora,E_melliodora
+LBM02G08,Eucalyptus melliodora,NA,NA,-33.121143000000004,149.05785,709,LB-J2-10,WGS84,LB-J2,334,Eucalyptus melliodora,E_melliodora
+LBM02G09,Eucalyptus melliodora,NA,NA,-33.44218,147.51628,213,LB-17-8,WGS84,LB-17,334,Eucalyptus melliodora,E_melliodora
+LBM02G10,Eucalyptus melliodora,NA,NA,-35.40026,149.1318,669,LB-11-6,WGS84,LB-11,334,Eucalyptus melliodora,E_melliodora
+LBM02G11,Eucalyptus melliodora,NA,NA,-36.54041,146.10739,195,LB-i2-4,WGS84,LB-i2,334,Eucalyptus melliodora,E_melliodora
+LBM02G12,Eucalyptus melliodora,NA,NA,-33.224724,149.28056,NA,LB-16-2,WGS84,LB-16,334,Eucalyptus melliodora,E_melliodora
+LBM02H02,Eucalyptus melliodora,NA,NA,-33.6166,149.64452,782,LB-N2-10,WGS84,LB-N2,334,Eucalyptus melliodora,E_melliodora
+LBM02H03,Eucalyptus melliodora,NA,NA,-34.036884,148.5675,318,LB-N1-8,WGS84,LB-N1,334,Eucalyptus melliodora,E_melliodora
+LBM02H04,Eucalyptus melliodora,NA,NA,-27.368696,152.03023,625,LB-3-6,WGS84,LB-3,334,Eucalyptus melliodora,E_melliodora
+LBM02H05,Eucalyptus melliodora,NA,NA,-33.936944,116.963333,NA,LB-7-4,WGS84,LB-7,334,Eucalyptus melliodora,E_melliodora
+LBM02H08,Eucalyptus melliodora,NA,NA,-33.44218,147.51628,213,LB-17-1,WGS84,LB-17,334,Eucalyptus melliodora,E_melliodora
+LBM02H09,Eucalyptus melliodora,NA,NA,-33.44218,147.51628,213,LB-17-9,WGS84,LB-17,334,Eucalyptus melliodora,E_melliodora
+LBM02H10,Eucalyptus melliodora,NA,NA,-35.40026,149.1318,669,LB-11-7,WGS84,LB-11,334,Eucalyptus melliodora,E_melliodora
+LBM02H11,Eucalyptus melliodora,NA,NA,-36.54041,146.10739,195,LB-i2-5,WGS84,LB-i2,334,Eucalyptus melliodora,E_melliodora
+LBM03A02,Eucalyptus melliodora,NA,NA,-36.6755,146.26477,236,LB-2-5,WGS84,LB-2,334,Eucalyptus melliodora,E_melliodora
+LBM03A11,Eucalyptus melliodora,NA,NA,-34.911785,148.971179,562,LB-20-7,WGS84,LB-20,334,Eucalyptus melliodora,E_melliodora
+LBM03B02,Eucalyptus melliodora,NA,NA,-36.6755,146.26477,236,LB-2-6,WGS84,LB-2,334,Eucalyptus melliodora,E_melliodora
+LBM03B04,Eucalyptus melliodora,NA,NA,-33.710145,149.52355,978,LB-5-2,WGS84,LB-5,334,Eucalyptus melliodora,E_melliodora
+LBM03B05,Eucalyptus melliodora,NA,NA,-33.710145,149.52355,978,LB-5-10,WGS84,LB-5,334,Eucalyptus melliodora,E_melliodora
+LBM03B07,Eucalyptus melliodora,NA,NA,-35.26495,147.310133,265,LB-T1-6,WGS84,LB-T1,334,Eucalyptus melliodora,E_melliodora
+LBM03B09,Eucalyptus melliodora,NA,NA,-30.54493,151.79367,1055,LB-K2-2,WGS84,LB-K2,334,Eucalyptus melliodora,E_melliodora
+LBM03B10,Eucalyptus melliodora,NA,NA,-30.54493,151.79367,1055,LB-K2-10,WGS84,LB-K2,334,Eucalyptus melliodora,E_melliodora
+LBM03B11,Eucalyptus melliodora,NA,NA,-34.911785,148.971179,562,LB-20-8,WGS84,LB-20,334,Eucalyptus melliodora,E_melliodora
+LBM03C02,Eucalyptus melliodora,NA,NA,-36.6755,146.26477,236,LB-2-7,WGS84,LB-2,334,Eucalyptus melliodora,E_melliodora
+LBM03C03,Eucalyptus melliodora,NA,NA,-32.389167,150.881667,147,LB-14-5,WGS84,LB-14,334,Eucalyptus melliodora,E_melliodora
+LBM03C04,Eucalyptus melliodora,NA,NA,-33.710145,149.52355,978,LB-5-3,WGS84,LB-5,334,Eucalyptus melliodora,E_melliodora
+LBM03C05,Eucalyptus melliodora,NA,NA,-37.285278,143.77778,321,LB-10-1,WGS84,LB-10,334,Eucalyptus melliodora,E_melliodora
+LBM03C07,Eucalyptus melliodora,NA,NA,-35.26495,147.310133,265,LB-T1-7,WGS84,LB-T1,334,Eucalyptus melliodora,E_melliodora
+LBM03C09,Eucalyptus melliodora,NA,NA,-30.54493,151.79367,1055,LB-K2-3,WGS84,LB-K2,334,Eucalyptus melliodora,E_melliodora
+LBM03C10,Eucalyptus melliodora,NA,NA,-34.911785,148.971179,562,LB-20-1,WGS84,LB-20,334,Eucalyptus melliodora,E_melliodora
+LBM03C11,Eucalyptus melliodora,NA,NA,-34.911785,148.971179,562,LB-20-9,WGS84,LB-20,334,Eucalyptus melliodora,E_melliodora
+LBM03D01,Eucalyptus melliodora,NA,NA,-33.224724,149.28056,NA,LB-16-7,WGS84,LB-16,334,Eucalyptus melliodora,E_melliodora
+LBM03D02,Eucalyptus melliodora,NA,NA,-36.6755,146.26477,236,LB-2-8,WGS84,LB-2,334,Eucalyptus melliodora,E_melliodora
+LBM03D03,Eucalyptus melliodora,NA,NA,-32.389167,150.881667,147,LB-14-6,WGS84,LB-14,334,Eucalyptus melliodora,E_melliodora
+LBM03D04,Eucalyptus melliodora,NA,NA,-33.710145,149.52355,978,LB-5-4,WGS84,LB-5,334,Eucalyptus melliodora,E_melliodora
+LBM03D05,Eucalyptus melliodora,NA,NA,-37.285278,143.77778,321,LB-10-2,WGS84,LB-10,334,Eucalyptus melliodora,E_melliodora
+LBM03D06,Eucalyptus melliodora,NA,NA,-37.285278,143.77778,321,LB-10-10,WGS84,LB-10,334,Eucalyptus melliodora,E_melliodora
+LBM03D07,Eucalyptus melliodora,NA,NA,-35.26495,147.310133,265,LB-T1-8,WGS84,LB-T1,334,Eucalyptus melliodora,E_melliodora
+LBM03D08,Eucalyptus melliodora,NA,NA,-37.179444,144.483333,517,LB-19-6,WGS84,LB-19,334,Eucalyptus melliodora,E_melliodora
+LBM03D09,Eucalyptus melliodora,NA,NA,-30.54493,151.79367,1055,LB-K2-4,WGS84,LB-K2,334,Eucalyptus melliodora,E_melliodora
+LBM03D10,Eucalyptus melliodora,NA,NA,-34.911785,148.971179,562,LB-20-2,WGS84,LB-20,334,Eucalyptus melliodora,E_melliodora
+LBM03D11,Eucalyptus melliodora,NA,NA,-34.911785,148.971179,562,LB-20-10,WGS84,LB-20,334,Eucalyptus melliodora,E_melliodora
+LBM03F01,Eucalyptus melliodora,NA,NA,-36.6755,146.26477,236,LB-2-2,WGS84,LB-2,334,Eucalyptus melliodora,E_melliodora
+LBM03F04,Eucalyptus melliodora,NA,NA,-33.710145,149.52355,978,LB-5-6,WGS84,LB-5,334,Eucalyptus melliodora,E_melliodora
+LBM03F05,Eucalyptus melliodora,NA,NA,-37.285278,143.77778,321,LB-10-4,WGS84,LB-10,334,Eucalyptus melliodora,E_melliodora
+LBM03F06,Eucalyptus melliodora,NA,NA,-35.26495,147.310133,265,LB-T1-2,WGS84,LB-T1,334,Eucalyptus melliodora,E_melliodora
+LBM03F07,Eucalyptus melliodora,NA,NA,-35.26495,147.310133,265,LB-T1-10,WGS84,LB-T1,334,Eucalyptus melliodora,E_melliodora
+LBM03F08,Eucalyptus melliodora,NA,NA,-37.179444,144.483333,517,LB-19-8,WGS84,LB-19,334,Eucalyptus melliodora,E_melliodora
+LBM03F09,Eucalyptus melliodora,NA,NA,-30.54493,151.79367,1055,LB-K2-6,WGS84,LB-K2,334,Eucalyptus melliodora,E_melliodora
+LBM03F10,Eucalyptus melliodora,NA,NA,-34.911785,148.971179,562,LB-20-4,WGS84,LB-20,334,Eucalyptus melliodora,E_melliodora
+LBM03F11,Eucalyptus melliodora,NA,NA,-36.580471,143.521639,206,LB-W2-2,WGS84,LB-W2,334,Eucalyptus melliodora,E_melliodora
+LBM03G02,Eucalyptus melliodora,NA,NA,-32.389167,150.881667,147,LB-14-1,WGS84,LB-14,334,Eucalyptus melliodora,E_melliodora
+LBM03G05,Eucalyptus melliodora,NA,NA,-37.285278,143.77778,321,LB-10-5,WGS84,LB-10,334,Eucalyptus melliodora,E_melliodora
+LBM03G06,Eucalyptus melliodora,NA,NA,-35.26495,147.310133,265,LB-T1-3,WGS84,LB-T1,334,Eucalyptus melliodora,E_melliodora
+LBM03G07,Eucalyptus melliodora,NA,NA,-37.179444,144.483333,517,LB-19-1,WGS84,LB-19,334,Eucalyptus melliodora,E_melliodora
+LBM03G08,Eucalyptus melliodora,NA,NA,-37.179444,144.483333,517,LB-19-9,WGS84,LB-19,334,Eucalyptus melliodora,E_melliodora
+LBM03G09,Eucalyptus melliodora,NA,NA,-30.54493,151.79367,1055,LB-K2-7,WGS84,LB-K2,334,Eucalyptus melliodora,E_melliodora
+LBM03G10,Eucalyptus melliodora,NA,NA,-34.911785,148.971179,562,LB-20-5,WGS84,LB-20,334,Eucalyptus melliodora,E_melliodora
+LBM03G11,Eucalyptus melliodora,NA,NA,-36.580471,143.521639,206,LB-W2-3,WGS84,LB-W2,334,Eucalyptus melliodora,E_melliodora
+LBM03H06,Eucalyptus melliodora,NA,NA,-35.26495,147.310133,265,LB-T1-4,WGS84,LB-T1,334,Eucalyptus melliodora,E_melliodora
+LBM04A01,Eucalyptus melliodora,NA,NA,-36.980278,144.047611,333,LB-24-3,WGS84,LB-24,334,Eucalyptus melliodora,E_melliodora
+LBM04A02,Eucalyptus melliodora,NA,NA,-36.487921,143.891325,138,LB-W3-1,WGS84,LB-W3,334,Eucalyptus melliodora,E_melliodora
+LBM04A03,Eucalyptus melliodora,NA,NA,-36.487921,143.891325,138,LB-W3-9,WGS84,LB-W3,334,Eucalyptus melliodora,E_melliodora
+LBM04A05,Eucalyptus melliodora,NA,NA,-37.144361,142.839428,244,LB-21-5,WGS84,LB-21,334,Eucalyptus melliodora,E_melliodora
+LBM04B01,Eucalyptus melliodora,NA,NA,-36.980278,144.047611,333,LB-24-4,WGS84,LB-24,334,Eucalyptus melliodora,E_melliodora
+LBM04B02,Eucalyptus melliodora,NA,NA,-36.487921,143.891325,138,LB-W3-2,WGS84,LB-W3,334,Eucalyptus melliodora,E_melliodora
+LBM04B04,Eucalyptus melliodora,NA,NA,-35.299683,147.165733,258,LB-T3-8,WGS84,LB-T3,334,Eucalyptus melliodora,E_melliodora
+LBM04B06,Eucalyptus melliodora,NA,NA,-35.37515,147.25261,266,LB-T2-4,WGS84,LB-T2,334,Eucalyptus melliodora,E_melliodora
+LBM04B08,Eucalyptus melliodora,NA,NA,-35.39474,149.677129,NA,LB-26-4,WGS84,LB-26,334,Eucalyptus melliodora,E_melliodora
+LBM04C02,Eucalyptus melliodora,NA,NA,-36.487921,143.891325,138,LB-W3-3,WGS84,LB-W3,334,Eucalyptus melliodora,E_melliodora
+LBM04C03,Eucalyptus melliodora,NA,NA,-35.299683,147.165733,258,LB-T3-1,WGS84,LB-T3,334,Eucalyptus melliodora,E_melliodora
+LBM04C04,Eucalyptus melliodora,NA,NA,-35.299683,147.165733,258,LB-T3-9,WGS84,LB-T3,334,Eucalyptus melliodora,E_melliodora
+LBM04C05,Eucalyptus melliodora,NA,NA,-37.144361,142.839428,244,LB-21-7,WGS84,LB-21,334,Eucalyptus melliodora,E_melliodora
+LBM04C06,Eucalyptus melliodora,NA,NA,-35.37515,147.25261,266,LB-T2-5,WGS84,LB-T2,334,Eucalyptus melliodora,E_melliodora
+LBM04D01,Eucalyptus melliodora,NA,NA,-36.980278,144.047611,333,LB-24-6,WGS84,LB-24,334,Eucalyptus melliodora,E_melliodora
+LBM04D02,Eucalyptus melliodora,NA,NA,-36.487921,143.891325,138,LB-W3-4,WGS84,LB-W3,334,Eucalyptus melliodora,E_melliodora
+LBM04D05,Eucalyptus melliodora,NA,NA,-37.144361,142.839428,244,LB-21-8,WGS84,LB-21,334,Eucalyptus melliodora,E_melliodora
+LBM04D06,Eucalyptus melliodora,NA,NA,-35.37515,147.25261,266,LB-T2-6,WGS84,LB-T2,334,Eucalyptus melliodora,E_melliodora
+LBM04D08,Eucalyptus melliodora,NA,NA,-35.39474,149.677129,NA,LB-26-6,WGS84,LB-26,334,Eucalyptus melliodora,E_melliodora
+LBM04F01,Eucalyptus melliodora,NA,NA,-36.980278,144.047611,333,LB-24-8,WGS84,LB-24,334,Eucalyptus melliodora,E_melliodora
+LBM04F02,Eucalyptus melliodora,NA,NA,-36.487921,143.891325,138,LB-W3-6,WGS84,LB-W3,334,Eucalyptus melliodora,E_melliodora
+LBM04F03,Eucalyptus melliodora,NA,NA,-35.299683,147.165733,258,LB-T3-4,WGS84,LB-T3,334,Eucalyptus melliodora,E_melliodora
+LBM04F04,Eucalyptus melliodora,NA,NA,-37.144361,142.839428,244,LB-21-2,WGS84,LB-21,334,Eucalyptus melliodora,E_melliodora
+LBM04F05,Eucalyptus melliodora,NA,NA,-37.144361,142.839428,244,LB-21-10,WGS84,LB-21,334,Eucalyptus melliodora,E_melliodora
+LBM04F06,Eucalyptus melliodora,NA,NA,-35.37515,147.25261,266,LB-T2-8,WGS84,LB-T2,334,Eucalyptus melliodora,E_melliodora
+LBM04G01,Eucalyptus melliodora,NA,NA,-36.980278,144.047611,333,LB-24-9,WGS84,LB-24,334,Eucalyptus melliodora,E_melliodora
+LBM04G02,Eucalyptus melliodora,NA,NA,-36.487921,143.891325,138,LB-W3-7,WGS84,LB-W3,334,Eucalyptus melliodora,E_melliodora
+LBM04G03,Eucalyptus melliodora,NA,NA,-35.299683,147.165733,258,LB-T3-5,WGS84,LB-T3,334,Eucalyptus melliodora,E_melliodora
+LBM04G04,Eucalyptus melliodora,NA,NA,-37.144361,142.839428,244,LB-21-3,WGS84,LB-21,334,Eucalyptus melliodora,E_melliodora
+LBM04G05,Eucalyptus melliodora,NA,NA,-35.37515,147.25261,266,LB-T2-1,WGS84,LB-T2,334,Eucalyptus melliodora,E_melliodora
+LBM04G06,Eucalyptus melliodora,NA,NA,-35.37515,147.25261,266,LB-T2-9,WGS84,LB-T2,334,Eucalyptus melliodora,E_melliodora
+LBM04G08,Eucalyptus melliodora,NA,NA,-35.39474,149.677129,NA,LB-26-9,WGS84,LB-26,334,Eucalyptus melliodora,E_melliodora
+LBM04H01,Eucalyptus melliodora,NA,NA,-36.980278,144.047611,333,LB-24-10,WGS84,LB-24,334,Eucalyptus melliodora,E_melliodora
+LBM01E01,Eucalyptus melliodora,NA,NA,-36.632668,144.35019,178,LB-U-5,WGS84,LB-U,334,Eucalyptus melliodora,E_melliodora
+LBM02E01,Eucalyptus melliodora,NA,NA,-35.03333,147.33333,NA,LB-C-8,WGS84,LB-C,334,Eucalyptus melliodora,E_melliodora
+LBM03E01,Eucalyptus melliodora,NA,NA,-36.6755,146.26477,236,LB-2-1,WGS84,LB-2,334,Eucalyptus melliodora,E_melliodora
+LBM04E01,Eucalyptus melliodora,NA,NA,-36.980278,144.047611,333,LB-24-7,WGS84,LB-24,334,Eucalyptus melliodora,E_melliodora
+LBM01E02,Eucalyptus melliodora,NA,NA,-35.819633,145.31187,101,LB-P-3,WGS84,LB-P,334,Eucalyptus melliodora,E_melliodora
+LBM02E02,Eucalyptus melliodora,NA,NA,-33.6166,149.64452,782,LB-N2-7,WGS84,LB-N2,334,Eucalyptus melliodora,E_melliodora
+LBM03E02,Eucalyptus melliodora,NA,NA,-36.6755,146.26477,236,LB-2-9,WGS84,LB-2,334,Eucalyptus melliodora,E_melliodora
+LBM04E02,Eucalyptus melliodora,NA,NA,-36.487921,143.891325,138,LB-W3-5,WGS84,LB-W3,334,Eucalyptus melliodora,E_melliodora
+LBM01E03,Eucalyptus melliodora,NA,NA,-36.86476,148.85016,638,LB-G-1,WGS84,LB-G,334,Eucalyptus melliodora,E_melliodora
+LBM02E03,Eucalyptus melliodora,NA,NA,-34.036884,148.5675,318,LB-N1-5,WGS84,LB-N1,334,Eucalyptus melliodora,E_melliodora
+LBM04E03,Eucalyptus melliodora,NA,NA,-35.299683,147.165733,258,LB-T3-3,WGS84,LB-T3,334,Eucalyptus melliodora,E_melliodora
+LBM01E04,Eucalyptus melliodora,NA,NA,-36.86476,148.85016,638,LB-G-9,WGS84,LB-G,334,Eucalyptus melliodora,E_melliodora
+LBM02E04,Eucalyptus melliodora,NA,NA,-27.368696,152.03023,625,LB-3-3,WGS84,LB-3,334,Eucalyptus melliodora,E_melliodora
+LBM03E04,Eucalyptus melliodora,NA,NA,-33.710145,149.52355,978,LB-5-5,WGS84,LB-5,334,Eucalyptus melliodora,E_melliodora
+LBM04E04,Eucalyptus melliodora,NA,NA,-37.144361,142.839428,244,LB-21-1,WGS84,LB-21,334,Eucalyptus melliodora,E_melliodora
+LBM02E05,Eucalyptus melliodora,NA,NA,-33.936944,116.963333,NA,LB-7-1,WGS84,LB-7,334,Eucalyptus melliodora,E_melliodora
+LBM04E05,Eucalyptus melliodora,NA,NA,-37.144361,142.839428,244,LB-21-9,WGS84,LB-21,334,Eucalyptus melliodora,E_melliodora
+LBM01E06,Eucalyptus melliodora,NA,NA,-36.63518,149.56728,186,LB-H-5,WGS84,LB-H,334,Eucalyptus melliodora,E_melliodora
+LBM02E06,Eucalyptus melliodora,NA,NA,-35.235664,149.16422,613,LB-B-2,WGS84,LB-B,334,Eucalyptus melliodora,E_melliodora
+LBM03E06,Eucalyptus melliodora,NA,NA,-35.26495,147.310133,265,LB-T1-1,WGS84,LB-T1,334,Eucalyptus melliodora,E_melliodora
+LBM04E06,Eucalyptus melliodora,NA,NA,-35.37515,147.25261,266,LB-T2-7,WGS84,LB-T2,334,Eucalyptus melliodora,E_melliodora
+LBM02E07,Eucalyptus melliodora,NA,NA,-35.235664,149.16422,613,LB-B-10,WGS84,LB-B,334,Eucalyptus melliodora,E_melliodora
+LBM03E07,Eucalyptus melliodora,NA,NA,-35.26495,147.310133,265,LB-T1-9,WGS84,LB-T1,334,Eucalyptus melliodora,E_melliodora
+LBM01E08,Eucalyptus melliodora,NA,NA,-36.3675,145.70232,268,LB-D-8,WGS84,LB-D,334,Eucalyptus melliodora,E_melliodora
+LBM03E08,Eucalyptus melliodora,NA,NA,-37.179444,144.483333,517,LB-19-7,WGS84,LB-19,334,Eucalyptus melliodora,E_melliodora
+LBM04E08,Eucalyptus melliodora,NA,NA,-35.39474,149.677129,NA,LB-26-7,WGS84,LB-26,334,Eucalyptus melliodora,E_melliodora
+LBM01E09,Eucalyptus melliodora,NA,NA,-33.423,149.752,844,LB-V-6,WGS84,LB-V,334,Eucalyptus melliodora,E_melliodora
+LBM02E09,Eucalyptus melliodora,NA,NA,-33.44218,147.51628,213,LB-17-6,WGS84,LB-17,334,Eucalyptus melliodora,E_melliodora
+LBM03E09,Eucalyptus melliodora,NA,NA,-30.54493,151.79367,1055,LB-K2-5,WGS84,LB-K2,334,Eucalyptus melliodora,E_melliodora
+LBM02E10,Eucalyptus melliodora,NA,NA,-35.40026,149.1318,669,LB-11-4,WGS84,LB-11,334,Eucalyptus melliodora,E_melliodora
+LBM03E10,Eucalyptus melliodora,NA,NA,-34.911785,148.971179,562,LB-20-3,WGS84,LB-20,334,Eucalyptus melliodora,E_melliodora
+LBM02E11,Eucalyptus melliodora,NA,NA,-36.54041,146.10739,195,LB-i2-2,WGS84,LB-i2,334,Eucalyptus melliodora,E_melliodora
+LBM03E11,Eucalyptus melliodora,NA,NA,-36.580471,143.521639,206,LB-W2-1,WGS84,LB-W2,334,Eucalyptus melliodora,E_melliodora
+LBM04E11,Eucalyptus melliodora,NA,NA,-33.936944,116.963333,NA,LB-7-1,WGS84,LB-7,334,Eucalyptus melliodora,E_melliodora
+LBM01E12,Eucalyptus melliodora,NA,NA,-33.416668,149.55055,712,LB-1-10,WGS84,LB-1,334,Eucalyptus melliodora,E_melliodora
+LBM02E12,Eucalyptus melliodora,NA,NA,-36.54041,146.10739,195,LB-i2-10,WGS84,LB-i2,334,Eucalyptus melliodora,E_melliodora
+LBM03E12,Eucalyptus melliodora,NA,NA,-36.580471,143.521639,206,LB-W2-9,WGS84,LB-W2,334,Eucalyptus melliodora,E_melliodora
+CCA0672,Eucalyptus polyanthemos subsp. polyanthemos,NSW,NA,-32.6936111111111,150.002777777778,NA,NA,WGS84,NA,1,Eucalyptus polyanthemos,E_polyanthemos
+CCA0677,Eucalyptus conica,NSW,NA,-32.4038888888889,150.222222222222,NA,NA,WGS84,NA,18,Eucalyptus polyanthemos,E_polyanthemos
+CCA0704,Eucalyptus melliodora,NSW,NA,-32.7122222222222,149.966111111111,NA,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+CCA0705,Eucalyptus melliodora,NSW,NA,-32.7122222222222,149.966111111111,NA,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+CCA0706,Eucalyptus melliodora,NSW,NA,-32.7122222222222,149.966111111111,NA,NA,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+CCA0708,Eucalyptus caleyi subsp. caleyi,NSW,NA,-32.4036111111111,150.228055555556,NA,NA,WGS84,NA,1,Eucalyptus caleyi,E_caleyi
+CCA0724,Eucalyptus polyanthemos subsp. marginalis,"16.5km from Avoca towards Maryborough, Vic",NA,-37.0833333333333,143.616666666667,NA,NA,WGS84,NA,1,Eucalyptus polyanthemos,E_polyanthemos
+CCA0751,Eucalyptus moluccana,Qld.,NA,-23.8011111111111,150.953333333333,NA,NA,WGS84,NA,11,Eucalyptus albens,E_albens
+CCA0768,Eucalyptus fibrosa,NSW,NA,-29.3022222222222,152.644722222222,NA,NA,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+CCA0807,Eucalyptus sideroxylon,Qld.,NA,-28.9008333333333,151.907777777778,NA,NA,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+CCA0808,Eucalyptus sideroxylon,Qld.,NA,-28.9008333333333,151.907777777778,NA,NA,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+CCA0904,Eucalyptus cloeziana,"Liechhardt Highway, Isla Gorge National Park, Queensland.",NA,-25.1847222222222,149.989166666667,NA,NA,WGS84,NA,1,Eucalyptus cloeziana,E_cloeziana
+CCA1135,Eucalyptus camaldulensis subsp. arida,NA,NA,-23.2041666666667,131.560277777778,NA,NA,WGS84,NA,1,Eucalyptus camadulensis,E_camaldulensis
+CCA1266,Eucalyptus camaldulensis subsp. camaldulensis,NA,NA,-35.6972222222222,137.5225,NA,NA,WGS84,NA,2,Eucalyptus camadulensis,E_camaldulensis
+CCA1478,Eucalyptus coolabah,"Palmer River crossing on Stuart HW, south of Alice Springs, NT",NA,-24.7361111111111,133.182777777778,NA,NA,WGS84,NA,3,Eucalyptus coolabah,E_coolabah
+CCA1504,Eucalyptus melliodora x E. sideroxylon,"East of Goolgowi, Mid Western Highway, NSW",NA,-33.9177777777778,145.943055555556,NA,NA,WGS84,NA,7,Eucalyptus melliodora,E_melliodora
+CCA1505,Eucalyptus melliodora x E. sideroxylon,"East of Goolgowi, Mid Western Highway, NSW",NA,-33.9177777777778,145.943055555556,NA,NA,WGS84,NA,7,Eucalyptus melliodora,E_melliodora
+CCA1506,Eucalyptus melliodora x E. sideroxylon,"East of Goolgowi, Mid Western Highway, NSW",NA,-33.9177777777778,145.943055555556,NA,NA,WGS84,NA,7,Eucalyptus melliodora,E_melliodora
+CCA1507,Eucalyptus melliodora x E. sideroxylon,"East of Goolgowi, Mid Western Highway, NSW",NA,-33.9177777777778,145.943055555556,NA,NA,WGS84,NA,7,Eucalyptus melliodora,E_melliodora
+CCA1543,Eucalyptus microcarpa,"East of West Wyalong, NSW",NA,-33.9036111111111,147.301111111111,NA,NA,WGS84,NA,14,Eucalyptus albens,E_albens
+CCA1644,Eucalyptus camaldulensis subsp. simulata,"Near Laura, QLD",NA,-15.5552777777778,144.439166666667,NA,NA,WGS84,NA,1,Eucalyptus camadulensis,E_camaldulensis
+CCA1654,Eucalyptus grandis,"south of Kew on Pacific HW, NSW",NA,-31.6916666666667,152.734166666667,NA,NA,WGS84,NA,11,Eucalyptus grandis,E_grandis
+CCA1655,Eucalyptus grandis,"south of Kew on Pacific HW, NSW",NA,-31.6916666666667,152.734166666667,NA,NA,WGS84,NA,11,Eucalyptus grandis,E_grandis
+CCA2812,Angophora floribunda,NA,NA,NA,NA,NA,NA,WGS84,NA,2,Angophora floribunda,A_floribunda
+CCA2857,Eucalyptus albens,"South of Melrose, southern Flinders Ranges, SA",NA,-32.9175,138.158888888889,NA,NA,WGS84,NA,225,Eucalyptus albens,E_albens
+CCA3011,Corymbia maculata,"Near Narooma, New South Wales.",NA,-36.2816666666667,150.124722222222,NA,NA,WGS84,NA,8,Corymbia maculata,C_maculata
+CCA3012,Corymbia maculata,"Near Narooma, New South Wales.",NA,-36.2816666666667,150.124722222222,NA,NA,WGS84,NA,8,Corymbia maculata,C_maculata
+CCA3130,Eucalyptus globulus,"South west of Kennett River, Great Ocean Rd, Vic",NA,-38.6886111111111,143.836388888889,NA,NA,WGS84,NA,7,Eucalyptus globulus,E_globulus
+CCA3216,Eucalyptus globulus,Tas,NA,-42.7519444444444,147.826388888889,NA,NA,WGS84,NA,7,Eucalyptus globulus,E_globulus
+CCA3217,Eucalyptus globulus,Tas,NA,-42.7519444444444,147.826388888889,NA,NA,WGS84,NA,7,Eucalyptus globulus,E_globulus
+CCA3451,Eucalyptus camaldulensis subsp. obtusa,"Daly Waters area on the Stuart Highway, NT.",NA,-16.2519444444444,133.397777777778,NA,NA,WGS84,NA,1,Eucalyptus camadulensis,E_camaldulensis
+CCA3711,Eucalyptus coolabah,"Darling River floodplain just south-east of Wilcannia, New South Wales.",NA,-31.5747222222222,143.390555555556,NA,NA,WGS84,NA,3,Eucalyptus coolabah,E_coolabah
+CCA3821,Eucalyptus albens,"West of Wagga Wagga, New South Wales.",NA,-35.1058333333333,147.200277777778,NA,NA,WGS84,NA,225,Eucalyptus albens,E_albens
+CCA3887,Eucalyptus magnificata,"Near Enmore, south of Armidale, New South Wales.",NA,-30.7191666666667,151.722222222222,NA,NA,WGS84,NA,13,Eucalyptus polyanthemos,E_polyanthemos
+CCA4821,Eucalyptus crebra,"Fitzroy Development Rd, near Flora Range, Queensland.",NA,-21.9922222222222,148.559722222222,NA,NA,WGS84,NA,11,Eucalyptus caleyi,E_caleyi
+CCA4957,Eucalyptus camaldulensis subsp. camaldulensis,"Gum Flat, just east of Minlaton on Stansbury road, Yorke Peninsula, South Australia.",NA,-34.7833333333333,137.6,NA,NA,WGS84,NA,2,Eucalyptus camadulensis,E_camaldulensis
+CCA5430,Eucalyptus camaldulensis subsp. minima,"Yunta Creek, ca. 2 km S of Yunta on Spring Dam road, South Australia.",NA,-32.5922222222222,139.568333333333,NA,NA,WGS84,NA,1,Eucalyptus camadulensis,E_camaldulensis
+CCA6869,Eucalyptus melliodora x E. sideroxylon,"East of Goolgowi, Mid Western Highway, NSW",NA,-33.9177777777778,145.943055555556,NA,NA,WGS84,NA,7,Eucalyptus melliodora,E_melliodora
+CCA6870,Eucalyptus melliodora x E. sideroxylon,"East of Goolgowi, Mid Western Highway, NSW",NA,-33.9177777777778,145.943055555556,NA,NA,WGS84,NA,7,Eucalyptus melliodora,E_melliodora
+CCA6871,Eucalyptus melliodora x E. sideroxylon,"East of Goolgowi, Mid Western Highway, NSW",NA,-33.9177777777778,145.943055555556,NA,NA,WGS84,NA,7,Eucalyptus melliodora,E_melliodora
+EB526,Eucalyptus albens,Melrose,NA,-32.8229,138.1843,NA,EB526,WGS84,NA,225,Eucalyptus albens,E_albens
+EB527,Eucalyptus microcarpa,Melrose,NA,-32.8229,138.1843,NA,EB527,WGS84,NA,14,Eucalyptus albens,E_albens
+EB529,Eucalyptus microcarpa,Mount Remarkable,NA,-32.725607,138.081843,NA,EB529,WGS84,NA,14,Eucalyptus albens,E_albens
+EB530,Eucalyptus albens,Melrose,NA,-32.85,138.18006,NA,EB530,WGS84,NA,225,Eucalyptus albens,E_albens
+EB534,Eucalyptus microcarpa,Norton Summit,NA,-35.90853,138.7042,NA,EB534,WGS84,NA,14,Eucalyptus albens,E_albens
+ENE0001,Eucalyptus sp. aff. magnificata,HRF1,2017-11-22T00:00:00Z,-29.84968,152.00146,NA,ENE0001,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+ENE0005,Eucalyptus melliodora,HRF1,2017-11-22T00:00:00Z,-29.85121,152.00075,NA,ENE0005,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+ENE0008,Eucalyptus sp. aff. magnificata,HRF1,2017-11-22T00:00:00Z,-29.85109,152.0009,NA,ENE0008,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+ENE0009,Eucalyptus conica,HRF1,2017-11-22T00:00:00Z,-29.85126,152.00015,NA,ENE0009,WGS84,NA,18,Eucalyptus polyanthemos,E_polyanthemos
+ENE0010,Eucalyptus sp. aff. magnificata,HRF1,2017-11-22T00:00:00Z,-29.85105,151.99956,NA,ENE0010,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+ENE0011,Eucalyptus sp. aff. magnificata,HRF1,2017-11-22T00:00:00Z,-29.85126,151.99948,NA,ENE0011,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+ENE0014,Eucalyptus melliodora,HRF1,2017-11-22T00:00:00Z,-29.84946,152.00108,NA,ENE0014,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+ENE0015,Eucalyptus melliodora,HRF1,2017-11-22T00:00:00Z,-29.84945,152.00114,NA,ENE0015,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+ENE0023,Eucalyptus sp. aff. magnificata,HRF1,2017-11-22T00:00:00Z,-29.84896,152.0058,NA,ENE0023,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+ENE0024,Eucalyptus melliodora,Waterfall Way 2,2017-11-24T00:00:00Z,-30.5176,151.97227,NA,ENE0024,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+ENE0026,Eucalyptus melliodora,Waterfall Way 2,2017-11-24T00:00:00Z,-30.51734,151.97252,NA,ENE0026,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+ENE0028,Eucalyptus melliodora,Waterfall Way 2,2017-11-24T00:00:00Z,-30.5173,151.97264,NA,ENE0028,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+ENE0030,Eucalyptus sp. aff. magnificata,Waterfall Way 2,2017-11-24T00:00:00Z,-30.51709,151.97293,NA,ENE0030,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+ENE0031,Eucalyptus sp. aff. magnificata,Waterfall Way 2,2017-11-24T00:00:00Z,-30.517,151.97298,NA,ENE0031,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+ENE0032,Eucalyptus sp. aff. magnificata,Waterfall Way 2,2017-11-24T00:00:00Z,-30.51712,151.97308,NA,ENE0032,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+ENE0033,Eucalyptus sp. aff. magnificata,Waterfall Way 2,2017-11-24T00:00:00Z,-30.51688,151.97357,NA,ENE0033,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+ENE0034,Eucalyptus sp. aff. magnificata,Waterfall Way 2,2017-11-24T00:00:00Z,-30.51691,151.9735,NA,ENE0034,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+ENE0036,Eucalyptus conica,Wollomombi Falls Lookout,2017-11-24T00:00:00Z,-30.53189,152.03299,NA,ENE0036,WGS84,NA,18,Eucalyptus polyanthemos,E_polyanthemos
+ENE0038,Eucalyptus conica,Wollomombi Falls Lookout,2017-11-24T00:00:00Z,-30.53132,152.03278,NA,ENE0038,WGS84,NA,18,Eucalyptus polyanthemos,E_polyanthemos
+ENE0040,Eucalyptus conica,Wollomombi Falls Lookout,2017-11-24T00:00:00Z,-30.53132,152.03148,NA,ENE0040,WGS84,NA,18,Eucalyptus polyanthemos,E_polyanthemos
+ENE0042,Eucalyptus conica,Kempsey road gravel depot,2017-11-24T00:00:00Z,-30.52496,152.07028,NA,ENE0042,WGS84,NA,18,Eucalyptus polyanthemos,E_polyanthemos
+ENE0044,Eucalyptus conica,Kempsey road gravel depot,2017-11-24T00:00:00Z,-30.52445,152.07028,NA,ENE0044,WGS84,NA,18,Eucalyptus polyanthemos,E_polyanthemos
+J345b,Eucalyptus albens,"Mullion, Mountain Creek Rd.",2015-11-20T00:00:00Z,-35.07022,148.83685,NA,J345b,WGS84,NA,225,Eucalyptus albens,E_albens
+J345c,Eucalyptus albens,"Mullion, Mountain Creek Rd.",2015-11-20T00:00:00Z,-35.07022,148.83685,NA,J345c,WGS84,NA,225,Eucalyptus albens,E_albens
+J359f,Eucalyptus sideroxylon,"Ingalba Nature Reserve, Hwy 94",2015-11-21T00:00:00Z,-34.47594,147.40941,NA,J359f,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J377f,Eucalyptus albens,Suggan Buggan,2016-01-25T00:00:00Z,-36.96985,148.30525,NA,J377f,WGS84,NA,225,Eucalyptus albens,E_albens
+J382,Eucalyptus albens,Swifts Creek,2016-01-27T00:00:00Z,-37.21575,147.71677,NA,J382,WGS84,NA,225,Eucalyptus albens,E_albens
+J395a,Eucalyptus albens,"Powers Rd, Woodstock on Loddon",2016-01-31T00:00:00Z,-36.76884,144.07336,NA,J395a,WGS84,NA,225,Eucalyptus albens,E_albens
+J401i,Eucalyptus sideroxylon,"Torreyburn Rd, Yarrowyck",2016-04-05T00:00:00Z,-30.44023,151.25069,NA,J401i,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J413b,Eucalyptus albens,Boggabri - private land,2016-06-16T00:00:00Z,-30.70737,150.09621,NA,J413b,WGS84,NA,225,Eucalyptus albens,E_albens
+J413d,Eucalyptus albens,Boggabri - private land,2016-06-16T00:00:00Z,-30.70737,150.09621,NA,J413d,WGS84,NA,225,Eucalyptus albens,E_albens
+J413e,Eucalyptus albens,Boggabri - private land,2016-06-16T00:00:00Z,-30.70737,150.09621,NA,J413e,WGS84,NA,225,Eucalyptus albens,E_albens
+J413g,Eucalyptus albens,Boggabri - private land,2016-06-16T00:00:00Z,-30.70737,150.09621,NA,J413g,WGS84,NA,225,Eucalyptus albens,E_albens
+J413h,Eucalyptus albens,Boggabri - private land,2016-06-16T00:00:00Z,-30.70737,150.09621,NA,J413h,WGS84,NA,225,Eucalyptus albens,E_albens
+J413i,Eucalyptus albens,Boggabri - private land,2016-06-16T00:00:00Z,-30.70737,150.09621,NA,J413i,WGS84,NA,225,Eucalyptus albens,E_albens
+J414d,Eucalyptus albens,Narrabri,2016-06-16T00:00:00Z,-30.49283,149.94203,NA,J414d,WGS84,NA,225,Eucalyptus albens,E_albens
+J418d,Eucalyptus sideroxylon,The Pilliga,2016-06-17T00:00:00Z,-31.05012,149.23013,NA,J418d,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J421a,Eucalyptus sideroxylon,Narromine,2016-06-23T00:00:00Z,-32.36597,148.23103,NA,J421a,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J421c,Eucalyptus sideroxylon,Narromine,2016-06-23T00:00:00Z,-32.36597,148.23103,NA,J421c,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J421d,Eucalyptus sideroxylon,Narromine,2016-06-23T00:00:00Z,-32.36597,148.23103,NA,J421d,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J421e,Eucalyptus sideroxylon,Narromine,2016-06-23T00:00:00Z,-32.36597,148.23103,NA,J421e,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J421f,Eucalyptus sideroxylon,Narromine,2016-06-23T00:00:00Z,-32.36597,148.23103,NA,J421f,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J421g,Eucalyptus sideroxylon,Narromine,2016-06-23T00:00:00Z,-32.36597,148.23103,NA,J421g,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J421h,Eucalyptus sideroxylon,Narromine,2016-06-23T00:00:00Z,-32.36597,148.23103,NA,J421h,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J421i,Eucalyptus sideroxylon,Narromine,2016-06-23T00:00:00Z,-32.36597,148.23103,NA,J421i,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J422b,Eucalyptus sideroxylon,Dubbo,2016-06-24T00:00:00Z,-32.22311,148.66797,NA,J422b,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J422d,Eucalyptus sideroxylon,Dubbo,2016-06-24T00:00:00Z,-32.22311,148.66797,NA,J422d,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J422h,Eucalyptus sideroxylon,Dubbo,2016-06-24T00:00:00Z,-32.22311,148.66797,NA,J422h,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J422i,Eucalyptus sideroxylon,Dubbo,2016-06-24T00:00:00Z,-32.22311,148.66797,NA,J422i,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J424h,Eucalyptus albens,Ardglen,2016-06-24T00:00:00Z,-31.71111,150.6998,NA,J424h,WGS84,NA,225,Eucalyptus albens,E_albens
+J424i,Eucalyptus albens,Ardglen,2016-06-24T00:00:00Z,-31.71111,150.6998,NA,J424i,WGS84,NA,225,Eucalyptus albens,E_albens
+J426e,Eucalyptus albens,Bundarra,2016-07-09T00:00:00Z,-30.30846,151.20667,NA,J426e,WGS84,NA,225,Eucalyptus albens,E_albens
+J433i,Eucalyptus sideroxylon,Glendon,2016-07-10T00:00:00Z,-28.17577,151.6577,NA,J433i,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+TLC724,Eucalyptus conica,Dundee,NA,-29.60560603,151.868071,1037.9375,TLC724,WGS84,NA,18,Eucalyptus polyanthemos,E_polyanthemos
+TLC732,Eucalyptus magnificata,Hillgrove,NA,-30.575079,151.903794,979,TLC732,WGS84,NA,13,Eucalyptus polyanthemos,E_polyanthemos
+TLC734,Eucalyptus magnificata,Hillgrove,NA,-30.55260301,151.896692,972,TLC734,WGS84,NA,13,Eucalyptus polyanthemos,E_polyanthemos
+TLC738-1,Eucalyptus sp. aff. magnificata,Cheadle Mtn,NA,-30.85471898,151.858673,1054.764404,TLC738-1,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC739,Eucalyptus sp. aff. magnificata,Cheadle Mtn,NA,-30.85471798,151.858588,1055.253906,TLC739,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC750,Eucalyptus magnificata,Enmore,NA,-30.71997302,151.72217,984,TLC750,WGS84,NA,13,Eucalyptus polyanthemos,E_polyanthemos
+TLC757,Eucalyptus magnificata,Enmore,NA,-30.71907003,151.721817,981.434265,TLC757,WGS84,NA,13,Eucalyptus polyanthemos,E_polyanthemos
+TLC758,Eucalyptus magnificata,Enmore,NA,-30.71955401,151.722795,977,TLC758,WGS84,NA,13,Eucalyptus polyanthemos,E_polyanthemos
+TLC760,Eucalyptus magnificata,Metz Gorge,NA,-30.57490801,151.884066,985,TLC760,WGS84,NA,13,Eucalyptus polyanthemos,E_polyanthemos
+TLC761,Eucalyptus magnificata,Metz Gorge,NA,-30.57479996,151.884278,990,TLC761,WGS84,NA,13,Eucalyptus polyanthemos,E_polyanthemos
+TLC764,Eucalyptus magnificata,Metz Gorge,NA,-30.57433502,151.885239,977,TLC764,WGS84,NA,13,Eucalyptus polyanthemos,E_polyanthemos
+TLC807,Eucalyptus magnificata,Hillgrove,NA,-30.57603898,151.90429,986,TLC807,WGS84,NA,13,Eucalyptus polyanthemos,E_polyanthemos
+TLC827,Eucalyptus magnificata,Long Point,NA,-30.61447897,151.940761,1001,TLC827,WGS84,NA,13,Eucalyptus polyanthemos,E_polyanthemos
+TLC830,Eucalyptus magnificata,Long Point,NA,-30.61620296,151.938109,994,TLC830,WGS84,NA,13,Eucalyptus polyanthemos,E_polyanthemos
+TLC831,Eucalyptus magnificata,Long Point,NA,-30.61607497,151.938129,996,TLC831,WGS84,NA,13,Eucalyptus polyanthemos,E_polyanthemos
+TLC908,Eucalyptus sp. aff. magnificata,Cheadle Mtn,NA,-30.86045003,151.891704,1048,TLC908,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC909,Eucalyptus sp. aff. magnificata,Cheadle Mtn,NA,-30.86056503,151.891859,1049,TLC909,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC914,Eucalyptus sp. aff. magnificata,Cheyenne Station,NA,-30.81462398,151.859377,1008,TLC914,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC915,Eucalyptus sp. aff. magnificata,Cheyenne Station,NA,-30.81471702,151.859337,1008,TLC915,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC922-1,Eucalyptus sp. aff. magnificata,Wollomombi,NA,-30.56833701,152.04948,1004,TLC922-1,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC922-2,Eucalyptus sp. aff. magnificata,Wollomombi,NA,-30.56833701,152.04948,1004,TLC922-2,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC922-3,Eucalyptus sp. aff. magnificata,Wollomombi,NA,-30.56833701,152.04948,1004,TLC922-3,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC922-4,Eucalyptus sp. aff. magnificata,Wollomombi,NA,-30.56833701,152.04948,1004,TLC922-4,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC922-5,Eucalyptus sp. aff. magnificata,Wollomombi,NA,-30.56833701,152.04948,1004,TLC922-5,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC946,Eucalyptus sp. aff. magnificata,Henry River Falls,NA,-29.84949804,152.001091,975,TLC946,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC947,Eucalyptus sp. aff. magnificata,Henry River Falls,NA,-29.84955001,152.001463,969,TLC947,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC948,Eucalyptus sp. aff. magnificata,Henry River Falls,NA,-29.84698003,152.010428,951,TLC948,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC949,Eucalyptus sp. aff. magnificata,Henry River Falls,NA,-29.845609,152.012508,923,TLC949,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC950,Eucalyptus sp. aff. magnificata,Henry River Falls,NA,-29.84570699,152.011747,930,TLC950,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC952-1,Eucalyptus sp. aff. magnificata,Yarraford Rd,NA,-29.62114801,151.783008,1062,TLC952-1,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC952-2,Eucalyptus sp. aff. magnificata,Yarraford Rd,NA,-29.62114801,151.783008,1062,TLC952-2,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC952-3,Eucalyptus sp. aff. magnificata,Yarraford Rd,NA,-29.62114801,151.783008,1062,TLC952-3,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC952-4,Eucalyptus sp. aff. magnificata,Yarraford Rd,NA,-29.62114801,151.783008,1062,TLC952-4,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC952-5,Eucalyptus sp. aff. magnificata,Yarraford Rd,NA,-29.62114801,151.783008,1062,TLC952-5,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC953C,Eucalyptus sp. aff. magnificata,Terralto,NA,-30.83146197,151.821772,1094,TLC953C,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC953E,Eucalyptus sp. aff. magnificata,Terralto,NA,-30.83146197,151.821772,1094,TLC953E,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC963A,Eucalyptus sp. aff. magnificata,Terralto,NA,-30.83926,151.83008,1136,TLC963A,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+TLC963C,Eucalyptus sp. aff. magnificata,Terralto,NA,-30.83926,151.83008,1136,TLC963C,WGS84,NA,35,Eucalyptus polyanthemos,E_polyanthemos
+J293,Eucalyptus albens,"Keepit, Old Menedebri Rd",2015-09-29T00:00:00Z,-30.8942,150.66708,NA,J293,WGS84,NA,225,Eucalyptus albens,E_albens
+J295,Eucalyptus albens,"Keepit, Somerton Main Rd",2015-09-29T00:00:00Z,-30.89198,150.6728,NA,J295,WGS84,NA,225,Eucalyptus albens,E_albens
+J300,Eucalyptus sideroxylon,"Gum Flat, Copeton Dam Rd",2015-09-30T00:00:00Z,-29.80812,150.91918,NA,J300,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J302,Eucalyptus albens,"Sawn Rocks, Kilarney Gap Rd",2015-09-30T00:00:00Z,-30.14391,150.05293,NA,J302,WGS84,NA,225,Eucalyptus albens,E_albens
+J304,Eucalyptus albens,"Sawn Rocks, Kilarney Gap Rd",2015-09-30T00:00:00Z,-30.14391,150.05293,NA,J304,WGS84,NA,225,Eucalyptus albens,E_albens
+J312,Eucalyptus sideroxylon,"Pilliga, Newell Hwy",2015-09-30T00:00:00Z,-30.60224,149.58173,NA,J312,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J341a,Eucalyptus albens,"Yellow Dam, Emmaville Rd",2015-11-05T00:00:00Z,-29.40223,151.41655,NA,J341a,WGS84,NA,225,Eucalyptus albens,E_albens
+J341b,Eucalyptus albens,"Yellow Dam, Emmaville Rd",2015-11-05T00:00:00Z,-29.40223,151.41655,NA,J341b,WGS84,NA,225,Eucalyptus albens,E_albens
+J341c,Eucalyptus albens,"Yellow Dam, Emmaville Rd",2015-11-05T00:00:00Z,-29.40223,151.41655,NA,J341c,WGS84,NA,225,Eucalyptus albens,E_albens
+J341d,Eucalyptus albens,"Yellow Dam, Emmaville Rd",2015-11-05T00:00:00Z,-29.40223,151.41655,NA,J341d,WGS84,NA,225,Eucalyptus albens,E_albens
+J342a,Eucalyptus sideroxylon,"Yellow Dam, Emmaville Rd",2015-11-05T00:00:00Z,-29.39087,151.39279,NA,J342a,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J342b,Eucalyptus sideroxylon,"Yellow Dam, Emmaville Rd",2015-11-05T00:00:00Z,-29.39087,151.39279,NA,J342b,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J342c,Eucalyptus sideroxylon,"Yellow Dam, Emmaville Rd",2015-11-05T00:00:00Z,-29.39087,151.39279,NA,J342c,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J342d,Eucalyptus sideroxylon,"Yellow Dam, Emmaville Rd",2015-11-05T00:00:00Z,-29.39087,151.39279,NA,J342d,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J345a,Eucalyptus albens,"Mullion, Mountain Creek Rd.",2015-11-20T00:00:00Z,-35.07022,148.83685,NA,J345a,WGS84,NA,225,Eucalyptus albens,E_albens
+J345d,Eucalyptus albens,"Mullion, Mountain Creek Rd.",2015-11-20T00:00:00Z,-35.07022,148.83685,NA,J345d,WGS84,NA,225,Eucalyptus albens,E_albens
+J349a,Eucalyptus albens,"Wee Jasper, Wee Jasper Rd.",2015-11-20T00:00:00Z,-35.24369,148.2968,NA,J349a,WGS84,NA,225,Eucalyptus albens,E_albens
+J349b,Eucalyptus albens,"Wee Jasper, Wee Jasper Rd.",2015-11-20T00:00:00Z,-35.24369,148.2968,NA,J349b,WGS84,NA,225,Eucalyptus albens,E_albens
+J349d,Eucalyptus albens,"Wee Jasper, Wee Jasper Rd.",2015-11-20T00:00:00Z,-35.24369,148.2968,NA,J349d,WGS84,NA,225,Eucalyptus albens,E_albens
+J349e,Eucalyptus albens,"Wee Jasper, Wee Jasper Rd.",2015-11-20T00:00:00Z,-35.24369,148.2968,NA,J349e,WGS84,NA,225,Eucalyptus albens,E_albens
+J349f,Eucalyptus albens,"Wee Jasper, Wee Jasper Rd.",2015-11-20T00:00:00Z,-35.24369,148.2968,NA,J349f,WGS84,NA,225,Eucalyptus albens,E_albens
+J349g,Eucalyptus albens,"Wee Jasper, Wee Jasper Rd.",2015-11-20T00:00:00Z,-35.24369,148.2968,NA,J349g,WGS84,NA,225,Eucalyptus albens,E_albens
+J349h,Eucalyptus albens,"Wee Jasper, Wee Jasper Rd.",2015-11-20T00:00:00Z,-35.24369,148.2968,NA,J349h,WGS84,NA,225,Eucalyptus albens,E_albens
+J349i,Eucalyptus albens,"Wee Jasper, Wee Jasper Rd.",2015-11-20T00:00:00Z,-35.24369,148.2968,NA,J349i,WGS84,NA,225,Eucalyptus albens,E_albens
+J349j,Eucalyptus albens,"Wee Jasper, Wee Jasper Rd.",2015-11-20T00:00:00Z,-35.24369,148.2968,NA,J349j,WGS84,NA,225,Eucalyptus albens,E_albens
+J350a,Eucalyptus albens,"Tarcutta, Mates Gully Rd.",2015-11-20T00:00:00Z,-35.2456,147.68083,NA,J350a,WGS84,NA,225,Eucalyptus albens,E_albens
+J350b,Eucalyptus albens,"Tarcutta, Mates Gully Rd.",2015-11-20T00:00:00Z,-35.2456,147.68083,NA,J350b,WGS84,NA,225,Eucalyptus albens,E_albens
+J350c,Eucalyptus albens,"Tarcutta, Mates Gully Rd.",2015-11-20T00:00:00Z,-35.2456,147.68083,NA,J350c,WGS84,NA,225,Eucalyptus albens,E_albens
+J350d,Eucalyptus albens,"Tarcutta, Mates Gully Rd.",2015-11-20T00:00:00Z,-35.2456,147.68083,NA,J350d,WGS84,NA,225,Eucalyptus albens,E_albens
+J350e,Eucalyptus albens,"Tarcutta, Mates Gully Rd.",2015-11-20T00:00:00Z,-35.2456,147.68083,NA,J350e,WGS84,NA,225,Eucalyptus albens,E_albens
+J350f,Eucalyptus albens,"Tarcutta, Mates Gully Rd.",2015-11-20T00:00:00Z,-35.2456,147.68083,NA,J350f,WGS84,NA,225,Eucalyptus albens,E_albens
+J350g,Eucalyptus albens,"Tarcutta, Mates Gully Rd.",2015-11-20T00:00:00Z,-35.2456,147.68083,NA,J350g,WGS84,NA,225,Eucalyptus albens,E_albens
+J350h,Eucalyptus albens,"Tarcutta, Mates Gully Rd.",2015-11-20T00:00:00Z,-35.2456,147.68083,NA,J350h,WGS84,NA,225,Eucalyptus albens,E_albens
+J350i,Eucalyptus albens,"Tarcutta, Mates Gully Rd.",2015-11-20T00:00:00Z,-35.2456,147.68083,NA,J350i,WGS84,NA,225,Eucalyptus albens,E_albens
+J352,Eucalyptus sideroxylon,"Tarcutta, Mates Gully Rd.",2015-11-20T00:00:00Z,-35.25665,147.68486,NA,J352,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J352a,Eucalyptus sideroxylon,"Tarcutta, Mates Gully Rd.",2015-11-20T00:00:00Z,-35.25665,147.68486,NA,J352a,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J352b,Eucalyptus sideroxylon,"Tarcutta, Mates Gully Rd.",2015-11-20T00:00:00Z,-35.25665,147.68486,NA,J352b,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J352c,Eucalyptus sideroxylon,"Tarcutta, Mates Gully Rd.",2015-11-20T00:00:00Z,-35.25665,147.68486,NA,J352c,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J352d,Eucalyptus sideroxylon,"Tarcutta, Mates Gully Rd.",2015-11-20T00:00:00Z,-35.25665,147.68486,NA,J352d,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J352e,Eucalyptus sideroxylon,"Tarcutta, Mates Gully Rd.",2015-11-20T00:00:00Z,-35.25665,147.68486,NA,J352e,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J352f,Eucalyptus sideroxylon,"Tarcutta, Mates Gully Rd.",2015-11-20T00:00:00Z,-35.25665,147.68486,NA,J352f,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J352g,Eucalyptus sideroxylon,"Tarcutta, Mates Gully Rd.",2015-11-20T00:00:00Z,-35.25665,147.68486,NA,J352g,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J352h,Eucalyptus sideroxylon,"Tarcutta, Mates Gully Rd.",2015-11-20T00:00:00Z,-35.25665,147.68486,NA,J352h,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J352i,Eucalyptus sideroxylon,"Tarcutta, Mates Gully Rd.",2015-11-20T00:00:00Z,-35.25665,147.68486,NA,J352i,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J355a,Eucalyptus sideroxylon,"Chiltern, Chiltern-Howlong Rd.",2015-11-21T00:00:00Z,-36.09264,146.61917,NA,J355a,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J355c,Eucalyptus sideroxylon,"Chiltern, Chiltern-Howlong Rd.",2015-11-21T00:00:00Z,-36.09264,146.61917,NA,J355c,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J355e,Eucalyptus sideroxylon,"Chiltern, Chiltern-Howlong Rd.",2015-11-21T00:00:00Z,-36.09264,146.61917,NA,J355e,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J355f,Eucalyptus sideroxylon,"Chiltern, Chiltern-Howlong Rd.",2015-11-21T00:00:00Z,-36.09264,146.61917,NA,J355f,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J355g,Eucalyptus sideroxylon,"Chiltern, Chiltern-Howlong Rd.",2015-11-21T00:00:00Z,-36.09264,146.61917,NA,J355g,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J359a,Eucalyptus sideroxylon,"Ingalba Nature Reserve, Hwy 94",2015-11-21T00:00:00Z,-34.47594,147.40941,NA,J359a,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J359b,Eucalyptus sideroxylon,"Ingalba Nature Reserve, Hwy 94",2015-11-21T00:00:00Z,-34.47594,147.40941,NA,J359b,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J359c,Eucalyptus sideroxylon,"Ingalba Nature Reserve, Hwy 94",2015-11-21T00:00:00Z,-34.47594,147.40941,NA,J359c,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J359d,Eucalyptus sideroxylon,"Ingalba Nature Reserve, Hwy 94",2015-11-21T00:00:00Z,-34.47594,147.40941,NA,J359d,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J359e,Eucalyptus sideroxylon,"Ingalba Nature Reserve, Hwy 94",2015-11-21T00:00:00Z,-34.47594,147.40941,NA,J359e,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J359g,Eucalyptus sideroxylon,"Ingalba Nature Reserve, Hwy 94",2015-11-21T00:00:00Z,-34.47594,147.40941,NA,J359g,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J359h,Eucalyptus sideroxylon,"Ingalba Nature Reserve, Hwy 94",2015-11-21T00:00:00Z,-34.47594,147.40941,NA,J359h,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J359i,Eucalyptus sideroxylon,"Ingalba Nature Reserve, Hwy 94",2015-11-21T00:00:00Z,-34.47594,147.40941,NA,J359i,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J361a,Eucalyptus albens,"Nangar Natl Park, Dripping Rock Rd.",2015-11-22T00:00:00Z,-33.42118,148.51154,NA,J361a,WGS84,NA,225,Eucalyptus albens,E_albens
+J361b,Eucalyptus albens,"Nangar Natl Park, Dripping Rock Rd.",2015-11-22T00:00:00Z,-33.42118,148.51154,NA,J361b,WGS84,NA,225,Eucalyptus albens,E_albens
+J361c,Eucalyptus albens,"Nangar Natl Park, Dripping Rock Rd.",2015-11-22T00:00:00Z,-33.42118,148.51154,NA,J361c,WGS84,NA,225,Eucalyptus albens,E_albens
+J361d,Eucalyptus albens,"Nangar Natl Park, Dripping Rock Rd.",2015-11-22T00:00:00Z,-33.42118,148.51154,NA,J361d,WGS84,NA,225,Eucalyptus albens,E_albens
+J361e,Eucalyptus albens,"Nangar Natl Park, Dripping Rock Rd.",2015-11-22T00:00:00Z,-33.42118,148.51154,NA,J361e,WGS84,NA,225,Eucalyptus albens,E_albens
+J361f,Eucalyptus albens,"Nangar Natl Park, Dripping Rock Rd.",2015-11-22T00:00:00Z,-33.42118,148.51154,NA,J361f,WGS84,NA,225,Eucalyptus albens,E_albens
+J361g,Eucalyptus albens,"Nangar Natl Park, Dripping Rock Rd.",2015-11-22T00:00:00Z,-33.42118,148.51154,NA,J361g,WGS84,NA,225,Eucalyptus albens,E_albens
+J361h,Eucalyptus albens,"Nangar Natl Park, Dripping Rock Rd.",2015-11-22T00:00:00Z,-33.42118,148.51154,NA,J361h,WGS84,NA,225,Eucalyptus albens,E_albens
+J361i,Eucalyptus albens,"Nangar Natl Park, Dripping Rock Rd.",2015-11-22T00:00:00Z,-33.42118,148.51154,NA,J361i,WGS84,NA,225,Eucalyptus albens,E_albens
+J362a,Eucalyptus sideroxylon,"Nangar Natl Park, Dripping Rock Rd.",2015-11-22T00:00:00Z,-33.42108,148.51126,NA,J362a,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J362b,Eucalyptus sideroxylon,"Nangar Natl Park, Dripping Rock Rd.",2015-11-22T00:00:00Z,-33.42108,148.51126,NA,J362b,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J367a,Eucalyptus sideroxylon,"Uralla-Kingstown Rd, Kingstown",2015-12-15T00:00:00Z,-30.5285,151.15897,NA,J367a,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J367b,Eucalyptus sideroxylon,"Uralla-Kingstown Rd, Kingstown",2015-12-15T00:00:00Z,-30.5285,151.15897,NA,J367b,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J367c,Eucalyptus sideroxylon,"Uralla-Kingstown Rd, Kingstown",2015-12-15T00:00:00Z,-30.5285,151.15897,NA,J367c,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J367d,Eucalyptus sideroxylon,"Uralla-Kingstown Rd, Kingstown",2015-12-15T00:00:00Z,-30.5285,151.15897,NA,J367d,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J367e,Eucalyptus sideroxylon,"Uralla-Kingstown Rd, Kingstown",2015-12-15T00:00:00Z,-30.5285,151.15897,NA,J367e,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J367f,Eucalyptus sideroxylon,"Uralla-Kingstown Rd, Kingstown",2015-12-15T00:00:00Z,-30.5285,151.15897,NA,J367f,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J367g,Eucalyptus sideroxylon,"Uralla-Kingstown Rd, Kingstown",2015-12-15T00:00:00Z,-30.5285,151.15897,NA,J367g,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J367h,Eucalyptus sideroxylon,"Uralla-Kingstown Rd, Kingstown",2015-12-15T00:00:00Z,-30.5285,151.15897,NA,J367h,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J374a,Eucalyptus albens,Ensay,2016-01-24T00:00:00Z,-37.36159,147.85228,NA,J374a,WGS84,NA,225,Eucalyptus albens,E_albens
+J374b,Eucalyptus albens,Ensay,2016-01-24T00:00:00Z,-37.36159,147.85228,NA,J374b,WGS84,NA,225,Eucalyptus albens,E_albens
+J374c,Eucalyptus albens,Ensay,2016-01-24T00:00:00Z,-37.36159,147.85228,NA,J374c,WGS84,NA,225,Eucalyptus albens,E_albens
+J374d,Eucalyptus albens,Ensay,2016-01-24T00:00:00Z,-37.36159,147.85228,NA,J374d,WGS84,NA,225,Eucalyptus albens,E_albens
+J374e,Eucalyptus albens,Ensay,2016-01-24T00:00:00Z,-37.36159,147.85228,NA,J374e,WGS84,NA,225,Eucalyptus albens,E_albens
+J374f,Eucalyptus albens,Ensay,2016-01-24T00:00:00Z,-37.36159,147.85228,NA,J374f,WGS84,NA,225,Eucalyptus albens,E_albens
+J374g,Eucalyptus albens,Ensay,2016-01-24T00:00:00Z,-37.36159,147.85228,NA,J374g,WGS84,NA,225,Eucalyptus albens,E_albens
+J374h,Eucalyptus albens,Ensay,2016-01-24T00:00:00Z,-37.36159,147.85228,NA,J374h,WGS84,NA,225,Eucalyptus albens,E_albens
+J374i,Eucalyptus albens,Ensay,2016-01-24T00:00:00Z,-37.36159,147.85228,NA,J374i,WGS84,NA,225,Eucalyptus albens,E_albens
+J376a,Eucalyptus albens,McKillop Bridge,2016-01-25T00:00:00Z,-37.07782,148.34419,NA,J376a,WGS84,NA,225,Eucalyptus albens,E_albens
+J376b,Eucalyptus albens,McKillop Bridge,2016-01-25T00:00:00Z,-37.07782,148.34419,NA,J376b,WGS84,NA,225,Eucalyptus albens,E_albens
+J376c,Eucalyptus albens,McKillop Bridge,2016-01-25T00:00:00Z,-37.07782,148.34419,NA,J376c,WGS84,NA,225,Eucalyptus albens,E_albens
+J376d,Eucalyptus albens,McKillop Bridge,2016-01-25T00:00:00Z,-37.07782,148.34419,NA,J376d,WGS84,NA,225,Eucalyptus albens,E_albens
+J376e,Eucalyptus albens,McKillop Bridge,2016-01-25T00:00:00Z,-37.07782,148.34419,NA,J376e,WGS84,NA,225,Eucalyptus albens,E_albens
+J376f,Eucalyptus albens,McKillop Bridge,2016-01-25T00:00:00Z,-37.07782,148.34419,NA,J376f,WGS84,NA,225,Eucalyptus albens,E_albens
+J376g,Eucalyptus albens,McKillop Bridge,2016-01-25T00:00:00Z,-37.07782,148.34419,NA,J376g,WGS84,NA,225,Eucalyptus albens,E_albens
+J376h,Eucalyptus albens,McKillop Bridge,2016-01-25T00:00:00Z,-37.07782,148.34419,NA,J376h,WGS84,NA,225,Eucalyptus albens,E_albens
+J376i,Eucalyptus albens,McKillop Bridge,2016-01-25T00:00:00Z,-37.07782,148.34419,NA,J376i,WGS84,NA,225,Eucalyptus albens,E_albens
+J377a,Eucalyptus albens,Suggan Buggan,2016-01-25T00:00:00Z,-36.96985,148.30525,NA,J377a,WGS84,NA,225,Eucalyptus albens,E_albens
+J377b,Eucalyptus albens,Suggan Buggan,2016-01-25T00:00:00Z,-36.96985,148.30525,NA,J377b,WGS84,NA,225,Eucalyptus albens,E_albens
+J377c,Eucalyptus albens,Suggan Buggan,2016-01-25T00:00:00Z,-36.96985,148.30525,NA,J377c,WGS84,NA,225,Eucalyptus albens,E_albens
+J377d,Eucalyptus albens,Suggan Buggan,2016-01-25T00:00:00Z,-36.96985,148.30525,NA,J377d,WGS84,NA,225,Eucalyptus albens,E_albens
+J377e,Eucalyptus albens,Suggan Buggan,2016-01-25T00:00:00Z,-36.96985,148.30525,NA,J377e,WGS84,NA,225,Eucalyptus albens,E_albens
+J377g,Eucalyptus albens,Suggan Buggan,2016-01-25T00:00:00Z,-36.96985,148.30525,NA,J377g,WGS84,NA,225,Eucalyptus albens,E_albens
+J377h,Eucalyptus albens,Suggan Buggan,2016-01-25T00:00:00Z,-36.96985,148.30525,NA,J377h,WGS84,NA,225,Eucalyptus albens,E_albens
+J377i,Eucalyptus albens,Suggan Buggan,2016-01-25T00:00:00Z,-36.96985,148.30525,NA,J377i,WGS84,NA,225,Eucalyptus albens,E_albens
+J382b,Eucalyptus albens,Swifts Creek,2016-01-27T00:00:00Z,-37.21575,147.71677,NA,J382b,WGS84,NA,225,Eucalyptus albens,E_albens
+J382c,Eucalyptus albens,Swifts Creek,2016-01-27T00:00:00Z,-37.21575,147.71677,NA,J382c,WGS84,NA,225,Eucalyptus albens,E_albens
+J382d,Eucalyptus albens,Swifts Creek,2016-01-27T00:00:00Z,-37.21575,147.71677,NA,J382d,WGS84,NA,225,Eucalyptus albens,E_albens
+J382e,Eucalyptus albens,Swifts Creek,2016-01-27T00:00:00Z,-37.21575,147.71677,NA,J382e,WGS84,NA,225,Eucalyptus albens,E_albens
+J382f,Eucalyptus albens,Swifts Creek,2016-01-27T00:00:00Z,-37.21575,147.71677,NA,J382f,WGS84,NA,225,Eucalyptus albens,E_albens
+J382g,Eucalyptus albens,Swifts Creek,2016-01-27T00:00:00Z,-37.21575,147.71677,NA,J382g,WGS84,NA,225,Eucalyptus albens,E_albens
+J382h,Eucalyptus albens,Swifts Creek,2016-01-27T00:00:00Z,-37.21575,147.71677,NA,J382h,WGS84,NA,225,Eucalyptus albens,E_albens
+J382i,Eucalyptus albens,Swifts Creek,2016-01-27T00:00:00Z,-37.21575,147.71677,NA,J382i,WGS84,NA,225,Eucalyptus albens,E_albens
+J385a,Eucalyptus sideroxylon,Chiltern,2016-01-29T00:00:00Z,-36.17434,146.66263,NA,J385a,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J385b,Eucalyptus sideroxylon,Chiltern,2016-01-29T00:00:00Z,-36.17434,146.66263,NA,J385b,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J385c,Eucalyptus sideroxylon,Chiltern,2016-01-29T00:00:00Z,-36.17434,146.66263,NA,J385c,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J385d,Eucalyptus sideroxylon,Chiltern,2016-01-29T00:00:00Z,-36.17434,146.66263,NA,J385d,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J385e,Eucalyptus sideroxylon,Chiltern,2016-01-29T00:00:00Z,-36.17434,146.66263,NA,J385e,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J385f,Eucalyptus sideroxylon,Chiltern,2016-01-29T00:00:00Z,-36.17434,146.66263,NA,J385f,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J385g,Eucalyptus sideroxylon,Chiltern,2016-01-29T00:00:00Z,-36.17434,146.66263,NA,J385g,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J385h,Eucalyptus sideroxylon,Chiltern,2016-01-29T00:00:00Z,-36.17434,146.66263,NA,J385h,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J385i,Eucalyptus sideroxylon,Chiltern,2016-01-29T00:00:00Z,-36.17434,146.66263,NA,J385i,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J386a,Eucalyptus albens,Chiltern,2016-01-29T00:00:00Z,-36.14425,146.65103,NA,J386a,WGS84,NA,225,Eucalyptus albens,E_albens
+J386b,Eucalyptus albens,Chiltern,2016-01-29T00:00:00Z,-36.14425,146.65103,NA,J386b,WGS84,NA,225,Eucalyptus albens,E_albens
+J386c,Eucalyptus albens,Chiltern,2016-01-29T00:00:00Z,-36.14425,146.65103,NA,J386c,WGS84,NA,225,Eucalyptus albens,E_albens
+J386d,Eucalyptus albens,Chiltern,2016-01-29T00:00:00Z,-36.14425,146.65103,NA,J386d,WGS84,NA,225,Eucalyptus albens,E_albens
+J386e,Eucalyptus albens,Chiltern,2016-01-29T00:00:00Z,-36.14425,146.65103,NA,J386e,WGS84,NA,225,Eucalyptus albens,E_albens
+J386f,Eucalyptus albens,Chiltern,2016-01-29T00:00:00Z,-36.14425,146.65103,NA,J386f,WGS84,NA,225,Eucalyptus albens,E_albens
+J386g,Eucalyptus albens,Chiltern,2016-01-29T00:00:00Z,-36.14425,146.65103,NA,J386g,WGS84,NA,225,Eucalyptus albens,E_albens
+J386h,Eucalyptus albens,Chiltern,2016-01-29T00:00:00Z,-36.14425,146.65103,NA,J386h,WGS84,NA,225,Eucalyptus albens,E_albens
+J386i,Eucalyptus albens,Chiltern,2016-01-29T00:00:00Z,-36.14425,146.65103,NA,J386i,WGS84,NA,225,Eucalyptus albens,E_albens
+J387a,Eucalyptus sideroxylon,Warrangatta,2016-01-29T00:00:00Z,-32.24456,146.18248,NA,J387a,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J387b,Eucalyptus sideroxylon,Warrangatta,2016-01-29T00:00:00Z,-32.24456,146.18248,NA,J387b,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J387c,Eucalyptus sideroxylon,Warrangatta,2016-01-29T00:00:00Z,-32.24456,146.18248,NA,J387c,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J387d,Eucalyptus sideroxylon,Warrangatta,2016-01-29T00:00:00Z,-32.24456,146.18248,NA,J387d,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J387e,Eucalyptus sideroxylon,Warrangatta,2016-01-29T00:00:00Z,-32.24456,146.18248,NA,J387e,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J387f,Eucalyptus sideroxylon,Warrangatta,2016-01-29T00:00:00Z,-32.24456,146.18248,NA,J387f,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J387g,Eucalyptus sideroxylon,Warrangatta,2016-01-29T00:00:00Z,-32.24456,146.18248,NA,J387g,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J387h,Eucalyptus sideroxylon,Warrangatta,2016-01-29T00:00:00Z,-32.24456,146.18248,NA,J387h,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J387i,Eucalyptus sideroxylon,Warrangatta,2016-01-29T00:00:00Z,-32.24456,146.18248,NA,J387i,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J388,Eucalyptus albens,Warrangatta,2016-01-29T00:00:00Z,-36.26528,146.15425,NA,J388,WGS84,NA,225,Eucalyptus albens,E_albens
+J388a,Eucalyptus albens,Warrangatta,2016-01-29T00:00:00Z,-36.26528,146.15425,NA,J388a,WGS84,NA,225,Eucalyptus albens,E_albens
+J388b,Eucalyptus albens,Warrangatta,2016-01-29T00:00:00Z,-36.26528,146.15425,NA,J388b,WGS84,NA,225,Eucalyptus albens,E_albens
+J388c,Eucalyptus albens,Warrangatta,2016-01-29T00:00:00Z,-36.26528,146.15425,NA,J388c,WGS84,NA,225,Eucalyptus albens,E_albens
+J388d,Eucalyptus albens,Warrangatta,2016-01-29T00:00:00Z,-36.26528,146.15425,NA,J388d,WGS84,NA,225,Eucalyptus albens,E_albens
+J388e,Eucalyptus albens,Warrangatta,2016-01-29T00:00:00Z,-36.26528,146.15425,NA,J388e,WGS84,NA,225,Eucalyptus albens,E_albens
+J388g,Eucalyptus albens,Warrangatta,2016-01-29T00:00:00Z,-36.26528,146.15425,NA,J388g,WGS84,NA,225,Eucalyptus albens,E_albens
+J388h,Eucalyptus albens,Warrangatta,2016-01-29T00:00:00Z,-36.26528,146.15425,NA,J388h,WGS84,NA,225,Eucalyptus albens,E_albens
+J388i,Eucalyptus albens,Warrangatta,2016-01-29T00:00:00Z,-36.26528,146.15425,NA,J388i,WGS84,NA,225,Eucalyptus albens,E_albens
+J390a,Eucalyptus albens,Reef Road State Park,2016-01-29T00:00:00Z,-36.5877,145.96066,NA,J390a,WGS84,NA,225,Eucalyptus albens,E_albens
+J390b,Eucalyptus albens,Reef Road State Park,2016-01-29T00:00:00Z,-36.5877,145.96066,NA,J390b,WGS84,NA,225,Eucalyptus albens,E_albens
+J393a,Eucalyptus albens,Heathcote,2016-01-30T00:00:00Z,-36.93458,144.74492,NA,J393a,WGS84,NA,225,Eucalyptus albens,E_albens
+J393b,Eucalyptus albens,Heathcote,2016-01-30T00:00:00Z,-36.93458,144.74492,NA,J393b,WGS84,NA,225,Eucalyptus albens,E_albens
+J393c,Eucalyptus albens,Heathcote,2016-01-30T00:00:00Z,-36.93458,144.74492,NA,J393c,WGS84,NA,225,Eucalyptus albens,E_albens
+J393d,Eucalyptus albens,Heathcote,2016-01-30T00:00:00Z,-36.93458,144.74492,NA,J393d,WGS84,NA,225,Eucalyptus albens,E_albens
+J393e,Eucalyptus albens,Heathcote,2016-01-30T00:00:00Z,-36.93458,144.74492,NA,J393e,WGS84,NA,225,Eucalyptus albens,E_albens
+J393f,Eucalyptus albens,Heathcote,2016-01-30T00:00:00Z,-36.93458,144.74492,NA,J393f,WGS84,NA,225,Eucalyptus albens,E_albens
+J393g,Eucalyptus albens,Heathcote,2016-01-30T00:00:00Z,-36.93458,144.74492,NA,J393g,WGS84,NA,225,Eucalyptus albens,E_albens
+J393h,Eucalyptus albens,Heathcote,2016-01-30T00:00:00Z,-36.93458,144.74492,NA,J393h,WGS84,NA,225,Eucalyptus albens,E_albens
+J393i,Eucalyptus albens,Heathcote,2016-01-30T00:00:00Z,-36.93458,144.74492,NA,J393i,WGS84,NA,225,Eucalyptus albens,E_albens
+J394,Eucalyptus albens,Lake Eppalock,2016-01-30T00:00:00Z,-36.84715,144.52614,NA,J394,WGS84,NA,225,Eucalyptus albens,E_albens
+J394a,Eucalyptus albens,Lake Eppalock,2016-01-30T00:00:00Z,-36.84715,144.52614,NA,J394a,WGS84,NA,225,Eucalyptus albens,E_albens
+J394b,Eucalyptus albens,Lake Eppalock,2016-01-30T00:00:00Z,-36.84715,144.52614,NA,J394b,WGS84,NA,225,Eucalyptus albens,E_albens
+J394c,Eucalyptus albens,Lake Eppalock,2016-01-30T00:00:00Z,-36.84715,144.52614,NA,J394c,WGS84,NA,225,Eucalyptus albens,E_albens
+J394d,Eucalyptus albens,Lake Eppalock,2016-01-30T00:00:00Z,-36.84715,144.52614,NA,J394d,WGS84,NA,225,Eucalyptus albens,E_albens
+J394e,Eucalyptus albens,Lake Eppalock,2016-01-30T00:00:00Z,-36.84715,144.52614,NA,J394e,WGS84,NA,225,Eucalyptus albens,E_albens
+J394f,Eucalyptus albens,Lake Eppalock,2016-01-30T00:00:00Z,-36.84715,144.52614,NA,J394f,WGS84,NA,225,Eucalyptus albens,E_albens
+J395b,Eucalyptus albens,"Powers Rd, Woodstock on Loddon",2016-01-31T00:00:00Z,-36.76884,144.07336,NA,J395b,WGS84,NA,225,Eucalyptus albens,E_albens
+J395c,Eucalyptus albens,"Powers Rd, Woodstock on Loddon",2016-01-31T00:00:00Z,-36.76884,144.07336,NA,J395c,WGS84,NA,225,Eucalyptus albens,E_albens
+J395d,Eucalyptus albens,"Powers Rd, Woodstock on Loddon",2016-01-31T00:00:00Z,-36.76884,144.07336,NA,J395d,WGS84,NA,225,Eucalyptus albens,E_albens
+J395e,Eucalyptus albens,"Powers Rd, Woodstock on Loddon",2016-01-31T00:00:00Z,-36.76884,144.07336,NA,J395e,WGS84,NA,225,Eucalyptus albens,E_albens
+J395h,Eucalyptus albens,"Powers Rd, Woodstock on Loddon",2016-01-31T00:00:00Z,-36.76884,144.07336,NA,J395h,WGS84,NA,225,Eucalyptus albens,E_albens
+J401a,Eucalyptus sideroxylon,"Torreyburn Rd, Yarrowyck",2016-04-05T00:00:00Z,-30.44023,151.25069,NA,J401a,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J401b,Eucalyptus sideroxylon,"Torreyburn Rd, Yarrowyck",2016-04-05T00:00:00Z,-30.44023,151.25069,NA,J401b,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J401c,Eucalyptus sideroxylon,"Torreyburn Rd, Yarrowyck",2016-04-05T00:00:00Z,-30.44023,151.25069,NA,J401c,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J401d,Eucalyptus sideroxylon,"Torreyburn Rd, Yarrowyck",2016-04-05T00:00:00Z,-30.44023,151.25069,NA,J401d,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J401e,Eucalyptus sideroxylon,"Torreyburn Rd, Yarrowyck",2016-04-05T00:00:00Z,-30.44023,151.25069,NA,J401e,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J401f,Eucalyptus sideroxylon,"Torreyburn Rd, Yarrowyck",2016-04-05T00:00:00Z,-30.44023,151.25069,NA,J401f,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J401g,Eucalyptus sideroxylon,"Torreyburn Rd, Yarrowyck",2016-04-05T00:00:00Z,-30.44023,151.25069,NA,J401g,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J401h,Eucalyptus sideroxylon,"Torreyburn Rd, Yarrowyck",2016-04-05T00:00:00Z,-30.44023,151.25069,NA,J401h,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J405a,Eucalyptus sideroxylon,Baldersleigh Rd,2016-04-05T00:00:00Z,-30.22862,151.23865,NA,J405a,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J405b,Eucalyptus sideroxylon,Baldersleigh Rd,2016-04-05T00:00:00Z,-30.22862,151.23865,NA,J405b,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J405c,Eucalyptus sideroxylon,Baldersleigh Rd,2016-04-05T00:00:00Z,-30.22862,151.23865,NA,J405c,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J405d,Eucalyptus sideroxylon,Baldersleigh Rd,2016-04-05T00:00:00Z,-30.22862,151.23865,NA,J405d,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J405e,Eucalyptus sideroxylon,Baldersleigh Rd,2016-04-05T00:00:00Z,-30.22862,151.23865,NA,J405e,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J405f,Eucalyptus sideroxylon,Baldersleigh Rd,2016-04-05T00:00:00Z,-30.22862,151.23865,NA,J405f,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J405g,Eucalyptus sideroxylon,Baldersleigh Rd,2016-04-05T00:00:00Z,-30.22862,151.23865,NA,J405g,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J405h,Eucalyptus sideroxylon,Baldersleigh Rd,2016-04-05T00:00:00Z,-30.22862,151.23865,NA,J405h,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J405i,Eucalyptus sideroxylon,Baldersleigh Rd,2016-04-05T00:00:00Z,-30.22862,151.23865,NA,J405i,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J406a,Eucalyptus albens,"Baldersleigh Rd, The Basin",2016-04-05T00:00:00Z,-30.23707,151.252,NA,J406a,WGS84,NA,225,Eucalyptus albens,E_albens
+J406b,Eucalyptus albens,"Baldersleigh Rd, The Basin",2016-04-05T00:00:00Z,-30.23707,151.252,NA,J406b,WGS84,NA,225,Eucalyptus albens,E_albens
+J406c,Eucalyptus albens,"Baldersleigh Rd, The Basin",2016-04-05T00:00:00Z,-30.23707,151.252,NA,J406c,WGS84,NA,225,Eucalyptus albens,E_albens
+J406d,Eucalyptus albens,"Baldersleigh Rd, The Basin",2016-04-05T00:00:00Z,-30.23707,151.252,NA,J406d,WGS84,NA,225,Eucalyptus albens,E_albens
+J406e,Eucalyptus albens,"Baldersleigh Rd, The Basin",2016-04-05T00:00:00Z,-30.23707,151.252,NA,J406e,WGS84,NA,225,Eucalyptus albens,E_albens
+J406f,Eucalyptus albens,"Baldersleigh Rd, The Basin",2016-04-05T00:00:00Z,-30.23707,151.252,NA,J406f,WGS84,NA,225,Eucalyptus albens,E_albens
+J406g,Eucalyptus albens,"Baldersleigh Rd, The Basin",2016-04-05T00:00:00Z,-30.23707,151.252,NA,J406g,WGS84,NA,225,Eucalyptus albens,E_albens
+J406h,Eucalyptus albens,"Baldersleigh Rd, The Basin",2016-04-05T00:00:00Z,-30.23707,151.252,NA,J406h,WGS84,NA,225,Eucalyptus albens,E_albens
+J406i,Eucalyptus albens,"Baldersleigh Rd, The Basin",2016-04-05T00:00:00Z,-30.23707,151.252,NA,J406i,WGS84,NA,225,Eucalyptus albens,E_albens
+J413a,Eucalyptus albens,Boggabri - private land,2016-06-16T00:00:00Z,-30.70737,150.09621,NA,J413a,WGS84,NA,225,Eucalyptus albens,E_albens
+J413c,Eucalyptus albens,Boggabri - private land,2016-06-16T00:00:00Z,-30.70737,150.09621,NA,J413c,WGS84,NA,225,Eucalyptus albens,E_albens
+J413f,Eucalyptus albens,Boggabri - private land,2016-06-16T00:00:00Z,-30.70737,150.09621,NA,J413f,WGS84,NA,225,Eucalyptus albens,E_albens
+J414a,Eucalyptus albens,Narrabri,2016-06-16T00:00:00Z,-30.49283,149.94203,NA,J414a,WGS84,NA,225,Eucalyptus albens,E_albens
+J414b,Eucalyptus albens,Narrabri,2016-06-16T00:00:00Z,-30.49283,149.94203,NA,J414b,WGS84,NA,225,Eucalyptus albens,E_albens
+J414c,Eucalyptus albens,Narrabri,2016-06-16T00:00:00Z,-30.49283,149.94203,NA,J414c,WGS84,NA,225,Eucalyptus albens,E_albens
+J416a,Eucalyptus sideroxylon,Weewaa,2016-06-17T00:00:00Z,-30.32322,149.26971,NA,J416a,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J416b,Eucalyptus sideroxylon,Weewaa,2016-06-17T00:00:00Z,-30.32322,149.26971,NA,J416b,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J416c,Eucalyptus sideroxylon,Weewaa,2016-06-17T00:00:00Z,-30.32322,149.26971,NA,J416c,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J416d,Eucalyptus sideroxylon,Weewaa,2016-06-17T00:00:00Z,-30.32322,149.26971,NA,J416d,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J416e,Eucalyptus sideroxylon,Weewaa,2016-06-17T00:00:00Z,-30.32322,149.26971,NA,J416e,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J416f,Eucalyptus sideroxylon,Weewaa,2016-06-17T00:00:00Z,-30.32322,149.26971,NA,J416f,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J416g,Eucalyptus sideroxylon,Weewaa,2016-06-17T00:00:00Z,-30.32322,149.26971,NA,J416g,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J416h,Eucalyptus sideroxylon,Weewaa,2016-06-17T00:00:00Z,-30.32322,149.26971,NA,J416h,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J416i,Eucalyptus sideroxylon,Weewaa,2016-06-17T00:00:00Z,-30.32322,149.26971,NA,J416i,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J418a,Eucalyptus sideroxylon,The Pilliga,2016-06-17T00:00:00Z,-31.05012,149.23013,NA,J418a,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J418b,Eucalyptus sideroxylon,The Pilliga,2016-06-17T00:00:00Z,-31.05012,149.23013,NA,J418b,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J418c,Eucalyptus sideroxylon,The Pilliga,2016-06-17T00:00:00Z,-31.05012,149.23013,NA,J418c,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J418e,Eucalyptus sideroxylon,The Pilliga,2016-06-17T00:00:00Z,-31.05012,149.23013,NA,J418e,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J418g,Eucalyptus sideroxylon,The Pilliga,2016-06-17T00:00:00Z,-31.05012,149.23013,NA,J418g,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J418h,Eucalyptus sideroxylon,The Pilliga,2016-06-17T00:00:00Z,-31.05012,149.23013,NA,J418h,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J418i,Eucalyptus sideroxylon,The Pilliga,2016-06-17T00:00:00Z,-31.05012,149.23013,NA,J418i,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J419a,Eucalyptus albens,Warrumbungle,2016-06-23T00:00:00Z,-31.35926,148.93951,NA,J419a,WGS84,NA,225,Eucalyptus albens,E_albens
+J419b,Eucalyptus albens,Warrumbungle,2016-06-23T00:00:00Z,-31.35926,148.93951,NA,J419b,WGS84,NA,225,Eucalyptus albens,E_albens
+J419c,Eucalyptus albens,Warrumbungle,2016-06-23T00:00:00Z,-31.35926,148.93951,NA,J419c,WGS84,NA,225,Eucalyptus albens,E_albens
+J419d,Eucalyptus albens,Warrumbungle,2016-06-23T00:00:00Z,-31.35926,148.93951,NA,J419d,WGS84,NA,225,Eucalyptus albens,E_albens
+J419e,Eucalyptus albens,Warrumbungle,2016-06-23T00:00:00Z,-31.35926,148.93951,NA,J419e,WGS84,NA,225,Eucalyptus albens,E_albens
+J419f,Eucalyptus albens,Warrumbungle,2016-06-23T00:00:00Z,-31.35926,148.93951,NA,J419f,WGS84,NA,225,Eucalyptus albens,E_albens
+J419g,Eucalyptus albens,Warrumbungle,2016-06-23T00:00:00Z,-31.35926,148.93951,NA,J419g,WGS84,NA,225,Eucalyptus albens,E_albens
+J419h,Eucalyptus albens,Warrumbungle,2016-06-23T00:00:00Z,-31.35926,148.93951,NA,J419h,WGS84,NA,225,Eucalyptus albens,E_albens
+J419i,Eucalyptus albens,Warrumbungle,2016-06-23T00:00:00Z,-31.35926,148.93951,NA,J419i,WGS84,NA,225,Eucalyptus albens,E_albens
+J421b,Eucalyptus sideroxylon,Narromine,2016-06-23T00:00:00Z,-32.36597,148.23103,NA,J421b,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J422a,Eucalyptus sideroxylon,Dubbo,2016-06-24T00:00:00Z,-32.22311,148.66797,NA,J422a,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J422c,Eucalyptus sideroxylon,Dubbo,2016-06-24T00:00:00Z,-32.22311,148.66797,NA,J422c,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J422e,Eucalyptus sideroxylon,Dubbo,2016-06-24T00:00:00Z,-32.22311,148.66797,NA,J422e,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J422f,Eucalyptus sideroxylon,Dubbo,2016-06-24T00:00:00Z,-32.22311,148.66797,NA,J422f,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J422g,Eucalyptus sideroxylon,Dubbo,2016-06-24T00:00:00Z,-32.22311,148.66797,NA,J422g,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J424a,Eucalyptus albens,Ardglen,2016-06-24T00:00:00Z,-31.71111,150.6998,NA,J424a,WGS84,NA,225,Eucalyptus albens,E_albens
+J424b,Eucalyptus albens,Ardglen,2016-06-24T00:00:00Z,-31.71111,150.6998,NA,J424b,WGS84,NA,225,Eucalyptus albens,E_albens
+J424c,Eucalyptus albens,Ardglen,2016-06-24T00:00:00Z,-31.71111,150.6998,NA,J424c,WGS84,NA,225,Eucalyptus albens,E_albens
+J424d,Eucalyptus albens,Ardglen,2016-06-24T00:00:00Z,-31.71111,150.6998,NA,J424d,WGS84,NA,225,Eucalyptus albens,E_albens
+J424e,Eucalyptus albens,Ardglen,2016-06-24T00:00:00Z,-31.71111,150.6998,NA,J424e,WGS84,NA,225,Eucalyptus albens,E_albens
+J424f,Eucalyptus albens,Ardglen,2016-06-24T00:00:00Z,-31.71111,150.6998,NA,J424f,WGS84,NA,225,Eucalyptus albens,E_albens
+J424g,Eucalyptus albens,Ardglen,2016-06-24T00:00:00Z,-31.71111,150.6998,NA,J424g,WGS84,NA,225,Eucalyptus albens,E_albens
+J425,Eucalyptus sideroxylon,Bundarra,2016-07-09T00:00:00Z,-30.30756,151.20671,NA,J425,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J425a,Eucalyptus sideroxylon,Bundarra,2016-07-09T00:00:00Z,-30.30756,151.20671,NA,J425a,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J425b,Eucalyptus sideroxylon,Bundarra,2016-07-09T00:00:00Z,-30.30756,151.20671,NA,J425b,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J425c,Eucalyptus sideroxylon,Bundarra,2016-07-09T00:00:00Z,-30.30756,151.20671,NA,J425c,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J425d,Eucalyptus sideroxylon,Bundarra,2016-07-09T00:00:00Z,-30.30756,151.20671,NA,J425d,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J425e,Eucalyptus sideroxylon,Bundarra,2016-07-09T00:00:00Z,-30.30756,151.20671,NA,J425e,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J425f,Eucalyptus sideroxylon,Bundarra,2016-07-09T00:00:00Z,-30.30756,151.20671,NA,J425f,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J425g,Eucalyptus sideroxylon,Bundarra,2016-07-09T00:00:00Z,-30.30756,151.20671,NA,J425g,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J425h,Eucalyptus sideroxylon,Bundarra,2016-07-09T00:00:00Z,-30.30756,151.20671,NA,J425h,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J426a,Eucalyptus albens,Bundarra,2016-07-09T00:00:00Z,-30.30846,151.20667,NA,J426a,WGS84,NA,225,Eucalyptus albens,E_albens
+J426b,Eucalyptus albens,Bundarra,2016-07-09T00:00:00Z,-30.30846,151.20667,NA,J426b,WGS84,NA,225,Eucalyptus albens,E_albens
+J426c,Eucalyptus albens,Bundarra,2016-07-09T00:00:00Z,-30.30846,151.20667,NA,J426c,WGS84,NA,225,Eucalyptus albens,E_albens
+J426d,Eucalyptus albens,Bundarra,2016-07-09T00:00:00Z,-30.30846,151.20667,NA,J426d,WGS84,NA,225,Eucalyptus albens,E_albens
+J426f,Eucalyptus albens,Bundarra,2016-07-09T00:00:00Z,-30.30846,151.20667,NA,J426f,WGS84,NA,225,Eucalyptus albens,E_albens
+J426g,Eucalyptus albens,Bundarra,2016-07-09T00:00:00Z,-30.30846,151.20667,NA,J426g,WGS84,NA,225,Eucalyptus albens,E_albens
+J426h,Eucalyptus albens,Bundarra,2016-07-09T00:00:00Z,-30.30846,151.20667,NA,J426h,WGS84,NA,225,Eucalyptus albens,E_albens
+J426i,Eucalyptus albens,Bundarra,2016-07-09T00:00:00Z,-30.30846,151.20667,NA,J426i,WGS84,NA,225,Eucalyptus albens,E_albens
+J428,Eucalyptus albens,Inverell,2016-07-09T00:00:00Z,-29.6731,151.15315,NA,J428,WGS84,NA,225,Eucalyptus albens,E_albens
+J428a,Eucalyptus albens,Inverell,2016-07-09T00:00:00Z,-29.6731,151.15315,NA,J428a,WGS84,NA,225,Eucalyptus albens,E_albens
+J428b,Eucalyptus albens,Inverell,2016-07-09T00:00:00Z,-29.6731,151.15315,NA,J428b,WGS84,NA,225,Eucalyptus albens,E_albens
+J428c,Eucalyptus albens,Inverell,2016-07-09T00:00:00Z,-29.6731,151.15315,NA,J428c,WGS84,NA,225,Eucalyptus albens,E_albens
+J428e,Eucalyptus albens,Inverell,2016-07-09T00:00:00Z,-29.6731,151.15315,NA,J428e,WGS84,NA,225,Eucalyptus albens,E_albens
+J428f,Eucalyptus albens,Inverell,2016-07-09T00:00:00Z,-29.6731,151.15315,NA,J428f,WGS84,NA,225,Eucalyptus albens,E_albens
+J428g,Eucalyptus albens,Inverell,2016-07-09T00:00:00Z,-29.6731,151.15315,NA,J428g,WGS84,NA,225,Eucalyptus albens,E_albens
+J428h,Eucalyptus albens,Inverell,2016-07-09T00:00:00Z,-29.6731,151.15315,NA,J428h,WGS84,NA,225,Eucalyptus albens,E_albens
+J428i,Eucalyptus albens,Inverell,2016-07-09T00:00:00Z,-29.6731,151.15315,NA,J428i,WGS84,NA,225,Eucalyptus albens,E_albens
+J429,Eucalyptus albens,Texas,2016-07-09T00:00:00Z,-28.77243,151.21523,NA,J429,WGS84,NA,225,Eucalyptus albens,E_albens
+J429a,Eucalyptus albens,Texas,2016-07-09T00:00:00Z,-28.77243,151.21523,NA,J429a,WGS84,NA,225,Eucalyptus albens,E_albens
+J429b,Eucalyptus albens,Texas,2016-07-09T00:00:00Z,-28.77243,151.21523,NA,J429b,WGS84,NA,225,Eucalyptus albens,E_albens
+J429c,Eucalyptus albens,Texas,2016-07-09T00:00:00Z,-28.77243,151.21523,NA,J429c,WGS84,NA,225,Eucalyptus albens,E_albens
+J429d,Eucalyptus albens,Texas,2016-07-09T00:00:00Z,-28.77243,151.21523,NA,J429d,WGS84,NA,225,Eucalyptus albens,E_albens
+J429e,Eucalyptus albens,Texas,2016-07-09T00:00:00Z,-28.77243,151.21523,NA,J429e,WGS84,NA,225,Eucalyptus albens,E_albens
+J429g,Eucalyptus albens,Texas,2016-07-09T00:00:00Z,-28.77243,151.21523,NA,J429g,WGS84,NA,225,Eucalyptus albens,E_albens
+J429h,Eucalyptus albens,Texas,2016-07-09T00:00:00Z,-28.77243,151.21523,NA,J429h,WGS84,NA,225,Eucalyptus albens,E_albens
+J429i,Eucalyptus albens,Texas,2016-07-09T00:00:00Z,-28.77243,151.21523,NA,J429i,WGS84,NA,225,Eucalyptus albens,E_albens
+J430,Eucalyptus sideroxylon,Inglewood,2016-07-10T00:00:00Z,-28.56925,151.07571,NA,J430,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J430a,Eucalyptus sideroxylon,Inglewood,2016-07-10T00:00:00Z,-28.56925,151.07571,NA,J430a,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J430b,Eucalyptus sideroxylon,Inglewood,2016-07-10T00:00:00Z,-28.56925,151.07571,NA,J430b,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J430c,Eucalyptus sideroxylon,Inglewood,2016-07-10T00:00:00Z,-28.56925,151.07571,NA,J430c,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J430d,Eucalyptus sideroxylon,Inglewood,2016-07-10T00:00:00Z,-28.56925,151.07571,NA,J430d,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J430e,Eucalyptus sideroxylon,Inglewood,2016-07-10T00:00:00Z,-28.56925,151.07571,NA,J430e,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J430f,Eucalyptus sideroxylon,Inglewood,2016-07-10T00:00:00Z,-28.56925,151.07571,NA,J430f,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J430g,Eucalyptus sideroxylon,Inglewood,2016-07-10T00:00:00Z,-28.56925,151.07571,NA,J430g,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J430h,Eucalyptus sideroxylon,Inglewood,2016-07-10T00:00:00Z,-28.56925,151.07571,NA,J430h,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J430i,Eucalyptus sideroxylon,Inglewood,2016-07-10T00:00:00Z,-28.56925,151.07571,NA,J430i,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J433,Eucalyptus sideroxylon,Glendon,2016-07-10T00:00:00Z,-28.17577,151.6577,NA,J433,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J433b,Eucalyptus sideroxylon,Glendon,2016-07-10T00:00:00Z,-28.17577,151.6577,NA,J433b,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J433c,Eucalyptus sideroxylon,Glendon,2016-07-10T00:00:00Z,-28.17577,151.6577,NA,J433c,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J433d,Eucalyptus sideroxylon,Glendon,2016-07-10T00:00:00Z,-28.17577,151.6577,NA,J433d,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J433e,Eucalyptus sideroxylon,Glendon,2016-07-10T00:00:00Z,-28.17577,151.6577,NA,J433e,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J433f,Eucalyptus sideroxylon,Glendon,2016-07-10T00:00:00Z,-28.17577,151.6577,NA,J433f,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J433g,Eucalyptus sideroxylon,Glendon,2016-07-10T00:00:00Z,-28.17577,151.6577,NA,J433g,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J433h,Eucalyptus sideroxylon,Glendon,2016-07-10T00:00:00Z,-28.17577,151.6577,NA,J433h,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J434,Eucalyptus sideroxylon,Allora,2016-07-10T00:00:00Z,-27.7547,152.1189,NA,J434,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J434b,Eucalyptus sideroxylon,Allora,2016-07-10T00:00:00Z,-27.7547,152.1189,NA,J434b,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J435,Eucalyptus sideroxylon,Wondai,2016-07-10T00:00:00Z,-26.36944,151.88103,NA,J435,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J435a,Eucalyptus sideroxylon,Wondai,2016-07-10T00:00:00Z,-26.36944,151.88103,NA,J435a,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J435b,Eucalyptus sideroxylon,Wondai,2016-07-10T00:00:00Z,-26.36944,151.88103,NA,J435b,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J435c,Eucalyptus sideroxylon,Wondai,2016-07-10T00:00:00Z,-26.36944,151.88103,NA,J435c,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J435e,Eucalyptus sideroxylon,Wondai,2016-07-10T00:00:00Z,-26.36944,151.88103,NA,J435e,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J435f,Eucalyptus sideroxylon,Wondai,2016-07-10T00:00:00Z,-26.36944,151.88103,NA,J435f,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J435g,Eucalyptus sideroxylon,Wondai,2016-07-10T00:00:00Z,-26.36944,151.88103,NA,J435g,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J435h,Eucalyptus sideroxylon,Wondai,2016-07-10T00:00:00Z,-26.36944,151.88103,NA,J435h,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J435i,Eucalyptus sideroxylon,Wondai,2016-07-10T00:00:00Z,-26.36944,151.88103,NA,J435i,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+J436,Eucalyptus albens,Kulpi,2016-07-11T00:00:00Z,-27.18896,151.73259,NA,J436,WGS84,NA,225,Eucalyptus albens,E_albens
+J436a,Eucalyptus albens,Kulpi,2016-07-11T00:00:00Z,-27.18896,151.73259,NA,J436a,WGS84,NA,225,Eucalyptus albens,E_albens
+J436b,Eucalyptus albens,Kulpi,2016-07-11T00:00:00Z,-27.18896,151.73259,NA,J436b,WGS84,NA,225,Eucalyptus albens,E_albens
+J436c,Eucalyptus albens,Kulpi,2016-07-11T00:00:00Z,-27.18896,151.73259,NA,J436c,WGS84,NA,225,Eucalyptus albens,E_albens
+J436e,Eucalyptus albens,Kulpi,2016-07-11T00:00:00Z,-27.18896,151.73259,NA,J436e,WGS84,NA,225,Eucalyptus albens,E_albens
+J436f,Eucalyptus albens,Kulpi,2016-07-11T00:00:00Z,-27.18896,151.73259,NA,J436f,WGS84,NA,225,Eucalyptus albens,E_albens
+J436g,Eucalyptus albens,Kulpi,2016-07-11T00:00:00Z,-27.18896,151.73259,NA,J436g,WGS84,NA,225,Eucalyptus albens,E_albens
+J436h,Eucalyptus albens,Kulpi,2016-07-11T00:00:00Z,-27.18896,151.73259,NA,J436h,WGS84,NA,225,Eucalyptus albens,E_albens
+J436i,Eucalyptus albens,Kulpi,2016-07-11T00:00:00Z,-27.18896,151.73259,NA,J436i,WGS84,NA,225,Eucalyptus albens,E_albens
+MelMosaic,Eucalyptus melliodora,Yeoval,NA,NA,NA,NA,MelMosaic,WGS84,NA,334,Eucalyptus melliodora,E_melliodora
+NAL05,Eucalyptus microcarpa,"Melrose-Trangie Rd, Albert Murrumbidgee NP",2013-10-16T00:00:00Z,-32.3742,147.4871,NA,NAL05,WGS84,NA,14,Eucalyptus albens,E_albens
+NBJ30,Eucalyptus microcarpa,Berry Jerry State Forest,2013-11-18T00:00:00Z,-35.05268,147.0439,NA,NBJ30,WGS84,NA,14,Eucalyptus albens,E_albens
+NCD30,Eucalyptus microcarpa,Condobolin,2013-11-17T00:00:00Z,-32.89835,147.05836,NA,NCD30,WGS84,NA,14,Eucalyptus albens,E_albens
+NCR13,Eucalyptus microcarpa,Crowther,2013-11-15T00:00:00Z,-34.08362,148.51941,NA,NCR13,WGS84,NA,14,Eucalyptus albens,E_albens
+NDU10,Eucalyptus microcarpa,Dubbo,2013-10-15T00:00:00Z,-32.32624,148.51287,NA,NDU10,WGS84,NA,14,Eucalyptus albens,E_albens
+RA1007,Eucalyptus albens,Bundarra Rd,NA,NA,NA,NA,RA1007,WGS84,NA,225,Eucalyptus albens,E_albens
+J355d,Eucalyptus sideroxylon,"Chiltern, Chiltern-Howlong Rd.",2015-11-21T00:00:00Z,-36.09264,146.61917,NA,J355d,WGS84,NA,173,Eucalyptus sideroxylon,E_sideroxylon
+SRR191872,Eucalyptus globulus,NA,NA,NA,NA,NA,SRR191872,WGS84,NA,7,Eucalyptus globulus,E_globulus
+SRR400875,Eucalyptus globulus,NA,NA,NA,NA,NA,SRR400875,WGS84,NA,7,Eucalyptus globulus,E_globulus
+SRR1386218,Eucalyptus grandis,NA,NA,NA,NA,NA,SRR1386218,WGS84,NA,11,Eucalyptus grandis,E_grandis
+SRR1386219,Eucalyptus grandis,NA,NA,NA,NA,NA,SRR1386219,WGS84,NA,11,Eucalyptus grandis,E_grandis
+SRR1386220,Eucalyptus grandis,NA,NA,NA,NA,NA,SRR1386220,WGS84,NA,11,Eucalyptus grandis,E_grandis
+SRR1386221,Eucalyptus grandis,NA,NA,NA,NA,NA,SRR1386221,WGS84,NA,11,Eucalyptus grandis,E_grandis
+SRR1386222,Eucalyptus grandis,NA,NA,NA,NA,NA,SRR1386222,WGS84,NA,11,Eucalyptus grandis,E_grandis
+SRR1392391,Eucalyptus grandis,NA,NA,NA,NA,NA,SRR1392391,WGS84,NA,11,Eucalyptus grandis,E_grandis
+SRR1392399,Eucalyptus grandis,NA,NA,NA,NA,NA,SRR1392399,WGS84,NA,11,Eucalyptus grandis,E_grandis
+SRR1392411,Eucalyptus globulus,NA,NA,NA,NA,NA,SRR1392411,WGS84,NA,7,Eucalyptus globulus,E_globulus
+SRR1448467,Eucalyptus grandis,NA,NA,NA,NA,NA,SRR1448467,WGS84,NA,11,Eucalyptus grandis,E_grandis
