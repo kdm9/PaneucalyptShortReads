@@ -29,19 +29,19 @@ refs:
   grandis: /g/data/xe2/references/eucalyptus/grandis/Egrandis_v2.fasta
   grandisv2chl: /g/data/xe2/references/eucalyptus/grandis_v2_chloro/Egrandis-v2-plus-chloro.fasta
   emel-scott: /g/data/xe2/references/eucalyptus/emel_scott/Emelliodora_CSIROg1_SISH00000000.1.fasta
-  #A_floribunda: /g/data/xe2/references/eucalyptus/scott-final-2020/A_floribunda.fasta
-  C_calophylla: /g/data/xe2/references/eucalyptus/scott-final-2020/C_calophylla.fasta
-  #C_maculata: /g/data/xe2/references/eucalyptus/scott-final-2020/C_maculata.fasta
   E_albens: /g/data/xe2/references/eucalyptus/scott-final-2020/E_albens2.fasta
-  #E_caleyi: /g/data/xe2/references/eucalyptus/scott-final-2020/E_caleyi.fasta
-  #E_camaldulensis: /g/data/xe2/references/eucalyptus/scott-final-2020/E_camaldulensis.fasta
-  #E_cloeziana: /g/data/xe2/references/eucalyptus/scott-final-2020/E_cloeziana.fasta
-  #E_coolabah: /g/data/xe2/references/eucalyptus/scott-final-2020/E_coolabah.fasta
-  #E_globulus: /g/data/xe2/references/eucalyptus/scott-final-2020/E_globulus.fasta
   E_grandis: /g/data/xe2/references/eucalyptus/scott-final-2020/E_grandis.fasta
   E_melliodora: /g/data/xe2/references/eucalyptus/scott-final-2020/E_mell_canu_dip.fasta
-  #E_polyanthemos: /g/data/xe2/references/eucalyptus/scott-final-2020/E_polyanthemos.fasta
   E_sideroxylon: /g/data/xe2/references/eucalyptus/scott-final-2020/E_sideroxylon2.fasta
+  C_calophylla: /g/data/xe2/references/eucalyptus/scott-final-2020/C_calophylla.fasta
+#A_floribunda: /g/data/xe2/references/eucalyptus/scott-final-2020/A_floribunda.fasta
+#C_maculata: /g/data/xe2/references/eucalyptus/scott-final-2020/C_maculata.fasta
+#E_caleyi: /g/data/xe2/references/eucalyptus/scott-final-2020/E_caleyi.fasta
+#E_camaldulensis: /g/data/xe2/references/eucalyptus/scott-final-2020/E_camaldulensis.fasta
+#E_cloeziana: /g/data/xe2/references/eucalyptus/scott-final-2020/E_cloeziana.fasta
+#E_coolabah: /g/data/xe2/references/eucalyptus/scott-final-2020/E_coolabah.fasta
+#E_globulus: /g/data/xe2/references/eucalyptus/scott-final-2020/E_globulus.fasta
+#E_polyanthemos: /g/data/xe2/references/eucalyptus/scott-final-2020/E_polyanthemos.fasta
 
 
 denovodist:
@@ -70,7 +70,7 @@ varcall:
         - bwa
       callers:
         - mpileup
-        - freebayes
+          #- freebayes
       refs:
         - grandisv2chl
     AdnatariaHighCoverage:
@@ -79,7 +79,7 @@ varcall:
         - bwa
       callers:
         - mpileup
-        - freebayes
+          #- freebayes
       refs:
         - grandisv2chl
     DP15_highcov:
@@ -87,7 +87,7 @@ varcall:
         - bwa
       callers:
         - mpileup
-        - freebayes
+          #- freebayes
       refs:
         - grandisv2chl
     RymerMarri:
@@ -95,25 +95,25 @@ varcall:
       aligners:
         - bwa
       callers:
-        - freebayes
+        #- freebayes
         - mpileup
       refs:
         - grandisv2chl
         - C_calophylla
-    E_melliodora: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_melliodora"]}
-    #A_floribunda: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "A_floribunda"]}
-    C_calophylla: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "C_calophylla"]}
-    #C_maculata: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "C_maculata"]}
-    E_albens: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_albens"]}
-    #E_caleyi: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_caleyi"]}
-    #E_camaldulensis: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_camaldulensis"]}
-    #E_cloeziana: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_cloeziana"]}
-    #E_coolabah: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_coolabah"]}
-    #E_globulus: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_globulus"]}
-    E_grandis: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_grandis"]}
-    E_melliodora: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_melliodora"]}
-    #E_polyanthemos: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_polyanthemos"]}
-    E_sideroxylon: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_sideroxylon"]}
+    SPP_E_melliodora: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_melliodora"]}
+    SPP_C_calophylla: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "C_calophylla"]}
+    SPP_E_albens: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_albens"]}
+    SPP_E_grandis: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_grandis"]}
+    SPP_E_melliodora: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_melliodora"]}
+    SPP_E_sideroxylon: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_sideroxylon"]}
+    #SPP_A_floribunda: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "A_floribunda"]}
+    #SPP_C_maculata: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "C_maculata"]}
+    #SPP_E_caleyi: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_caleyi"]}
+    #SPP_E_camaldulensis: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_camaldulensis"]}
+    #SPP_E_cloeziana: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_cloeziana"]}
+    #SPP_E_coolabah: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_coolabah"]}
+    #SPP_E_globulus: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_globulus"]}
+    #SPP_E_polyanthemos: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_polyanthemos"]}
   filters:
     default: >
       -i 'QUAL >= 10 &&
