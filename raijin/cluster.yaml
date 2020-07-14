@@ -74,8 +74,8 @@ mashdist:
   queue: normalbw
 
 mpileup:
-  time: '24:00:00'
-  mem: 8G
+  time: '48:00:00'
+  mem: 16G
 
 freebayes:
   time: '8:00:00'

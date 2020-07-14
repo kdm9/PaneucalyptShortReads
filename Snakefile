@@ -309,35 +309,6 @@ rule unique_kmers:
         " ) 2>{log}"
 
 
-rule sourmash_sketch:
-    input:
-        "data/reads/samples_pipe/{sample}.fastq.gz",
-    output:
-        temp("data/sourmash/sketch/k{ksize}-s{sketchsize}/{sample}.smh"),
-    log:
-        "data/log/sourmash/sketch/k{ksize}-s{sketchsize}-{sample}.log"
-    shell:
-        "( sourmash compute"
-        "   --name '{wildcards.sample}'"
-        "   -k {wildcards.ksize}"
-        "   -n {wildcards.sketchsize}"
-        "   -o {output}"
-        "   {input}"
-        ") >{log} 2>&1"
-
-rule sourmash_dist:
-    input:
-        lambda wc: expand("data/sourmash/sketch/k{ksize}-s{sketchsize}/{sample}.smh",
-                            ksize=wc.ksize, sketchsize=wc.sketchsize,
-                            sample=SAMPLESETS[wc.set]),
-    output:
-        "data/sourmash/k{ksize}-s{sketchsize}/{set}.dist",
-    log:
-        "data/log/sourmash/dist/k{ksize}-s{sketchsize}-{set}.log"
-    threads: 1
-    shell:
-        "(sourmash compare -k {wildcards.ksize} -o {output} {input} ) >{log} 2>&1"
-
 
 rule kwip:
     input:
@@ -346,12 +317,6 @@ rule kwip:
                sketchsize=config["denovodist"]["kwip_sketchsize"],
                set=config["denovodist"]["kwip_sets"]),
 
-rule sourmash:
-    input:
-        expand("data/sourmash/k{ksize}-s{sketchsize}/{set}.dist",
-               ksize=config["denovodist"]["ksize"],
-               sketchsize=config["denovodist"]["sourmash_sketchsize"],
-               set=config["denovodist"]["sourmash_sets"]),
 
 rule mash:
     input:
@@ -364,7 +329,6 @@ rule denovo:
     input:
         rules.kwip.input,
         rules.mash.input,
-        rules.sourmash.input,
 
 #######################################################################
 #                       Alignment to Reference                        #
@@ -699,6 +663,7 @@ rule mpileup:
         minmq=lambda wc: config["varcall"]["minmapq"].get(wc.aligner, 5),
         minbq=config["varcall"]["minbq"],
     priority: 1  # get them done earlier, normalisation is super quick
+    threads: 2
     shell:
         "( bcftools mpileup"
         "   --redo-BAQ"
@@ -712,6 +677,7 @@ rule mpileup:
         "   --output-type u" # uncompressed bam
         "   {input.bam}"
         " | bcftools call"
+        "   --threads {threads}"
         "   --targets '{wildcards.region}'" # might not be needed
         "   --multiallelic-caller"
         "   --prior {params.theta}"
@@ -868,10 +834,12 @@ rule filtered_variants:
                aligner=config["varcall"]["samplesets"][sampleset]["aligners"],
                ref=config["varcall"]["samplesets"][sampleset]["refs"],
                filter=config["varcall"]["filters"],
-               sampleset=sampleset)
-        for sampleset in config["varcall"]["samplesets"]]
-
-
+               sampleset=sampleset
+               ) for sampleset in config["varcall"]["samplesets"]],
+        [expand("data/variants/final/gatk-hc~{aligner}~{ref}~{sampleset}.vcf.gz",
+                aligner="bwa", ref=config["varcall"]["gatksets"][sampleset]["refs"],
+                sampleset=sampleset
+                ) for sampleset in config["varcall"]["gatksets"]],
 
 rule varcall:
     input:
@@ -987,11 +955,6 @@ rule gatk_mergevariants:
         )
             
                    
-localrules: gatk
-rule gatk:
-    input:
-        expand("data/variants/final/gatk-hc~{aligner}~{ref}~{sampleset}.vcf.gz",
-                aligner="bwa", ref="grandisv2chl", sampleset="DP15_highcov")
 
 
 ### ANGSD
