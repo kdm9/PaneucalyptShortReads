@@ -1,8 +1,8 @@
 #!/bin/bash
 #PBS -q normal
-#PBS -l ncpus=1
+#PBS -l ncpus=2
 #PBS -l walltime=48:00:00
-#PBS -l mem=5G
+#PBS -l mem=50G
 #PBS -l storage=scratch/xe2+gdata/xe2
 #PBS -l wd
 #PBS -j oe
@@ -33,7 +33,6 @@ fi
 
 snakemake                                                          \
     -j 1000                                                        \
-    --max-jobs-per-second 2                                        \
     --cluster-config raijin/cluster.yaml                           \
     --local-cores ${PBS_NCPUS:-1}                                  \
     --js raijin/jobscript.sh                                       \

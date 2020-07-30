@@ -141,23 +141,6 @@ rule sample_fastqs:
         [expand("data/reads/samples/{sample}.fastq.gz", sample=SAMPLESETS[sset])
             for sset in config["persample_reads"]["samplesets"]]
 
-#rule read_count_librun:
-#    input:
-#        ["data/reads/runs/{run}/{lib}.fastq.gz".format(run=run, lib=lib)
-#		for run, lib in RUNLIB2SAMP],
-#    output:
-#        "data/stats/reads/readnum_librun.tsv",
-#    threads:
-#        48
-#    log:
-#        "data/log/readstats/seqhax-stats-librun.log",
-#    shell:
-#        "( seqhax stats"
-#        "    -t {threads}"
-#        "    {input}"
-#        "    >{output}"
-#        " ) 2>{log}"
-
 rule read_count_librun_indiv:
     input:
         "data/reads/runs/{run}/{lib}.fastq.gz"

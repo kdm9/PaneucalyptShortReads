@@ -60,20 +60,20 @@ varcall:
   chunksize:
     mpileup:   2000000
     freebayes:   50000
-    gatk-hc:   3000000
-  gatksets:
-    HMBEmel:
-      refs:
-        - grandisv2chl
-        - E_melliodora
-    AdnatariaHighCoverage:
-      refs:
-        - grandisv2chl
-        - E_melliodora
-    RymerMarri:
-      refs:
-        - grandisv2chl
-        - C_calophylla
+    gatk-hc: 100000000
+  gatksets: {}
+    #HMBEmel:
+    #  refs:
+    #    - grandisv2chl
+    #    - E_melliodora
+    #AdnatariaHighCoverage:
+    #  refs:
+    #    - grandisv2chl
+    #    - E_melliodora
+    #RymerMarri:
+    #  refs:
+    #    - grandisv2chl
+    #    - C_calophylla
   samplesets:
     HMBEmel:
       theta_prior: 0.1
@@ -84,6 +84,7 @@ varcall:
           #- freebayes
       refs:
         - grandisv2chl
+        - E_melliodora
     AdnatariaHighCoverage:
       theta_prior: 0.1
       aligners:
@@ -93,6 +94,7 @@ varcall:
           #- freebayes
       refs:
         - grandisv2chl
+        - E_melliodora
     DP15_highcov:
       aligners:
         - bwa

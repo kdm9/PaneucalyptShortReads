@@ -55,15 +55,15 @@ mergebam_set:
   mem: 15G
 
 bamidx:
-  time: '72:00:00'
+  time: '48:00:00'
   mem: 15G
 
 bcfmerge:
-  time: '72:00:00'
+  time: '48:00:00'
   mem: 7G
 
 kwipdist:
-  time: '168:00:00'
+  time: '48:00:00'
 
 mashsketch:
   time: '12:00:00'
@@ -107,17 +107,17 @@ bcfstats:
   mem: 4G
 
 gatk_hapcall:
-  time: '12:00:00'
-  mem: 8G
+  time: '48:00:00'
+  mem: 16G
 
 gatk_combinegvcfs:
-  time: '8:00:00'
+  time: '48:00:00'
   mem: 48G
 
 gatk_genotypegvcfs:
-  time: '8:00:00'
+  time: '48:00:00'
   mem: 48G
 
 gatk_mergevariants:
-  time: '8:00:00'
+  time: '48:00:00'
   mem: 48G
