@@ -113,32 +113,54 @@ varcall:
       refs:
         - grandisv2chl
         - C_calophylla
-    SPP_E_melliodora: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_melliodora"]}
-    SPP_C_calophylla: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "C_calophylla"]}
-    SPP_E_albens: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_albens"]}
-    SPP_E_grandis: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_grandis"]}
-    SPP_E_melliodora: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_melliodora"]}
-    SPP_E_sideroxylon: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_sideroxylon"]}
-    #SPP_A_floribunda: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "A_floribunda"]}
-    #SPP_C_maculata: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "C_maculata"]}
-    #SPP_E_caleyi: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_caleyi"]}
-    #SPP_E_camaldulensis: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_camaldulensis"]}
-    #SPP_E_cloeziana: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_cloeziana"]}
-    #SPP_E_coolabah: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_coolabah"]}
-    #SPP_E_globulus: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_globulus"]}
-    #SPP_E_polyanthemos: {"theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"], "refs": ["grandisv2chl", "E_polyanthemos"]}
+    SPP_melsidalb: {
+      "theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"],
+      "refs": ["grandisv2chl", "E_melliodora", "E_sideroxylon", "E_albens"]}
+    SPP_C_calophylla: {
+      "theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"],
+      "refs": ["grandisv2chl", "C_calophylla"]}
+    SPP_E_albens: {
+      "theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"],
+      "refs": ["grandisv2chl", "E_albens"]}
+    SPP_E_grandis: {
+      "theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"],
+      "refs": ["grandisv2chl", "E_grandis"]}
+    SPP_E_melliodora: {
+      "theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"],
+      "refs": ["grandisv2chl", "E_melliodora"]}
+    SPP_E_sideroxylon: {
+      "theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"],
+      "refs": ["grandisv2chl", "E_sideroxylon"]}
+    #SPP_A_floribunda: {
+    #  "theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"],
+    #  "refs": ["grandisv2chl", "A_floribunda"]}
+    #SPP_C_maculata: {
+    #  "theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"],
+    #  "refs": ["grandisv2chl", "C_maculata"]}
+    SPP_E_melliodora: {
+      "theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"],
+      "refs": ["grandisv2chl", "E_melliodora"]}
+    SPP_C_calophylla: {
+      "theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"],
+      "refs": ["grandisv2chl", "C_calophylla"]}
+    SPP_E_albens: {
+      "theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"],
+      "refs": ["grandisv2chl", "E_albens"]}
+    SPP_E_grandis: {
+      "theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"],
+      "refs": ["grandisv2chl", "E_grandis"]}
+    SPP_E_melliodora: {
+      "theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"],
+      "refs": ["grandisv2chl", "E_melliodora"]}
+    SPP_E_sideroxylon: {
+      "theta_prior": 0.1, "aligners": ["bwa"], "callers": ["mpileup"],
+      "refs": ["grandisv2chl", "E_sideroxylon"]}
   filters:
     default: >
       -i 'QUAL >= 10 &&
           ALT != "." &&
           INFO/DP >= 5 &&
           INFO/AN >= 3'
-    strict: >
-      -i 'QUAL >= 40 &&
-          ALT != "." &&
-          INFO/DP >= 20 &&
-          ((INFO/AN / N_SAMPLES)*2) > 0.20 &&
-          MAF >= 0.01'
     # Above is presence rate, >20%
 
 angsd:
