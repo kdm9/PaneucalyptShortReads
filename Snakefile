@@ -1,18 +1,22 @@
 configfile: "config.yml"
-import snkmk
-RUNLIB2SAMP, SAMP2RUNLIB = snkmk.make_runlib2samp("metadata/sample2runlib.csv")
+import snkmk  #snkmk.py file with python functions
+RUNLIB2SAMP, SAMP2RUNLIB = snkmk.make_runlib2samp("metadata/sample2runlib.csv") #This fxn creates 2 dictionaries associating the metadata for runs and samples
+										#Full rule for definining both dictionaries in snkmk.py
 SAMPLESETS = snkmk.make_samplesets(s2rl_file="metadata/sample2runlib.csv",
-                                   setfile_glob="metadata/samplesets/*.txt")
+                                   setfile_glob="metadata/samplesets/*.txt")  #This fxn makes a dictionary that maps sample set to its list of samples
 
+## Define variant calling regions based on the "varcall" and "chunksize" attributes in the config file
 VARCALL_REGIONS = {
     vc: snkmk.make_regions(config["refs"], window=config["varcall"]["chunksize"][vc])
     for vc in config["varcall"]["chunksize"]
-}
+}  
 
-CHROMS = snkmk.make_chroms(config["refs"])
-shell.prefix = "set -euo pipefail; "
+## Define a list of chromosomes from the "refs" attribute in the config file
+CHROMS = snkmk.make_chroms(config["refs"])  
+## Specify 'bash safe mode': e = exit, u = error if a variable is undefined, o pipefail = if the lefthand side of the pipe fails, then this specifies that the whole operation should be considered failed
+shell.prefix = "set -euo pipefail; "  
 
-wildcard_constraints:
+wildcard_constraints:  #Helps snakemake differentiate between all wildcards, including any slashes
     run="[^/]+",
     lib="[^/]+",
     aligner="[^/]+",
@@ -20,18 +24,20 @@ wildcard_constraints:
     ref="[^/]+",
     type="[^/]+",
 
+######################################################   ##
+#           Shortcut rules for Read-level QC              #
+####################################
+## These shortcut rules check that everything necessary to get to specified steps/checkpoints has run successfully
 
-#######################################################################
-#                            Read-level QC                            #
-#######################################################################
-
-rule qc_runlib:
+## Run qc_runlib on all runs and all libraries; this includes all samples across all runs
+rule qc_runlib: 
     input:
         ["data/reads/runs/{run}/{lib}.fastq.gz".format(run=run, lib=lib) for run, lib in RUNLIB2SAMP],
         expand("data/mash/everything/k{ksize}-s{sketchsize}_everything_librun.dist", 
                ksize=config["denovodist"]["ksize"], sketchsize=config["denovodist"]["mash_sketchsize"]),
 
-rule read_stats:
+## Calculate statistics for all reads
+rule read_stats:  
     input:
         "data/stats/reads/readnum_librun.tsv",
         #"data/stats/reads/readnum_samples.tsv",
@@ -41,22 +47,26 @@ rule reads:
         rules.qc_runlib.input,
         rules.read_stats.input,
 
-### Actual rules
+##                                             ##
+#                Actual rules                   #
+##                                             ##
 
-ruleorder: qcreads_il > qcreads
+## Shortcut: tells snakemake to first try the interleaved rule; if that doesn't exist, then use the unmerged R1 & R2 qc rule
+ruleorder: qcreads_il > qcreads  
+
 rule qcreads:
     input:
         r1=ancient("rawdata/runs/{run}/{lib}_R1.fastq.gz"),
         r2=ancient("rawdata/runs/{run}/{lib}_R2.fastq.gz"),
     output:
-        reads="data/reads/runs/{run}/{lib}.fastq.gz",
+        reads="data/reads/runs/{run}/{lib}.fastq.gz",  #Creates a new file with R1 & R2 combined
     log:
         log="data/log/adapterremoval/{run}/{lib}.log",
         settings="data/stats/adapterremoval/{run}/{lib}.txt",
     threads:
         8
     params:
-        adp1=lambda wc: config["qc"].get(wc.run, config["qc"]["_DEFAULT_"])["adapter1"],
+        adp1=lambda wc: config["qc"].get(wc.run, config["qc"]["_DEFAULT_"])["adapter1"],  #lambda wc = fxn that gets applied to wildcards defined for the config file
         adp2=lambda wc: config["qc"].get(wc.run, config["qc"]["_DEFAULT_"])["adapter2"],
         minqual=lambda wc: config["qc"].get(wc.run, config["qc"]["_DEFAULT_"])["minqual"],
     shell:
@@ -74,13 +84,14 @@ rule qcreads:
         "   --threads {threads}"
         "   --settings {log.settings}"
         "   --output1 /dev/stdout"
-        " | seqhax pairs"
+        " | seqhax pairs"  #seqhax is a program Kevin wrote to verify R1 & R2 are matched correctly; it also checks for minimum length filtering (requires seqs of at least 20 bp)
         "   -l 20"
-        "   -b >(pigz -p {threads} >{output.reads})"
+        "   -b >(pigz -p {threads} >{output.reads})"  #Process redirection, similar to pipe; pigz is a parallel version of gzip; this outputs a single zipped fastq per run and library
         "   /dev/stdin"
         ") >{log.log} 2>&1"
 
-rule qcreads_il:
+## Rule for interleaved qc (when input is single merged read as opposed to R1 & R2); otherwise same as above qc
+rule qcreads_il:  
     input:
         il="rawdata/runs/{run}/{lib}.fastq.gz",
     output:
@@ -115,8 +126,8 @@ rule qcreads_il:
         "   /dev/stdin"
         ") >{log.log} 2>&1"
 
-
-rule samplefastqpipe:
+## Concatenate all reads for a given sample across multiple runs, then pipe data from concatenated fastqs to this fxn, without creating a new file to save space
+rule samplefastqpipe: 
     input:
         lambda wc: ["data/reads/runs/{run}/{lib}.fastq.gz".format(run=r, lib=l) for r, l in SAMP2RUNLIB[wc.sample]],
     output: pipe("data/reads/samples_pipe/{sample}.fastq.gz")
@@ -125,7 +136,8 @@ rule samplefastqpipe:
     shell:
         "cat {input} > {output}"
 
-rule samplefastqfile:
+## Similar to above, but creates a new concatenated fastq file from all reads per sample
+rule samplefastqfile:  
     input:
         lambda wc: ["data/reads/runs/{run}/{lib}.fastq.gz".format(run=r, lib=l) for r, l in SAMP2RUNLIB[wc.sample]],
     output: "data/reads/samples/{sample}.fastq.gz"
@@ -134,14 +146,15 @@ rule samplefastqfile:
     shell:
         "cat {input} > {output}"
 
-
-localrules: sample_fastqs
+## The previous rule concatenates reads for 1 sample; this rule tells snakemake how to call all concatenated samples
+localrules: sample_fastqs  
 rule sample_fastqs:
     input:
         [expand("data/reads/samples/{sample}.fastq.gz", sample=SAMPLESETS[sset])
             for sset in config["persample_reads"]["samplesets"]]
 
-rule read_count_librun_indiv:
+## Create a .tsv file of read counts per file
+rule read_count_librun_indiv:  
     input:
         "data/reads/runs/{run}/{lib}.fastq.gz"
     output:
@@ -154,7 +167,8 @@ rule read_count_librun_indiv:
         "    >{output}"
         " ) 2>{log}"
 
-rule read_count_fromindiv:
+## Combine all read counts for different runs into a single file including all runs and libraries
+rule read_count_fromindiv:   
     input:
         ["data/stats/reads/readnum_librun/{run}~{lib}.tsv".format(run=run, lib=lib)
           for run, lib in RUNLIB2SAMP],
@@ -172,9 +186,9 @@ rule read_count_fromindiv:
                         fh.write(line)
 
 
-rule read_count_sample:
+rule read_count_sample:  
     input:
-    	expand("data/reads/samples_pipe/{sample}.fastq.gz", sample=SAMP2RUNLIB),
+        expand("data/reads/samples_pipe/{sample}.fastq.gz", sample=SAMP2RUNLIB),
     output:
         "data/stats/reads/readnum_samples.tsv",
     threads:
@@ -189,9 +203,9 @@ rule read_count_sample:
         " ) 2>{log}"
 
 
-#######################################################################
-#                      De-novo Distance analysis                      #
-#######################################################################
+#########################################################################
+#                      De-novo Distance Analysis                        #
+#########################################################################
 
 rule everything_mash_sketch:
     input:
@@ -200,7 +214,7 @@ rule everything_mash_sketch:
         temp("data/mash/everything/k{ksize}-s{sketchsize}_everything_librun.msh"),
     log:
         "data/log/mash/everything/k{ksize}-s{sketchsize}.log"
-    threads: 49
+    threads: 48
     shell:
         " mash sketch"
         "   -k {wildcards.ksize}"
