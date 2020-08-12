@@ -206,7 +206,8 @@ rule read_count_sample:
 #########################################################################
 #                      De-novo Distance Analysis                        #
 #########################################################################
-
+## mash (similar to kwip) estimates genetic distance directly from short reads
+## 1. This part calculates all k-mers
 rule everything_mash_sketch:
     input:
         ["data/reads/runs/{run}/{lib}.fastq.gz".format(run=run, lib=lib) for run, lib in RUNLIB2SAMP],
@@ -224,7 +225,7 @@ rule everything_mash_sketch:
         "   {input}"
         " >{log} 2>&1"
 
-
+## 2. This part calculates distances from the k-mer data
 rule mashdist:
     input:
         "data/mash/everything/k{ksize}-s{sketchsize}_everything_librun.msh",
@@ -241,6 +242,7 @@ rule mashdist:
         " >{output}"
         " 2>{log}"
 
+## KWIP: part 1 uses counting.py to count kmers
 rule countsketch:
     input:
         "data/reads/samples_pipe/{sample}.fastq.gz",
@@ -265,6 +267,7 @@ rule countsketch:
         "   {input}"
         " >{log} 2>&1"
 
+## KWIP: part 2 calculates distance
 rule kwipdist:
     input:
         lambda wc: expand("data/kwip/sketch/k{ksize}-s{sketchsize}/{sample}.ct.gz",
@@ -285,6 +288,7 @@ rule kwipdist:
         " {input}"
         " >{log} 2>&1"
 
+## Count unique kmers
 rule unique_kmers:
     input:
         lambda wc: expand("data/reads/samples_pipe/{sample}.fastq.gz",
@@ -306,7 +310,7 @@ rule unique_kmers:
         " ) 2>{log}"
 
 
-
+## Shortcut rules - checks if all the output has been generated from the above rules
 rule kwip:
     input:
         expand("data/kwip/k{ksize}-s{sketchsize}/{set}.dist",
