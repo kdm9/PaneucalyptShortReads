@@ -1,7 +1,7 @@
 __default__:
   mem: 47G
   queue: normal
-  time: '01:00:00'
+  time: '48:00:00'
   jobfs: 400G
   project: xe2
   name: "SNK_{rule}"
@@ -20,22 +20,20 @@ everything_mash_sketch:
 
 read_count_librun:
   time: "6:00:00"
-  queue: normalbw
   mem: 10G
 
 read_count_sample:
   time: "24:00:00"
-  queue: normalbw
 
 unique_kmers:
-  time: "18:00:00"
+  time: "48:00:00"
 
 ngmap:
-  time: '12:00:00'
+  time: '24:00:00'
   mem: 15G
 
 bwamem:
-  time: '12:00:00'
+  time: '24:00:00'
   mem: 15G
 
 bam_markdups_sort:
@@ -43,7 +41,7 @@ bam_markdups_sort:
   mem: 7500m
 
 mergebam_samp:
-  time: '6:00:00'
+  time: '12:00:00'
   mem: 7G
 
 qualimap_samp:
@@ -67,11 +65,9 @@ kwipdist:
 
 mashsketch:
   time: '12:00:00'
-  queue: normalbw
 
 mashdist:
   time: '2:00:00'
-  queue: normalbw
 
 mpileup:
   time: '48:00:00'
@@ -82,7 +78,7 @@ freebayes:
   mem: 4G
 
 bcfnorm:
-  time: '2:00:00'
+  time: '8:00:00'
   mem: 4G
 
 bcffilter:
@@ -91,19 +87,18 @@ bcffilter:
 
 bcfmerge:
   time: '18:00:00'
-  queue: express
   mem: 8G
 
 bcf2vcf:
-  time: '12:00:00'
+  time: '24:00:00'
   mem: 2G
 
 variantidx:
-  time: '5:00:00'
+  time: '48:00:00'
   mem: 8G
 
 bcfstats:
-  time: '8:00:00'
+  time: '24:00:00'
   mem: 4G
 
 gatk_hapcall:
