@@ -1,5 +1,6 @@
 name: paneuc
 channels:
+  - defaults
   - conda-forge
   - bioconda
 dependencies:
@@ -11,3 +12,5 @@ dependencies:
   - qualimap
   - whatshap
   - AdapterRemoval
+  - pynvim
+  - git-annex
